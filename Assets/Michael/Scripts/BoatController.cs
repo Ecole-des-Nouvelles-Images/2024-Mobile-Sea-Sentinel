@@ -1,60 +1,57 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class BoatController : MonoBehaviour
+namespace Alexandre
 {
-    [SerializeField] private float _boatSpeed;
-    private GameObject _playerTarget;
-    private NavMeshAgent _navMeshAgent;
-    private bool _HasThief = false;
-    private Vector3 _fleeDestination;
-    
-  
-    void Start()
+    public class BoatController : MonoBehaviour
     {
-        //_playerTarget = GameObject.FindGameObjectWithTag("Player");
-        _navMeshAgent = GetComponent<NavMeshAgent>();
-        _navMeshAgent.speed = _boatSpeed;
-    }
+        [SerializeField] private float _boatSpeed;
+        private GameObject _playerTarget;
+        private NavMeshAgent _navMeshAgent;
+        private bool _HasThief = false;
+        private Vector3 _fleeDestination;
 
-    
-    void Update()
-    {
-        if (!_HasThief)
+
+        void Start()
         {
-            FollowTarget(Vector3.zero);
-
-        }
-        else
-        {
-            FollowTarget(_fleeDestination);
-
-        }
-      
-    }
-
-    private void FollowTarget(Vector3 destination)
-    {
-        _navMeshAgent.SetDestination(destination);
-    }
-
-
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.CompareTag("Bullet"))
-        {
-           Destroy(gameObject);
-           Debug.Log("bateau touché");
+            //_playerTarget = GameObject.FindGameObjectWithTag("Player");
+            _navMeshAgent = GetComponent<NavMeshAgent>();
+            _navMeshAgent.speed = _boatSpeed;
         }
 
-        if (other.CompareTag("Player"))
+
+        void Update()
         {
-            Debug.Log("phare atteint" );
-            _HasThief = true;
-            _fleeDestination = Vector3.zero - transform.position;
+            if (!_HasThief)
+            {
+                FollowTarget(Vector3.zero);
+            }
+            else
+            {
+                FollowTarget(_fleeDestination);
+            }
+        }
+
+        private void FollowTarget(Vector3 destination)
+        {
+            _navMeshAgent.SetDestination(destination);
+        }
+
+
+        private void OnTriggerEnter(Collider other)
+        {
+            if (other.CompareTag("Bullet"))
+            {
+                Destroy(gameObject);
+                Debug.Log("bateau touché");
+            }
+
+            if (other.CompareTag("Player"))
+            {
+                Debug.Log("phare atteint");
+                _HasThief = true;
+                _fleeDestination = Vector3.zero - transform.position;
+            }
         }
     }
 }
