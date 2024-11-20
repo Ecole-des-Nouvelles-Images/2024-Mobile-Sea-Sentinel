@@ -8,7 +8,7 @@ public class SpawnManager : MonoBehaviour
 {
     [SerializeField] private GameObject _boatPrefab;
     [SerializeField] private List<Transform> _spawnPoints;
-
+    public Camera _camera;
     private void Start() {
       InvokeRepeating(nameof(SpwanBoat),0f,5f);
     }
@@ -16,6 +16,7 @@ public class SpawnManager : MonoBehaviour
     private void SpwanBoat() {
         int num = Random.Range(0, _spawnPoints.Count);
         Instantiate(_boatPrefab, _spawnPoints[num].position, Quaternion.identity);
+      
     }
     
     

@@ -6,77 +6,33 @@
   <component name="ChangeListManager">
     <list default="true" id="b7472739-ef28-4269-8639-9f341bd314f4" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Mobile-Sea-Sentinel/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Mobile-Sea-Sentinel/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/M_Boat.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/M_Boat.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/M_Canon.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/M_Canon.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/M_Water.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/M_Water.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PhareProto.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PhareProto/Inputs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PhareProto/Inputs/PlayerControls.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PhareProto/Inputs/PlayerControls.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PhareProto/Inputs/PlayerControls.inputactions" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PhareProto/Inputs/PlayerControls.inputactions.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PhareProto/Resources.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PhareProto/Resources/Materials.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PhareProto/Resources/Materials/M_Blue.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PhareProto/Resources/Materials/M_Blue.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PhareProto/Resources/Materials/M_Green.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PhareProto/Resources/Materials/M_Green.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PhareProto/Resources/Materials/M_Grey.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PhareProto/Resources/Materials/M_Grey.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PhareProto/Resources/Materials/M_Red.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PhareProto/Resources/Materials/M_Red.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PhareProto/Resources/Materials/M_White.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PhareProto/Resources/Materials/M_White.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PhareProto/Resources/Prefabs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PhareProto/Resources/Prefabs/Bullet.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PhareProto/Resources/Prefabs/Bullet.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PhareProto/Resources/Prefabs/Phare.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PhareProto/Resources/Prefabs/Phare.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PhareProto/Resources/Prefabs/Plane.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PhareProto/Resources/Prefabs/Plane.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PhareProto/Scenes.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PhareProto/Scenes/SampleScene.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PhareProto/Scenes/SampleScene.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PhareProto/Scripts.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PhareProto/Scripts/Bullet.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PhareProto/Scripts/Bullet.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PhareProto/Scripts/PhareController.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PhareProto/Scripts/PhareController.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Model.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Model/ST_Boat_Placeholder.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Model/ST_Boat_Placeholder.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Model/ST_LighthouseIsland_Placeholder.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Model/ST_LighthouseIsland_Placeholder.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Model/ST_Lighthouse_Placeholder.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Model/ST_Lighthouse_Placeholder.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/ST_Boat_Placeholder.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/ST_Boat_Placeholder.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Prototype.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Prototype.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Prototype.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Prototype/NavMesh-Ground.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Prototype/NavMesh-Ground.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BoatController.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BoatController.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SpawnManager.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SpawnManager.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Purple and Blue Dots Clean Minimalism Twitch Webcam Overlay (7).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Purple and Blue Dots Clean Minimalism Twitch Webcam Overlay (7).png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Bangers SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Bangers SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Electronic Highway Sign SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Electronic Highway Sign SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Oswald Bold SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Oswald Bold SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Roboto-Bold SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Roboto-Bold SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ShaderGraphSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ShaderGraphSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/URPProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/URPProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IgniteCoders.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IgniteCoders/Simple Water Shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IgniteCoders/Simple Water Shader/Prefabs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IgniteCoders/Simple Water Shader/Prefabs/WaterBlock_50m.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IgniteCoders/Simple Water Shader/Prefabs/WaterBlock_50m.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IgniteCoders/Simple Water Shader/Prefabs/WaterReflectionCamera.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IgniteCoders/Simple Water Shader/Prefabs/WaterReflectionCamera.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IgniteCoders/Simple Water Shader/Resources.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IgniteCoders/Simple Water Shader/Resources/WaterBlock_50m.mesh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IgniteCoders/Simple Water Shader/Resources/WaterBlock_50m.mesh.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IgniteCoders/Simple Water Shader/Resources/WaterReflection.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IgniteCoders/Simple Water Shader/Resources/WaterReflection.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IgniteCoders/Simple Water Shader/Resources/WaterReflection.renderTexture" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IgniteCoders/Simple Water Shader/Resources/WaterReflection.renderTexture.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IgniteCoders/Simple Water Shader/Resources/WaterShader.shadergraph" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IgniteCoders/Simple Water Shader/Resources/WaterShader.shadergraph.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IgniteCoders/Simple Water Shader/Resources/WaterSurface_atlas.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IgniteCoders/Simple Water Shader/Resources/WaterSurface_atlas.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IgniteCoders/Simple Water Shader/Resources/WaterSurface_single.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IgniteCoders/Simple Water Shader/Resources/WaterSurface_single.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IgniteCoders/Simple Water Shader/Resources/Water_mat_01.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IgniteCoders/Simple Water Shader/Resources/Water_mat_01.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IgniteCoders/Simple Water Shader/Resources/Water_mat_02.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IgniteCoders/Simple Water Shader/Resources/Water_mat_02.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IgniteCoders/Simple Water Shader/Resources/Water_mat_03.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IgniteCoders/Simple Water Shader/Resources/Water_mat_03.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/Scenes/Prototype.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Scenes/Prototype.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -159,6 +115,7 @@
       <updated>1731946962783</updated>
       <workItem from="1731946964446" duration="6000" />
       <workItem from="1732013491065" duration="11068000" />
+      <workItem from="1732112914738" duration="3941000" />
     </task>
     <servers />
   </component>
