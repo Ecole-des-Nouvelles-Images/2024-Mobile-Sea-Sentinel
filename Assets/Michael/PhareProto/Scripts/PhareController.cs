@@ -6,8 +6,9 @@ namespace Michael.PhareProto.Scripts
 {
     public class PhareController : MonoBehaviour
     {
-        [Header("Phare Settings")]
-        public GameObject PhareLight;
+        [FormerlySerializedAs("PhareLight")] [Header("Phare Settings")]
+        public GameObject Pharecanon;
+        public GameObject PhareRailcanon;
         public GameObject CanonOut;
         public GameObject BulletPrefab;
         public Slider inclinationSlider;
@@ -37,13 +38,13 @@ namespace Michael.PhareProto.Scripts
         private void OnAimSliderValueChanged(float value)
         {
             _elevationAngle = value;
-            PhareLight.transform.localEulerAngles = new Vector3(-_elevationAngle, PhareLight.transform.localEulerAngles.y, PhareLight.transform.localEulerAngles.z);
+            Pharecanon.transform.localEulerAngles = new Vector3(-_elevationAngle, Pharecanon.transform.localEulerAngles.y, Pharecanon.transform.localEulerAngles.z);
         }
         
         private void OnRotationSliderValueChanged(float value)
         {
             _rotationAngle = value * 10f;
-            PhareLight.transform.rotation = Quaternion.Euler(0,_rotationAngle,0);
+            PhareRailcanon.transform.localRotation = Quaternion.Euler(0,0 , _rotationAngle);
         }
 
         public void ToggleRotation()
@@ -56,8 +57,9 @@ namespace Michael.PhareProto.Scripts
             // Rotation continue du phare
             if (options2)
             {
-                PhareLight.transform.Rotate(Vector3.up, SpeedRotation * Time.deltaTime, Space.World);
+                Pharecanon.transform.Rotate(Vector3.up, SpeedRotation * Time.deltaTime, Space.World);
                 RotationSlider.gameObject.SetActive(false);
+                Debug.Log("tourne");
             }
             else
             {
@@ -110,7 +112,7 @@ namespace Michael.PhareProto.Scripts
         {
             _elevationAngle += direction * ElevationSpeed * Time.deltaTime;
             _elevationAngle = Mathf.Clamp(_elevationAngle, MinElevationAngle, MaxElevationAngle);
-            PhareLight.transform.localEulerAngles = new Vector3(-_elevationAngle, PhareLight.transform.localEulerAngles.y, PhareLight.transform.localEulerAngles.z);
+            Pharecanon.transform.localEulerAngles = new Vector3(-_elevationAngle, Pharecanon.transform.localEulerAngles.y, Pharecanon.transform.localEulerAngles.z);
         }
     }
 }

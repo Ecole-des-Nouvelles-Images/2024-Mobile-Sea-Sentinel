@@ -178,7 +178,7 @@ GameObject:
   - component: {fileID: 568016248099730833}
   - component: {fileID: 1202013629422032517}
   - component: {fileID: 8646450130846106673}
-  - component: {fileID: 6785650398588027652}
+  - component: {fileID: 2857412625605504302}
   m_Layer: 0
   m_Name: ST_Boat_Placeholder
   m_TagString: Untagged
@@ -216,7 +216,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 485ee03770dceb84b9d51ab3a9bb630c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _boatSpeed: 4
+  _boatSpeed: 28
+  _HasThief: 0
+  spawnManager: {fileID: 0}
+  initialposition: {x: 0, y: 0, z: 0}
 --- !u!195 &1202013629422032517
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -226,16 +229,16 @@ NavMeshAgent:
   m_GameObject: {fileID: 1027624851078406337}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 8.45
-  m_Speed: 3.5
-  m_Acceleration: 8
-  avoidancePriority: 50
-  m_AngularSpeed: 120
-  m_StoppingDistance: 0
+  m_Radius: 5.9
+  m_Speed: 0
+  m_Acceleration: 3
+  avoidancePriority: 99
+  m_AngularSpeed: 3000
+  m_StoppingDistance: 1
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
-  m_Height: 4.27
+  m_Height: 0.51
   m_BaseOffset: 1
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
@@ -255,12 +258,12 @@ BoxCollider:
     m_Bits: 0
   m_LayerOverridePriority: 0
   m_IsTrigger: 1
-  m_ProvidesContacts: 0
+  m_ProvidesContacts: 1
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 5.186026, y: 8.490659, z: 16.704956}
-  m_Center: {x: -0.056139708, y: 3.7453294, z: 0.84840393}
---- !u!54 &6785650398588027652
+  m_Size: {x: 5.186026, y: 8.490659, z: 13.877997}
+  m_Center: {x: -0.056139708, y: 3.7453294, z: -0.5650754}
+--- !u!54 &2857412625605504302
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -270,7 +273,7 @@ Rigidbody:
   serializedVersion: 4
   m_Mass: 1
   m_Drag: 0
-  m_AngularDrag: 0.05
+  m_AngularDrag: 0.26
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -280,9 +283,9 @@ Rigidbody:
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 1
+  m_ImplicitCom: 0
+  m_ImplicitTensor: 0
+  m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0

@@ -3,21 +3,27 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using Random = UnityEngine.Random;
 
 public class BoatController : MonoBehaviour
 {
     [SerializeField] private float _boatSpeed;
     private GameObject _playerTarget;
     private NavMeshAgent _navMeshAgent;
-    private bool _HasThief = false;
-    private Vector3 _fleeDestination;
-    
+    public bool _HasThief = false;
+    //public SpawnManager spawnManager;
+   // private Vector3 fleeDestination;
+   public Vector3 initialposition;
   
     void Start()
     {
-        //_playerTarget = GameObject.FindGameObjectWithTag("Player");
+       // spawnManager = FindObjectOfType<SpawnManager>();
+        _playerTarget = GameObject.FindGameObjectWithTag("Player");
         _navMeshAgent = GetComponent<NavMeshAgent>();
         _navMeshAgent.speed = _boatSpeed;
+        initialposition = transform.position;
+
+     //  fleeDestination = spawnManager._spawnPoints[Random.Range(0, spawnManager._spawnPoints.Count)].position;
     }
 
     
@@ -25,12 +31,17 @@ public class BoatController : MonoBehaviour
     {
         if (!_HasThief)
         {
-            FollowTarget(Vector3.zero);
+            FollowTarget(_playerTarget.transform.position);
 
         }
         else
-        {
-            FollowTarget(_fleeDestination);
+        {  
+            //FollowTarget(fleeDestination);
+            FollowTarget(initialposition);
+            if (_navMeshAgent.remainingDistance < 1)
+            {
+                Destroy(gameObject);
+            }
 
         }
       
@@ -39,6 +50,7 @@ public class BoatController : MonoBehaviour
     private void FollowTarget(Vector3 destination)
     {
         _navMeshAgent.SetDestination(destination);
+       
     }
 
 
@@ -54,7 +66,8 @@ public class BoatController : MonoBehaviour
         {
             Debug.Log("phare atteint" );
             _HasThief = true;
-            _fleeDestination = Vector3.zero - transform.position;
+            
+           
         }
     }
 }
