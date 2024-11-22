@@ -6,21 +6,28 @@
   <component name="ChangeListManager">
     <list default="true" id="b7472739-ef28-4269-8639-9f341bd314f4" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Mobile-Sea-Sentinel/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Mobile-Sea-Sentinel/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/Materials/M_Water.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Materials/M_Water.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Michael/PhareProto/Scripts/PhareController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/PhareProto/Scripts/PhareController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Prefabs/Model/ST_LighthouseIsland_Placeholder.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Prefabs/Model/ST_LighthouseIsland_Placeholder.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Prefabs/Model/ST_Lighthouse_Placeholder.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Prefabs/Model/ST_Lighthouse_Placeholder.fbx.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Michael/Prefabs/ST_Boat_Placeholder.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Prefabs/ST_Boat_Placeholder.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Michael/Scenes/Prototype.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Scenes/Prototype.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/Scenes/Prototype/LightingData.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Scenes/Prototype/LightingData.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/Scenes/Prototype/Lightmap-0_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Scenes/Prototype/Lightmap-0_comp_dir.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/Scenes/Prototype/Lightmap-0_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Scenes/Prototype/Lightmap-0_comp_light.exr" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/Scenes/Prototype/Lightmap-1_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Scenes/Prototype/Lightmap-1_comp_dir.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/Scenes/Prototype/Lightmap-1_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Scenes/Prototype/Lightmap-1_comp_light.exr" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/Scenes/Prototype/Lightmap-2_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Scenes/Prototype/Lightmap-2_comp_dir.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/Scenes/Prototype/Lightmap-2_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Scenes/Prototype/Lightmap-2_comp_light.exr" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Michael/Scenes/Prototype/NavMesh-Ground.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Scenes/Prototype/NavMesh-Ground.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Michael/Scripts/BoatController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Scripts/BoatController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Michael/Scripts/SpawnManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Scripts/SpawnManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/Simple Water Shader/Resources/WaterSurface_single.tif.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Simple Water Shader/Resources/WaterSurface_single.tif.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Michael/Simple Water Shader/Resources/Water_mat_01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Simple Water Shader/Resources/Water_mat_01.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Settings/SampleSceneProfile.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/SampleSceneProfile.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Bangers SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Bangers SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Electronic Highway Sign SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Electronic Highway Sign SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/NavMeshAreas.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/NavMeshAreas.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/test.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/test.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/BurstAotSettings_StandaloneWindows.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/BurstAotSettings_StandaloneWindows.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/CommonBurstAotSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/CommonBurstAotSettings.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,7 +38,12 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Michael/Scripts/FloatingBoat.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/test.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventInterfaces.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/GraphicRaycaster.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Selectable.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Slider.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
@@ -103,6 +115,7 @@
       <workItem from="1732013491065" duration="11068000" />
       <workItem from="1732112914738" duration="4832000" />
       <workItem from="1732178485457" duration="16376000" />
+      <workItem from="1732266889849" duration="17082000" />
     </task>
     <servers />
   </component>
