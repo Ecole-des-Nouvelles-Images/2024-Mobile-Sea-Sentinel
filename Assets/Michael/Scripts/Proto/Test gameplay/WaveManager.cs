@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class WaveManager : MonoBehaviour
 {
-    public int currentWave = 1;
+       public int currentWave = 1;
        public List<GameObject> enemyPrefabs; // Bateaux (petits, moyens, gros)
        public Transform[] spawnPoints; // Points où les bateaux apparaissent
        public int enemiesRemaining = 0; // Ennemis en vie ou non enfuis
@@ -17,7 +17,6 @@ public class WaveManager : MonoBehaviour
    
        public void StartWave()
        {
-           Debug.Log($"Starting Wave {currentWave}");
            StartCoroutine(SpawnWave());
        }
    

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-   public WaveManager waveManager;
+     public WaveManager waveManager;
      public GameObject shopUI; // Interface du shop
  
      public void OpenShop()

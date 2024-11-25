@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Michael.Scripts
+namespace Michael.Scripts.Controller
 {
     public class PlayerData : MonoBehaviour
     {

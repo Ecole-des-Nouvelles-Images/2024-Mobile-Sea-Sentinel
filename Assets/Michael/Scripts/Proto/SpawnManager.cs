@@ -33,13 +33,12 @@ namespace Michael.Scripts
            // GenerateWave();
         }
 
-          private void SpwanBoat() {
-        int num = Random.Range(0, _spawnPoints.Count);
-        Instantiate(_boatPrefab, _spawnPoints[num].position, Quaternion.identity);
-      
-    }
+        private void SpwanBoat() {
+            int num = Random.Range(0, _spawnPoints.Count);
+            Instantiate(_boatPrefab, _spawnPoints[num].position, Quaternion.identity);
+        }
 
-       /* private void FixedUpdate()
+      /*  private void FixedUpdate()
         {
             if (spawnTimer >= 0 )
             {
