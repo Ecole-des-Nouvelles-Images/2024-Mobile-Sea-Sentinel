@@ -42,10 +42,10 @@ namespace Alexandre
         public SteeringWheel RotationWheel;
         private bool _isRotatingBack;
         private bool _isRotatingForward;
+
         private void Start()
         {
             inclinationSlider.onValueChanged.AddListener(OnAimSliderValueChanged);
-            //RotationController.onValueChanged.AddListener(OnRotationSliderValueChanged);
             _isChargingShot = false;
             ChargeSlider.value = 0f; // Initialize charge slider value
         }
@@ -73,7 +73,7 @@ namespace Alexandre
             _rotationAngle = value * 10f;
             PhareLight.transform.rotation = Quaternion.Euler(0, _rotationAngle, 0);
         }
-        
+
         public void RotateWheel(float value)
         {
             if (value < 0)
@@ -91,9 +91,7 @@ namespace Alexandre
                 _isRotatingBack = false;
                 _isRotatingForward = false;
             }
- }
-         
-        
+        }
 
         public void ToggleRotation()
         {
@@ -102,7 +100,6 @@ namespace Alexandre
 
         private void Update()
         {
-
             if (options2)
             {
                 PhareLight.transform.Rotate(Vector3.up, SpeedRotation * Time.deltaTime, Space.World);
@@ -137,7 +134,6 @@ namespace Alexandre
             {
                 AdjustElevation(-1f, LoweringSpeed);
                 ChargeSlider.value -= 1; // Update charge slider value
-
             }
 
             if (_isRotatingBack)
@@ -155,31 +151,12 @@ namespace Alexandre
             yield return new WaitForSeconds(delay);
             _isLowering = true;
         }
+
         public void Shoot()
         {
             GameObject bullet = Instantiate(BulletPrefab, CanonOut.transform.position, CanonOut.transform.rotation);
         }
 
-        public void StartElevating()
-        {
-            _isElevating = true;
-        }
-
-        public void StopElevating()
-        {
-            _isElevating = false;
-        }
-
-        public void StartLowering()
-        {
-            _isLowering = true;
-        }
-
-        public void StopLowering()
-        {
-            _isLowering = false;
-        }
-        
         private void AdjustRotation(float direction)
         {
             _rotationAngle += direction * SpeedRotation * Time.deltaTime;
