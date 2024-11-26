@@ -7,8 +7,53 @@
     <list default="true" id="b7472739-ef28-4269-8639-9f341bd314f4" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Mobile-Sea-Sentinel/.idea/projectSettingsUpdater.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Mobile-Sea-Sentinel/.idea/projectSettingsUpdater.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Mobile-Sea-Sentinel/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Mobile-Sea-Sentinel/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/Prefabs/Prefabs Boats/ShipPrefab_3.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Prefabs/Prefabs Boats/ShipPrefab_3.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/Prefabs/Prefabs Boats/ShipPrefabs_1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Prefabs/Prefabs Boats/ShipPrefabs_1.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/Prefabs/Prefabs Boats/ShipPrefabs_2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Prefabs/Prefabs Boats/ShipPrefabs_2.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/Scenes/Prototype.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Scenes/Prototype.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/Scripts/Enemy/Boat 1.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Scripts/Enemy/Boat 1.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/Scripts/Enemy/Boat 2.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Scripts/Enemy/Boat 2.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/Scripts/Enemy/Boat 3.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Scripts/Enemy/Boat 3.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Michael/Scripts/Enemy/BoatEnemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Scripts/Enemy/BoatEnemy.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Michael/Scripts/Manager/WaveManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Scripts/Manager/WaveManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/Scripts/Proto/Test gameplay.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/Scripts/Proto/Test gameplay/Enemy.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/Scripts/Proto/Test gameplay/Enemy.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/Scripts/Proto/Test gameplay/GameManager.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/Scripts/Proto/Test gameplay/GameManager.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/Scripts/Proto/Test gameplay/WaveManager.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/Scripts/Proto/Test gameplay/WaveManager.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/Simple Water Shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/Simple Water Shader/Prefabs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/Simple Water Shader/Prefabs/WaterBlock_50m.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/Simple Water Shader/Prefabs/WaterBlock_50m.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/Simple Water Shader/Prefabs/WaterReflectionCamera.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/Simple Water Shader/Prefabs/WaterReflectionCamera.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/Simple Water Shader/Resources.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/Simple Water Shader/Resources/WaterBlock_50m.mesh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/Simple Water Shader/Resources/WaterBlock_50m.mesh.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/Simple Water Shader/Resources/WaterReflection.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/Simple Water Shader/Resources/WaterReflection.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/Simple Water Shader/Resources/WaterReflection.renderTexture" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/Simple Water Shader/Resources/WaterReflection.renderTexture.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/Simple Water Shader/Resources/WaterShader.shadergraph" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/Simple Water Shader/Resources/WaterShader.shadergraph.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/Simple Water Shader/Resources/WaterSurface_atlas.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/Simple Water Shader/Resources/WaterSurface_atlas.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/Simple Water Shader/Resources/WaterSurface_single.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/Simple Water Shader/Resources/WaterSurface_single.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/Simple Water Shader/Resources/Water_mat_01.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/Simple Water Shader/Resources/Water_mat_01.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/Simple Water Shader/Resources/Water_mat_02.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/Simple Water Shader/Resources/Water_mat_02.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/Simple Water Shader/Resources/Water_mat_03.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/Simple Water Shader/Resources/Water_mat_03.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Settings/SampleSceneProfile.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/SampleSceneProfile.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Bangers SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Bangers SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Electronic Highway Sign SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Electronic Highway Sign SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,6 +157,7 @@
       <workItem from="1732478557623" duration="577000" />
       <workItem from="1732524940360" duration="21071000" />
       <workItem from="1732569906519" duration="4634000" />
+      <workItem from="1732610326029" duration="19337000" />
     </task>
     <servers />
   </component>
@@ -126,6 +172,7 @@
   </component>
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
   <component name="VcsManagerConfiguration">
+    <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
 </project>

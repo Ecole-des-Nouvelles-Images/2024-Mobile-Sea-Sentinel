@@ -49,7 +49,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 485ee03770dceb84b9d51ab3a9bb630c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BoatType: {fileID: 0}
+  BoatType: {fileID: 11400000, guid: ba29ed64427a20f4da5f02d1e8236f52, type: 2}
+  _boatStealSpeed: 1
 --- !u!65 &4713444641581972916
 BoxCollider:
   m_ObjectHideFlags: 0

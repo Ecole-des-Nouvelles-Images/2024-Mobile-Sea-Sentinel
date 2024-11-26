@@ -15,6 +15,6 @@ MonoBehaviour:
   BoatPrefab: {fileID: 1668166797174309776, guid: 92b873df10e4e904bbfd10a3a83df6f1,
     type: 3}
   SpawnCost: 10
-  Speed: 10
+  Speed: 7
   GoldCapacity: 50
   MaxHealth: 20

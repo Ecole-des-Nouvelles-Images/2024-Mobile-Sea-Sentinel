@@ -5,6 +5,7 @@ using UnityEngine.AI;
 namespace Michael.Scripts.Enemy
 {
   
+    
     public class BoatEnemy : MonoBehaviour
     {
         [Header("Boat Data")]
@@ -14,11 +15,12 @@ namespace Michael.Scripts.Enemy
         private int _maxHealth;
         private int _currentHealth;
 
+        [SerializeField] private float _boatStealSpeed;
         private GameObject _playerTarget;
         private NavMeshAgent _navMeshAgent;
         private bool _hasThief = false;
         private Vector3 _initialPosition;
-   
+        
         
 
         void Start() {
@@ -39,9 +41,10 @@ namespace Michael.Scripts.Enemy
     
         void Update() {
             if (!_hasThief) return;
-            if (_navMeshAgent.remainingDistance < 1) {
-                Destroy(gameObject);
-            }
+            
+            if (!(_navMeshAgent.remainingDistance < 1)) return;
+            WaveManager.Instance._spawnedBoats.Remove(gameObject);
+            Destroy(gameObject);
         }
 
         private void FollowTarget(Vector3 destination) {
@@ -52,16 +55,15 @@ namespace Michael.Scripts.Enemy
         private void OnTriggerEnter(Collider other) {
         
             if (other.CompareTag("Bullet")) {
-                Destroy(gameObject);
-               // TakeDamage(10);
+               
+               TakeDamage(10);
                 Debug.Log("bateau touché");
             }
 
             if (other.CompareTag("Player")) {
-                Debug.Log("phare atteint" ); 
+                
                 _hasThief = true;
                 FollowTarget(_initialPosition);
-               // PhareController.Goldnumber -= _boatGold;
             }
         }
         
@@ -71,14 +73,15 @@ namespace Michael.Scripts.Enemy
             _currentHealth -= damage;
             if (_currentHealth <= 0)
             {
-                Debug.Log($"{BoatType.BoatPrefab.name} détruit!");
                 Destroy(gameObject);
+                WaveManager.Instance._spawnedBoats.Remove(gameObject);
             }
         }
 
-        private void stealGold()
+        private void StealGold()
         {
-      
+            
+            FollowTarget(_initialPosition);
         }
     
     }
