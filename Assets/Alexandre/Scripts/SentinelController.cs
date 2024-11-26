@@ -9,6 +9,7 @@ namespace Alexandre
     {
         [Header("Sentinel Elements")]
         public GameObject SentinelLight;
+        public GameObject SentinelRotationControlr;
         public GameObject CanonOut;
         public GameObject BulletPrefab;
 
@@ -78,5 +79,14 @@ namespace Alexandre
                 }
             }
         }
+
+        // Méthode pour mettre à jour la rotation sur l'axe Y
+        public void UpdateRotation(float rotationSpeed)
+        {
+            SentinelRotationControlr.transform.Rotate(Vector3.up, rotationSpeed * SpeedRotation * Time.deltaTime);
+        }
     }
 }
+
+//rajouter le tir avec cooldown
+

@@ -4700,6 +4700,38 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1433512345}
   m_SourcePrefab: {fileID: 100100000, guid: 2469a958ec330e146ba30999d41ccc9b, type: 3}
+--- !u!1 &1048936907
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1048936908}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1048936908
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1048936907}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 6829577983581343594}
+  m_Father: {fileID: 6154130093794934087}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1057338833
 GameObject:
   m_ObjectHideFlags: 0
@@ -7334,7 +7366,7 @@ PrefabInstance:
     - target: {fileID: 347826781839240180, guid: abbea5762e10e6d418d69c6b27cb57c5,
         type: 3}
       propertyPath: wheelReleasedSpeed
-      value: -50
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 347826781839240180, guid: abbea5762e10e6d418d69c6b27cb57c5,
         type: 3}
@@ -7349,13 +7381,18 @@ PrefabInstance:
     - target: {fileID: 762587391638084735, guid: abbea5762e10e6d418d69c6b27cb57c5,
         type: 3}
       propertyPath: wheelReleasedSpeed
-      value: 10
+      value: -10
       objectReference: {fileID: 0}
     - target: {fileID: 762587391638084735, guid: abbea5762e10e6d418d69c6b27cb57c5,
         type: 3}
       propertyPath: PhareControllerReference
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 762587391638084735, guid: abbea5762e10e6d418d69c6b27cb57c5,
+        type: 3}
+      propertyPath: SentinelControllerReference
+      value: 
+      objectReference: {fileID: 6385770208779471322}
     - target: {fileID: 2899849201545116747, guid: abbea5762e10e6d418d69c6b27cb57c5,
         type: 3}
       propertyPath: m_Pivot.x
@@ -8873,7 +8910,7 @@ Transform:
   m_LocalScale: {x: 5, y: 10, z: 5}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 6829577983581343594}
+  - {fileID: 1048936908}
   - {fileID: 403891830}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -8986,12 +9023,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SentinelLight: {fileID: 7963287465088868888}
+  SentinelRotationControlr: {fileID: 1048936907}
   CanonOut: {fileID: 7963287465088868888}
   BulletPrefab: {fileID: 3024273405111157043, guid: ea646e859924ebd4ebfafc7fa270620f,
     type: 3}
   ChargeSlider: {fileID: 926335589}
   RotationWheel: {fileID: 1494278329}
-  SpeedRotation: 15
+  SpeedRotation: 50
   ElevationSpeed: 50
   LoweringSpeed: 10
   LoweringDelay: 2
@@ -9074,13 +9112,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7782923609503007224}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 1, z: 0}
   m_LocalScale: {x: 0.5, y: 0.1, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8876940852114598276}
-  m_Father: {fileID: 6154130093794934087}
+  m_Father: {fileID: 1048936908}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &7290308750696118612
 MeshFilter:
