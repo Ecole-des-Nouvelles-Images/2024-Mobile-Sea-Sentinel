@@ -6,8 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="047e4b05-4340-413f-a495-d790df9d2ef7" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Mobile-Sea-Sentinel/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Mobile-Sea-Sentinel/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Alexandre/PhareProto/Resources/Prefabs/Bullet.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Alexandre/PhareProto/Resources/Prefabs/Bullet.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Alexandre/Scripts/SentinelController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Alexandre/Scripts/SentinelController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Alexandre/Scripts/SteeringWheel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Alexandre/Scripts/SteeringWheel.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,7 +109,7 @@
       <workItem from="1732013491065" duration="11068000" />
       <workItem from="1732361513344" duration="9520000" />
       <workItem from="1732535818324" duration="8234000" />
-      <workItem from="1732552196914" duration="6656000" />
+      <workItem from="1732552196914" duration="8929000" />
     </task>
     <servers />
   </component>

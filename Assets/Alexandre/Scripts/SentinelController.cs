@@ -29,27 +29,9 @@ namespace Alexandre
         private bool _isReturning = false;
         private float _chargeTime = 0f;
         private float _returningTime = 0f;
+        private bool _canShoot = true;
 
-        public void ChargeShot()
-        {
-            _isReturning = false;
-            _isChargingShot = true;
-            _chargeTime = 0f; // Reset charge time
-        }
 
-        public void ReleaseShot()
-        {
-            _returningTime = 0f;
-            _isChargingShot = false;
-            ChargeSlider.value = 0f;
-            StartCoroutine(ReturnToMinimumAngle());
-        }
-
-        private IEnumerator ReturnToMinimumAngle()
-        {
-            yield return new WaitForSeconds(LoweringDelay);
-            _isReturning = true;
-        }
 
         // Start is called before the first frame update
         void Start()
@@ -76,15 +58,50 @@ namespace Alexandre
                 if (SentinelLight.transform.localRotation == targetRotation)
                 {
                     _isReturning = false;
+                    _canShoot = true;
                 }
             }
         }
 
-        // Méthode pour mettre à jour la rotation sur l'axe Y
+        private void Shoot()
+        {
+            Instantiate(BulletPrefab, CanonOut.transform.position, CanonOut.transform.rotation);
+        }
+        
+        // Called by UI
+        public void ChargeShot()
+        {
+            if(_canShoot == false) return; // Prevent charging while shooting (or returning to minimum angle
+            _isReturning = false;
+            _isChargingShot = true;
+            _chargeTime = 0f; // Reset charge time
+        }
+
+        public void ReleaseShot()
+        {
+            if(_canShoot == false) return; // Prevent shooting while shooting (or returning to minimum angle
+            Shoot();
+            _canShoot = false;
+            _returningTime = 0f;
+            _isChargingShot = false;
+            ChargeSlider.value = 0f;
+            StartCoroutine(ReturnToMinimumAngle());
+        }
+        
         public void UpdateRotation(float rotationSpeed)
         {
             SentinelRotationControlr.transform.Rotate(Vector3.up, rotationSpeed * SpeedRotation * Time.deltaTime);
         }
+
+        
+        private IEnumerator ReturnToMinimumAngle()
+        {
+            yield return new WaitForSeconds(LoweringDelay);
+            _isReturning = true;
+        }
+        
+        // Méthode pour mettre à jour la rotation sur l'axe Y
+
     }
 }
 
