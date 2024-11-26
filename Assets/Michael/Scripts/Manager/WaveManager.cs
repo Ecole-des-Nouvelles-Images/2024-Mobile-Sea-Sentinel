@@ -16,6 +16,14 @@ namespace Michael.Scripts.Manager
         [SerializeField] private List<GameObject> _boatsToSpawn = new List<GameObject>();
         [SerializeField] private List<GameObject> _spawnedBoats = new List<GameObject>();
         private Transform _lastSpawnPoint;
+        
+        [Header("Enemy Progression")]
+        public int speedIncrement = 2; // Vitesse supplémentaire
+        public int goldIncrement = 25; // Capacité d'or supplémentaire
+        public int progressionInterval = 3; // Toutes les x vagues
+        
+        
+        
         private void Start()
         {
 
@@ -35,6 +43,11 @@ namespace Michael.Scripts.Manager
 
             _waveValue += 5;
             _currentWaveValue = _waveValue;
+            
+            if (_currentWave % progressionInterval == 0)
+            {
+               // ApplyProgression(); // Augmente les stats toutes les X vagues
+            }
             _currentWave++;
 
             GenerateEnemy();
@@ -75,14 +88,26 @@ namespace Michael.Scripts.Manager
             int num = Random.Range(0, _spawnPoints.Count);
             while (_lastSpawnPoint != _spawnPoints[num])
             {
-                _lastSpawnPoint = _spawnPoints[num];
-                GameObject boat = Instantiate(_boat[rndBoat].BoatPrefab, _spawnPoints[num].position, Quaternion.identity);
-                boat.GetComponent<Enemy.BoatEnemy>().BoatType = _boat[rndBoat];
-                Debug.Log(_boat[rndBoat].BoatPrefab);
+                num = Random.Range(0, _spawnPoints.Count);
+            }
+            _lastSpawnPoint = _spawnPoints[num];
+            GameObject boat = Instantiate(_boat[rndBoat].BoatPrefab, _spawnPoints[num].position, Quaternion.identity);
+            boat.GetComponent<Enemy.BoatEnemy>().BoatType = _boat[rndBoat];
+            Debug.Log(_boat[rndBoat].BoatPrefab);
+        }
+        
+        private void ApplyProgression()
+        {
+            foreach (BoatType boat in _boat) {
+                boat.Speed += speedIncrement; 
+                boat.GoldCapacity += goldIncrement;
             }
             
-          
         }
+
+        
+        
+        
 
     }
 }

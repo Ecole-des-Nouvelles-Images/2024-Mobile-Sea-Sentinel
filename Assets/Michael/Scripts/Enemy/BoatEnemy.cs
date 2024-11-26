@@ -12,13 +12,14 @@ namespace Michael.Scripts.Enemy
         private int _boatGoldMax; 
         private int _currentBoatGold = 0;
         private int _maxHealth;
-        private int _currentHeath;
-        
+        private int _currentHealth;
+
         private GameObject _playerTarget;
         private NavMeshAgent _navMeshAgent;
         private bool _hasThief = false;
         private Vector3 _initialPosition;
    
+        
 
         void Start() {
         
@@ -28,10 +29,12 @@ namespace Michael.Scripts.Enemy
            _navMeshAgent.speed = BoatType.Speed;
             _boatGoldMax = BoatType.GoldCapacity;
             _maxHealth = BoatType.MaxHealth;
-            _currentHeath = _maxHealth;
+            _currentHealth = _maxHealth;
             
             FollowTarget(_playerTarget.transform.position);
         }
+        
+        
 
     
         void Update() {
@@ -50,6 +53,7 @@ namespace Michael.Scripts.Enemy
         
             if (other.CompareTag("Bullet")) {
                 Destroy(gameObject);
+               // TakeDamage(10);
                 Debug.Log("bateau touché");
             }
 
@@ -60,7 +64,17 @@ namespace Michael.Scripts.Enemy
                // PhareController.Goldnumber -= _boatGold;
             }
         }
-
+        
+        
+        private void TakeDamage(int damage)
+        {
+            _currentHealth -= damage;
+            if (_currentHealth <= 0)
+            {
+                Debug.Log($"{BoatType.BoatPrefab.name} détruit!");
+                Destroy(gameObject);
+            }
+        }
 
         private void stealGold()
         {

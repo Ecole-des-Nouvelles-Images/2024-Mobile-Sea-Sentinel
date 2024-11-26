@@ -7,28 +7,8 @@
     <list default="true" id="b7472739-ef28-4269-8639-9f341bd314f4" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Mobile-Sea-Sentinel/.idea/projectSettingsUpdater.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Mobile-Sea-Sentinel/.idea/projectSettingsUpdater.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Mobile-Sea-Sentinel/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Mobile-Sea-Sentinel/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Prefabs/ST_Boat_Placeholder.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Prefabs/ST_Boat_Placeholder.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Prefabs/ST_LighthouseIsland_Placeholder (1).fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Prefabs/ST_LighthouseIsland_Placeholder (1).fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Prefabs/ShipPrefabs.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Prefabs/ShipPrefabs.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Scenes/Prototype.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Scenes/Prototype.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Scripts/BoatController.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Scripts/BoatController.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Scripts/FloatingEffect.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Scripts/FloatingEffect.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Scripts/PlayerData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Scripts/Controller/PlayerData.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Scripts/PlayerData.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Scripts/Controller/PlayerData.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Scripts/SpawnManager.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Scripts/SpawnManager.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Scripts/Test gameplay.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Scripts/Test gameplay/Enemy.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Scripts/Test gameplay/Enemy.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Scripts/Test gameplay/GameManager.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Scripts/Test gameplay/GameManager.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Scripts/Test gameplay/WaveManager.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Scripts/Test gameplay/WaveManager.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/Scripts/Enemy/BoatEnemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Scripts/Enemy/BoatEnemy.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/Scripts/Manager/WaveManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Scripts/Manager/WaveManager.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,9 +19,6 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Michael/Scripts/Enemy/BoatEnemy.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Michael/Scripts/Enemy/FloatingEffect.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Michael/Scripts/Manager/MonoBehaviourSingleton.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventInterfaces.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/GraphicRaycaster.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Selectable.cs" root0="SKIP_HIGHLIGHTING" />
@@ -134,6 +111,7 @@
       <workItem from="1732266889849" duration="17082000" />
       <workItem from="1732478557623" duration="577000" />
       <workItem from="1732524940360" duration="21071000" />
+      <workItem from="1732569906519" duration="4634000" />
     </task>
     <servers />
   </component>
@@ -148,7 +126,6 @@
   </component>
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
   <component name="VcsManagerConfiguration">
-    <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
 </project>
