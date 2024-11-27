@@ -1,3 +1,4 @@
+using Michael.Scripts.Controller;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Serialization;
@@ -15,12 +16,9 @@ namespace Michael.PhareProto.Scripts
         public Slider inclinationSlider;
         public Slider RotationSlider;
         public bool options2 = false;
+        public PlayerData playerData;
        
-        public static int Goldnumber;
-        public int MaxGoldCapacity = 100;
-        public float FireRate = 1;
-        public TextMeshProUGUI goldText;
-        
+     
         [Header("Canon Settings")]
         public float SpeedRotation = 15.0f; // Vitesse de rotation du phare
         public float ElevationSpeed = 100f; // Vitesse d'élévation
@@ -36,8 +34,7 @@ namespace Michael.PhareProto.Scripts
         
         private void Start()
         {
-           
-            Goldnumber = MaxGoldCapacity;
+            
             inclinationSlider.onValueChanged.AddListener(OnAimSliderValueChanged);
             RotationSlider.onValueChanged.AddListener(OnRotationSliderValueChanged);
         }
@@ -62,7 +59,6 @@ namespace Michael.PhareProto.Scripts
 
         private void Update()
         {
-            goldText.text = Goldnumber + " / " + MaxGoldCapacity;
             // Rotation continue du phare
             if (options2)
             {

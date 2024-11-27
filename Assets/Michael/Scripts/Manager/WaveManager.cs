@@ -43,10 +43,11 @@ namespace Michael.Scripts.Manager
                 if (_boatsToSpawn.Count > 0) {
                     
                     _spawnIndex = Random.Range(0, _spawnPoints.Count);
-                    while (_lastSpawnPoint != _spawnPoints[_spawnIndex]) {
+                   if(_lastSpawnPoint == _spawnPoints[_spawnIndex]) {
                         
-                        _lastSpawnPoint = _spawnPoints[_spawnIndex];
+                        _spawnIndex = Random.Range(0, _spawnPoints.Count);
                     }
+                    _lastSpawnPoint = _spawnPoints[_spawnIndex];
                     GameObject boat = Instantiate(_boatsToSpawn[0],_lastSpawnPoint.position, Quaternion.identity);
               
                     _boatsToSpawn.RemoveAt(0);
@@ -83,7 +84,7 @@ namespace Michael.Scripts.Manager
             _waveText.text = "Vague : " + _currentWave;
             
             if (_currentWave % progressionInterval == 0) {
-                ApplyProgression(); // Augmente les stats toutes les x vagues
+              //  ApplyProgression(); // Augmente les stats toutes les x vagues
                 Debug.Log("upgrade ENEMY !!!!");
             }
             GenerateEnemy();

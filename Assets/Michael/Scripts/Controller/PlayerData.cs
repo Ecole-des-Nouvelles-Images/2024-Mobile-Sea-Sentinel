@@ -1,22 +1,26 @@
+using System;
+using TMPro;
 using UnityEngine;
 
 namespace Michael.Scripts.Controller
 {
     public class PlayerData : MonoBehaviour
     {
-        public int Goldnumber;
-        public int MaxGoldCapacity;
+        public int MaxGoldCapacity = 150;
+        public int CurrentGold;
         public float FireRate;
-    
-        void Start()
+        public float BulletDamage;
+        public int AlliesBoats; 
+        public TextMeshProUGUI goldText;
+
+        private void Start()
         {
-        
+            CurrentGold = MaxGoldCapacity; 
         }
 
-        // Update is called once per frame
-        void Update()
+        private void Update()
         {
-        
+            goldText.text =  goldText.text = CurrentGold + " / " + MaxGoldCapacity;
         }
     }
 }

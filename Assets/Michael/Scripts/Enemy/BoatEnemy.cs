@@ -1,3 +1,4 @@
+using Michael.Scripts.Controller;
 using Michael.Scripts.Manager;
 using UnityEngine;
 using UnityEngine.AI;
@@ -63,7 +64,7 @@ namespace Michael.Scripts.Enemy
             if (other.CompareTag("Player")) {
                 
                 _hasThief = true;
-                FollowTarget(_initialPosition);
+               StealGold(other.gameObject);
             }
         }
         
@@ -78,9 +79,11 @@ namespace Michael.Scripts.Enemy
             }
         }
 
-        private void StealGold()
+        private void StealGold(GameObject target)
         {
-            
+            _currentBoatGold = _boatGoldMax;
+            target.GetComponent<PlayerData>().CurrentGold -= _currentBoatGold;
+            Debug.Log("or volé " + _currentBoatGold);
             FollowTarget(_initialPosition);
         }
     
