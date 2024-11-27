@@ -6,8 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="047e4b05-4340-413f-a495-d790df9d2ef7" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Mobile-Sea-Sentinel/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Mobile-Sea-Sentinel/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Alexandre/PhareProto/Resources/Prefabs/Bullet.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Alexandre/PhareProto/Resources/Prefabs/Bullet.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Alexandre/Scripts/SentinelController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Alexandre/Scripts/SentinelController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Alexandre/Scenes/Prototype.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Alexandre/Scenes/Prototype.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +22,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Alexandre/Scripts/InfiniteScroll.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Alexandre/Scripts/IntListBox.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Alexandre/Scripts/LoopingScrollRect.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Alexandre/Scripts/RayCastControl.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Alexandre/Scripts/Scroll.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Alexandre/Scripts/SentinelController.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -109,7 +110,7 @@
       <workItem from="1732013491065" duration="11068000" />
       <workItem from="1732361513344" duration="9520000" />
       <workItem from="1732535818324" duration="8234000" />
-      <workItem from="1732552196914" duration="8929000" />
+      <workItem from="1732552196914" duration="14461000" />
     </task>
     <servers />
   </component>
