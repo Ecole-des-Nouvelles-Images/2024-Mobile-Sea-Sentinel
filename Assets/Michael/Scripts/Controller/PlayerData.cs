@@ -20,6 +20,7 @@ namespace Michael.Scripts.Controller
 
         private void Update()
         {
+            
             goldText.text =  goldText.text = CurrentGold + " / " + MaxGoldCapacity;
         }
     }

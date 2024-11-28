@@ -5,11 +5,305 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b7472739-ef28-4269-8639-9f341bd314f4" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Mobile-Sea-Sentinel/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Mobile-Sea-Sentinel/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/PhareProto/Scripts/PhareController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/PhareProto/Scripts/PhareController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Prefabs/Prefabs Boats/ShipPrefab_3.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Prefabs/Prefabs Boats/ShipPrefab_3.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Prefabs/Prefabs Boats/ShipPrefabs_1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Prefabs/Prefabs Boats/ShipPrefabs_1.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Prefabs/Prefabs Boats/ShipPrefabs_2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Prefabs/Prefabs Boats/ShipPrefabs_2.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Cartoon Base BlueSky.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Cartoon Base BlueSky/Day_BlueSky_Nothing Equirect.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Cartoon Base BlueSky/Day_BlueSky_Nothing Equirect.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Cartoon Base BlueSky/Day_BlueSky_Nothing.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Cartoon Base BlueSky/Day_BlueSky_Nothing.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Cartoon Base BlueSky/Day_BlueSky_Nothing.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Cartoon Base BlueSky/Day_BlueSky_Nothing.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Cartoon Base BlueSky/Day_BlueSky_NothingSettings.lighting" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Cartoon Base BlueSky/Day_BlueSky_NothingSettings.lighting.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Cartoon Base BlueSky/Sky_Day_BlueSky_Equirect.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Cartoon Base BlueSky/Sky_Day_BlueSky_Equirect.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Cartoon Base BlueSky/Sky_Day_BlueSky_Nothing_Cam_0_Front+Z.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Cartoon Base BlueSky/Sky_Day_BlueSky_Nothing_Cam_0_Front+Z.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Cartoon Base BlueSky/Sky_Day_BlueSky_Nothing_Cam_1_Back-Z.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Cartoon Base BlueSky/Sky_Day_BlueSky_Nothing_Cam_1_Back-Z.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Cartoon Base BlueSky/Sky_Day_BlueSky_Nothing_Cam_2_Left+X.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Cartoon Base BlueSky/Sky_Day_BlueSky_Nothing_Cam_2_Left+X.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Cartoon Base BlueSky/Sky_Day_BlueSky_Nothing_Cam_3_Right-X.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Cartoon Base BlueSky/Sky_Day_BlueSky_Nothing_Cam_3_Right-X.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Cartoon Base BlueSky/Sky_Day_BlueSky_Nothing_Cam_4_Up+Y.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Cartoon Base BlueSky/Sky_Day_BlueSky_Nothing_Cam_4_Up+Y.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Cartoon Base BlueSky/Sky_Day_BlueSky_Nothing_Cam_5_Down-Y.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Cartoon Base BlueSky/Sky_Day_BlueSky_Nothing_Cam_5_Down-Y.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Cartoon Base NightSky.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Cartoon Base NightSky/Cartoon Base NightSky Equirect.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Cartoon Base NightSky/Cartoon Base NightSky Equirect.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Cartoon Base NightSky/Cartoon Base NightSky Equirect.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Cartoon Base NightSky/Cartoon Base NightSky Equirect.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Cartoon Base NightSky/Cartoon Base NightSky.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Cartoon Base NightSky/Cartoon Base NightSky.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Cartoon Base NightSky/Cartoon Base NightSky.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Cartoon Base NightSky/Cartoon Base NightSky.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Cartoon Base NightSky/Cartoon Base NightSkySettings.lighting" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Cartoon Base NightSky/Cartoon Base NightSkySettings.lighting.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Cartoon Base NightSky/Cartoon Base NightSky_Cam_0_Front+Z.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Cartoon Base NightSky/Cartoon Base NightSky_Cam_0_Front+Z.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Cartoon Base NightSky/Cartoon Base NightSky_Cam_1_Back-Z.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Cartoon Base NightSky/Cartoon Base NightSky_Cam_1_Back-Z.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Cartoon Base NightSky/Cartoon Base NightSky_Cam_2_Left+X.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Cartoon Base NightSky/Cartoon Base NightSky_Cam_2_Left+X.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Cartoon Base NightSky/Cartoon Base NightSky_Cam_3_Right-X.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Cartoon Base NightSky/Cartoon Base NightSky_Cam_3_Right-X.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Cartoon Base NightSky/Cartoon Base NightSky_Cam_4_Up+Y.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Cartoon Base NightSky/Cartoon Base NightSky_Cam_4_Up+Y.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Cartoon Base NightSky/Cartoon Base NightSky_Cam_5_Down-Y.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Cartoon Base NightSky/Cartoon Base NightSky_Cam_5_Down-Y.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Cold Night.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Cold Night/Cold Night Equirect.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Cold Night/Cold Night Equirect.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Cold Night/Cold Night Equirect.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Cold Night/Cold Night Equirect.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Cold Night/Cold Night.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Cold Night/Cold Night.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Cold Night/Cold Night.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Cold Night/Cold Night.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Cold Night/Cold NightSettings.lighting" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Cold Night/Cold NightSettings.lighting.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Cold Night/Cold Night__Cam_0_Front+Z.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Cold Night/Cold Night__Cam_0_Front+Z.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Cold Night/Cold Night__Cam_1_Back-Z.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Cold Night/Cold Night__Cam_1_Back-Z.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Cold Night/Cold Night__Cam_2_Left+X.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Cold Night/Cold Night__Cam_2_Left+X.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Cold Night/Cold Night__Cam_3_Right-X.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Cold Night/Cold Night__Cam_3_Right-X.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Cold Night/Cold Night__Cam_4_Up+Y.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Cold Night/Cold Night__Cam_4_Up+Y.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Cold Night/Cold Night__Cam_5_Down-Y.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Cold Night/Cold Night__Cam_5_Down-Y.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Cold Sunset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Cold Sunset/Cold Sunset Equirect.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Cold Sunset/Cold Sunset Equirect.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Cold Sunset/Cold Sunset Equirect.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Cold Sunset/Cold Sunset Equirect.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Cold Sunset/Cold Sunset.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Cold Sunset/Cold Sunset.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Cold Sunset/Cold Sunset.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Cold Sunset/Cold Sunset.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Cold Sunset/Cold SunsetSettings.lighting" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Cold Sunset/Cold SunsetSettings.lighting.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Cold Sunset/Cold Sunset__Cam_0_Front+Z.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Cold Sunset/Cold Sunset__Cam_0_Front+Z.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Cold Sunset/Cold Sunset__Cam_1_Back-Z.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Cold Sunset/Cold Sunset__Cam_1_Back-Z.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Cold Sunset/Cold Sunset__Cam_2_Left+X.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Cold Sunset/Cold Sunset__Cam_2_Left+X.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Cold Sunset/Cold Sunset__Cam_3_Right-X.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Cold Sunset/Cold Sunset__Cam_3_Right-X.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Cold Sunset/Cold Sunset__Cam_4_Up+Y.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Cold Sunset/Cold Sunset__Cam_4_Up+Y.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Cold Sunset/Cold Sunset__Cam_5_Down-Y.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Cold Sunset/Cold Sunset__Cam_5_Down-Y.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Deep Dusk.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Deep Dusk/Deep Dusk Equirect.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Deep Dusk/Deep Dusk Equirect.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Deep Dusk/Deep Dusk Equirect.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Deep Dusk/Deep Dusk Equirect.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Deep Dusk/Deep Dusk.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Deep Dusk/Deep Dusk.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Deep Dusk/Deep Dusk.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Deep Dusk/Deep Dusk.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Deep Dusk/Deep DuskSettings.lighting" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Deep Dusk/Deep DuskSettings.lighting.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Deep Dusk/Deep Dusk__Cam_0_Front+Z.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Deep Dusk/Deep Dusk__Cam_0_Front+Z.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Deep Dusk/Deep Dusk__Cam_1_Back-Z.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Deep Dusk/Deep Dusk__Cam_1_Back-Z.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Deep Dusk/Deep Dusk__Cam_2_Left+X.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Deep Dusk/Deep Dusk__Cam_2_Left+X.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Deep Dusk/Deep Dusk__Cam_3_Right-X.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Deep Dusk/Deep Dusk__Cam_3_Right-X.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Deep Dusk/Deep Dusk__Cam_4_Up+Y.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Deep Dusk/Deep Dusk__Cam_4_Up+Y.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Deep Dusk/Deep Dusk__Cam_5_Down-Y.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Deep Dusk/Deep Dusk__Cam_5_Down-Y.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Epic_BlueSunset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Epic_BlueSunset/Epic_BlueSunset Equirect.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Epic_BlueSunset/Epic_BlueSunset Equirect.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Epic_BlueSunset/Epic_BlueSunset.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Epic_BlueSunset/Epic_BlueSunset.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Epic_BlueSunset/Epic_BlueSunset.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Epic_BlueSunset/Epic_BlueSunset.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Epic_BlueSunset/Epic_BlueSunsetSettings.lighting" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Epic_BlueSunset/Epic_BlueSunsetSettings.lighting.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Epic_BlueSunset/Epic_BlueSunset_Cam_0_Front+Z.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Epic_BlueSunset/Epic_BlueSunset_Cam_0_Front+Z.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Epic_BlueSunset/Epic_BlueSunset_Cam_1_Back-Z.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Epic_BlueSunset/Epic_BlueSunset_Cam_1_Back-Z.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Epic_BlueSunset/Epic_BlueSunset_Cam_2_Left+X.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Epic_BlueSunset/Epic_BlueSunset_Cam_2_Left+X.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Epic_BlueSunset/Epic_BlueSunset_Cam_3_Right-X.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Epic_BlueSunset/Epic_BlueSunset_Cam_3_Right-X.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Epic_BlueSunset/Epic_BlueSunset_Cam_4_Up+Y.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Epic_BlueSunset/Epic_BlueSunset_Cam_4_Up+Y.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Epic_BlueSunset/Epic_BlueSunset_Cam_5_Down-Y.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Epic_BlueSunset/Epic_BlueSunset_Cam_5_Down-Y.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Epic_BlueSunset/Epic_BlueSunset_EquiRect_flat.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Epic_BlueSunset/Epic_BlueSunset_EquiRect_flat.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Epic_GloriousPink.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Epic_GloriousPink/Epic_GloriousPink Equirect.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Epic_GloriousPink/Epic_GloriousPink Equirect.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Epic_GloriousPink/Epic_GloriousPink.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Epic_GloriousPink/Epic_GloriousPink.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Epic_GloriousPink/Epic_GloriousPink.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Epic_GloriousPink/Epic_GloriousPink.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Epic_GloriousPink/Epic_GloriousPinkSettings.lighting" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Epic_GloriousPink/Epic_GloriousPinkSettings.lighting.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Epic_GloriousPink/Epic_GloriousPink_Cam_0_Front+Z.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Epic_GloriousPink/Epic_GloriousPink_Cam_0_Front+Z.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Epic_GloriousPink/Epic_GloriousPink_Cam_1_Back-Z.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Epic_GloriousPink/Epic_GloriousPink_Cam_1_Back-Z.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Epic_GloriousPink/Epic_GloriousPink_Cam_2_Left+X.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Epic_GloriousPink/Epic_GloriousPink_Cam_2_Left+X.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Epic_GloriousPink/Epic_GloriousPink_Cam_3_Right-X.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Epic_GloriousPink/Epic_GloriousPink_Cam_3_Right-X.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Epic_GloriousPink/Epic_GloriousPink_Cam_4_Up+Y.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Epic_GloriousPink/Epic_GloriousPink_Cam_4_Up+Y.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Epic_GloriousPink/Epic_GloriousPink_Cam_5_Down-Y.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Epic_GloriousPink/Epic_GloriousPink_Cam_5_Down-Y.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Epic_GloriousPink/Epic_GloriousPink_EquiRect.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Epic_GloriousPink/Epic_GloriousPink_EquiRect.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Night MoonBurst.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Night MoonBurst/AllSky_Night_MoonBurst Equirect.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Night MoonBurst/AllSky_Night_MoonBurst Equirect.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Night MoonBurst/AllSky_Night_MoonBurst Equirect.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Night MoonBurst/AllSky_Night_MoonBurst Equirect.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Night MoonBurst/Night Moon Burst.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Night MoonBurst/Night Moon Burst.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Night MoonBurst/Night Moon Burst.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Night MoonBurst/Night Moon Burst.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Night MoonBurst/Night Moon BurstSettings.lighting" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Night MoonBurst/Night Moon BurstSettings.lighting.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Night MoonBurst/Night Moon Burst_Cam_0_Front+Z.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Night MoonBurst/Night Moon Burst_Cam_0_Front+Z.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Night MoonBurst/Night Moon Burst_Cam_1_Back-Z.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Night MoonBurst/Night Moon Burst_Cam_1_Back-Z.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Night MoonBurst/Night Moon Burst_Cam_2_Left+X.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Night MoonBurst/Night Moon Burst_Cam_2_Left+X.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Night MoonBurst/Night Moon Burst_Cam_3_Right-X.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Night MoonBurst/Night Moon Burst_Cam_3_Right-X.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Night MoonBurst/Night Moon Burst_Cam_4_Up+Y.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Night MoonBurst/Night Moon Burst_Cam_4_Up+Y.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Night MoonBurst/Night Moon Burst_Cam_5_Down-Y.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Night MoonBurst/Night Moon Burst_Cam_5_Down-Y.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Overcast Low.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Overcast Low/AllSky_Overcast4_Low Equirect.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Overcast Low/AllSky_Overcast4_Low Equirect.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Overcast Low/AllSky_Overcast4_Low.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Overcast Low/AllSky_Overcast4_Low.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Overcast Low/AllSky_Overcast4_Low.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Overcast Low/AllSky_Overcast4_Low.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Overcast Low/AllSky_Overcast4_Low.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Overcast Low/AllSky_Overcast4_Low.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Overcast Low/AllSky_Overcast4_LowSettings.lighting" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Overcast Low/AllSky_Overcast4_LowSettings.lighting.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Overcast Low/Sky_AllSky_Overcast4_Low_Cam_0_Front+Z.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Overcast Low/Sky_AllSky_Overcast4_Low_Cam_0_Front+Z.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Overcast Low/Sky_AllSky_Overcast4_Low_Cam_1_Back-Z.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Overcast Low/Sky_AllSky_Overcast4_Low_Cam_1_Back-Z.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Overcast Low/Sky_AllSky_Overcast4_Low_Cam_2_Left+X.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Overcast Low/Sky_AllSky_Overcast4_Low_Cam_2_Left+X.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Overcast Low/Sky_AllSky_Overcast4_Low_Cam_3_Right-X.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Overcast Low/Sky_AllSky_Overcast4_Low_Cam_3_Right-X.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Overcast Low/Sky_AllSky_Overcast4_Low_Cam_4_Up+Y.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Overcast Low/Sky_AllSky_Overcast4_Low_Cam_4_Up+Y.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Overcast Low/Sky_AllSky_Overcast4_Low_Cam_5_Down-Y.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Overcast Low/Sky_AllSky_Overcast4_Low_Cam_5_Down-Y.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Space_AnotherPlanet.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Space_AnotherPlanet/AllSky_Space_AnotherPlanet Equirect.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Space_AnotherPlanet/AllSky_Space_AnotherPlanet Equirect.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Space_AnotherPlanet/AllSky_Space_AnotherPlanet Equirect.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Space_AnotherPlanet/AllSky_Space_AnotherPlanet Equirect.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Space_AnotherPlanet/AllSky_Space_AnotherPlanet.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Space_AnotherPlanet/AllSky_Space_AnotherPlanet.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Space_AnotherPlanet/AllSky_Space_AnotherPlanet.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Space_AnotherPlanet/AllSky_Space_AnotherPlanet.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Space_AnotherPlanet/AllSky_Space_AnotherPlanetSettings.lighting" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Space_AnotherPlanet/AllSky_Space_AnotherPlanetSettings.lighting.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Space_AnotherPlanet/AllSky_Space_AnotherPlanet_Cam_0_Front+Z.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Space_AnotherPlanet/AllSky_Space_AnotherPlanet_Cam_0_Front+Z.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Space_AnotherPlanet/AllSky_Space_AnotherPlanet_Cam_1_Back-Z.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Space_AnotherPlanet/AllSky_Space_AnotherPlanet_Cam_1_Back-Z.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Space_AnotherPlanet/AllSky_Space_AnotherPlanet_Cam_2_Left+X.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Space_AnotherPlanet/AllSky_Space_AnotherPlanet_Cam_2_Left+X.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Space_AnotherPlanet/AllSky_Space_AnotherPlanet_Cam_3_Right-X.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Space_AnotherPlanet/AllSky_Space_AnotherPlanet_Cam_3_Right-X.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Space_AnotherPlanet/AllSky_Space_AnotherPlanet_Cam_4_Up+Y.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Space_AnotherPlanet/AllSky_Space_AnotherPlanet_Cam_4_Up+Y.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Space_AnotherPlanet/AllSky_Space_AnotherPlanet_Cam_5_Down-Y.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/Space_AnotherPlanet/AllSky_Space_AnotherPlanet_Cam_5_Down-Y.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/_AllSkyFreeDemoEnvironment.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/_AllSkyFreeDemoEnvironment/AdditiveSprite.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/_AllSkyFreeDemoEnvironment/AdditiveSprite.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/_AllSkyFreeDemoEnvironment/AllSkyFreeDemoEnvironment.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/_AllSkyFreeDemoEnvironment/AllSkyFreeDemoEnvironment.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/_AllSkyFreeDemoEnvironment/AllSky_DemoEnvironment.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/_AllSkyFreeDemoEnvironment/AllSky_DemoEnvironment.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/_AllSkyFreeDemoEnvironment/AllSky_DemoEnvironment02.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/_AllSkyFreeDemoEnvironment/AllSky_DemoEnvironment02.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/_AllSkyFreeDemoEnvironment/AllSky_DemoEnvironment_Center.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/_AllSkyFreeDemoEnvironment/AllSky_DemoEnvironment_Center.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/_AllSkyFreeDemoEnvironment/AllSky_DemoEnvironment_Light.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/_AllSkyFreeDemoEnvironment/AllSky_DemoEnvironment_Light.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/_AllSkyFreeDemoEnvironment/Materials.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/_AllSkyFreeDemoEnvironment/Materials/AllSkyDemoEnv_Building.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/_AllSkyFreeDemoEnvironment/Materials/AllSkyDemoEnv_Building.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/_AllSkyFreeDemoEnvironment/Materials/AllSkyDemoEnv_FlagGreen.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/_AllSkyFreeDemoEnvironment/Materials/AllSkyDemoEnv_FlagGreen.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/_AllSkyFreeDemoEnvironment/Materials/AllSkyDemoEnv_Flag_Blue.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/_AllSkyFreeDemoEnvironment/Materials/AllSkyDemoEnv_Flag_Blue.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/_AllSkyFreeDemoEnvironment/Materials/AllSkyDemoEnv_Flag_Gold.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/_AllSkyFreeDemoEnvironment/Materials/AllSkyDemoEnv_Flag_Gold.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/_AllSkyFreeDemoEnvironment/Materials/AllSkyDemoEnv_Flag_Red.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/_AllSkyFreeDemoEnvironment/Materials/AllSkyDemoEnv_Flag_Red.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/_AllSkyFreeDemoEnvironment/Materials/AllSkyDemoEnv_Landscape.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/_AllSkyFreeDemoEnvironment/Materials/AllSkyDemoEnv_Landscape.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/_AllSkyFreeDemoEnvironment/Materials/AllSkyDemoEnv_LightIllum.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/_AllSkyFreeDemoEnvironment/Materials/AllSkyDemoEnv_LightIllum.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/_AllSkyFreeDemoEnvironment/Materials/AllSkyDemoEnv_LightMetal.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/_AllSkyFreeDemoEnvironment/Materials/AllSkyDemoEnv_LightMetal.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/_AllSkyFreeDemoEnvironment/Materials/AllSkyDemoEnv_MountainGlow.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/_AllSkyFreeDemoEnvironment/Materials/AllSkyDemoEnv_MountainGlow.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/_AllSkyFreeDemoEnvironment/Materials/AllSkyDemoEnv_Rock.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/_AllSkyFreeDemoEnvironment/Materials/AllSkyDemoEnv_Rock.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/_AllSkyFreeDemoEnvironment/Materials/AllSkyDemoEnv_SphereSkyReflect.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/_AllSkyFreeDemoEnvironment/Materials/AllSkyDemoEnv_SphereSkyReflect.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/_AllSkyFreeDemoEnvironment/Materials/AllSkyDemoEnv_TreeLeaves.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/_AllSkyFreeDemoEnvironment/Materials/AllSkyDemoEnv_TreeLeaves.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/_AllSkyFreeDemoEnvironment/Materials/AllSkyDemoEnv_TreeTrunk.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/_AllSkyFreeDemoEnvironment/Materials/AllSkyDemoEnv_TreeTrunk.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/_AllSkyFreeDemoEnvironment/Materials/Landscape.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/_AllSkyFreeDemoEnvironment/Materials/Landscape.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/_AllSkyFreeDemoEnvironment/Materials/TreeLeaves.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/_AllSkyFreeDemoEnvironment/Materials/TreeLeaves.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/_AllSkyFreeDemoEnvironment/Materials/TreeTrunk.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/_AllSkyFreeDemoEnvironment/Materials/TreeTrunk.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/_AllSkyFreeDemoEnvironment/Materials/rock.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/_AllSkyFreeDemoEnvironment/Materials/rock.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/_AllSkyFreeDemoEnvironment/Moon Glare.flare" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/_AllSkyFreeDemoEnvironment/Moon Glare.flare.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/_AllSkyFreeDemoEnvironment/MoonGlow.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/_AllSkyFreeDemoEnvironment/MoonGlow.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/_AllSkyFreeDemoEnvironment/Mountain Glare.flare" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/_AllSkyFreeDemoEnvironment/Mountain Glare.flare.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/_AllSkyFreeDemoEnvironment/Sun Glare.flare" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/_AllSkyFreeDemoEnvironment/Sun Glare.flare.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/_AllSkyFreeDemoEnvironment/SunGlare.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/_AllSkyFreeDemoEnvironment/SunGlare.psd.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/_AllSkyFreeDemoEnvironment/SunGlow.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/_AllSkyFreeDemoEnvironment/SunGlow.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/_AllSkyFree_Documentation.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/AllSkyFree/_AllSkyFree_Documentation.pdf.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/Prefabs/Prefabs Boats/ShipPrefab_3.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/Prefabs/Prefabs Boats/ShipPrefab_3.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/Prefabs/Prefabs Boats/ShipPrefabs_1.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/Prefabs/Prefabs Boats/ShipPrefabs_1.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/Prefabs/Prefabs Boats/ShipPrefabs_2.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/Prefabs/Prefabs Boats/ShipPrefabs_2.prefab.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Michael/Scenes/Prototype.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Scenes/Prototype.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Michael/Scripts/Controller/PlayerData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Scripts/Controller/PlayerData.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Michael/Scripts/Enemy/Boat 1.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Scripts/Enemy/Boat 1.asset" afterDir="false" />
@@ -17,81 +311,11 @@
       <change beforePath="$PROJECT_DIR$/Assets/Michael/Scripts/Enemy/Boat 3.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Scripts/Enemy/Boat 3.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Michael/Scripts/Enemy/BoatEnemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Scripts/Enemy/BoatEnemy.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Michael/Scripts/Manager/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Scripts/Manager/GameManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Scripts/Manager/WaveManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Scripts/Manager/WaveManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Shader/Simple Water Shader/Prefabs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Shader/Simple Water Shader/Prefabs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Shader/Simple Water Shader/Prefabs/WaterBlock_50m.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Shader/Simple Water Shader/Prefabs/WaterBlock_50m.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Shader/Simple Water Shader/Prefabs/WaterBlock_50m.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Shader/Simple Water Shader/Prefabs/WaterBlock_50m.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Shader/Simple Water Shader/Prefabs/WaterReflectionCamera.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Shader/Simple Water Shader/Prefabs/WaterReflectionCamera.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Shader/Simple Water Shader/Prefabs/WaterReflectionCamera.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Shader/Simple Water Shader/Prefabs/WaterReflectionCamera.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Shader/Simple Water Shader/Resources.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Shader/Simple Water Shader/Resources.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Shader/Simple Water Shader/Resources/WaterBlock_50m.mesh" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Shader/Simple Water Shader/Resources/WaterBlock_50m.mesh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Shader/Simple Water Shader/Resources/WaterBlock_50m.mesh.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Shader/Simple Water Shader/Resources/WaterBlock_50m.mesh.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Shader/Simple Water Shader/Resources/WaterReflection.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Shader/Simple Water Shader/Resources/WaterReflection.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Michael/Shader/Simple Water Shader/Resources/WaterReflection.renderTexture" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Shader/Simple Water Shader/Resources/WaterReflection.renderTexture" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Shader/Simple Water Shader/Resources/WaterReflection.renderTexture.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Shader/Simple Water Shader/Resources/WaterReflection.renderTexture.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Shader/Simple Water Shader/Resources/WaterShader.shadergraph" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Shader/Simple Water Shader/Resources/WaterShader.shadergraph" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Shader/Simple Water Shader/Resources/WaterShader.shadergraph.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Shader/Simple Water Shader/Resources/WaterShader.shadergraph.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Shader/Simple Water Shader/Resources/WaterSurface_atlas.tif.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Shader/Simple Water Shader/Resources/WaterSurface_atlas.tif.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Shader/Simple Water Shader/Resources/WaterSurface_single.tif.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Shader/Simple Water Shader/Resources/WaterSurface_single.tif.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Michael/Shader/Simple Water Shader/Resources/Water_mat_01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Shader/Simple Water Shader/Resources/Water_mat_01.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Shader/Simple Water Shader/Resources/Water_mat_01.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Shader/Simple Water Shader/Resources/Water_mat_01.mat.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Shader/Simple Water Shader/Resources/Water_mat_02.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Shader/Simple Water Shader/Resources/Water_mat_02.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Shader/Simple Water Shader/Resources/Water_mat_02.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Shader/Simple Water Shader/Resources/Water_mat_02.mat.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Shader/Simple Water Shader/Resources/Water_mat_03.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Shader/Simple Water Shader/Resources/Water_mat_03.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Shader/Simple Water Shader/Resources/Water_mat_03.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Shader/Simple Water Shader/Resources/Water_mat_03.mat.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Shader/StylisedWater.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Shader/StylisedWater/URP.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Shader/StylisedWater/URP/Examples.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Shader/StylisedWater/URP/Examples/Example-Scene-01.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Shader/StylisedWater/URP/Examples/Example-Scene-01.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Shader/StylisedWater/URP/Examples/StylisedWaterProfile.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Shader/StylisedWater/URP/Examples/StylisedWaterProfile.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Shader/StylisedWater/URP/Materials.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Shader/StylisedWater/URP/Materials/example-water-01.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Shader/StylisedWater/URP/Materials/example-water-01.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Shader/StylisedWater/URP/Materials/example-water-02.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Shader/StylisedWater/URP/Materials/example-water-02.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Shader/StylisedWater/URP/Materials/example-water-03.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Shader/StylisedWater/URP/Materials/example-water-03.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Shader/StylisedWater/URP/Materials/greyboxing.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Shader/StylisedWater/URP/Materials/greyboxing.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Shader/StylisedWater/URP/Materials/skybox.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Shader/StylisedWater/URP/Materials/skybox.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Shader/StylisedWater/URP/Meshes.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Shader/StylisedWater/URP/Meshes/example-scene-01.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Shader/StylisedWater/URP/Meshes/example-scene-01.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Shader/StylisedWater/URP/Scripts.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Shader/StylisedWater/URP/Scripts/Bitgem.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Shader/StylisedWater/URP/Scripts/Bitgem/Core.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Shader/StylisedWater/URP/Scripts/Bitgem/Core/FlagEnumAttribute.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Shader/StylisedWater/URP/Scripts/Bitgem/Core/FlagEnumAttribute.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Shader/StylisedWater/URP/Scripts/Bitgem/Editor.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Shader/StylisedWater/URP/Scripts/Bitgem/Editor/FlagEnumAttributeDrawer.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Shader/StylisedWater/URP/Scripts/Bitgem/Editor/FlagEnumAttributeDrawer.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Shader/StylisedWater/URP/Scripts/Bitgem/VFX.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Shader/StylisedWater/URP/Scripts/Bitgem/VFX/StylisedWater.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Shader/StylisedWater/URP/Scripts/Bitgem/VFX/StylisedWater/WaterVolumeBase.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Shader/StylisedWater/URP/Scripts/Bitgem/VFX/StylisedWater/WaterVolumeBase.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Shader/StylisedWater/URP/Scripts/Bitgem/VFX/StylisedWater/WaterVolumeBox.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Shader/StylisedWater/URP/Scripts/Bitgem/VFX/StylisedWater/WaterVolumeBox.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Shader/StylisedWater/URP/Scripts/Bitgem/VFX/StylisedWater/WaterVolumeHelper.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Shader/StylisedWater/URP/Scripts/Bitgem/VFX/StylisedWater/WaterVolumeHelper.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Shader/StylisedWater/URP/Scripts/Bitgem/VFX/StylisedWater/WaterVolumeTransforms.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Shader/StylisedWater/URP/Scripts/Bitgem/VFX/StylisedWater/WaterVolumeTransforms.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Shader/StylisedWater/URP/Scripts/Bitgem/VFX/StylisedWater/WateverVolumeFloater.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Shader/StylisedWater/URP/Scripts/Bitgem/VFX/StylisedWater/WateverVolumeFloater.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Shader/StylisedWater/URP/Shaders.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Shader/StylisedWater/URP/Shaders/Triplanar.shadergraph" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Shader/StylisedWater/URP/Shaders/Triplanar.shadergraph.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Shader/StylisedWater/URP/Shaders/WaterVolume-URP.shadergraph" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Shader/StylisedWater/URP/Shaders/WaterVolume-URP.shadergraph.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Shader/StylisedWater/URP/Textures.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Shader/StylisedWater/URP/Textures/greyboxing-01.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Shader/StylisedWater/URP/Textures/greyboxing-01.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Shader/StylisedWater/URP/Textures/waves_n.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Shader/StylisedWater/URP/Textures/waves_n.png.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Resources/DOTweenSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/DOTweenSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Settings/SampleSceneProfile.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/SampleSceneProfile.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Bangers SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Bangers SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,6 +326,8 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Michael/Scripts/UI/HealthBar.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Michael/Scripts/UI/UiFollowCamera.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.universal@14.0.11/Runtime/ScriptableRendererData.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventInterfaces.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/GraphicRaycaster.cs" root0="SKIP_HIGHLIGHTING" />
