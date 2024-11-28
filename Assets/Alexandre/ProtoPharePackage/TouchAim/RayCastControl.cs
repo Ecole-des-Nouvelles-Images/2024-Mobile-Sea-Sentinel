@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class RayCastControl : MonoBehaviour
 {
@@ -10,7 +11,7 @@ public class RayCastControl : MonoBehaviour
     public GameObject phareLight;
 
     public float AimSpeed = 5f;
-
+    public RectTransform crosshairUI;
     // Position touchée
     private Vector3 touchPosition;
 
@@ -34,6 +35,11 @@ public class RayCastControl : MonoBehaviour
             Touch touch = Input.GetTouch(0);
             Debug.Log("Touch phase : " + touch.phase);
 
+            if (EventSystem.current.IsPointerOverGameObject(touch.fingerId))
+            {
+                Debug.Log("Touch is over a UI element");
+                return;
+            }
             // Vérifiez si le toucher est une phase de début (quand le joueur commence à toucher l'écran)
             if (touch.phase == TouchPhase.Began || touch.phase == TouchPhase.Moved || touch.phase == TouchPhase.Stationary)
             {
@@ -51,6 +57,7 @@ public class RayCastControl : MonoBehaviour
 
                     // Mettez à jour la direction de la lumière
                     UpdateLightDirection();
+                    UpdateCrosshairPosition(hit.point);
                 }
             }
         }
@@ -66,6 +73,12 @@ public class RayCastControl : MonoBehaviour
             // Interpolez la direction de la lumière en utilisant le delta time et la vitesse
             phareLight.transform.forward = Vector3.Lerp(phareLight.transform.forward, direction, AimSpeed * Time.deltaTime);
         }
+    }
+    
+    void UpdateCrosshairPosition(Vector3 hitPoint)
+    {
+        Vector2 screenPoint = Camera.main.WorldToScreenPoint(hitPoint);
+        crosshairUI.position = screenPoint;
     }
 
     public void ShootWithCooldown()
