@@ -13,7 +13,7 @@ namespace Alexandre
         public GameObject CanonOut;
         public GameObject BulletPrefab;
 
-        [Header("UI Elements")]
+        [Header("UI Elements")] public GameObject WheelChargeShotUI; // Ref to the UI Wheel and Shot with charge button
         public Slider ChargeSlider; // Slider for charge feedback
         public GameObject RotationWheel;
 
@@ -36,7 +36,7 @@ namespace Alexandre
         // Start is called before the first frame update
         void Start()
         {
-
+            WheelChargeShotUI.SetActive(true);
         }
 
         // Update is called once per frame

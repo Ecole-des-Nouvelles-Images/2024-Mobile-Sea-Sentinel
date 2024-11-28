@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class RayCastControl : MonoBehaviour
 {
+    public GameObject RayCastUI;
     // Définissez le masque de couche pour la couche "Interactable"
     public LayerMask interactableLayer;
 
@@ -20,6 +21,10 @@ public class RayCastControl : MonoBehaviour
     public GameObject BulletPrefab;
     public Transform CanonOut;
 
+    void Start()
+    {
+        RayCastUI.SetActive(true);
+    }
     void Update()
     {
         // Vérifiez s'il y a des touches sur l'écran
