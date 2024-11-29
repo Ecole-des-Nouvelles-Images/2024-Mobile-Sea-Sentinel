@@ -28,6 +28,8 @@ public class RayCastControl : MonoBehaviour
     }
     void Update()
     {
+        UpdateLightDirection();
+
         // Vérifiez s'il y a des touches sur l'écran
         if (Input.touchCount > 0)
         {
