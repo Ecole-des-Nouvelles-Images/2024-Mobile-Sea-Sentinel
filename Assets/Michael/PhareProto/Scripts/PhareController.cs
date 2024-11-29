@@ -60,7 +60,7 @@ namespace Michael.PhareProto.Scripts
         private void Update()
         {
             // Rotation continue du phare
-            if (options2)
+         /*   if (options2)
             {
                 Pharecanon.transform.Rotate(Vector3.up, SpeedRotation * Time.deltaTime, Space.World);
                 RotationSlider.gameObject.SetActive(false);
@@ -69,7 +69,7 @@ namespace Michael.PhareProto.Scripts
             else
             {
                 RotationSlider.gameObject.SetActive(true);
-            }
+            }*/
             
 
            

@@ -147,9 +147,9 @@ namespace Michael.Scripts.Enemy
             _damageNumberSequence.Kill();
             _damageNumberSequence = DOTween.Sequence();
             _damageNumberText.gameObject.SetActive(true);
-            _damageNumberSequence.Join(_damageNumberText.gameObject.transform.DOMoveY(_originalPosition.y, 0.5f).SetEase(Ease.OutQuad));
-            _damageNumberSequence.Join((_damageNumberText.DOFade(1f, 0.5f)));
-            _damageNumberSequence.Append((_damageNumberText.DOFade(0f, 0.5f)));
+            _damageNumberSequence.Join(_damageNumberText.gameObject.transform.DOMoveY(_originalPosition.y, 0.3f).SetEase(Ease.OutQuad));
+            _damageNumberSequence.Join((_damageNumberText.DOFade(1f, 0.25f)));
+            _damageNumberSequence.Append((_damageNumberText.DOFade(0f, 0.25f)));
             _damageNumberSequence.Play();
             _damageNumberSequence.OnComplete(() => { _damageNumberText.gameObject.SetActive(false);
             });

@@ -1,4 +1,5 @@
 using System;
+using Michael.Scripts.Manager;
 using TMPro;
 using UnityEngine;
 
@@ -20,8 +21,12 @@ namespace Michael.Scripts.Controller
 
         private void Update()
         {
-            
             goldText.text =  goldText.text = CurrentGold + " / " + MaxGoldCapacity;
+            if (CurrentGold <= 0)
+            {
+                CurrentGold = 0;
+                GameManager.Instance.GameOver();
+            }
         }
     }
 }
