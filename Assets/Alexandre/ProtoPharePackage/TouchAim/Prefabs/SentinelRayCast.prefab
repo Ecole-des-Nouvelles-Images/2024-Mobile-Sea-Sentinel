@@ -185,7 +185,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &5394630489185820999
 Transform:
   m_ObjectHideFlags: 0
@@ -221,10 +221,12 @@ MonoBehaviour:
     m_Bits: 64
   phareLight: {fileID: 2061983335989862050}
   AimSpeed: 5
+  crosshairUI: {fileID: 0}
   shootCooldown: 2
   BulletPrefab: {fileID: 3024273405111157043, guid: ea646e859924ebd4ebfafc7fa270620f,
     type: 3}
   CanonOut: {fileID: 9212959413200457827}
+  CoolDownSlider: {fileID: 0}
 --- !u!1 &4515226485454760198
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,9 +1,11 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 public class RayCastControl : MonoBehaviour
 {
     public GameObject RayCastUI;
+
     // Définissez le masque de couche pour la couche "Interactable"
     public LayerMask interactableLayer;
 
@@ -12,6 +14,7 @@ public class RayCastControl : MonoBehaviour
 
     public float AimSpeed = 5f;
     public RectTransform crosshairUI;
+
     // Position touchée
     private Vector3 touchPosition;
 
@@ -22,13 +25,20 @@ public class RayCastControl : MonoBehaviour
     public GameObject BulletPrefab;
     public Transform CanonOut;
 
+    // Reference CoolDown slider
+    public Slider CoolDownSlider;
+
     void Start()
     {
         RayCastUI.SetActive(true);
+        CoolDownSlider.maxValue = shootCooldown;
+        CoolDownSlider.value = 0; // Initialiser à la valeur minimale
     }
+
     void Update()
     {
         UpdateLightDirection();
+        UpdateCoolDownSlider();
 
         // Vérifiez s'il y a des touches sur l'écran
         if (Input.touchCount > 0)
@@ -42,8 +52,10 @@ public class RayCastControl : MonoBehaviour
                 Debug.Log("Touch is over a UI element");
                 return;
             }
+
             // Vérifiez si le toucher est une phase de début (quand le joueur commence à toucher l'écran)
-            if (touch.phase == TouchPhase.Began || touch.phase == TouchPhase.Moved || touch.phase == TouchPhase.Stationary)
+            if (touch.phase == TouchPhase.Began || touch.phase == TouchPhase.Moved ||
+                touch.phase == TouchPhase.Stationary)
             {
                 // Convertissez la position du toucher en un rayon
                 Ray ray = Camera.main.ScreenPointToRay(touch.position);
@@ -65,6 +77,12 @@ public class RayCastControl : MonoBehaviour
         }
     }
 
+    void UpdateCoolDownSlider()
+    {
+        float timeSinceLastShot = Time.time - lastShootTime;
+        CoolDownSlider.value = Mathf.Clamp(timeSinceLastShot, 0, shootCooldown);
+    }
+
     void UpdateLightDirection()
     {
         if (phareLight != null && touchPosition != Vector3.zero)
@@ -73,10 +91,11 @@ public class RayCastControl : MonoBehaviour
             Vector3 direction = (touchPosition - phareLight.transform.position).normalized;
 
             // Interpolez la direction de la lumière en utilisant le delta time et la vitesse
-            phareLight.transform.forward = Vector3.Lerp(phareLight.transform.forward, direction, AimSpeed * Time.deltaTime);
+            phareLight.transform.forward =
+                Vector3.Lerp(phareLight.transform.forward, direction, AimSpeed * Time.deltaTime);
         }
     }
-    
+
     void UpdateCrosshairPosition(Vector3 hitPoint)
     {
         Vector2 screenPoint = Camera.main.WorldToScreenPoint(hitPoint);
@@ -95,6 +114,9 @@ public class RayCastControl : MonoBehaviour
 
             // Update the last shoot time
             lastShootTime = Time.time;
+
+            // Réinitialiser le slider à la valeur minimale
+            CoolDownSlider.value = 0;
         }
     }
 }
