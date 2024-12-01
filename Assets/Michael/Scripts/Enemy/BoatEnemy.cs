@@ -22,6 +22,7 @@ namespace Michael.Scripts.Enemy
         private int _currentHealth;
         [SerializeField] private float _boatStealSpeed;
        
+        [SerializeField] private Transform _boatModel;
         [SerializeField] private TextMeshProUGUI _boatGoldText;
         [SerializeField] private TextMeshProUGUI _damageNumberText;
         [SerializeField] Slider _boatHealthBar;
@@ -99,7 +100,7 @@ namespace Michael.Scripts.Enemy
             HealthBarFeedback(_boatUi);
             _currentHealth -= damage;
             _boatHealthBar.value = _currentHealth; 
-           gameObject.transform.DOShakePosition( 0.2f,new Vector3(0.2f,0,0.2f),4).SetEase(Ease.InBounce);
+           _boatModel.DOShakePosition( 1f,new Vector3(0.2f,0,0.2f),4).SetEase(Ease.InBounce);
             Sequence feedBackSequence = DOTween.Sequence();
             feedBackSequence.Append( _damageImageCanvasGroup.DOFade(0.2f, 0.1f).SetEase(Ease.Linear));
             feedBackSequence.Append( _damageImageCanvasGroup.DOFade(0f, 0.1f).SetEase(Ease.Linear));
