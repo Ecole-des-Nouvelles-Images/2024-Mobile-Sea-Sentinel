@@ -1,3 +1,4 @@
+using ProtoPharePackage;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
@@ -27,6 +28,8 @@ public class RayCastControl : MonoBehaviour
 
     // Reference CoolDown slider
     public Slider CoolDownSlider;
+
+    private Vector3 aimPosition;
 
     void Start()
     {
@@ -91,7 +94,7 @@ public class RayCastControl : MonoBehaviour
             Vector3 direction = (touchPosition - phareLight.transform.position).normalized;
 
             // Interpolez la direction de la lumière en utilisant le delta time et la vitesse
-            phareLight.transform.forward =
+            aimPosition = phareLight.transform.forward =
                 Vector3.Lerp(phareLight.transform.forward, direction, AimSpeed * Time.deltaTime);
         }
     }
@@ -108,10 +111,10 @@ public class RayCastControl : MonoBehaviour
         {
             // Instantiate the bullet prefab
             GameObject bullet = Instantiate(BulletPrefab, CanonOut.position, CanonOut.rotation);
-
+            
+            
             // Set the bullet's direction to match the direction of phareLight
-            bullet.transform.forward = phareLight.transform.forward;
-
+            bullet.GetComponent<Bullet>().Initialize(aimPosition);
             // Update the last shoot time
             lastShootTime = Time.time;
 

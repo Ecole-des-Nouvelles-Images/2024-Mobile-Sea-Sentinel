@@ -120,3 +120,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 30
   lifeTime: 10
+  controlHeight: 30

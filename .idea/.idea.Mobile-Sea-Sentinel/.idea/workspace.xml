@@ -6,8 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="047e4b05-4340-413f-a495-d790df9d2ef7" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Mobile-Sea-Sentinel/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Mobile-Sea-Sentinel/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Alexandre/PhareProto/Scripts/Bullet.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Alexandre/PhareProto/Scripts/Bullet.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Alexandre/ProtoPharePackage/Bullet.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Alexandre/ProtoPharePackage/Bullet.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Alexandre/ProtoPharePackage/TouchAim/RayCastControl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Alexandre/ProtoPharePackage/TouchAim/RayCastControl.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Alexandre/ProtoPharePackage/TouchAim/TouchAimProto.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Alexandre/ProtoPharePackage/TouchAim/TouchAimProto.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/PhareProto/Scripts/Bullet.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/PhareProto/Scripts/Bullet.cs.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +22,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Alexandre/ProtoPharePackage/Bullet.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Alexandre/ProtoPharePackage/SlidersAim/SlidersControl.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Alexandre/Scripts/InListBank.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Alexandre/Scripts/InfiniteScroll.cs" root0="FORCE_HIGHLIGHTING" />
@@ -111,7 +116,7 @@
       <workItem from="1732535818324" duration="8234000" />
       <workItem from="1732552196914" duration="15053000" />
       <workItem from="1732758904847" duration="5108000" />
-      <workItem from="1732877228387" duration="2512000" />
+      <workItem from="1732877228387" duration="6918000" />
     </task>
     <servers />
   </component>
