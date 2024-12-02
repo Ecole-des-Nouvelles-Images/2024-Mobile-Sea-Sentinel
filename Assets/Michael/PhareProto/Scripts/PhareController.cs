@@ -16,7 +16,6 @@ namespace Michael.PhareProto.Scripts
         public Slider inclinationSlider;
         public Slider RotationSlider;
         public bool options2 = false;
-        public PlayerData playerData;
        
      
         [Header("Canon Settings")]

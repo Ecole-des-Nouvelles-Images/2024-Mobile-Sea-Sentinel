@@ -117,12 +117,13 @@ namespace Michael.Scripts.Enemy
 
         private void StealGold(GameObject target)
         {
-            _currentBoatGold = _boatGoldMax;
+            _currentBoatGold = _boatGoldMax - _currentBoatGold;
             PlayerData playerData = target.GetComponent<PlayerData>();
             playerData.CurrentGold -= _currentBoatGold;
             HealthBarFeedback( playerData.goldText.gameObject);
             _boatGoldText.text = _currentBoatGold + "/" + _boatGoldMax;
-            Debug.Log("or volé " + _currentBoatGold);
+          
+            
             FollowTarget(_initialPosition);
         }
 

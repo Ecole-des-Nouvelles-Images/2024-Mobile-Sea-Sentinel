@@ -58,7 +58,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - Texture2D_eb872b6fea4c4e9bbf9ae7c3605301f6:
-        m_Texture: {fileID: 2800000, guid: 5a601c5020a459949a074a4c0ea996d8, type: 3}
+        m_Texture: {fileID: 2800000, guid: c21511cdc86c86847bdae740c8b071da, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BaseMap:
@@ -127,17 +127,17 @@ Material:
     - Boolean_e23becd06cc24226b5f7c011d5c75eab: 1
     - Vector1_00923200cbc64e29addcc0ad90f8a0be: 15
     - Vector1_05f841d59f284837a16f75293ea846e1: 0
-    - Vector1_13fd3ecdcb7c4093bfa64be766d4bb2f: 1.15
+    - Vector1_13fd3ecdcb7c4093bfa64be766d4bb2f: 2
     - Vector1_31c3f77129c74580b5e4c8a0ca75ab2c: 3
     - Vector1_33fc1cba724d4672ac81b13eb2b7a1b1: 1.2
     - Vector1_353457b98f714923b9cb9ffe273aa2d1: 0.437
     - Vector1_38fc6cc849514ad18756f88411b0e346: 0.3
     - Vector1_41c4db8b870446fe80ce86c0fd78fd8c: 2
     - Vector1_56b9861046d247359b52cd37ab87cd99: 0.2
-    - Vector1_5aaaa4bca5ae44e6984dfc529ce2d504: 2.7
+    - Vector1_5aaaa4bca5ae44e6984dfc529ce2d504: 10.92
     - Vector1_93c50bb2e5fe4de1b69a601e616a515a: 1.12
     - Vector1_b4d0dc8bb33440e884ced58c04f20ee1: 0.5
-    - Vector1_be0ccdb81ad54f29986176a6a4a69f1c: 1
+    - Vector1_be0ccdb81ad54f29986176a6a4a69f1c: 0.585
     - Vector1_c2a26a3484204a3a9b0d73bdfd579d02: 0.2
     - Vector1_da84f9cecb92426a871118ff0e688e26: 1400
     - Vector1_e0dc8220e56d44ca92f9485559de96c7: 0.02
@@ -177,9 +177,9 @@ Material:
         a: 0}
     - Color_363c18cd4bab4d08a5a0036e278ceee3: {r: 0.42352942, g: 0.42352942, b: 0.42352942,
         a: 0.6509804}
-    - Color_cc93b70e40c54c46881e0228bd6e3623: {r: 0.024296913, g: 0.34371868, b: 0.39622638,
+    - Color_cc93b70e40c54c46881e0228bd6e3623: {r: 0.06634923, g: 0.63869196, b: 0.6698113,
         a: 1}
-    - Color_dce8e05d9129476f989af101532bc4de: {r: 0.5821022, g: 0.9716981, b: 0.9103729,
+    - Color_dce8e05d9129476f989af101532bc4de: {r: 0.06341223, g: 0.4988474, b: 0.7075472,
         a: 1}
     - Vector2_96ef9bdb871b472eaa8998ca2475aa08: {r: 0.01, g: -0.01, b: 0, a: 0}
     - Vector2_99419e9b69324839bec8ebdb8b08a75a: {r: 50, g: 50, b: 0, a: 0}
