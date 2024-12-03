@@ -17,7 +17,7 @@ namespace Michael.Scripts.Upgrade
         {
             CurrentCost = BaseCost;  
             CostText.text = BaseCost.ToString();
-            IncrementValueText.text = IncrementValue.ToString();
+            IncrementValueText.text = " + " + IncrementValue;
             
         }
 
@@ -25,7 +25,7 @@ namespace Michael.Scripts.Upgrade
         {
             CurrentCost = (int)(CurrentCost * CostIncrement);
             CostText.text = CurrentCost.ToString();
-            IncrementValueText.text = "+ " + IncrementValue;
+            IncrementValueText.text = " + " + IncrementValue;
         }
     }
 }

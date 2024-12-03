@@ -11,7 +11,7 @@ namespace Michael.Scripts.Controller
         public int CurrentGold;
         public  int MaxGoldCapacity = 150;
         public   float FireRate;
-        public  float BulletDamage;
+        public  int BulletDamage;
         public  int AlliesBoats; 
         
         

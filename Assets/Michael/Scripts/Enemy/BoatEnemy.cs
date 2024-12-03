@@ -64,7 +64,7 @@ namespace Michael.Scripts.Enemy
 
             if (Input.GetKeyDown(KeyCode.Space))
             {
-                TakeDamage(10);
+                TakeDamage(PlayerData.Instance.BulletDamage);
             }
             
             if (!_hasThief) return;
