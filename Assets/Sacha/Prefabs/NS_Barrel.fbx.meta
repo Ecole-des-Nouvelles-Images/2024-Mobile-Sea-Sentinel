@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 8a9708b8700714a48980a37ea58aaacb
+guid: cbd46a25bdfa28b48ad96eb327bc8068
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -7,8 +7,8 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: M_SmallBoat.002
-    second: {fileID: 2100000, guid: 304f32ffeea84ed468349bca48632739, type: 2}
+      name: M_Barrel
+    second: {fileID: 2100000, guid: 77796aa98a52b344187c021087d3b886, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
