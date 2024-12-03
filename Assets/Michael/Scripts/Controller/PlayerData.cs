@@ -5,20 +5,23 @@ using UnityEngine;
 
 namespace Michael.Scripts.Controller
 {
-    public class PlayerData : MonoBehaviour
+    public class PlayerData : MonoBehaviourSingleton<PlayerData>
     {
-        public int MaxGoldCapacity = 150;
+        [Header ("Player Data")]
         public int CurrentGold;
-        public float FireRate;
-        public float BulletDamage;
-        public int AlliesBoats; 
+        public  int MaxGoldCapacity = 150;
+        public   float FireRate;
+        public  float BulletDamage;
+        public  int AlliesBoats; 
+        
+        
         public TextMeshProUGUI goldText;
 
         private void Start() 
         {
             CurrentGold = MaxGoldCapacity; 
         }
-
+        
         private void Update()
         {
             goldText.text =  goldText.text = CurrentGold + " / " + MaxGoldCapacity;
@@ -28,5 +31,14 @@ namespace Michael.Scripts.Controller
                 GameManager.Instance.GameOver();
             }
         }
+
+
+      
+        
+        
+        
+        
+        
+        
     }
 }
