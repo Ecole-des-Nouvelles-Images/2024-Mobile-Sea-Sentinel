@@ -1,14 +1,9 @@
 fileFormatVersion: 2
-guid: 72a61470ce7977246812e8c2c12bec2d
+guid: 10985d9d1df9c124988590f9122dbc02
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: M_Sand
-    second: {fileID: 2100000, guid: 01934ab25fcae56458788c000b2f7153, type: 2}
+  externalObjects: {}
   materials:
     materialImportMode: 2
     materialName: 0
