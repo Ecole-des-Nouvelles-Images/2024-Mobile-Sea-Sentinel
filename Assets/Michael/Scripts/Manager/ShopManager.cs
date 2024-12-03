@@ -12,16 +12,20 @@ namespace Michael.Scripts.Manager
         public static Action OnDamageUpgrade;
         public static Action OnGoldCapacityUpgrade;
         [SerializeField] PlayerData _playerData;
-        public Upgrade[] allUpgrades; 
         
         private void OnEnable()
         {
-
+            OnDamageUpgrade += UpgradeDamage;
         }
 
         private void OnDisable()
         {
+            OnDamageUpgrade -= UpgradeDamage;
+        }
 
+        public void UpgradeDamage()
+        {
+            OnDamageUpgrade?.Invoke();
         }
 
     

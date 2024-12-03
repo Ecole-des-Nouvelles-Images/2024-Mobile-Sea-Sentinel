@@ -20,7 +20,7 @@ namespace Michael.Scripts.Enemy
         private int _currentBoatGold = 0;
         private int _maxHealth;
         private int _currentHealth;
-        [SerializeField] private float _boatStealSpeed;
+      
        
         [SerializeField] private Transform _boatModel;
         [SerializeField] private TextMeshProUGUI _boatGoldText;

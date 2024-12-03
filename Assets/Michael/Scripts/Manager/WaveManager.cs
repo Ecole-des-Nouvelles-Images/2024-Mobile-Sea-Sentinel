@@ -134,7 +134,7 @@ namespace Michael.Scripts.Manager
         }
         
        
-        private void ApplyProgression()
+       /* private void ApplyProgression()
         {
             foreach (BoatType boat in _boat) {
               
@@ -142,7 +142,7 @@ namespace Michael.Scripts.Manager
                 boat.GoldCapacity += goldIncrement;
             }
             
-        }
+        }*/
 
         
         
