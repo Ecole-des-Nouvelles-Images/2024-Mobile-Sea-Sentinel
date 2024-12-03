@@ -1,9 +1,19 @@
 fileFormatVersion: 2
-guid: 777d1cec466afcd44a95145f58608e3f
+guid: 6965c7d7b8f69fe4599decd11b6cc0f1
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_SmallBoat.007
+    second: {fileID: 2100000, guid: 142e999bbe5e16c49bd9032348a91832, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_SmallBoatEmissive.001
+    second: {fileID: 2100000, guid: 2c2e812291b686745a7366327d4d52ab, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

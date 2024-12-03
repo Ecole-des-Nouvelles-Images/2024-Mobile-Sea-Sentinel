@@ -8,7 +8,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: M_BigBoat.002
-    second: {fileID: 2100000, guid: 6327e359e9c04e34f9319f5f19667060, type: 2}
+    second: {fileID: 2100000, guid: 319c70a70d8a9a74eaef58524fc6fe4e, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
