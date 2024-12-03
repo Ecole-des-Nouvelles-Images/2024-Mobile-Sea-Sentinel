@@ -26,14 +26,15 @@ namespace Michael.Scripts.Manager
         [SerializeField] private float _spawnInterval = 5f;
         [SerializeField] private float _spawnTimer;
         [SerializeField] private TextMeshProUGUI _waveText;
+        [SerializeField] private List<WaveData> _waveData;
+        private WaveData _currentWaveData;
         private int _spawnIndex;
         private Transform _lastSpawnPoint;
      
         
         
         
-        private void Start()
-        {
+        private void Start() {
             StartWave();
         }
 
@@ -43,10 +44,11 @@ namespace Michael.Scripts.Manager
                 if (_boatsToSpawn.Count > 0) {
                     
                     _spawnIndex = Random.Range(0, _spawnPoints.Count);
-                    while (_lastSpawnPoint != _spawnPoints[_spawnIndex]) {
+                   if(_lastSpawnPoint == _spawnPoints[_spawnIndex]) {
                         
-                        _lastSpawnPoint = _spawnPoints[_spawnIndex];
+                        _spawnIndex = Random.Range(0, _spawnPoints.Count);
                     }
+                    _lastSpawnPoint = _spawnPoints[_spawnIndex];
                     GameObject boat = Instantiate(_boatsToSpawn[0],_lastSpawnPoint.position, Quaternion.identity);
               
                     _boatsToSpawn.RemoveAt(0);
@@ -65,15 +67,18 @@ namespace Michael.Scripts.Manager
                 _spawnTimer -= Time.fixedDeltaTime;
             }
 
-            if ( _spawnedBoats.Count <= 0) { 
-               _waveValue += _waveValueIncrement;
-               StartWave();
+            if ( _spawnedBoats.Count <= 0 && _boatsToSpawn.Count <= 0) { 
+                
+               EndWave();
             }
             
         }
 
         [ContextMenu("StartWave !")]
-        private void StartWave() {
+        public void StartWave() {
+            
+            _currentWaveData = _waveData[_currentWave]; 
+            _waveValue += _waveValueIncrement;
             _spawnTimer = 0;
             Debug.Log("Wave Started!");
             // ui alerte 
@@ -83,7 +88,7 @@ namespace Michael.Scripts.Manager
             _waveText.text = "Vague : " + _currentWave;
             
             if (_currentWave % progressionInterval == 0) {
-                ApplyProgression(); // Augmente les stats toutes les x vagues
+              //  ApplyProgression(); // Augmente les stats toutes les x vagues
                 Debug.Log("upgrade ENEMY !!!!");
             }
             GenerateEnemy();
@@ -91,47 +96,45 @@ namespace Michael.Scripts.Manager
         }
 
         private void GenerateEnemy() {
-            while (_currentWaveValue > 0) {
-                
-                int rndBoat = Random.Range(0, _boat.Count);
-                int rndBoatCost = _boat[rndBoat].SpawnCost;
-                
-                if (_currentWaveValue - rndBoatCost >= 0) {
-                    
-                    //SpawnBoat(rndBoat);
-                    // spawn instantiate 
-                     _boatsToSpawn.Add( _boat[rndBoat].BoatPrefab);
-                    _currentWaveValue -= rndBoatCost;
-                    _boat[rndBoat].BoatPrefab.GetComponent<Enemy.BoatEnemy>().BoatType = _boat[rndBoat];
-                }
-                else if (_currentWaveValue <= 0) {
-                    break;
-                }
 
+            if (_currentWave > 10 ) {
+                while (_currentWaveValue > 0) {
+                
+                    int rndBoat = Random.Range(0, _boat.Count);
+                    int rndBoatCost = _boat[rndBoat].SpawnCost;
+                
+                    if (_currentWaveValue - rndBoatCost >= 0) {
+                    
+                        //SpawnBoat(rndBoat);
+                        // spawn instantiate 
+                        _boatsToSpawn.Add( _boat[rndBoat].BoatPrefab);
+                        _currentWaveValue -= rndBoatCost;
+                        _boat[rndBoat].BoatPrefab.GetComponent<Enemy.BoatEnemy>().BoatType = _boat[rndBoat];
+                    }
+                    else if (_currentWaveValue <= 0) {
+                        break;
+                    }
+                }
             }
+            else
+            {
+                foreach (BoatType boat in _currentWaveData.Boats)
+                {
+                    _boatsToSpawn.Add(boat.BoatPrefab);
+                    boat.BoatPrefab.GetComponent<Enemy.BoatEnemy>().BoatType = boat ;
+                }
+                
+            }
+          
 
         }
         private void EndWave() {
-            Debug.Log("Wave Completed!");
-            // ouvrir le shop 
-        }
-
-       /* private void SpawnBoat(int rndBoat)
-        {
-          //  _spawnIndex = Random.Range(0, _spawnPoints.Count);
-            while (_lastSpawnPoint != _spawnPoints[_spawnIndex])
-            {
-                _spawnIndex = Random.Range(0, _spawnPoints.Count);
-                _lastSpawnPoint = _spawnPoints[_spawnIndex];
-            }
            
-            GameObject boat = Instantiate(_boat[rndBoat].BoatPrefab, _spawnPoints[_spawnIndex].position, Quaternion.identity);
-            boat.GetComponent<Enemy.BoatEnemy>().BoatType = _boat[rndBoat];
-            Debug.Log(_boat[rndBoat].BoatPrefab);
-        }*/
+            GameManager.Instance.OpenShop();
+        }
         
        
-        private void ApplyProgression()
+       /* private void ApplyProgression()
         {
             foreach (BoatType boat in _boat) {
               
@@ -139,7 +142,7 @@ namespace Michael.Scripts.Manager
                 boat.GoldCapacity += goldIncrement;
             }
             
-        }
+        }*/
 
         
         

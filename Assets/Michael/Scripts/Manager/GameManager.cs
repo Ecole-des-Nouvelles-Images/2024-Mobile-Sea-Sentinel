@@ -1,22 +1,67 @@
-using System.Collections;
-using System.Collections.Generic;
+using System;
+using DG.Tweening;
+using Michael.Scripts.Controller;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.Serialization;
 
-public class GameManager : MonoBehaviour
+namespace Michael.Scripts.Manager
 {
-     
-     public GameObject shopUI; // Interface du shop
+    public class GameManager : MonoBehaviourSingleton<GameManager>
+    {
+        
+        [SerializeField] private GameObject _shopPanel;
+        [SerializeField] private GameObject _gameOverPanel;
+        public PlayerData playerData;
+        [SerializeField] private Camera _mainCamera;
+        [SerializeField] private float _shakeVibrato;
+        private void Start()
+        {
+            _mainCamera = Camera.main;
+        }
+
+        public void StartGame()
+        {
+            SceneManager.LoadScene("Game");
+        }
+
+        public void GameOver()
+        {
+            OpenPanel(_gameOverPanel);
+        }
+        
+        [ContextMenu("open shop !")]
+        public void OpenShop() {
+            OpenPanel(_shopPanel);
+        }
  
-     public void OpenShop()
-     {
-         shopUI.SetActive(true); // Affiche l'interface du shop
-         Time.timeScale = 0; // Met le jeu en pause
-     }
- 
-     public void CloseShop()
-     {
-         shopUI.SetActive(false); // Cache l'interface du shop
-         Time.timeScale = 1; // Reprend le jeu
-        // waveManager.StartWave(); // Lance la prochaine vague
-     }
+        public void CloseShop() { 
+            ClosePanel(_shopPanel);
+        }
+
+        public void ShakeCamera() {
+            _mainCamera.transform.DOShakePosition(0.5f,0.25f, 10);
+        }
+
+        private void OpenPanel(GameObject panel) {
+            
+            panel.SetActive(true); 
+            Sequence showSequence = DOTween.Sequence();
+            showSequence.Append(panel.transform.DOScale(Vector3.one, 0.5f).SetEase(Ease.OutBack));
+            showSequence.Join((panel.GetComponent<CanvasGroup>().DOFade(1f, 0.5f)));
+            showSequence.Play();
+        }
+        private void ClosePanel(GameObject panel)
+       {
+            Sequence showSequence = DOTween.Sequence();
+            showSequence.Append(panel.transform.DOScale(Vector3.zero, 0.5f).SetEase(Ease.OutBack));
+            showSequence.Join((panel.GetComponent<CanvasGroup>().DOFade(0f, 0.5f)));
+            showSequence.Play();
+            showSequence.OnComplete(()=> panel.SetActive(false)); 
+        }
+        
+        
+        
+        
+    }
 }

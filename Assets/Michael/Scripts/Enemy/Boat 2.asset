@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c54cc41d5f79fc47bd745c57d76f935, type: 3}
   m_Name: Boat 2
   m_EditorClassIdentifier: 
-  BoatPrefab: {fileID: 1668166797174309776, guid: 92b873df10e4e904bbfd10a3a83df6f1,
+  BoatPrefab: {fileID: 1668166797174309776, guid: 4b1bd8354fbee4c4abc09be79f410d5b,
     type: 3}
   SpawnCost: 10
   Speed: 7
