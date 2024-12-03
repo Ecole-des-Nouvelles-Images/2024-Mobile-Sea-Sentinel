@@ -51,7 +51,7 @@ public class RayCastControl : MonoBehaviour
             Touch touch = Input.GetTouch(0);
             Debug.Log("Touch phase : " + touch.phase);
 
-            if (EventSystem.current.IsPointerOverGameObject(touch.fingerId))
+            if (EventSystem.current.IsPointerOverGameObject())
             {
                 Debug.Log("Touch is over a UI element");
                 return;
