@@ -12,7 +12,6 @@ namespace Michael.Scripts.Manager
         
         [SerializeField] private GameObject _shopPanel;
         [SerializeField] private GameObject _gameOverPanel;
-        public PlayerData playerData;
         [SerializeField] private Camera _mainCamera;
         [SerializeField] private float _shakeVibrato;
         private void Start()

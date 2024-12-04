@@ -2914,7 +2914,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 725.7128, y: 240}
+  m_AnchoredPosition: {x: 725.7128, y: 126}
   m_SizeDelta: {x: 770.0168, y: 165.7573}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1099096887
@@ -3249,8 +3249,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 8.656015, y: 3.1020584, z: 5.496327}
-  m_Center: {x: 0.2937636, y: 1.0510273, z: 0.8851259}
+  m_Size: {x: 8.656015, y: 5.069418, z: 7.542839}
+  m_Center: {x: 0.2937636, y: 1.4049563, z: 1.9083514}
 --- !u!1 &1335475257
 GameObject:
   m_ObjectHideFlags: 0
@@ -3325,7 +3325,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: ba29ed64427a20f4da5f02d1e8236f52, type: 2}
   - {fileID: 11400000, guid: ad487da6c56c6984a818681592fa7de1, type: 2}
   _boatsToSpawn: []
-  _spawnInterval: 2
+  _spawnInterval: 4
   _spawnTimer: 0
   _waveText: {fileID: 1307763594}
   _waveData:
@@ -3561,8 +3561,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 10.875447, y: 1.0000001, z: 2.822882}
-  m_Center: {x: -0.5085168, y: -0.0000011417515, z: 0.9114408}
+  m_Size: {x: 7.7403774, y: 3.988303, z: 4.8430605}
+  m_Center: {x: 1.059018, y: 1.4941491, z: 1.9215299}
 --- !u!1 &1630774427
 GameObject:
   m_ObjectHideFlags: 0
@@ -3927,7 +3927,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _shopPanel: {fileID: 1813503175}
   _gameOverPanel: {fileID: 596133880}
-  playerData: {fileID: 0}
   _mainCamera: {fileID: 0}
   _shakeVibrato: 10
 --- !u!4 &1807758860
@@ -4097,7 +4096,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1813503176
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4107,7 +4106,7 @@ RectTransform:
   m_GameObject: {fileID: 1813503175}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1089984446}
@@ -4126,7 +4125,7 @@ CanvasGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1813503175}
   m_Enabled: 1
-  m_Alpha: 0
+  m_Alpha: 1
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
@@ -4759,7 +4758,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 20.9, z: 0}
-  m_LocalScale: {x: 5.75634, y: 5.75634, z: 5.75634}
+  m_LocalScale: {x: 4, y: 4, z: 4}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 779687452}
