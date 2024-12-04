@@ -31,6 +31,7 @@ namespace Michael.Scripts.Enemy
         [SerializeField] private AnimationCurve _bounceFeedback;
         [SerializeField] private float _lerpSpeed = 0.05f;
         [SerializeField] CanvasGroup _damageImageCanvasGroup;
+        [SerializeField] private GameObject _chest;
         private GameObject _playerTarget;
         private NavMeshAgent _navMeshAgent;
         private bool _hasThief ;
@@ -38,6 +39,7 @@ namespace Michael.Scripts.Enemy
         private Sequence _damageNumberSequence;
         private Vector3 _originalPosition;
         private GameObject[] _playerChests;
+        
 
         void Start() {
             
@@ -62,10 +64,10 @@ namespace Michael.Scripts.Enemy
         void Update() {
             
 
-            if (Input.GetKeyDown(KeyCode.Space))
+          /*  if (Input.GetKeyDown(KeyCode.Space))
             {
                 TakeDamage(PlayerData.Instance.BulletDamage);
-            }
+            }*/
             
             if (!_hasThief) return;
             
@@ -83,7 +85,7 @@ namespace Michael.Scripts.Enemy
         
             if (other.CompareTag("Bullet")) {
                
-               TakeDamage(10);
+               TakeDamage(PlayerData.Instance.BulletDamage);
                 Debug.Log("bateau touché");
             }
 
@@ -132,7 +134,12 @@ namespace Michael.Scripts.Enemy
             // opacité shader
             Destroy(gameObject);
             GameManager.Instance.ShakeCamera();
-            
+            if (_currentBoatGold >= 1 )
+            { 
+                GameObject chest = Instantiate(_chest, transform.position,transform.rotation);
+                chest.GetComponent<Chest>().ChestGold = _currentBoatGold;
+            }
+            Instantiate(_chest, transform.position,transform.rotation);
         }
 
         private void HealthBarFeedback(GameObject ui)

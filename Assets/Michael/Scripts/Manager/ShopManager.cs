@@ -3,6 +3,7 @@ using DG.Tweening;
 using Michael.Scripts.Controller;
 using Michael.Scripts.UI;
 using Michael.Scripts.Upgrade;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -11,16 +12,26 @@ using UnityEngine.UI;
     
     public class ShopManager : MonoBehaviour
     {
-     
+       
+
+        [SerializeField] private TextMeshProUGUI currentGoldText;
+        private void Update()
+        {
+            currentGoldText.text = "golds actuels : " + PlayerData.Instance.CurrentGold;
+        }
         
         public void PurchaseUpgrade(Button button)
         {
             Upgrade upgrade = button.GetComponent<Upgrade>();
-            if (PlayerData.Instance.CurrentGold >= upgrade.CurrentCost)
+            if (PlayerData.Instance.CurrentGold > upgrade.CurrentCost)
             {
                 PlayerData.Instance.CurrentGold -= upgrade.CurrentCost;
                 upgrade.ApplyUpgrade();
                 UpdateButtons(button.gameObject);
+            }
+            else
+            {
+                upgrade.CostText.color = Color.red;
             }
         }
         
