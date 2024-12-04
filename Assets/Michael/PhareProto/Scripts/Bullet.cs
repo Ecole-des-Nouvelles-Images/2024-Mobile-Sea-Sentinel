@@ -12,19 +12,33 @@ namespace Alexandre
         private Vector3 controlPoint;
         private float journeyLength;
         private float startTime;
+        private bool initialized = false;
 
-        private void Start()
+        // private void Start()
+        // {
+        //     startPosition = transform.position;
+        //     journeyLength = Vector3.Distance(startPosition, targetPosition);
+        //     startTime = Time.time;
+        //
+        //     // Calculer le point de contrôle intermédiaire en fonction de la hauteur maximale
+        //     controlPoint = (startPosition + targetPosition) / 2 + Vector3.up * maxHeight;
+        // }
+
+        public void InitializeTrajectory()
         {
             startPosition = transform.position;
             journeyLength = Vector3.Distance(startPosition, targetPosition);
             startTime = Time.time;
-
-            // Calculer le point de contrôle intermédiaire en fonction de la hauteur maximale
             controlPoint = (startPosition + targetPosition) / 2 + Vector3.up * maxHeight;
+            initialized = true;
         }
 
         private void Update()
         {
+            if (!initialized)
+            {
+                return;
+            }
             float distCovered = (Time.time - startTime) * speed;
             float fractionOfJourney = distCovered / journeyLength;
 

@@ -5,197 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b7472739-ef28-4269-8639-9f341bd314f4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Alexandre.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/ProtoPharePackage.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/ProtoPharePackage/Bullet.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/ProtoPharePackage/Bullet.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/ProtoPharePackage/TouchAim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/ProtoPharePackage/TouchAim/M_Crosshair.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/ProtoPharePackage/TouchAim/M_Crosshair.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/ProtoPharePackage/TouchAim/Prefabs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/ProtoPharePackage/TouchAim/Prefabs/Crosshair.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/ProtoPharePackage/TouchAim/Prefabs/Crosshair.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/ProtoPharePackage/TouchAim/Prefabs/Crosshair.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/ProtoPharePackage/TouchAim/Prefabs/Crosshair.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/ProtoPharePackage/TouchAim/Prefabs/M_Crosshair.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/ProtoPharePackage/TouchAim/Prefabs/M_Crosshair.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/ProtoPharePackage/TouchAim/Prefabs/RayCastUI.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/ProtoPharePackage/TouchAim/Prefabs/RayCastUI.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/ProtoPharePackage/TouchAim/Prefabs/SentinelRayCast.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/ProtoPharePackage/TouchAim/Prefabs/SentinelRayCast.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/ProtoPharePackage/TouchAim/RayCastControl.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/ProtoPharePackage/TouchAim/RayCastControl.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/ProtoPharePackage/TouchAim/TouchAimProto.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/ProtoPharePackage/TouchAim/TouchAimProto.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/Scenes.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/Scenes/Prototype.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/Scenes/Prototype.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/Scenes/Prototype.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/Scenes/Prototype/LightingData.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/Scenes/Prototype/LightingData.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/Scenes/Prototype/ReflectionProbe-0.exr" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/Scenes/Prototype/ReflectionProbe-0.exr.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/Scenes/protomerge.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/Scenes/protomerge.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Michael/Shader/Simple Water Shader/Resources/OpacWaterShader.shadergraph" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Michael/Shader/Simple Water Shader/Resources/OpacWaterShader.shadergraph.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Michael/Shader/Simple Water Shader/Resources/Opac_Water_Mat.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Michael/Shader/Simple Water Shader/Resources/Opac_Water_Mat.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sacha/Materials/M_Barrel.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sacha/Materials/M_Barrel.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sacha/Materials/M_Chest.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sacha/Materials/M_Chest.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sacha/Materials/M_ExplosiveBarrel.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sacha/Materials/M_ExplosiveBarrel.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sacha/Materials/M_Rock1.001.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sacha/Materials/M_Rock1.001.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sacha/Materials/M_Rock3.002.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sacha/Materials/M_Rock3.002.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sacha/Materials/M_Sand.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sacha/Materials/M_Sand.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sacha/Materials/M_SmallBoat.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sacha/Materials/M_SmallBoat.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sacha/Prefabs/NS_Barrel.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sacha/Prefabs/NS_Barrel.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sacha/Prefabs/NS_Chest_low.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sacha/Prefabs/NS_Chest_low.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sacha/Prefabs/NS_ExplosiveBarrel.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sacha/Prefabs/NS_ExplosiveBarrel.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sacha/Prefabs/NS_SmallBoat_low.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sacha/Prefabs/NS_SmallBoat_low.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sacha/Prefabs/ST_LighthouseIsland_low.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sacha/Prefabs/ST_LighthouseIsland_low.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sacha/Prefabs/ST_Rock1.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sacha/Prefabs/ST_Rock1.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sacha/Prefabs/ST_Rock3.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sacha/Prefabs/ST_Rock3.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sacha/Prefabs/ST_Rock6.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sacha/Prefabs/ST_Rock7.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sacha/Prefabs/ST_Rock7.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sacha/Textures/Boats.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sacha/Textures/Boats/T_BigBoat_Emission.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sacha/Textures/Boats/T_BigBoat_Emission.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sacha/Textures/Boats/T_BigBoat_MetallicSmoothness.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sacha/Textures/Boats/T_Boat_AlbedoTransparency.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sacha/Textures/Boats/T_Boat_Emission.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sacha/Textures/Boats/T_Boat_Emission.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sacha/Textures/Boats/T_Boat_MetallicSmoothness.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sacha/Textures/Boats/T_Boat_Normal.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sacha/Textures/Boats/T_SmallBoat_AlbedoTransparency.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sacha/Textures/Boats/T_SmallBoat_AlbedoTransparency.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sacha/Textures/Boats/T_SmallBoat_Emission.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sacha/Textures/Boats/T_SmallBoat_Emission.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sacha/Textures/Boats/T_SmallBoat_MetallicSmoothness.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sacha/Textures/Boats/T_SmallBoat_MetallicSmoothness.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sacha/Textures/Boats/T_SmallBoat_Normal.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sacha/Textures/Boats/T_SmallBoat_Normal.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sacha/Textures/Lighthouse.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sacha/Textures/Lighthouse/T_Lighthouse_AlbedoTransparency.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sacha/Textures/Lighthouse/T_Lighthouse_Emmisive.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sacha/Textures/Lighthouse/T_Lighthouse_Emmisive.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sacha/Textures/Lighthouse/T_Lighthouse_MetallicSmoothness.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sacha/Textures/Lighthouse/T_Sand_AlbedoTransparency.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sacha/Textures/Lighthouse/T_Sand_AlbedoTransparency.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sacha/Textures/Lighthouse/T_Sand_MetallicSmoothness.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sacha/Textures/Lighthouse/T_Sand_MetallicSmoothness.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sacha/Textures/Lighthouse/T_Sand_Normal.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sacha/Textures/Lighthouse/T_Sand_Normal.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sacha/Textures/Props.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sacha/Textures/Props/T_Barrel_AlbedoTransparency.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sacha/Textures/Props/T_Barrel_AlbedoTransparency.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sacha/Textures/Props/T_Barrel_MetallicSmoothness.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sacha/Textures/Props/T_Barrel_MetallicSmoothness.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sacha/Textures/Props/T_Barrel_Normal.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sacha/Textures/Props/T_Barrel_Normal.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sacha/Textures/Props/T_Chest_AlbedoTransparency.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sacha/Textures/Props/T_Chest_AlbedoTransparency.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sacha/Textures/Props/T_Chest_MetallicSmoothness.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sacha/Textures/Props/T_Chest_MetallicSmoothness.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sacha/Textures/Props/T_Chest_Normal.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sacha/Textures/Props/T_Chest_Normal.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sacha/Textures/Props/T_ExplosiveBarrel_AlbedoTransparency.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sacha/Textures/Props/T_ExplosiveBarrel_AlbedoTransparency.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sacha/Textures/Props/T_ExplosiveBarrel_MetallicSmoothness.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sacha/Textures/Props/T_ExplosiveBarrel_MetallicSmoothness.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sacha/Textures/Props/T_ExplosiveBarrel_Normal.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sacha/Textures/Props/T_ExplosiveBarrel_Normal.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sacha/Textures/Rocks.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sacha/Textures/Rocks/T_Rock1_AlbedoTransparency.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sacha/Textures/Rocks/T_Rock1_AlbedoTransparency.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sacha/Textures/Rocks/T_Rock1_M_Rock1.001_MetallicSmoothness.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sacha/Textures/Rocks/T_Rock1_M_Rock1.001_MetallicSmoothness.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sacha/Textures/Rocks/T_Rock1_M_Rock1.001_Normal.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sacha/Textures/Rocks/T_Rock1_M_Rock1.001_Normal.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sacha/Textures/Rocks/T_Rock3_AlbedoTransparency.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sacha/Textures/Rocks/T_Rock3_AlbedoTransparency.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sacha/Textures/Rocks/T_Rock3_MetallicSmoothness.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sacha/Textures/Rocks/T_Rock3_MetallicSmoothness.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sacha/Textures/Rocks/T_Rock3_Normal.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sacha/Textures/Rocks/T_Rock3_Normal.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Mobile-Sea-Sentinel/.idea/projectSettingsUpdater.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Mobile-Sea-Sentinel/.idea/projectSettingsUpdater.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Mobile-Sea-Sentinel/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Mobile-Sea-Sentinel/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Alexandre/ProtoPharePackage/TouchAim/RayCastControl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Alexandre/ProtoPharePackage/TouchAim/RayCastControl.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Michael/PhareProto/Scripts/Bullet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/PhareProto/Scripts/Bullet.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Prefabs/Prefabs Boats/BalancedShip.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Prefabs/Prefabs Boats/BalancedShip.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Prefabs/Prefabs Boats/BigShip.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Prefabs/Prefabs Boats/BigShip.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Prefabs/Prefabs Boats/BigShip.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Prefabs/Prefabs Boats/BigShip.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Prefabs/Prefabs Boats/LittleShip.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Prefabs/Prefabs Boats/LittleShip.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Prefabs/Prefabs Boats/NewLayer.terrainlayer" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Prefabs/Prefabs Boats/NewLayer.terrainlayer.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Scenes/Prototype.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Scenes/Prototype.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Scripts/Enemy/Boat 1.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Scripts/Enemy/Boat 1.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Scripts/Enemy/Boat 2.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Scripts/Enemy/Boat 2.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Scripts/Enemy/Boat 3.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Scripts/Enemy/Boat 3.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Scripts/Enemy/BoatEnemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Scripts/Enemy/BoatEnemy.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Shader/Simple Water Shader/Resources/WaterReflection.renderTexture" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Shader/Simple Water Shader/Resources/WaterReflection.renderTexture" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Shader/Simple Water Shader/Resources/WaterShader.shadergraph" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Shader/Simple Water Shader/Resources/WaterShader.shadergraph" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Shader/Simple Water Shader/Resources/Water_mat_01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Shader/Simple Water Shader/Resources/Water_mat_01.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Michael/Shader/Simple Water Shader/Resources/Water_mat_03.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Shader/Simple Water Shader/Resources/Water_mat_03.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/DOTweenSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/DOTweenSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sacha/Materials/M_BigBoat.002.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sacha/Materials/M_BigBoat.002.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sacha/Materials/M_BigBoat.002.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sacha/Materials/M_BigBoat.002.mat.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sacha/Materials/M_Boat.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sacha/Materials/M_Boat.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sacha/Materials/M_Lighthouse.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sacha/Materials/M_Lighthouse.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sacha/Materials/T_PalmTree.001.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sacha/Materials/T_PalmTree.001.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sacha/Prefabs/NS_BigBoat_low.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sacha/Prefabs/NS_BigBoat_low.fbx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sacha/Prefabs/NS_BigBoat_low.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sacha/Prefabs/NS_BigBoat_low.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sacha/Prefabs/NS_Boat_low.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sacha/Prefabs/NS_Boat_low.fbx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sacha/Prefabs/NS_Boat_low.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sacha/Prefabs/NS_Boat_low.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sacha/Prefabs/NS_SmallBoat.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sacha/Prefabs/NS_SmallBoat.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sacha/Prefabs/ST_Rock6.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sacha/Prefabs/ST_Lighthouse_low.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sacha/Prefabs/ST_Lighthouse_low.fbx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sacha/Prefabs/ST_PalmTree.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sacha/Prefabs/ST_PalmTree.fbx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sacha/Scenes/Prototype_Sacha.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sacha/Scenes/Prototype_Sacha.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sacha/Textures/T_BigBoat_AlbedoTransparency.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sacha/Textures/Boats/T_BigBoat_AlbedoTransparency.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sacha/Textures/T_BigBoat_AlbedoTransparency.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sacha/Textures/Boats/T_BigBoat_AlbedoTransparency.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sacha/Textures/T_BigBoat_MetallicSmoothness.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sacha/Textures/T_BigBoat_MetallicSmoothness.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sacha/Textures/Boats/T_BigBoat_MetallicSmoothness.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sacha/Textures/T_BigBoat_Normal.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sacha/Textures/Boats/T_BigBoat_Normal.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sacha/Textures/T_BigBoat_Normal.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sacha/Textures/Boats/T_BigBoat_Normal.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sacha/Textures/T_Boat_AlbedoTransparency.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sacha/Textures/T_Boat_AlbedoTransparency.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sacha/Textures/Boats/T_Boat_AlbedoTransparency.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sacha/Textures/T_Boat_MetallicSmoothness.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sacha/Textures/T_Boat_MetallicSmoothness.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sacha/Textures/Boats/T_Boat_MetallicSmoothness.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sacha/Textures/T_Boat_Normal.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sacha/Textures/T_Boat_Normal.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sacha/Textures/Boats/T_Boat_Normal.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sacha/Textures/T_Lighthouse_AlbedoTransparency.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sacha/Textures/T_Lighthouse_AlbedoTransparency.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sacha/Textures/Lighthouse/T_Lighthouse_AlbedoTransparency.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sacha/Textures/T_Lighthouse_MetallicSmoothness.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sacha/Textures/T_Lighthouse_MetallicSmoothness.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sacha/Textures/Lighthouse/T_Lighthouse_MetallicSmoothness.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sacha/Textures/T_Lighthouse_Normal.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sacha/Textures/Lighthouse/T_Lighthouse_Normal.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sacha/Textures/T_Lighthouse_Normal.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sacha/Textures/Lighthouse/T_Lighthouse_Normal.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sacha/Textures/T_PalmTree_AlbedoTransparency.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sacha/Textures/Props/T_PalmTree_AlbedoTransparency.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sacha/Textures/T_PalmTree_AlbedoTransparency.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sacha/Textures/Props/T_PalmTree_AlbedoTransparency.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sacha/Textures/T_PalmTree_MetallicSmoothness.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sacha/Textures/Props/T_PalmTree_MetallicSmoothness.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sacha/Textures/T_PalmTree_MetallicSmoothness.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sacha/Textures/Props/T_PalmTree_MetallicSmoothness.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sacha/Textures/T_PalmTree_Normal.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sacha/Textures/Props/T_PalmTree_Normal.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sacha/Textures/T_PalmTree_Normal.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sacha/Textures/Props/T_PalmTree_Normal.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Settings/URP-Balanced-Renderer.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/URP-Balanced-Renderer.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Settings/URP-HighFidelity-Renderer.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/URP-HighFidelity-Renderer.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -208,7 +23,6 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Michael/Scripts/UI/HealthBar.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Michael/Scripts/UI/UiFollowCamera.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Michael/Scripts/Upgrade/PlayerData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.universal@14.0.11/Runtime/ScriptableRendererData.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventInterfaces.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/GraphicRaycaster.cs" root0="SKIP_HIGHLIGHTING" />
@@ -226,22 +40,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Discover.Launch.Via.Unity": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "Merging Michael",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "CodeLensConfigurable",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Discover.Launch.Via.Unity&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Merging Michael&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;CodeLensConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2022.3.47f1\Editor\Unity.exe" />
@@ -260,7 +74,7 @@
       <method v="2" />
     </configuration>
     <configuration name="UnitTests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="D:\Utilisateurs\miche\Unity\2022.3.47f1\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2022.3.47f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath &quot;D:\Utilisateurs\miche\Unity Project 2023-2024\Mobile-Sea-Sentinel&quot; -testResults Logs/results.xml -testPlatform EditMode -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="D:\Utilisateurs\miche\Unity Project 2023-2024\Mobile-Sea-Sentinel" />
       <option name="PASS_PARENT_ENVS" value="1" />
