@@ -83,7 +83,7 @@ namespace Michael.Scripts.Enemy
         
             if (other.CompareTag("Bullet")) {
                
-               //TakeDamage(10);
+               TakeDamage(10);
                 Debug.Log("bateau touché");
             }
 

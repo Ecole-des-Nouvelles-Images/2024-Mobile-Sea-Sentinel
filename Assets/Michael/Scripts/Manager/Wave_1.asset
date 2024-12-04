@@ -14,8 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <Boats>k__BackingField:
   - {fileID: 11400000, guid: cbc8dbb618206454880c9a22b239987d, type: 2}
+  - {fileID: 11400000, guid: ba29ed64427a20f4da5f02d1e8236f52, type: 2}
   - {fileID: 11400000, guid: cbc8dbb618206454880c9a22b239987d, type: 2}
-  - {fileID: 11400000, guid: cbc8dbb618206454880c9a22b239987d, type: 2}
-  - {fileID: 11400000, guid: cbc8dbb618206454880c9a22b239987d, type: 2}
-  - {fileID: 11400000, guid: cbc8dbb618206454880c9a22b239987d, type: 2}
-  - {fileID: 11400000, guid: cbc8dbb618206454880c9a22b239987d, type: 2}
+  - {fileID: 11400000, guid: ba29ed64427a20f4da5f02d1e8236f52, type: 2}
