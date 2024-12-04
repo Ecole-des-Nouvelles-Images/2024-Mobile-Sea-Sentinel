@@ -22,6 +22,8 @@ public class RayCastControl : MonoBehaviour
     // Position touchée
     private Vector3 touchPosition;
 
+    private Vector3 targetPosition;
+    
     public float shootCooldown = 2.0f; // Cooldown time in seconds
     private float lastShootTime = 0f; // Time when the last shot was fired
 
@@ -100,7 +102,7 @@ public class RayCastControl : MonoBehaviour
             // Calculez la direction de la lumière vers la position touchée
             Vector3 direction = (touchPosition - phareLight.transform.position).normalized;
             //
-            Vector3 targetPosition = Vector3.Lerp(touchPosition, direction, AimSpeed * Time.deltaTime);
+            targetPosition = Vector3.Lerp(touchPosition, direction, AimSpeed * Time.deltaTime);
 
             // Interpolez la direction de la lumière en utilisant le delta time et la vitesse
             phareLight.transform.forward =
@@ -127,7 +129,10 @@ public class RayCastControl : MonoBehaviour
 
             // Set the target position for the bullet
             Bullet bulletScript = bullet.GetComponent<Bullet>();
-            bulletScript.targetPosition = touchPosition;
+            bulletScript.targetPosition = targetPosition;
+            
+            // Initialize the trajectory
+            bulletScript.InitializeTrajectory();
 
             // Update the last shoot time
             lastShootTime = Time.time;
