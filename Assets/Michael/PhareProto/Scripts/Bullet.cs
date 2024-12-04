@@ -5,7 +5,6 @@ namespace Alexandre
     public class Bullet : MonoBehaviour
     {
         public float speed = 30f; // Vitesse de déplacement de la balle
-        public float maxHeight = 10f; // Hauteur maximale de la trajectoire en cloche
         public Vector3 targetPosition; // Position cible fournie par l'autre script
 
         private Vector3 startPosition;
@@ -14,22 +13,17 @@ namespace Alexandre
         private float startTime;
         private bool initialized = false;
 
-        // private void Start()
-        // {
-        //     startPosition = transform.position;
-        //     journeyLength = Vector3.Distance(startPosition, targetPosition);
-        //     startTime = Time.time;
-        //
-        //     // Calculer le point de contrôle intermédiaire en fonction de la hauteur maximale
-        //     controlPoint = (startPosition + targetPosition) / 2 + Vector3.up * maxHeight;
-        // }
-
-        public void InitializeTrajectory()
+        public void InitializeTrajectory(float minHeight, float maxHeight, float maxDistance)
         {
             startPosition = transform.position;
             journeyLength = Vector3.Distance(startPosition, targetPosition);
             startTime = Time.time;
-            controlPoint = (startPosition + targetPosition) / 2 + Vector3.up * maxHeight;
+
+            // Calculer la hauteur maximale en fonction de la distance
+            float distance = Vector3.Distance(startPosition, targetPosition);
+            float height = minHeight + (maxHeight - minHeight) * Mathf.Pow(distance / maxDistance, 2);
+            controlPoint = (startPosition + targetPosition) / 2 + Vector3.up * height;
+
             initialized = true;
         }
 

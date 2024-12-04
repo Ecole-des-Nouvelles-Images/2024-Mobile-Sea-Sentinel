@@ -119,5 +119,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 30
-  maxHeight: 50
+  maxHeight: 100
   targetPosition: {x: 0, y: 0, z: 0}

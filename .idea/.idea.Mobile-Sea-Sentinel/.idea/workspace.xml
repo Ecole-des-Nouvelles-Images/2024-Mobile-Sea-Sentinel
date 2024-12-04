@@ -5,12 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b7472739-ef28-4269-8639-9f341bd314f4" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Mobile-Sea-Sentinel/.idea/projectSettingsUpdater.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Mobile-Sea-Sentinel/.idea/projectSettingsUpdater.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Mobile-Sea-Sentinel/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Mobile-Sea-Sentinel/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Alexandre/ProtoPharePackage/Bullet.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Alexandre/ProtoPharePackage/Bullet.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Alexandre/ProtoPharePackage/TouchAim/RayCastControl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Alexandre/ProtoPharePackage/TouchAim/RayCastControl.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Alexandre/Scenes/Merge0412.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Alexandre/Scenes/Merge0412.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Michael/PhareProto/Scripts/Bullet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/PhareProto/Scripts/Bullet.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Shader/Simple Water Shader/Resources/Water_mat_03.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Shader/Simple Water Shader/Resources/Water_mat_03.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Settings/URP-HighFidelity-Renderer.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/URP-HighFidelity-Renderer.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,6 +126,7 @@
       <workItem from="1733131445512" duration="12627000" />
       <workItem from="1733221748890" duration="2587000" />
       <workItem from="1733302853849" duration="1257000" />
+      <workItem from="1733325005297" duration="513000" />
     </task>
     <servers />
   </component>
@@ -152,7 +153,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
 </project>

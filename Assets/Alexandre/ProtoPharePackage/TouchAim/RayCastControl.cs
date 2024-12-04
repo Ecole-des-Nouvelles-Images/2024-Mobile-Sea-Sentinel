@@ -23,16 +23,25 @@ public class RayCastControl : MonoBehaviour
     private Vector3 touchPosition;
 
     private Vector3 targetPosition;
-    
+
     public float shootCooldown = 2.0f; // Cooldown time in seconds
     private float lastShootTime = 0f; // Time when the last shot was fired
 
     // Références pour le tir
     public GameObject BulletPrefab;
     public Transform CanonOut;
-
+    // Ref au Canon
+    public Transform Canon;
     // Reference CoolDown slider
     public Slider CoolDownSlider;
+
+    // Paramètres de la courbe de Bézier
+    public float minHeight = 2f; // Hauteur minimale pour les courtes distances
+    public float maxHeight = 20f; // Hauteur maximale pour les longues distances
+    public float maxDistance = 50f; // Distance maximale pour laquelle la hauteur est ajustée
+
+    private Vector3 initialBulletDirection;
+    private float maxHeightForDistance;
 
     void Start()
     {
@@ -46,6 +55,7 @@ public class RayCastControl : MonoBehaviour
     {
         UpdateLightDirection();
         UpdateCoolDownSlider();
+        UpdateCanonDirection();
 
         // Vérifiez s'il y a des touches sur l'écran
         if (Input.touchCount > 0)
@@ -117,28 +127,72 @@ public class RayCastControl : MonoBehaviour
         // crosshairUI.position = screenPoint;
     }
 
+    void UpdateCanonDirection()
+    {
+        if (touchPosition != Vector3.zero)
+        {
+            CalculateCanonDirectionAndHeight();
+
+            // Interpoler la direction du canon en utilisant le delta time et la vitesse
+            Canon.forward = Vector3.Lerp(Canon.forward, initialBulletDirection, AimSpeed * Time.deltaTime);
+        }
+    }
+
     public void ShootWithCooldown()
     {
         if (Time.time >= lastShootTime + shootCooldown)
         {
-            // Instantiate the bullet prefab
+            // Instancier le boulet
             GameObject bullet = Instantiate(BulletPrefab, CanonOut.position, CanonOut.rotation);
 
-            // Set the bullet's direction to match the direction of phareLight
-            bullet.transform.forward = phareLight.transform.forward;
+            // Définir la direction du boulet pour correspondre à la direction du Canon
+            bullet.transform.forward = Canon.forward;
 
-            // Set the target position for the bullet
+            // Définir la position cible pour le boulet
             Bullet bulletScript = bullet.GetComponent<Bullet>();
             bulletScript.targetPosition = targetPosition;
-            
-            // Initialize the trajectory
-            bulletScript.InitializeTrajectory();
 
-            // Update the last shoot time
+            // Initialiser la trajectoire avec la hauteur ajustée
+            bulletScript.InitializeTrajectory(minHeight, maxHeightForDistance, maxDistance);
+
+            // Mettre à jour le dernier temps de tir
             lastShootTime = Time.time;
 
             // Réinitialiser le slider à la valeur minimale
             CoolDownSlider.value = 0;
         }
+    }
+
+    private void CalculateCanonDirectionAndHeight()
+    {
+        // Calculer la distance entre la position de départ et la position cible
+        float distance = Vector3.Distance(CanonOut.position, touchPosition);
+
+        // Calculer la hauteur maximale en fonction de la distance
+        maxHeightForDistance = CalculateMaxHeight(distance);
+
+        // Calculer la direction initiale du boulet
+        initialBulletDirection = CalculateInitialBulletDirection(CanonOut.position, touchPosition, maxHeightForDistance);
+    }
+
+    private float CalculateMaxHeight(float distance)
+    {
+        // Utiliser une fonction quadratique pour ajuster la hauteur en fonction de la distance
+        float height = minHeight + (maxHeight - minHeight) * Mathf.Pow(distance / maxDistance, 2);
+        return height;
+    }
+
+    private Vector3 CalculateInitialBulletDirection(Vector3 startPosition, Vector3 targetPosition, float maxHeight)
+    {
+        Vector3 controlPoint = (startPosition + targetPosition) / 2 + Vector3.up * maxHeight;
+        Vector3 initialDirection = CalculateQuadraticBezierTangent(0, startPosition, controlPoint, targetPosition);
+        return initialDirection;
+    }
+
+    private Vector3 CalculateQuadraticBezierTangent(float t, Vector3 p0, Vector3 p1, Vector3 p2)
+    {
+        float u = 1 - t;
+        Vector3 tangent = 2 * u * (p1 - p0) + 2 * t * (p2 - p1);
+        return tangent.normalized;
     }
 }
