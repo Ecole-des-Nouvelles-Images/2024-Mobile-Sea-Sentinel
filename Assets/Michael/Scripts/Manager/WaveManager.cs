@@ -30,14 +30,10 @@ namespace Michael.Scripts.Manager
         private WaveData _currentWaveData;
         private int _spawnIndex;
         private Transform _lastSpawnPoint;
-     
-        
-        
         
         private void Start() {
             StartWave();
         }
-
         private void FixedUpdate()
         {
             if (_spawnTimer <= 0) {
@@ -104,9 +100,7 @@ namespace Michael.Scripts.Manager
                     int rndBoatCost = _boat[rndBoat].SpawnCost;
                 
                     if (_currentWaveValue - rndBoatCost >= 0) {
-                    
-                        //SpawnBoat(rndBoat);
-                        // spawn instantiate 
+                        
                         _boatsToSpawn.Add( _boat[rndBoat].BoatPrefab);
                         _currentWaveValue -= rndBoatCost;
                         _boat[rndBoat].BoatPrefab.GetComponent<Enemy.BoatEnemy>().BoatType = _boat[rndBoat];

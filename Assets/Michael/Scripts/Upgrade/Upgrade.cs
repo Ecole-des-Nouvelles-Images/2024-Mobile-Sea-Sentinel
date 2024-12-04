@@ -1,23 +1,31 @@
+using Michael.Scripts.Controller;
+using TMPro;
 using UnityEngine;
 
-namespace Michael.Scripts
+namespace Michael.Scripts.Upgrade
 {
-    [CreateAssetMenu(fileName = "NewUpgrade", menuName = "Upgrades/Upgrade")]
-    public class Upgrade : ScriptableObject
+    public abstract class Upgrade : MonoBehaviour
     {
-        public string UpgradeName;
-        public string Description;
         public int BaseCost;
-        public int CostIncrement; 
-        public UpgradeType Type; 
-        public float Value;
-    }
-    
-    public enum UpgradeType
-    {
-        Damage,
-        FireRate,
-        MaxGold,
-        ExtraProjectile
+        public float CostIncrement; 
+        public int IncrementValue;
+        public int CurrentCost ;
+        public TextMeshProUGUI CostText;
+        public TextMeshProUGUI IncrementValueText;
+        public TextMeshProUGUI ValueText;
+        public virtual void Start() 
+        {
+            CurrentCost = BaseCost;  
+            CostText.text = BaseCost.ToString();
+            IncrementValueText.text = " + " + IncrementValue;
+            
+        }
+
+        public virtual void ApplyUpgrade()
+        {
+            CurrentCost = (int)(CurrentCost * CostIncrement);
+            CostText.text = CurrentCost.ToString();
+            IncrementValueText.text = " + " + IncrementValue;
+        }
     }
 }

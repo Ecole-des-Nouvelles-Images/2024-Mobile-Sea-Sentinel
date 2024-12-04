@@ -64,7 +64,7 @@ namespace Michael.Scripts.Enemy
 
             if (Input.GetKeyDown(KeyCode.Space))
             {
-                TakeDamage(10);
+                TakeDamage(PlayerData.Instance.BulletDamage);
             }
             
             if (!_hasThief) return;
@@ -118,9 +118,9 @@ namespace Michael.Scripts.Enemy
         private void StealGold(GameObject target)
         {
             _currentBoatGold = _boatGoldMax - _currentBoatGold;
-            PlayerData playerData = target.GetComponent<PlayerData>();
-            playerData.CurrentGold -= _currentBoatGold;
-            HealthBarFeedback( playerData.goldText.gameObject);
+           
+            PlayerData.Instance.CurrentGold -= _currentBoatGold;
+            HealthBarFeedback( PlayerData.Instance.goldText.gameObject);
             _boatGoldText.text = _currentBoatGold + "/" + _boatGoldMax;
           
             

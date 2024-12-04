@@ -1,36 +1,41 @@
 using System;
-using System.Collections.Generic;
+using DG.Tweening;
 using Michael.Scripts.Controller;
+using Michael.Scripts.UI;
+using Michael.Scripts.Upgrade;
 using UnityEngine;
+using UnityEngine.UI;
 
-namespace Michael.Scripts.Manager
-{
 
-    public class ShopManager : MonoBehaviour
-    {
-
-        public static Action OnDamageUpgrade;
-        public static Action OnGoldCapacityUpgrade;
-        [SerializeField] PlayerData _playerData;
-        
-        private void OnEnable()
-        {
-            OnDamageUpgrade += UpgradeDamage;
-        }
-
-        private void OnDisable()
-        {
-            OnDamageUpgrade -= UpgradeDamage;
-        }
-
-        public void UpgradeDamage()
-        {
-            OnDamageUpgrade?.Invoke();
-        }
 
     
+    public class ShopManager : MonoBehaviour
+    {
+     
+        
+        public void PurchaseUpgrade(Button button)
+        {
+            Upgrade upgrade = button.GetComponent<Upgrade>();
+            if (PlayerData.Instance.CurrentGold >= upgrade.CurrentCost)
+            {
+                PlayerData.Instance.CurrentGold -= upgrade.CurrentCost;
+                upgrade.ApplyUpgrade();
+                UpdateButtons(button.gameObject);
+            }
+        }
+        
+        private void UpdateButtons(GameObject buttons)
+        {
+          UiFeedback(buttons);
+        }
 
+        private void UiFeedback(GameObject ui)
+        {
+            ui.transform.DOScale(1.2f, 0.5f).SetEase(Ease.InBounce);
+        }
+
+     
     }
-}
+
     
  

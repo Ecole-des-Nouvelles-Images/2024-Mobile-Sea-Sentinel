@@ -34,8 +34,8 @@ namespace Michael.PhareProto.Scripts
         private void Start()
         {
             
-            inclinationSlider.onValueChanged.AddListener(OnAimSliderValueChanged);
-            RotationSlider.onValueChanged.AddListener(OnRotationSliderValueChanged);
+        //    inclinationSlider.onValueChanged.AddListener(OnAimSliderValueChanged);
+           // RotationSlider.onValueChanged.AddListener(OnRotationSliderValueChanged);
         }
 
       
