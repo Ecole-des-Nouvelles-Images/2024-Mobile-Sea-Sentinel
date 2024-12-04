@@ -6,9 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="b7472739-ef28-4269-8639-9f341bd314f4" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Mobile-Sea-Sentinel/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Mobile-Sea-Sentinel/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Alexandre/ProtoPharePackage/Bullet.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Alexandre/ProtoPharePackage/Bullet.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Alexandre/ProtoPharePackage/TouchAim/RayCastControl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Alexandre/ProtoPharePackage/TouchAim/RayCastControl.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Alexandre/ProtoPharePackage/TouchAim/TouchAimProto.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Alexandre/ProtoPharePackage/TouchAim/TouchAimProto.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Alexandre/Scenes/protomerge.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Alexandre/Scenes/protomerge.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/PhareProto/Scripts/Bullet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/PhareProto/Scripts/Bullet.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

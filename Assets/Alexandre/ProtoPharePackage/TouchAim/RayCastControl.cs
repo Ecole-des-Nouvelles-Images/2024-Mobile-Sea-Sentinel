@@ -1,3 +1,4 @@
+using Alexandre;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
@@ -98,6 +99,8 @@ public class RayCastControl : MonoBehaviour
         {
             // Calculez la direction de la lumière vers la position touchée
             Vector3 direction = (touchPosition - phareLight.transform.position).normalized;
+            //
+            Vector3 targetPosition = Vector3.Lerp(touchPosition, direction, AimSpeed * Time.deltaTime);
 
             // Interpolez la direction de la lumière en utilisant le delta time et la vitesse
             phareLight.transform.forward =
@@ -121,6 +124,10 @@ public class RayCastControl : MonoBehaviour
 
             // Set the bullet's direction to match the direction of phareLight
             bullet.transform.forward = phareLight.transform.forward;
+
+            // Set the target position for the bullet
+            Bullet bulletScript = bullet.GetComponent<Bullet>();
+            bulletScript.targetPosition = touchPosition;
 
             // Update the last shoot time
             lastShootTime = Time.time;

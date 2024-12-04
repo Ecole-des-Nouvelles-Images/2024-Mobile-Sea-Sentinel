@@ -119,4 +119,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 30
-  lifeTime: 10
+  maxHeight: 50
+  targetPosition: {x: 0, y: 0, z: 0}
