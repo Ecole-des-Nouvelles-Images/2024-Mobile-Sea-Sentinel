@@ -17,4 +17,4 @@ MonoBehaviour:
   SpawnCost: 5
   Speed: 10
   GoldCapacity: 25
-  MaxHealth: 20
+  MaxHealth: 2000

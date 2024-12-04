@@ -20,8 +20,9 @@ namespace Michael.Scripts.Enemy
         private int _currentBoatGold = 0;
         private int _maxHealth;
         private int _currentHealth;
-        [SerializeField] private float _boatStealSpeed;
+      
        
+        [SerializeField] private Transform _boatModel;
         [SerializeField] private TextMeshProUGUI _boatGoldText;
         [SerializeField] private TextMeshProUGUI _damageNumberText;
         [SerializeField] Slider _boatHealthBar;
@@ -99,7 +100,7 @@ namespace Michael.Scripts.Enemy
             HealthBarFeedback(_boatUi);
             _currentHealth -= damage;
             _boatHealthBar.value = _currentHealth; 
-           gameObject.transform.DOShakePosition( 0.2f,new Vector3(0.2f,0,0.2f),4).SetEase(Ease.InBounce);
+           _boatModel.DOShakePosition( 1f,new Vector3(0.2f,0,0.2f),4).SetEase(Ease.InBounce);
             Sequence feedBackSequence = DOTween.Sequence();
             feedBackSequence.Append( _damageImageCanvasGroup.DOFade(0.2f, 0.1f).SetEase(Ease.Linear));
             feedBackSequence.Append( _damageImageCanvasGroup.DOFade(0f, 0.1f).SetEase(Ease.Linear));
@@ -116,12 +117,13 @@ namespace Michael.Scripts.Enemy
 
         private void StealGold(GameObject target)
         {
-            _currentBoatGold = _boatGoldMax;
+            _currentBoatGold = _boatGoldMax - _currentBoatGold;
             PlayerData playerData = target.GetComponent<PlayerData>();
             playerData.CurrentGold -= _currentBoatGold;
             HealthBarFeedback( playerData.goldText.gameObject);
             _boatGoldText.text = _currentBoatGold + "/" + _boatGoldMax;
-            Debug.Log("or volé " + _currentBoatGold);
+          
+            
             FollowTarget(_initialPosition);
         }
 

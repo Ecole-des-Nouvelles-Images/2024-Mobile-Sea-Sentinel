@@ -14,7 +14,7 @@ namespace Michael.Scripts.Controller
         public int AlliesBoats; 
         public TextMeshProUGUI goldText;
 
-        private void Start()
+        private void Start() 
         {
             CurrentGold = MaxGoldCapacity; 
         }

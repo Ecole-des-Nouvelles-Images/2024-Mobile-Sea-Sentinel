@@ -6,6 +6,50 @@
   <component name="ChangeListManager">
     <list default="true" id="b7472739-ef28-4269-8639-9f341bd314f4" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Mobile-Sea-Sentinel/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Mobile-Sea-Sentinel/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/Scripts/Enemy/BoatEnemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Scripts/Enemy/BoatEnemy.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/Scripts/Manager/BoatType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Scripts/Manager/BoatType.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/Scripts/Manager/ShopManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Scripts/Manager/ShopManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/Scripts/Manager/WaveManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Scripts/Manager/WaveManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/Shader/Simple Water Shader/Resources/WaterShader.shadergraph" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Shader/Simple Water Shader/Resources/WaterShader.shadergraph" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/Shader/Simple Water Shader/Resources/Water_mat_03.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Shader/Simple Water Shader/Resources/Water_mat_03.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Settings/SampleSceneProfile.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/SampleSceneProfile.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Stylized Water.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Stylized Water/Materials.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Stylized Water/Materials/Stylized Water 1.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Stylized Water/Materials/Stylized Water 1.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Stylized Water/Materials/Stylized Water 2.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Stylized Water/Materials/Stylized Water 2.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Stylized Water/Materials/Stylized Water 3.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Stylized Water/Materials/Stylized Water 3.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Stylized Water/Meshes.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Stylized Water/Meshes/HighPolyPlane.blend" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Stylized Water/Meshes/HighPolyPlane.blend.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Stylized Water/Meshes/UniformHighPolyPlane.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Stylized Water/Meshes/UniformHighPolyPlane.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Stylized Water/Shaders.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Stylized Water/Shaders/ShadowUtilities.cginc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Stylized Water/Shaders/ShadowUtilities.cginc.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Stylized Water/Shaders/Stylized Water.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Stylized Water/Shaders/Stylized Water.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Stylized Water/Shaders/WaterUtilities.cginc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Stylized Water/Shaders/WaterUtilities.cginc.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Stylized Water/Textures.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Stylized Water/Textures/CausticsDeep.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Stylized Water/Textures/CausticsDeep.bmp.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Stylized Water/Textures/CausticsShallow.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Stylized Water/Textures/CausticsShallow.jpg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Stylized Water/Textures/GentleWaves.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Stylized Water/Textures/GentleWaves.bmp.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Stylized Water/Textures/LargeWaves.TGA" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Stylized Water/Textures/LargeWaves.TGA.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Stylized Water/Textures/README.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Stylized Water/Textures/README.txt.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Stylized Water/Textures/SeaPattern.TGA" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Stylized Water/Textures/SeaPattern.TGA.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Stylized Water/Textures/Seafoam.TGA" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Stylized Water/Textures/Seafoam.TGA.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Stylized Water/Textures/SmallWaves.TGA" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Stylized Water/Textures/SmallWaves.TGA.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Alexandre/ProtoPharePackage/Bullet.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Alexandre/ProtoPharePackage/Bullet.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Alexandre/ProtoPharePackage/TouchAim/RayCastControl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Alexandre/ProtoPharePackage/TouchAim/RayCastControl.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Michael/PhareProto/Scripts/Bullet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/PhareProto/Scripts/Bullet.cs" afterDir="false" />
@@ -21,6 +65,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Michael/Scripts/UI/HealthBar.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Michael/Scripts/UI/UiFollowCamera.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Michael/Scripts/Upgrade/PlayerData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.universal@14.0.11/Runtime/ScriptableRendererData.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventInterfaces.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/GraphicRaycaster.cs" root0="SKIP_HIGHLIGHTING" />
@@ -38,21 +83,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Discover.Launch.Via.Unity&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Michael&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Discover.Launch.Via.Unity": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "Michael",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "CodeLensConfigurable",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2022.3.47f1\Editor\Unity.exe" />
@@ -118,6 +164,10 @@
       <workItem from="1732610326029" duration="19337000" />
       <workItem from="1732705126863" duration="11511000" />
       <workItem from="1732888632123" duration="7345000" />
+      <workItem from="1732917246779" duration="596000" />
+      <workItem from="1732975570970" duration="1827000" />
+      <workItem from="1733131445512" duration="12627000" />
+      <workItem from="1733221748890" duration="2587000" />
     </task>
     <servers />
   </component>
