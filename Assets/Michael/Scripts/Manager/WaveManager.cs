@@ -46,7 +46,6 @@ namespace Michael.Scripts.Manager
                     }
                     _lastSpawnPoint = _spawnPoints[_spawnIndex];
                     GameObject boat = Instantiate(_boatsToSpawn[0],_lastSpawnPoint.position, Quaternion.identity);
-              
                     _boatsToSpawn.RemoveAt(0);
                     _spawnedBoats.Add(boat);
                    _spawnTimer = _spawnInterval;
@@ -128,15 +127,15 @@ namespace Michael.Scripts.Manager
         }
         
        
-       /* private void ApplyProgression()
+        private void ApplyProgression()
         {
             foreach (BoatType boat in _boat) {
               
-                boat.Speed += speedIncrement; 
-                boat.GoldCapacity += goldIncrement;
+                //boat.BoatPrefab.GetComponent<BoatEnemy>(). += speedIncrement; 
+              //  boat.GoldCapacity += goldIncrement;
             }
             
-        }*/
+        }
 
         
         

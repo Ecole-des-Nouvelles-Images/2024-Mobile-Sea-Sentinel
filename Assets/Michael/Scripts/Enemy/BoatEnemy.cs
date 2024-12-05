@@ -64,10 +64,10 @@ namespace Michael.Scripts.Enemy
         void Update() {
             
 
-          /*  if (Input.GetKeyDown(KeyCode.Space))
+            if (Input.GetKeyDown(KeyCode.Space))
             {
                 TakeDamage(PlayerData.Instance.BulletDamage);
-            }*/
+            }
             
             if (!_hasThief) return;
             
@@ -90,9 +90,12 @@ namespace Michael.Scripts.Enemy
             }
 
             if (other.CompareTag("Player")) {
-                
+
+                if (!_hasThief)
+                {
+                    StealGold(other.gameObject);
+                }
                 _hasThief = true;
-               StealGold(other.gameObject);
             }
         }
         
@@ -119,8 +122,8 @@ namespace Michael.Scripts.Enemy
 
         private void StealGold(GameObject target)
         {
+            Debug.Log("StealGold");
             _currentBoatGold = _boatGoldMax - _currentBoatGold;
-           
             PlayerData.Instance.CurrentGold -= _currentBoatGold;
             HealthBarFeedback( PlayerData.Instance.goldText.gameObject);
             _boatGoldText.text = _currentBoatGold + "/" + _boatGoldMax;
@@ -139,7 +142,6 @@ namespace Michael.Scripts.Enemy
                 GameObject chest = Instantiate(_chest, transform.position,transform.rotation);
                 chest.GetComponent<Chest>().ChestGold = _currentBoatGold;
             }
-            Instantiate(_chest, transform.position,transform.rotation);
         }
 
         private void HealthBarFeedback(GameObject ui)

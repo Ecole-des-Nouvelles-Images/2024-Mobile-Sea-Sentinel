@@ -17,7 +17,7 @@ using UnityEngine.UI;
         [SerializeField] private TextMeshProUGUI currentGoldText;
         private void Update()
         {
-            currentGoldText.text = "golds actuels : " + PlayerData.Instance.CurrentGold;
+            currentGoldText.text = "" + PlayerData.Instance.CurrentGold;
         }
         
         public void PurchaseUpgrade(Button button)
