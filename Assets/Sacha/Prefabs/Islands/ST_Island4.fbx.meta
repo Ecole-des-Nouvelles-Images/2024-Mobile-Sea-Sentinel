@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: c19d11b9272f47246965c3f9fd40317f
+guid: c79e51179c070554fb59b6f3fa0ca0b9
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -7,8 +7,8 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: M_PalmTree
-    second: {fileID: 2100000, guid: 569db18738cb6404e93306960a65b7f7, type: 2}
+      name: M_Island4
+    second: {fileID: 2100000, guid: 19cdd695655f4824cbc509fe44c0d34d, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
