@@ -24,6 +24,9 @@ namespace Michael.Scripts.Enemy
          //animation coffre qui s'ouvre 
          // 
          PlayerData.Instance.CurrentGold += ChestGold;
+         ChestGold = 0;
+         Destroy(gameObject);
+         Destroy(buttons);
          Debug.Log("Gold recovered");
       }
    }

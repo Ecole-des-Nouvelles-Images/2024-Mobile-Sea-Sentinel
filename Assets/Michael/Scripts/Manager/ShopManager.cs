@@ -12,14 +12,18 @@ using UnityEngine.UI;
     
     public class ShopManager : MonoBehaviour
     {
-       
-
+        
         [SerializeField] private TextMeshProUGUI currentGoldText;
         private void Update()
         {
+          
+        }
+
+        private void OnEnable()
+        {
             currentGoldText.text = "" + PlayerData.Instance.CurrentGold;
         }
-        
+
         public void PurchaseUpgrade(Button button)
         {
             Upgrade upgrade = button.GetComponent<Upgrade>();

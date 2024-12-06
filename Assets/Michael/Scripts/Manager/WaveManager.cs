@@ -16,22 +16,26 @@ namespace Michael.Scripts.Manager
 
         [Header("Wave Progression")]
         public List<GameObject> _spawnedBoats = new List<GameObject>();
-        public List<Transform> _spawnPoints;
-        [SerializeField] private int _currentWaveValue = 10;
-        [SerializeField] private int _waveValue;
-        [SerializeField] private int _currentWave = 0;
-        [SerializeField] private int _waveValueIncrement;
+        public List<Transform> _spawnPoints; 
+        [SerializeField]private int _littleBoatsIncrement  ;
+        [SerializeField]private int _balancedBoatsIncrement ;
+        [SerializeField] private int _bigBoatsIncrement = 0 ;
         [SerializeField] private List<BoatType> _boat = new List<BoatType>();
         [SerializeField] private List<GameObject> _boatsToSpawn = new List<GameObject>();
         [SerializeField] private float _spawnInterval = 5f;
         [SerializeField] private float _spawnTimer;
         [SerializeField] private TextMeshProUGUI _waveText;
         [SerializeField] private List<WaveData> _waveData;
-        private WaveData _currentWaveData;
+        public WaveData _currentWaveData;
         private int _spawnIndex;
         private Transform _lastSpawnPoint;
+        private int _littleBoatsBonus = 0 ;
+        private int _balancedBoatsBonus = 0 ;
+        private int _bigBoatsBonus = 0 ;
+        public int _currentWave = 0;
         
         private void Start() {
+            _currentWaveData = _waveData[_currentWave];
             StartWave();
         }
         private void FixedUpdate()
@@ -46,6 +50,7 @@ namespace Michael.Scripts.Manager
                     }
                     _lastSpawnPoint = _spawnPoints[_spawnIndex];
                     GameObject boat = Instantiate(_boatsToSpawn[0],_lastSpawnPoint.position, Quaternion.identity);
+                    
                     _boatsToSpawn.RemoveAt(0);
                     _spawnedBoats.Add(boat);
                    _spawnTimer = _spawnInterval;
@@ -66,24 +71,28 @@ namespace Michael.Scripts.Manager
                 
                EndWave();
             }
-            
         }
-
+        
         [ContextMenu("StartWave !")]
         public void StartWave() {
-            
-            _currentWaveData = _waveData[_currentWave]; 
-            _waveValue += _waveValueIncrement;
+
+            if (_currentWave > 20) {
+                
+                _littleBoatsBonus += _littleBoatsIncrement;
+                _balancedBoatsBonus += _balancedBoatsIncrement;
+                _bigBoatsBonus += _bigBoatsIncrement;
+            }
             _spawnTimer = 0;
             Debug.Log("Wave Started!");
             // ui alerte 
-            // un tuto avant  ?
-            _currentWaveValue = _waveValue;
             _currentWave++;
             _waveText.text = "Vague : " + _currentWave;
             
-            if (_currentWave % progressionInterval == 0) {
-              //  ApplyProgression(); // Augmente les stats toutes les x vagues
+         
+             if (_currentWave % progressionInterval == 0) {
+                
+                _currentWaveData = _waveData[_currentWave-2];
+                ApplyBoatProgression();
                 Debug.Log("upgrade ENEMY !!!!");
             }
             GenerateEnemy();
@@ -92,47 +101,31 @@ namespace Michael.Scripts.Manager
 
         private void GenerateEnemy() {
 
-            if (_currentWave > 10 ) {
-                while (_currentWaveValue > 0) {
-                
-                    int rndBoat = Random.Range(0, _boat.Count);
-                    int rndBoatCost = _boat[rndBoat].SpawnCost;
-                
-                    if (_currentWaveValue - rndBoatCost >= 0) {
-                        
-                        _boatsToSpawn.Add( _boat[rndBoat].BoatPrefab);
-                        _currentWaveValue -= rndBoatCost;
-                        _boat[rndBoat].BoatPrefab.GetComponent<Enemy.BoatEnemy>().BoatType = _boat[rndBoat];
-                    }
-                    else if (_currentWaveValue <= 0) {
-                        break;
-                    }
-                }
-            }
-            else
-            {
-                foreach (BoatType boat in _currentWaveData.Boats)
+                for (int i = 0; i < _currentWaveData.LittleBoatCount + _littleBoatsBonus; i++)
                 {
-                    _boatsToSpawn.Add(boat.BoatPrefab);
-                    boat.BoatPrefab.GetComponent<Enemy.BoatEnemy>().BoatType = boat ;
+                    _boatsToSpawn.Add(_boat[0].BoatPrefab);
                 }
-                
-            }
-          
+                for (int i = 0; i < _currentWaveData.BalancedBoatCount + _balancedBoatsBonus; i++)
+                {
+                    _boatsToSpawn.Add(_boat[1].BoatPrefab);
+                }
+                for (int i = 0; i < _currentWaveData.BigBoatCount + _bigBoatsBonus; i++)
+                {
+                    _boatsToSpawn.Add(_boat[2].BoatPrefab);
+                }
 
         }
         private void EndWave() {
            
             GameManager.Instance.OpenShop();
         }
-        
        
-        private void ApplyProgression()
+       private void ApplyBoatProgression()
         {
             foreach (BoatType boat in _boat) {
               
-                //boat.BoatPrefab.GetComponent<BoatEnemy>(). += speedIncrement; 
-              //  boat.GoldCapacity += goldIncrement;
+               // boat.Speed += speedIncrement; 
+               // boat.GoldCapacity += goldIncrement;
             }
             
         }
