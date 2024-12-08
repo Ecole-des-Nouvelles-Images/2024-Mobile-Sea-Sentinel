@@ -51,47 +51,47 @@ Material:
     m_Ints: []
     m_Floats:
     - WORLD_SPACE_UV: 0
-    - _Depth_Fade_Distance: 1
+    - _Depth_Fade_Distance: 1.6
     - _Foam_Blend: 1
-    - _Horizon_Distance: 2.2
+    - _Horizon_Distance: 40
     - _Intersection_Foam_Blend: 0
     - _Intersection_Foam_Color_Blend: 0.043
     - _Intersection_Foam_Cutoff: 0.78
-    - _Intersection_Foam_Depth: 2.26
+    - _Intersection_Foam_Depth: 3.71
     - _Intersection_Foam_Direction: 0.154
-    - _Intersection_Foam_Fade: 1
+    - _Intersection_Foam_Fade: 0.15
     - _Intersection_Foam_Speed: 0.131
     - _Intersection_Foam_Tiling: 100
     - _Lighting_Hardness: 0
-    - _Lighting_Smoothness: 0.361
-    - _Normals_Scale: 0.0492
-    - _Normals_Speed: 0.1248
-    - _Normals_Strength: 1
+    - _Lighting_Smoothness: 0.535
+    - _Normals_Scale: 0.134
+    - _Normals_Speed: 0.055
+    - _Normals_Strength: 0.66
     - _QueueControl: 1
     - _QueueOffset: 0
-    - _Refraction_Scale: 0.01
+    - _Refraction_Scale: 0.055
     - _Refraction_Speed: 0
-    - _Refraction_Strength: 0
+    - _Refraction_Strength: 0.0028
     - _Shore_Depth: 0
     - _Smoothness: 0.47
     - _Surface_Foam_Blend: 1
     - _Surface_Foam_Color_Blend: 1
     - _Surface_Foam_Cutoff: 0.131
-    - _Surface_Foam_Direction: 0
+    - _Surface_Foam_Direction: 0.028
     - _Surface_Foam_Distortion: 2.46
-    - _Surface_Foam_Speed: 0
-    - _Surface_Foam_Tiling: 2
+    - _Surface_Foam_Speed: 0.031
+    - _Surface_Foam_Tiling: 30.1
     - _Wave_Length: 2.84
     - _Wave_Speed: 0.49
-    - _Wave_Steepness: 0.131
+    - _Wave_Steepness: 0.518
     m_Colors:
-    - _Deep_Color: {r: 0.23137252, g: 0.6694056, b: 0.7529412, a: 1}
+    - _Deep_Color: {r: 0, g: 0.65223825, b: 0.7735849, a: 0.95686275}
     - _Diffuse_Color: {r: 1, g: 0, b: 0, a: 1}
     - _Foam_Color: {r: 0, g: 1, b: 0.46160954, a: 0.4392157}
     - _Horizon_Color: {r: 1, g: 0.32790184, b: 0, a: 1}
     - _Intersection_Foam_Color: {r: 0.8773585, g: 0.8773585, b: 0.8773585, a: 1}
     - _Refraction_Movement: {r: 0, g: 0, b: 0, a: 0}
-    - _Shallow_Color: {r: 0, g: 0.8046981, b: 0.8679245, a: 0.48235294}
+    - _Shallow_Color: {r: 0, g: 0.7863488, b: 1, a: 0.56078434}
     - _Shore_Color: {r: 0, g: 0, b: 0, a: 0}
     - _Specular_Color: {r: 1, g: 1, b: 1, a: 1}
     - _Surface_Foam_Color: {r: 1, g: 1, b: 1, a: 0}

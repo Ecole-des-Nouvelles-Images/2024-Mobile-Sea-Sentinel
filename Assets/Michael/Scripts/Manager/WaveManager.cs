@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using Michael.Scripts.Controller;
+using Michael.Scripts.Enemy;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Serialization;
@@ -10,10 +11,12 @@ namespace Michael.Scripts.Manager
     public class WaveManager : MonoBehaviourSingleton<WaveManager>
     {
         [Header("Enemy Progression")]
-        public int speedIncrement = 2; // Vitesse supplémentaire
-        public int goldIncrement = 25; // Capacité d'or supplémentaire
-        public int progressionInterval = 3; // Toutes les x vagues
-
+        public int speedIncrement = 2; 
+        public int goldIncrement = 25; 
+        public int StatsprogressionInterval = 3; 
+        public int WaveprogressionInterval = 5;
+        
+        
         [Header("Wave Progression")]
         public List<GameObject> _spawnedBoats = new List<GameObject>();
         public List<Transform> _spawnPoints; 
@@ -89,13 +92,19 @@ namespace Michael.Scripts.Manager
             _waveText.text = "Vague : " + _currentWave;
             
          
-             if (_currentWave % progressionInterval == 0) {
+             if (_currentWave % WaveprogressionInterval == 0) {
                 
                 _currentWaveData = _waveData[_currentWave-2];
-                ApplyBoatProgression();
-                Debug.Log("upgrade ENEMY !!!!");
-            }
-            GenerateEnemy();
+                // nouvelle vague 
+                Debug.Log("new wave !!!!");
+             }
+             else if (_currentWave % StatsprogressionInterval == 0) {
+             
+                 ApplyBoatProgression();
+                 // up des stats des bateaux
+                 Debug.Log("upgrade ENEMY !!!!");
+             }
+             GenerateEnemy();
             
         }
 
@@ -122,8 +131,9 @@ namespace Michael.Scripts.Manager
        
        private void ApplyBoatProgression()
         {
-            foreach (BoatType boat in _boat) {
+            foreach (GameObject boat in _boatsToSpawn) {
               
+               
                // boat.Speed += speedIncrement; 
                // boat.GoldCapacity += goldIncrement;
             }
