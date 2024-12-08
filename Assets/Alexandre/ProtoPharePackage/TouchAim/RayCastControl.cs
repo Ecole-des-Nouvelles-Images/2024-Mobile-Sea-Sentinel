@@ -1,4 +1,4 @@
-using Alexandre;
+using System;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
@@ -15,10 +15,10 @@ public class RayCastControl : MonoBehaviour
     public GameObject phareLight;
 
     public float AimSpeed = 5f;
-    public RectTransform crosshairUI;
 
     public GameObject CrosshairPrefab;
     private GameObject crosshairInstance;
+
     // Position touchée
     private Vector3 touchPosition;
 
@@ -29,19 +29,22 @@ public class RayCastControl : MonoBehaviour
 
     // Références pour le tir
     public GameObject BulletPrefab;
+
     public Transform CanonOut;
+
     // Ref au Canon
     public Transform Canon;
+
     // Reference CoolDown slider
     public Slider CoolDownSlider;
 
-    // Paramètres de la courbe de Bézier
-    public float minHeight = 2f; // Hauteur minimale pour les courtes distances
-    public float maxHeight = 20f; // Hauteur maximale pour les longues distances
-    public float maxDistance = 50f; // Distance maximale pour laquelle la hauteur est ajustée
+    public float minDistance = 5f; // Distance minimale pour viser
+    public float maxDistance = 50f; // Distance maximale pour viser
+    
+    public float _depthOffset = 5f;
+    public float _heightOffsetDelta = 1f;
 
-    private Vector3 initialBulletDirection;
-    private float maxHeightForDistance;
+    [SerializeField]private Transform _offset;
 
     void Start()
     {
@@ -49,6 +52,9 @@ public class RayCastControl : MonoBehaviour
         CoolDownSlider.maxValue = shootCooldown;
         CoolDownSlider.value = 0; // Initialiser à la valeur minimale
         crosshairInstance = Instantiate(CrosshairPrefab);
+
+        // Ajuster le masque de couche pour exclure le layer "NonInteractable"
+        interactableLayer = ~LayerMask.GetMask("NonInteractable");
     }
 
     void Update()
@@ -86,9 +92,23 @@ public class RayCastControl : MonoBehaviour
                     touchPosition = hit.point;
                     Debug.Log("Position touchée : " + touchPosition);
 
+                    // Calculez la distance en deux dimensions (x, z)
+                    Vector3 horizontalOffset = new Vector3(touchPosition.x, 0, touchPosition.z) - new Vector3(Canon.position.x, 0, Canon.position.z);
+                    float distanceToTarget = horizontalOffset.magnitude;
+                    distanceToTarget = Mathf.Clamp(distanceToTarget, minDistance, maxDistance);
+
+                    // Ajuster la position touchée en fonction de la distance ajustée tout en conservant la valeur de Y
+                    Vector3 adjustedPosition = Canon.position + horizontalOffset.normalized * distanceToTarget;
+                    touchPosition = new Vector3(adjustedPosition.x, touchPosition.y, adjustedPosition.z);
+                    
+                    //Ajuster l'Offset
+                    CalculateOffset(distanceToTarget);
+                    //Ajuste l'inclinaison du Canon
+                    UpdateCanonDirection();
+
                     // Mettez à jour la direction de la lumière
                     UpdateLightDirection();
-                    UpdateCrosshairPosition(hit.point);
+                    UpdateCrosshairPosition(touchPosition);
                 }
             }
 
@@ -99,11 +119,17 @@ public class RayCastControl : MonoBehaviour
         }
     }
 
-    void UpdateCoolDownSlider()
+
+
+    void CalculateOffset(float distanceToTarget)
     {
-        float timeSinceLastShot = Time.time - lastShootTime;
-        CoolDownSlider.value = Mathf.Clamp(timeSinceLastShot, 0, shootCooldown);
+        float offsetHeight = Mathf.Lerp(touchPosition.y, Canon.position.y * _heightOffsetDelta, (distanceToTarget - minDistance) / (maxDistance - minDistance));
+        Debug.Log("Offset Height : " + offsetHeight);
+
+        _offset.position = new Vector3(touchPosition.x, offsetHeight, touchPosition.z);
+        Debug.Log("Offset position : " + _offset.position);
     }
+
 
     void UpdateLightDirection()
     {
@@ -111,8 +137,6 @@ public class RayCastControl : MonoBehaviour
         {
             // Calculez la direction de la lumière vers la position touchée
             Vector3 direction = (touchPosition - phareLight.transform.position).normalized;
-            //
-            targetPosition = Vector3.Lerp(touchPosition, direction, AimSpeed * Time.deltaTime);
 
             // Interpolez la direction de la lumière en utilisant le delta time et la vitesse
             phareLight.transform.forward =
@@ -123,76 +147,60 @@ public class RayCastControl : MonoBehaviour
     void UpdateCrosshairPosition(Vector3 hitPoint)
     {
         crosshairInstance.transform.position = hitPoint;
-        // Vector2 screenPoint = Camera.main.WorldToScreenPoint(hitPoint);
-        // crosshairUI.position = screenPoint;
     }
 
     void UpdateCanonDirection()
     {
         if (touchPosition != Vector3.zero)
         {
-            CalculateCanonDirectionAndHeight();
+            // Calculez la direction du canon vers la position touchée
+            Vector3 direction = (_offset.position - Canon.position).normalized;
 
-            // Interpoler la direction du canon en utilisant le delta time et la vitesse
-            Canon.forward = Vector3.Lerp(Canon.forward, initialBulletDirection, AimSpeed * Time.deltaTime);
+            // Interpolez la direction du canon en utilisant le delta time et la vitesse
+            Canon.forward = Vector3.Lerp(Canon.forward, direction, AimSpeed * Time.deltaTime);
         }
     }
 
+    // private Vector3 GetBezierPoints(Vector3 start , Vector3 end, Vector3 offset, float time) {
+    //     
+    //     Vector3 startToOffset = Vector3.Lerp(start, offset, time);
+    //     Vector3 offsetToEnd = Vector3.Lerp(offset,end,  time);
+    //     return Vector3.Lerp(startToOffset, offsetToEnd, time);
+    // }
     public void ShootWithCooldown()
     {
         if (Time.time >= lastShootTime + shootCooldown)
         {
-            // Instancier le boulet
-            GameObject bullet = Instantiate(BulletPrefab, CanonOut.position, CanonOut.rotation);
+            // Vérifiez si la position de tir est valide
+            if (touchPosition != Vector3.zero)
+            {
+                //float distanceToTarget = Vector3.Distance(Canon.position, touchPosition);
 
-            // Définir la direction du boulet pour correspondre à la direction du Canon
-            bullet.transform.forward = Canon.forward;
+                    // Instancier le boulet
+                    GameObject bullet = Instantiate(BulletPrefab, CanonOut.position, CanonOut.rotation);
+                    Vector3 bulletEndTarget = touchPosition + Vector3.up * -_depthOffset;
+                    bullet.GetComponent<Bullet>().SetTrajectoryParameters(CanonOut.position, bulletEndTarget, _offset.position);
+                    // Définir la direction du boulet pour correspondre à la direction du Canon
+                    bullet.transform.forward = Canon.forward;
 
-            // Définir la position cible pour le boulet
-            Bullet bulletScript = bullet.GetComponent<Bullet>();
-            bulletScript.targetPosition = targetPosition;
+                    // Mettre à jour le dernier temps de tir
+                    lastShootTime = Time.time;
 
-            // Initialiser la trajectoire avec la hauteur ajustée
-            bulletScript.InitializeTrajectory(minHeight, maxHeightForDistance, maxDistance);
-
-            // Mettre à jour le dernier temps de tir
-            lastShootTime = Time.time;
-
-            // Réinitialiser le slider à la valeur minimale
-            CoolDownSlider.value = 0;
+                    // Réinitialiser le slider à la valeur minimale
+                    CoolDownSlider.value = 0;
+               
+            }
         }
     }
-
-    private void CalculateCanonDirectionAndHeight()
+    void UpdateCoolDownSlider()
     {
-        // Calculer la distance entre la position de départ et la position cible
-        float distance = Vector3.Distance(CanonOut.position, touchPosition);
-
-        // Calculer la hauteur maximale en fonction de la distance
-        maxHeightForDistance = CalculateMaxHeight(distance);
-
-        // Calculer la direction initiale du boulet
-        initialBulletDirection = CalculateInitialBulletDirection(CanonOut.position, touchPosition, maxHeightForDistance);
+        float timeSinceLastShot = Time.time - lastShootTime;
+        CoolDownSlider.value = Mathf.Clamp(timeSinceLastShot, 0, shootCooldown);
     }
 
-    private float CalculateMaxHeight(float distance)
+    private void OnDrawGizmos()
     {
-        // Utiliser une fonction quadratique pour ajuster la hauteur en fonction de la distance
-        float height = minHeight + (maxHeight - minHeight) * Mathf.Pow(distance / maxDistance, 2);
-        return height;
-    }
-
-    private Vector3 CalculateInitialBulletDirection(Vector3 startPosition, Vector3 targetPosition, float maxHeight)
-    {
-        Vector3 controlPoint = (startPosition + targetPosition) / 2 + Vector3.up * maxHeight;
-        Vector3 initialDirection = CalculateQuadraticBezierTangent(0, startPosition, controlPoint, targetPosition);
-        return initialDirection;
-    }
-
-    private Vector3 CalculateQuadraticBezierTangent(float t, Vector3 p0, Vector3 p1, Vector3 p2)
-    {
-        float u = 1 - t;
-        Vector3 tangent = 2 * u * (p1 - p0) + 2 * t * (p2 - p1);
-        return tangent.normalized;
+        Gizmos.color = Color.magenta;
+        Gizmos.DrawSphere(_offset.position, 2f);
     }
 }

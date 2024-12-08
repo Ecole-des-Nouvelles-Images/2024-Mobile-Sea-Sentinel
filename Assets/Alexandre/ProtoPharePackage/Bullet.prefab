@@ -118,6 +118,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f00e4b2598ed90147863712be2620ce9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 30
-  maxHeight: 100
-  targetPosition: {x: 0, y: 0, z: 0}
+  speed: 1.5

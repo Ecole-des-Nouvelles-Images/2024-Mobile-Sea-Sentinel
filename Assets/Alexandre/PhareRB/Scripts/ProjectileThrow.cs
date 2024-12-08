@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UI;
 
 [RequireComponent(typeof(TrajectoryPredictor))]
 public class ProjectileThrow : MonoBehaviour
@@ -9,7 +10,7 @@ public class ProjectileThrow : MonoBehaviour
     [SerializeField]
     Rigidbody objectToThrow;
 
-    [SerializeField, Range(0.0f, 50.0f)]
+    [SerializeField, Range(0.0f, 250.0f)]
     float force;
 
     [SerializeField]
@@ -17,12 +18,19 @@ public class ProjectileThrow : MonoBehaviour
 
     public GameObject Visor;
 
+    public float ShootCoolDown = 2f;
+    private float lastShootTime;
+    
+    public Slider CoolDownSlider;
     void OnEnable()
     {
         trajectoryPredictor = GetComponent<TrajectoryPredictor>();
 
         if (StartPosition == null)
             StartPosition = transform;
+        
+        CoolDownSlider.maxValue = ShootCoolDown;
+        CoolDownSlider.value = 0; // Initialiser à la valeur minimale
 
 
     }
@@ -30,6 +38,8 @@ public class ProjectileThrow : MonoBehaviour
     void Update()
     {
         Predict();
+        UpdateCoolDownSlider();
+
     }
 
     void Predict()
@@ -37,6 +47,11 @@ public class ProjectileThrow : MonoBehaviour
         trajectoryPredictor.PredictTrajectory(ProjectileData());
     }
 
+    void UpdateCoolDownSlider()
+    {
+        float timeSinceLastShot = Time.time - lastShootTime;
+        CoolDownSlider.value = Mathf.Clamp(timeSinceLastShot, 0, ShootCoolDown);
+    }
     ProjectileProperties ProjectileData()
     {
         ProjectileProperties properties = new ProjectileProperties();
@@ -53,7 +68,16 @@ public class ProjectileThrow : MonoBehaviour
 
     public void ThrowObject()
     {
-        Rigidbody thrownObject = Instantiate(objectToThrow, StartPosition.position, Quaternion.identity);
-        thrownObject.AddForce(StartPosition.forward * force, ForceMode.Impulse);
+        if (Time.time >= lastShootTime + ShootCoolDown)
+        {
+            Rigidbody thrownObject = Instantiate(objectToThrow, StartPosition.position, Quaternion.identity);
+            thrownObject.AddForce(StartPosition.forward * force, ForceMode.Impulse);
+            lastShootTime = Time.time;
+            CoolDownSlider.value = 0;
+
+        }
+
+        
+
     }
 }
