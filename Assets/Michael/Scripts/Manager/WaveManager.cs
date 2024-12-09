@@ -11,8 +11,9 @@ namespace Michael.Scripts.Manager
     public class WaveManager : MonoBehaviourSingleton<WaveManager>
     {
         [Header("Enemy Progression")]
-        public int speedIncrement = 2; 
-        public int goldIncrement = 25; 
+        public int SpeedIncrement = 2; 
+        public int GoldIncrement = 25; 
+        public int HealthIncrement = 25; 
         public int StatsprogressionInterval = 3; 
         public int WaveprogressionInterval = 5;
         
@@ -78,31 +79,30 @@ namespace Michael.Scripts.Manager
         
         [ContextMenu("StartWave !")]
         public void StartWave() {
-
-            if (_currentWave > 20) {
+            
+            
+            if (_currentWave > (_waveData.Count-1) * WaveprogressionInterval) {
                 
                 _littleBoatsBonus += _littleBoatsIncrement;
                 _balancedBoatsBonus += _balancedBoatsIncrement;
                 _bigBoatsBonus += _bigBoatsIncrement;
             }
             _spawnTimer = 0;
-            Debug.Log("Wave Started!");
+           
             // ui alerte 
             _currentWave++;
             _waveText.text = "Vague : " + _currentWave;
             
          
-             if (_currentWave % WaveprogressionInterval == 0) {
+             if (_currentWave % WaveprogressionInterval == 0 ) {
                 
-                _currentWaveData = _waveData[_currentWave-2];
+                _currentWaveData = _waveData[_currentWave / WaveprogressionInterval];
                 // nouvelle vague 
-                Debug.Log("new wave !!!!");
              }
              else if (_currentWave % StatsprogressionInterval == 0) {
              
                  ApplyBoatProgression();
                  // up des stats des bateaux
-                 Debug.Log("upgrade ENEMY !!!!");
              }
              GenerateEnemy();
             
