@@ -29,7 +29,8 @@ public class RayCastControl : MonoBehaviour
 
     // Références pour le tir
     public GameObject BulletPrefab;
-
+    public ParticleSystem VFXShot1;
+    public ParticleSystem VFXShot2;
     public Transform CanonOut;
 
     // Ref au Canon
@@ -160,13 +161,6 @@ public class RayCastControl : MonoBehaviour
             Canon.forward = Vector3.Lerp(Canon.forward, direction, AimSpeed * Time.deltaTime);
         }
     }
-
-    // private Vector3 GetBezierPoints(Vector3 start , Vector3 end, Vector3 offset, float time) {
-    //     
-    //     Vector3 startToOffset = Vector3.Lerp(start, offset, time);
-    //     Vector3 offsetToEnd = Vector3.Lerp(offset,end,  time);
-    //     return Vector3.Lerp(startToOffset, offsetToEnd, time);
-    // }
     public void ShootWithCooldown()
     {
         if (Time.time >= lastShootTime + shootCooldown)
@@ -176,6 +170,9 @@ public class RayCastControl : MonoBehaviour
             {
                 //float distanceToTarget = Vector3.Distance(Canon.position, touchPosition);
 
+                    // VFX de tir
+                    if(VFXShot1 != null) VFXShot1.Play();
+                    if(VFXShot2 != null) VFXShot2.Play();
                     // Instancier le boulet
                     GameObject bullet = Instantiate(BulletPrefab, CanonOut.position, CanonOut.rotation);
                     Vector3 bulletEndTarget = touchPosition + Vector3.up * -_depthOffset;

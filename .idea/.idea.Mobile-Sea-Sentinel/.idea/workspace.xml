@@ -6,11 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b7472739-ef28-4269-8639-9f341bd314f4" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Mobile-Sea-Sentinel/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Mobile-Sea-Sentinel/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Alexandre/PhareRB/Scripts/ProjectileThrow.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Alexandre/PhareRB/Scripts/ProjectileThrow.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Alexandre/ProtoPharePackage/Bullet.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Alexandre/ProtoPharePackage/Bullet.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Alexandre/ProtoPharePackage/TouchAim/RayCastControl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Alexandre/ProtoPharePackage/TouchAim/RayCastControl.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/PhareProto/Scripts/Bullet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/PhareProto/Scripts/Bullet.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,7 +126,7 @@
       <workItem from="1733302853849" duration="1257000" />
       <workItem from="1733325005297" duration="513000" />
       <workItem from="1733394114134" duration="6512000" />
-      <workItem from="1733488337959" duration="23690000" />
+      <workItem from="1733488337959" duration="24915000" />
     </task>
     <servers />
   </component>
