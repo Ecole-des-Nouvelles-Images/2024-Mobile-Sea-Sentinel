@@ -76,12 +76,12 @@ Material:
     - Vector1_6269b1025b26473ca8bc61634f34b537: 1
     - Vector1_687f54e8c371429f86b9eaab0e7dfe3e: 0.575
     - Vector1_6c82dffdd68049bcb019d3a9c64c92a0: 0.21
-    - Vector1_6f56a0970372485390c6587863c2374e: 1
+    - Vector1_6f56a0970372485390c6587863c2374e: -2.1
     - Vector1_7273530c27a34c9f8ee5723b84f96baa: 0.3
     - Vector1_dada42ebfac44076897b6de67441ba32: 2.22
-    - _FoamAmount: 3.12
-    - _FoamCutoff: 0.7
-    - _FoamScale: 13.85
+    - _FoamAmount: 10.99
+    - _FoamCutoff: 4.69
+    - _FoamScale: 47
     - _FoamSpeed: 0.001
     - _Normal_1_Speed: 100
     - _Normal_2_Speed: 50
@@ -94,7 +94,8 @@ Material:
     m_Colors:
     - Color_36218622185947c6a5ae36366d8e21d8: {r: 0.101237066, g: 0.7465165, b: 0.8584906,
         a: 1}
-    - Color_93e06cd551a5449091bcde90b46765a0: {r: 0, g: 0.98672557, b: 1, a: 0.65882355}
+    - Color_93e06cd551a5449091bcde90b46765a0: {r: 0, g: 0.7264151, b: 0.68421316,
+        a: 0.65882355}
     - Vector2_4351ac2be1d74054986ec5378db9d578: {r: 10, g: 10, b: 0, a: 0}
     - _Depth_Color: {r: 0.3726415, g: 1, b: 0.84992605, a: 1}
     - _Emission: {r: 0, g: 0, b: 0, a: 1}

@@ -26,7 +26,6 @@ namespace Michael.Scripts.Enemy
          PlayerData.Instance.CurrentGold += ChestGold;
          ChestGold = 0;
          Destroy(gameObject);
-         Destroy(buttons);
          Debug.Log("Gold recovered");
       }
    }

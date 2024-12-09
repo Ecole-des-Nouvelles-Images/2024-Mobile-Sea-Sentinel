@@ -11,9 +11,10 @@ namespace Michael.Scripts.Manager
     public class WaveManager : MonoBehaviourSingleton<WaveManager>
     {
         [Header("Enemy Progression")]
-        public int SpeedIncrement = 2; 
+        public int SpeedIncrement = 1; 
         public int GoldIncrement = 25; 
-        public int HealthIncrement = 25; 
+        public int HealthIncrement = 10;
+        public float BoatGoldMultiplier = 0.2f;  
         public int StatsprogressionInterval = 3; 
         public int WaveprogressionInterval = 5;
         
@@ -132,17 +133,14 @@ namespace Michael.Scripts.Manager
        private void ApplyBoatProgression()
         {
             foreach (GameObject boat in _boatsToSpawn) {
-              
-               
+                
                // boat.Speed += speedIncrement; 
                // boat.GoldCapacity += goldIncrement;
+               
             }
             
         }
-
         
-        
-        
-
+       
     }
 }

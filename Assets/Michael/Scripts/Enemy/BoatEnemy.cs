@@ -5,6 +5,7 @@ using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.Serialization;
 using Slider = UnityEngine.UI.Slider;
 using Sequence = DG.Tweening.Sequence;
 
@@ -16,12 +17,11 @@ namespace Michael.Scripts.Enemy
     {
         [Header("Boat Data")]
         public BoatType BoatType;
-        private int _boatGoldMax; 
-        private int _currentBoatGold = 0;
+        public int CurrentBoatGold = 0;
+        public int BoatGoldMax; 
         private int _maxHealth;
         private int _currentHealth;
-      
-       
+        
         [SerializeField] private Transform _boatModel;
         [SerializeField] private TextMeshProUGUI _boatGoldText;
         [SerializeField] private TextMeshProUGUI _damageNumberText;
@@ -46,10 +46,8 @@ namespace Michael.Scripts.Enemy
             _navMeshAgent = GetComponent<NavMeshAgent>();
             _initialPosition = transform.position;
             InitializeBoatStats();
-            
-           // UpgradeStats(WaveManager.Instance.SpeedIncrement,WaveManager.Instance.GoldIncrement,WaveManager.Instance.HealthIncrement);
-            _currentHealth = _maxHealth;
-            _boatGoldText.text = _currentBoatGold + "/" + _boatGoldMax;
+            UpgradeStats(WaveManager.Instance.SpeedIncrement,WaveManager.Instance.GoldIncrement,WaveManager.Instance.HealthIncrement);
+            _boatGoldText.text = CurrentBoatGold + "/" + BoatGoldMax;
             GetNearestTarget();
             FollowTarget(_playerTarget.transform.position);
             _boatHealthBar.maxValue = _maxHealth;
@@ -62,14 +60,22 @@ namespace Michael.Scripts.Enemy
         public void InitializeBoatStats()
         {
             _navMeshAgent.speed = BoatType.Speed;
-            _boatGoldMax = BoatType.GoldCapacity;
+            BoatGoldMax = BoatType.GoldCapacity;
             _maxHealth = BoatType.MaxHealth;
+            
+            if (Random.value <= WaveManager.Instance._currentWaveData.BoatWithGoldPourcent)
+            {
+                //CurrentBoatGold =  BoatGoldMax * BoatType.
+            }
+            else {
+                CurrentBoatGold = 0;
+            }
         }
         
         public void UpgradeStats(float speedIncrease, int goldCapacityIncrease, int healthIncrease)
         {
             _navMeshAgent.speed += speedIncrease;
-            _boatGoldMax += goldCapacityIncrease;
+            BoatGoldMax += goldCapacityIncrease;
             _maxHealth += healthIncrease;
         }
 
@@ -136,10 +142,10 @@ namespace Michael.Scripts.Enemy
         private void StealGold(GameObject target)
         {
             Debug.Log("StealGold");
-            _currentBoatGold = _boatGoldMax - _currentBoatGold;
-            PlayerData.Instance.CurrentGold -= _currentBoatGold;
+            CurrentBoatGold = BoatGoldMax - CurrentBoatGold;
+            PlayerData.Instance.CurrentGold -= CurrentBoatGold;
             HealthBarFeedback( PlayerData.Instance.goldText.gameObject);
-            _boatGoldText.text = _currentBoatGold + "/" + _boatGoldMax;
+            _boatGoldText.text = CurrentBoatGold + "/" + BoatGoldMax;
             target.transform.DOShakePosition(1, Vector3.one).SetEase(Ease.InBounce);
             FollowTarget(_initialPosition);
         }
@@ -150,10 +156,10 @@ namespace Michael.Scripts.Enemy
             // opacité shader
             Destroy(gameObject);
             GameManager.Instance.ShakeCamera();
-            if (_currentBoatGold >= 1 )
+            if (CurrentBoatGold >= 1 )
             { 
                 GameObject chest = Instantiate(_chest, transform.position,transform.rotation);
-                chest.GetComponent<Chest>().ChestGold = _currentBoatGold;
+                chest.GetComponent<Chest>().ChestGold = CurrentBoatGold;
             }
         }
 

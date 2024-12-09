@@ -13,5 +13,7 @@ namespace Michael.Scripts.Manager
         public int BalancedBoatCount { get; private set; }
         [field : SerializeField]
         public int BigBoatCount { get; private set; }
+        [field : SerializeField]
+        public int BoatWithGoldPourcent { get; private set; }
     }
 }
