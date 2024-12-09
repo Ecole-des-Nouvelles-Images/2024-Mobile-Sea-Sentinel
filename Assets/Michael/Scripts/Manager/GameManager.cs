@@ -17,6 +17,7 @@ namespace Michael.Scripts.Manager
         public Canvas _canvas;
         private void Start()
         {
+            Time.timeScale = 1;
             _mainCamera = Camera.main;
         }
 

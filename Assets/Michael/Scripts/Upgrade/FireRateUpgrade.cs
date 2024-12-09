@@ -9,7 +9,7 @@ public class FireRateUpgrade : Upgrade
     public override void Start()
     {
         base.Start();
-        ValueText.text = PlayerData.Instance.FireRate.ToString();
+       // ValueText.text = PlayerData.Instance.FireRate.ToString();
     }
 
     public override void ApplyUpgrade()

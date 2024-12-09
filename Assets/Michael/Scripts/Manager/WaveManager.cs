@@ -22,6 +22,7 @@ namespace Michael.Scripts.Manager
         [Header("Wave Progression")]
         public List<GameObject> _spawnedBoats = new List<GameObject>();
         public List<Transform> _spawnPoints; 
+        public WaveData _currentWaveData;
         [SerializeField]private int _littleBoatsIncrement  ;
         [SerializeField]private int _balancedBoatsIncrement ;
         [SerializeField] private int _bigBoatsIncrement = 0 ;
@@ -31,7 +32,7 @@ namespace Michael.Scripts.Manager
         [SerializeField] private float _spawnTimer;
         [SerializeField] private TextMeshProUGUI _waveText;
         [SerializeField] private List<WaveData> _waveData;
-        public WaveData _currentWaveData;
+        private int _boatsWithGoldGenerated = 0; // Nombre de bateaux riches générés
         private int _spawnIndex;
         private Transform _lastSpawnPoint;
         private int _littleBoatsBonus = 0 ;
@@ -55,6 +56,18 @@ namespace Michael.Scripts.Manager
                     }
                     _lastSpawnPoint = _spawnPoints[_spawnIndex];
                     GameObject boat = Instantiate(_boatsToSpawn[0],_lastSpawnPoint.position, Quaternion.identity);
+                    
+                    float currentGoldBoatRatio = (float)_boatsWithGoldGenerated / _boatsToSpawn.Count;
+                    if (currentGoldBoatRatio < _currentWaveData.BoatWithGoldPourcent)
+                    {
+                        Debug.Log("boat with gols");
+                        int goldOnBoat = Mathf.CeilToInt(boat.GetComponent<BoatEnemy>().BoatGoldMax * 0.2f);
+                        boat.GetComponent<Enemy.BoatEnemy>().SetGoldOnBoat(goldOnBoat);
+                        _boatsWithGoldGenerated++;
+                    }
+                    
+                    
+                    
                     
                     _boatsToSpawn.RemoveAt(0);
                     _spawnedBoats.Add(boat);
@@ -126,7 +139,8 @@ namespace Michael.Scripts.Manager
 
         }
         private void EndWave() {
-           
+            
+            _boatsWithGoldGenerated = 0;
             GameManager.Instance.OpenShop();
         }
        

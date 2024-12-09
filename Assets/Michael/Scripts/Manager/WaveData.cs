@@ -14,6 +14,6 @@ namespace Michael.Scripts.Manager
         [field : SerializeField]
         public int BigBoatCount { get; private set; }
         [field : SerializeField]
-        public int BoatWithGoldPourcent { get; private set; }
+        public float BoatWithGoldPourcent { get; private set; }
     }
 }

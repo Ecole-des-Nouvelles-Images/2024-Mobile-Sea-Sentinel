@@ -8,7 +8,7 @@ namespace Michael.Scripts.Upgrade
         public override void Start()
         {
             base.Start();
-            ValueText.text = PlayerData.Instance.BulletDamage.ToString();
+           // ValueText.text = PlayerData.Instance.BulletDamage.ToString();
         }
 
 

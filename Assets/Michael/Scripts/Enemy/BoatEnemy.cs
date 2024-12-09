@@ -65,11 +65,16 @@ namespace Michael.Scripts.Enemy
             
             if (Random.value <= WaveManager.Instance._currentWaveData.BoatWithGoldPourcent)
             {
-                //CurrentBoatGold =  BoatGoldMax * BoatType.
+              
             }
             else {
                 CurrentBoatGold = 0;
             }
+        }
+
+        public void SetGoldOnBoat(int gold)
+        {
+            CurrentBoatGold = gold;
         }
         
         public void UpgradeStats(float speedIncrease, int goldCapacityIncrease, int healthIncrease)

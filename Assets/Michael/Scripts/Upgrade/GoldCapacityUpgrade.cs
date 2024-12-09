@@ -7,7 +7,7 @@ namespace Michael.Scripts.Upgrade
         public override void Start()
         {
             base.Start();
-            ValueText.text = PlayerData.Instance.MaxGoldCapacity.ToString();
+          //  ValueText.text = PlayerData.Instance.MaxGoldCapacity.ToString();
         }
 
 
