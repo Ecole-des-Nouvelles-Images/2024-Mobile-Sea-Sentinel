@@ -12,9 +12,9 @@ namespace Michael.Scripts.Manager
         
         [SerializeField] private GameObject _shopPanel;
         [SerializeField] private GameObject _gameOverPanel;
-        public PlayerData playerData;
-        [SerializeField] private Camera _mainCamera;
+        public Camera _mainCamera;
         [SerializeField] private float _shakeVibrato;
+        public Canvas _canvas;
         private void Start()
         {
             _mainCamera = Camera.main;

@@ -854,10 +854,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -305.0,
-            "y": 16.0,
-            "width": 145.0,
-            "height": 129.0
+            "x": -405.0000305175781,
+            "y": 28.000017166137697,
+            "width": 208.0,
+            "height": 313.0
         }
     },
     "m_Slots": [
@@ -867,13 +867,13 @@
     ],
     "synonyms": [],
     "m_Precision": 0,
-    "m_PreviewExpanded": false,
+    "m_PreviewExpanded": true,
     "m_DismissedVersion": 0,
     "m_PreviewMode": 0,
     "m_CustomColors": {
         "m_SerializableColors": []
     },
-    "m_ScreenSpaceType": 0
+    "m_ScreenSpaceType": 1
 }
 
 {

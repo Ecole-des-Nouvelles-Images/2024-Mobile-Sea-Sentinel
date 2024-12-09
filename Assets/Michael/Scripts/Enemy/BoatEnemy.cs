@@ -31,32 +31,47 @@ namespace Michael.Scripts.Enemy
         [SerializeField] private AnimationCurve _bounceFeedback;
         [SerializeField] private float _lerpSpeed = 0.05f;
         [SerializeField] CanvasGroup _damageImageCanvasGroup;
+        [SerializeField] private GameObject _chest;
         private GameObject _playerTarget;
         private NavMeshAgent _navMeshAgent;
         private bool _hasThief ;
         private Vector3 _initialPosition;
         private Sequence _damageNumberSequence;
         private Vector3 _originalPosition;
+        private GameObject[] _playerChests;
         
 
         void Start() {
-        
-            _playerTarget = GameObject.FindGameObjectWithTag("Player");
+            
             _navMeshAgent = GetComponent<NavMeshAgent>();
             _initialPosition = transform.position;
-           _navMeshAgent.speed = BoatType.Speed;
-            _boatGoldMax = BoatType.GoldCapacity;
-            _maxHealth = BoatType.MaxHealth;
+            InitializeBoatStats();
+            
+           // UpgradeStats(WaveManager.Instance.SpeedIncrement,WaveManager.Instance.GoldIncrement,WaveManager.Instance.HealthIncrement);
             _currentHealth = _maxHealth;
             _boatGoldText.text = _currentBoatGold + "/" + _boatGoldMax;
+            GetNearestTarget();
             FollowTarget(_playerTarget.transform.position);
-
             _boatHealthBar.maxValue = _maxHealth;
             _boatEaseHealthBar.maxValue = _maxHealth;
             _originalPosition = _damageNumberText.transform.position;
+            
+            
+        }
+
+        public void InitializeBoatStats()
+        {
+            _navMeshAgent.speed = BoatType.Speed;
+            _boatGoldMax = BoatType.GoldCapacity;
+            _maxHealth = BoatType.MaxHealth;
         }
         
-        
+        public void UpgradeStats(float speedIncrease, int goldCapacityIncrease, int healthIncrease)
+        {
+            _navMeshAgent.speed += speedIncrease;
+            _boatGoldMax += goldCapacityIncrease;
+            _maxHealth += healthIncrease;
+        }
 
     
         void Update() {
@@ -83,14 +98,17 @@ namespace Michael.Scripts.Enemy
         
             if (other.CompareTag("Bullet")) {
                
-               TakeDamage(10);
+               TakeDamage(PlayerData.Instance.BulletDamage);
                 Debug.Log("bateau touché");
             }
 
             if (other.CompareTag("Player")) {
-                
+
+                if (!_hasThief)
+                {
+                    StealGold(other.gameObject);
+                }
                 _hasThief = true;
-               StealGold(other.gameObject);
             }
         }
         
@@ -117,13 +135,12 @@ namespace Michael.Scripts.Enemy
 
         private void StealGold(GameObject target)
         {
+            Debug.Log("StealGold");
             _currentBoatGold = _boatGoldMax - _currentBoatGold;
-           
             PlayerData.Instance.CurrentGold -= _currentBoatGold;
             HealthBarFeedback( PlayerData.Instance.goldText.gameObject);
             _boatGoldText.text = _currentBoatGold + "/" + _boatGoldMax;
-          
-            
+            target.transform.DOShakePosition(1, Vector3.one).SetEase(Ease.InBounce);
             FollowTarget(_initialPosition);
         }
 
@@ -133,7 +150,11 @@ namespace Michael.Scripts.Enemy
             // opacité shader
             Destroy(gameObject);
             GameManager.Instance.ShakeCamera();
-            
+            if (_currentBoatGold >= 1 )
+            { 
+                GameObject chest = Instantiate(_chest, transform.position,transform.rotation);
+                chest.GetComponent<Chest>().ChestGold = _currentBoatGold;
+            }
         }
 
         private void HealthBarFeedback(GameObject ui)
@@ -156,9 +177,24 @@ namespace Michael.Scripts.Enemy
             _damageNumberSequence.OnComplete(() => { _damageNumberText.gameObject.SetActive(false);
             });
         }
+
+        public void GetNearestTarget()
+        {
+            _playerChests = GameObject.FindGameObjectsWithTag("Player");
+            GameObject nearestChest = _playerChests[0];
+            float nearestDistance = Vector3.Distance(gameObject.transform.position, nearestChest.transform.position);
+
+            for (int i = 1; i < _playerChests.Length; i++)
+            {
+                float distance = Vector3.Distance(gameObject.transform.position, _playerChests[i].transform.position);
+                if (distance < nearestDistance)
+                {
+                    nearestChest = _playerChests[i];
+                    distance = nearestDistance;
+                }
+            }
+            _playerTarget = nearestChest;
+        }
         
-        
-        
-    
     }
 }

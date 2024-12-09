@@ -5,8 +5,117 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b7472739-ef28-4269-8639-9f341bd314f4" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Mobile-Sea-Sentinel/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Mobile-Sea-Sentinel/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Alexandre/ProtoPharePackage/TouchAim/RayCastControl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Alexandre/ProtoPharePackage/TouchAim/RayCastControl.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sacha/Free Stylized Skybox.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sacha/Free Stylized Skybox/CubeMap.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sacha/Free Stylized Skybox/CubeMap/Materials.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sacha/Free Stylized Skybox/CubeMap/Materials/Sky_Anime_03_Day_a.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sacha/Free Stylized Skybox/CubeMap/Materials/Sky_Anime_03_Day_a.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sacha/Free Stylized Skybox/CubeMap/Materials/Sky_Anime_11_morning_a.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sacha/Free Stylized Skybox/CubeMap/Materials/Sky_Anime_11_morning_a.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sacha/Free Stylized Skybox/CubeMap/Materials/Sky_Anime_15_Day_a.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sacha/Free Stylized Skybox/CubeMap/Materials/Sky_Anime_15_Day_a.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sacha/Free Stylized Skybox/CubeMap/Materials/Sky_Anime_18_day_a.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sacha/Free Stylized Skybox/CubeMap/Materials/Sky_Anime_18_day_a.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sacha/Free Stylized Skybox/CubeMap/Materials/Sky_LowPoly_01_Day_a.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sacha/Free Stylized Skybox/CubeMap/Materials/Sky_LowPoly_01_Day_a.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sacha/Free Stylized Skybox/CubeMap/Materials/Sky_LowPoly_02_Night_a.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sacha/Free Stylized Skybox/CubeMap/Materials/Sky_LowPoly_02_Night_a.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sacha/Free Stylized Skybox/CubeMap/Textures.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sacha/Free Stylized Skybox/CubeMap/Textures/Sky_Anime_03_Day_a.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sacha/Free Stylized Skybox/CubeMap/Textures/Sky_Anime_03_Day_a.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sacha/Free Stylized Skybox/CubeMap/Textures/Sky_Anime_11_morning_a.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sacha/Free Stylized Skybox/CubeMap/Textures/Sky_Anime_11_morning_a.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sacha/Free Stylized Skybox/CubeMap/Textures/Sky_Anime_15_Day_a.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sacha/Free Stylized Skybox/CubeMap/Textures/Sky_Anime_15_Day_a.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sacha/Free Stylized Skybox/CubeMap/Textures/Sky_Anime_18_day_a.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sacha/Free Stylized Skybox/CubeMap/Textures/Sky_Anime_18_day_a.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sacha/Free Stylized Skybox/CubeMap/Textures/Sky_LowPoly_01_Day_a.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sacha/Free Stylized Skybox/CubeMap/Textures/Sky_LowPoly_01_Day_a.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sacha/Free Stylized Skybox/CubeMap/Textures/Sky_LowPoly_02_Night_a.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sacha/Free Stylized Skybox/CubeMap/Textures/Sky_LowPoly_02_Night_a.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sacha/Free Stylized Skybox/Panoramic.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sacha/Free Stylized Skybox/Panoramic/Materials.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sacha/Free Stylized Skybox/Panoramic/Materials/Sky_Anime_03_Day_a.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sacha/Free Stylized Skybox/Panoramic/Materials/Sky_Anime_03_Day_a.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sacha/Free Stylized Skybox/Panoramic/Materials/Sky_Anime_11_morning_a.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sacha/Free Stylized Skybox/Panoramic/Materials/Sky_Anime_11_morning_a.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sacha/Free Stylized Skybox/Panoramic/Materials/Sky_Anime_15_Day_a.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sacha/Free Stylized Skybox/Panoramic/Materials/Sky_Anime_15_Day_a.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sacha/Free Stylized Skybox/Panoramic/Materials/Sky_Anime_18_day_a.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sacha/Free Stylized Skybox/Panoramic/Materials/Sky_Anime_18_day_a.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sacha/Free Stylized Skybox/Panoramic/Materials/Sky_LowPoly_01_Day_a.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sacha/Free Stylized Skybox/Panoramic/Materials/Sky_LowPoly_01_Day_a.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sacha/Free Stylized Skybox/Panoramic/Materials/Sky_LowPoly_01_Day_a.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sacha/Free Stylized Skybox/Panoramic/Materials/Sky_LowPoly_01_Day_a.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sacha/Free Stylized Skybox/Panoramic/Materials/Sky_LowPoly_02_Night_a.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sacha/Free Stylized Skybox/Panoramic/Materials/Sky_LowPoly_02_Night_a.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sacha/Free Stylized Skybox/Panoramic/Materials/StylizedSkybox.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sacha/Free Stylized Skybox/Panoramic/Materials/StylizedSkybox.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sacha/Free Stylized Skybox/Panoramic/Textures.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sacha/Free Stylized Skybox/Panoramic/Textures/Sky_Anime_03_Day_a.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sacha/Free Stylized Skybox/Panoramic/Textures/Sky_Anime_03_Day_a.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sacha/Free Stylized Skybox/Panoramic/Textures/Sky_Anime_11_morning_a.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sacha/Free Stylized Skybox/Panoramic/Textures/Sky_Anime_11_morning_a.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sacha/Free Stylized Skybox/Panoramic/Textures/Sky_Anime_15_Day_a.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sacha/Free Stylized Skybox/Panoramic/Textures/Sky_Anime_15_Day_a.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sacha/Free Stylized Skybox/Panoramic/Textures/Sky_Anime_18_day_a.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sacha/Free Stylized Skybox/Panoramic/Textures/Sky_Anime_18_day_a.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sacha/Free Stylized Skybox/Panoramic/Textures/Sky_LowPoly_02_Night_a.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sacha/Free Stylized Skybox/Panoramic/Textures/Sky_LowPoly_02_Night_a.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sacha/Free Stylized Skybox/Panoramic/Textures/SkyboxTest.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sacha/Free Stylized Skybox/Panoramic/Textures/SkyboxTest.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sacha/Free Stylized Skybox/ReadMe.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sacha/Free Stylized Skybox/ReadMe.txt.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sacha/Free Stylized Skybox/Scene.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sacha/Free Stylized Skybox/Scene.unity.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/Scripts/Enemy/BoatEnemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Scripts/Enemy/BoatEnemy.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/Shader/Simple Water Shader/Resources/WaterShader.shadergraph" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Shader/Simple Water Shader/Resources/WaterShader.shadergraph" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/Shader/Simple Water Shader/Resources/Water_mat_03.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Shader/Simple Water Shader/Resources/Water_mat_03.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/Skybox/CubeMap.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Skybox/CubeMap.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/Skybox/CubeMap/Materials.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Skybox/CubeMap/Materials.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/Skybox/CubeMap/Materials/Sky_Anime_03_Day_a.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Skybox/CubeMap/Materials/Sky_Anime_03_Day_a.mat.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/Skybox/CubeMap/Materials/Sky_Anime_11_morning_a.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Skybox/CubeMap/Materials/Sky_Anime_11_morning_a.mat.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/Skybox/CubeMap/Materials/Sky_Anime_15_Day_a.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Skybox/CubeMap/Materials/Sky_Anime_15_Day_a.mat.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/Skybox/CubeMap/Materials/Sky_Anime_18_day_a.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Skybox/CubeMap/Materials/Sky_Anime_18_day_a.mat.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/Skybox/CubeMap/Materials/Sky_LowPoly_01_Day_a.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Skybox/CubeMap/Materials/Sky_LowPoly_01_Day_a.mat.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/Skybox/CubeMap/Materials/Sky_LowPoly_02_Night_a.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Skybox/CubeMap/Materials/Sky_LowPoly_02_Night_a.mat.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/Skybox/CubeMap/Textures.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Skybox/CubeMap/Textures.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/Skybox/CubeMap/Textures/Sky_Anime_03_Day_a.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Skybox/CubeMap/Textures/Sky_Anime_03_Day_a.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/Skybox/CubeMap/Textures/Sky_Anime_11_morning_a.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Skybox/CubeMap/Textures/Sky_Anime_11_morning_a.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/Skybox/CubeMap/Textures/Sky_Anime_15_Day_a.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Skybox/CubeMap/Textures/Sky_Anime_15_Day_a.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/Skybox/CubeMap/Textures/Sky_Anime_18_day_a.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Skybox/CubeMap/Textures/Sky_Anime_18_day_a.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/Skybox/CubeMap/Textures/Sky_LowPoly_01_Day_a.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Skybox/CubeMap/Textures/Sky_LowPoly_01_Day_a.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/Skybox/CubeMap/Textures/Sky_LowPoly_02_Night_a.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Skybox/CubeMap/Textures/Sky_LowPoly_02_Night_a.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/Skybox/Panoramic.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Skybox/Panoramic.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/Skybox/Panoramic/Materials.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Skybox/Panoramic/Materials.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/Skybox/Panoramic/Materials/Sky_Anime_03_Day_a.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Skybox/Panoramic/Materials/Sky_Anime_03_Day_a.mat.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/Skybox/Panoramic/Materials/Sky_Anime_11_morning_a.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Skybox/Panoramic/Materials/Sky_Anime_11_morning_a.mat.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/Skybox/Panoramic/Materials/Sky_Anime_15_Day_a.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Skybox/Panoramic/Materials/Sky_Anime_15_Day_a.mat.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/Skybox/Panoramic/Materials/Sky_Anime_18_day_a.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Skybox/Panoramic/Materials/Sky_Anime_18_day_a.mat.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/Skybox/Panoramic/Materials/Sky_LowPoly_01_Day_a.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Skybox/Panoramic/Materials/Sky_LowPoly_01_Day_a.mat.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/Skybox/Panoramic/Materials/Sky_LowPoly_02_Night_a.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Skybox/Panoramic/Materials/Sky_LowPoly_02_Night_a.mat.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/Skybox/Panoramic/Textures.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Skybox/Panoramic/Textures.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/Skybox/Panoramic/Textures/Sky_Anime_03_Day_a.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Skybox/Panoramic/Textures/Sky_Anime_03_Day_a.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/Skybox/Panoramic/Textures/Sky_Anime_11_morning_a.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Skybox/Panoramic/Textures/Sky_Anime_11_morning_a.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/Skybox/Panoramic/Textures/Sky_Anime_15_Day_a.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Skybox/Panoramic/Textures/Sky_Anime_15_Day_a.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/Skybox/Panoramic/Textures/Sky_Anime_18_day_a.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Skybox/Panoramic/Textures/Sky_Anime_18_day_a.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/Skybox/Panoramic/Textures/Sky_LowPoly_02_Night_a.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Skybox/Panoramic/Textures/Sky_LowPoly_02_Night_a.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/Skybox/ReadMe.txt.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Skybox/ReadMe.txt.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/Skybox/Scene.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Skybox/Scene.unity.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sacha/Materials/M_BigBoat.002.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sacha/Materials/M_BigBoat.002.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sacha/Materials/M_Boat.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sacha/Materials/M_Boat.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sacha/Prefabs/NS_BigBoat_low.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sacha/Prefabs/NS_BigBoat_low.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sacha/Prefabs/NS_Boat_low.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sacha/Prefabs/NS_Boat_low.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sacha/Scenes/Prototype_Sacha.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sacha/Scenes/Prototype_Sacha.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sacha/Textures/Props/NS_Chest_low_M_Chest.001_AlbedoTransparency.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sacha/Textures/Props/T_Chest_low_M_Chest.001_AlbedoTransparency.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sacha/Textures/Props/NS_Chest_low_M_Chest.001_AlbedoTransparency.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sacha/Textures/Props/T_Chest_low_M_Chest.001_AlbedoTransparency.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sacha/Textures/Props/NS_Chest_low_M_Chest.001_Emission.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sacha/Textures/Props/T_Chest_low_M_Chest.001_Emission.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sacha/Textures/Props/NS_Chest_low_M_Chest.001_Emission.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sacha/Textures/Props/T_Chest_low_M_Chest.001_Emission.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sacha/Textures/Props/NS_Chest_low_M_Chest.001_MetallicSmoothness.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sacha/Textures/Props/T_Chest_low_M_Chest.001_MetallicSmoothness.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sacha/Textures/Props/NS_Chest_low_M_Chest.001_MetallicSmoothness.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sacha/Textures/Props/T_Chest_low_M_Chest.001_MetallicSmoothness.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sacha/Textures/Props/NS_Chest_low_M_Chest.001_Normal.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sacha/Textures/Props/T_Chest_low_M_Chest.001_Normal.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sacha/Textures/Props/NS_Chest_low_M_Chest.001_Normal.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sacha/Textures/Props/T_Chest_low_M_Chest.001_Normal.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sacha/Textures/Props/T_ExplosiveBarrel_AlbedoTransparency.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sacha/Textures/Props/T_ExplosiveBarrel_AlbedoTransparency.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +130,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Alexandre/ProtoPharePackage/TouchAim/LHControls.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Michael/Scripts/UI/HealthBar.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Michael/Scripts/UI/UiFollowCamera.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Michael/Scripts/Upgrade/FireRateUpgrade.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.universal@14.0.11/Runtime/ScriptableRendererData.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventInterfaces.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/GraphicRaycaster.cs" root0="SKIP_HIGHLIGHTING" />
@@ -38,22 +148,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Discover.Launch.Via.Unity&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Merging Michael&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;CodeLensConfigurable&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Discover.Launch.Via.Unity": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "Merging Michael",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "CodeLensConfigurable",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2022.3.47f1\Editor\Unity.exe" />
@@ -72,7 +182,7 @@
       <method v="2" />
     </configuration>
     <configuration name="UnitTests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2022.3.47f1\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="D:\Utilisateurs\miche\Unity\2022.3.47f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath &quot;D:\Utilisateurs\miche\Unity Project 2023-2024\Mobile-Sea-Sentinel&quot; -testResults Logs/results.xml -testPlatform EditMode -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="D:\Utilisateurs\miche\Unity Project 2023-2024\Mobile-Sea-Sentinel" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -125,8 +235,11 @@
       <workItem from="1733221748890" duration="2587000" />
       <workItem from="1733302853849" duration="1257000" />
       <workItem from="1733325005297" duration="513000" />
-      <workItem from="1733394114134" duration="6512000" />
-      <workItem from="1733488337959" duration="24915000" />
+      <workItem from="1733394114134" duration="3725000" />
+      <workItem from="1733475534642" duration="5741000" />
+      <workItem from="1733573922918" duration="7286000" />
+      <workItem from="1733676312333" duration="2564000" />
+      <workItem from="1733734738072" duration="4962000" />
     </task>
     <servers />
   </component>
