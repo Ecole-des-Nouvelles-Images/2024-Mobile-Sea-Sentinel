@@ -46,7 +46,8 @@ namespace Michael.Scripts.Enemy
             _navMeshAgent = GetComponent<NavMeshAgent>();
             _initialPosition = transform.position;
             InitializeBoatStats();
-            UpgradeStats(WaveManager.Instance.SpeedIncrement,WaveManager.Instance.GoldIncrement,WaveManager.Instance.HealthIncrement);
+            
+           // UpgradeStats(WaveManager.Instance.SpeedIncrement,WaveManager.Instance.GoldIncrement,WaveManager.Instance.HealthIncrement);
             _currentHealth = _maxHealth;
             _boatGoldText.text = _currentBoatGold + "/" + _boatGoldMax;
             GetNearestTarget();
