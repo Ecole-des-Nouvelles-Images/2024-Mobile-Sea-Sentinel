@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 2100000, guid: 4ced1a018de1aca479de521b5c75732e, type: 2}
+  m_SkyboxMaterial: {fileID: 2100000, guid: d353d6a5ae5fc424dbb0dc155fecc355, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -481,6 +481,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: ST_SmallBrokenBoatFlagHolder_low
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a6b6addb65ad8844b854eba667e4a7a8,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -891,6 +896,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: ST_SmallBrokenBoat
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 936197e693d83ab4da84127921024241,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1744,10 +1754,45 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -8.039
       objectReference: {fileID: 0}
+    - target: {fileID: -8354305412941574533, guid: 018516af9ce48a347a782b7761be726d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: -3349142983924523288, guid: 018516af9ce48a347a782b7761be726d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 018516af9ce48a347a782b7761be726d,
         type: 3}
       propertyPath: m_Name
-      value: NS_Chest_low_1
+      value: ST_Chest_low_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 018516af9ce48a347a782b7761be726d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1213059494929563977, guid: 018516af9ce48a347a782b7761be726d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 3200234657454191720, guid: 018516af9ce48a347a782b7761be726d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 5374405030397623207, guid: 018516af9ce48a347a782b7761be726d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 5953020476311009763, guid: 018516af9ce48a347a782b7761be726d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 9181651104033787935, guid: 018516af9ce48a347a782b7761be726d,
         type: 3}
@@ -2220,6 +2265,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: ST_Rock7
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 10985d9d1df9c124988590f9122dbc02,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3317,6 +3367,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: ST_Rock3
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4481b9f34f7731b41a5a3a4089749932,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4780,7 +4835,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!135 &1225445563
 SphereCollider:
@@ -5015,6 +5070,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: ST_Rock4
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: dc02be4c55a83e94bae8ee7a49ef506a,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6129,10 +6189,45 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 8.902
       objectReference: {fileID: 0}
+    - target: {fileID: -8354305412941574533, guid: 018516af9ce48a347a782b7761be726d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: -3349142983924523288, guid: 018516af9ce48a347a782b7761be726d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 018516af9ce48a347a782b7761be726d,
         type: 3}
       propertyPath: m_Name
-      value: NS_Chest_low
+      value: ST_Chest_low
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 018516af9ce48a347a782b7761be726d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1213059494929563977, guid: 018516af9ce48a347a782b7761be726d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 3200234657454191720, guid: 018516af9ce48a347a782b7761be726d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 5374405030397623207, guid: 018516af9ce48a347a782b7761be726d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 5953020476311009763, guid: 018516af9ce48a347a782b7761be726d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 9181651104033787935, guid: 018516af9ce48a347a782b7761be726d,
         type: 3}
@@ -6172,6 +6267,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -8774679978565621560, guid: 3b5002957bf397446b5533be6759816c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3b5002957bf397446b5533be6759816c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6222,10 +6322,40 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -6933440704213433037, guid: 3b5002957bf397446b5533be6759816c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: -5780266116780357263, guid: 3b5002957bf397446b5533be6759816c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: -2090060766713940421, guid: 3b5002957bf397446b5533be6759816c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: -573136300459220512, guid: 3b5002957bf397446b5533be6759816c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 3b5002957bf397446b5533be6759816c,
         type: 3}
       propertyPath: m_Name
       value: ST_Lighthouse_low
+      objectReference: {fileID: 0}
+    - target: {fileID: 2870684516615673784, guid: 3b5002957bf397446b5533be6759816c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 2908470678429606889, guid: 3b5002957bf397446b5533be6759816c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6294,6 +6424,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: ST_Rock1_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7a5c0af324c70da46a5e373f8e414391,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7608,6 +7743,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: ST_Rock1
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7a5c0af324c70da46a5e373f8e414391,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7819,6 +7959,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: ST_SmallBrokenBoatFlagHolder_low_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a6b6addb65ad8844b854eba667e4a7a8,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
