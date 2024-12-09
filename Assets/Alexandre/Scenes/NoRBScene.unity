@@ -3035,9 +3035,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2662a097ea7aea64b811d8f35d22dc7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speedIncrement: 2
-  goldIncrement: 25
-  progressionInterval: 3
+  SpeedIncrement: 2
+  GoldIncrement: 25
+  HealthIncrement: 25
+  StatsprogressionInterval: 3
+  WaveprogressionInterval: 5
   _spawnedBoats: []
   _spawnPoints:
   - {fileID: 2028883343}
@@ -3048,10 +3050,9 @@ MonoBehaviour:
   - {fileID: 877966309}
   - {fileID: 322215573}
   - {fileID: 322279560}
-  _currentWaveValue: 10
-  _waveValue: 15
-  _currentWave: 0
-  _waveValueIncrement: 20
+  _littleBoatsIncrement: 0
+  _balancedBoatsIncrement: 0
+  _bigBoatsIncrement: 0
   _boat:
   - {fileID: 11400000, guid: cbc8dbb618206454880c9a22b239987d, type: 2}
   - {fileID: 11400000, guid: ba29ed64427a20f4da5f02d1e8236f52, type: 2}
@@ -3065,6 +3066,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 3ffb4d65fe7c2b04e854be277bf0d8dc, type: 2}
   - {fileID: 11400000, guid: 3ffb4d65fe7c2b04e854be277bf0d8dc, type: 2}
   - {fileID: 11400000, guid: 3ffb4d65fe7c2b04e854be277bf0d8dc, type: 2}
+  _currentWaveData: {fileID: 0}
+  _currentWave: 0
 --- !u!1 &1355313800
 GameObject:
   m_ObjectHideFlags: 0
@@ -3659,9 +3662,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _shopPanel: {fileID: 1813503175}
   _gameOverPanel: {fileID: 596133880}
-  playerData: {fileID: 0}
   _mainCamera: {fileID: 0}
   _shakeVibrato: 10
+  _canvas: {fileID: 0}
 --- !u!4 &1807758860
 Transform:
   m_ObjectHideFlags: 0
@@ -4139,11 +4142,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1840048320}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a75e60358381851439fa41d2cb5ab136, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currentGoldText: {fileID: 0}
 --- !u!4 &1840048322
 Transform:
   m_ObjectHideFlags: 0

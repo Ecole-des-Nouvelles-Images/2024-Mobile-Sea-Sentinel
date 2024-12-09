@@ -38,6 +38,16 @@ namespace Alexandre.NoRBPhare.Scripts
         public ParticleSystem VFXShot1;
         public ParticleSystem VFXShot2;
         public Transform CanonOut;
+        [SerializeField] private Transform _offset;
+
+        public float _depthOffset = 5f;
+        public float _heightOffsetDelta = 1f;
+        
+        // Références pour le tir de tonneaux explosifs
+        public Transform BarrelOut;
+        public GameObject ExplosiveBarrelPrefab;
+        public Transform BarrelOffset;
+        
 
         // Ref au Canon
         public Transform Canon;
@@ -48,10 +58,8 @@ namespace Alexandre.NoRBPhare.Scripts
         public float minDistance = 5f; // Distance minimale pour viser
         public float maxDistance = 50f; // Distance maximale pour viser
 
-        public float _depthOffset = 5f;
-        public float _heightOffsetDelta = 1f;
 
-        [SerializeField] private Transform _offset;
+
 
         void Start()
         {
@@ -138,6 +146,24 @@ namespace Alexandre.NoRBPhare.Scripts
             Debug.Log("Offset position : " + _offset.position);
         }
 
+        void GetExplosiveBarrelTrajectory()
+        {
+            float offsetHeight = Mathf.Lerp(_touchPosition.y, BarrelOut.position.y * _heightOffsetDelta,
+                (Vector3.Distance(BarrelOut.position, _touchPosition) - minDistance) / (maxDistance - minDistance));
+            BarrelOffset.position = new Vector3(_touchPosition.x, offsetHeight, _touchPosition.z);
+            // Calculez la direction du canon vers la position touchée
+            Vector3 direction = (BarrelOffset.position - BarrelOut.position).normalized;
+
+            // Interpolez la direction du tonneaux en utilisant le delta time et la vitesse
+            BarrelOut.forward = Vector3.Lerp(BarrelOut.forward, direction, AimSpeed * Time.deltaTime);
+            
+        }
+
+        void ShootExplosiveBarrel()
+        {
+            GameObject barrel = Instantiate(ExplosiveBarrelPrefab, BarrelOut.position, BarrelOut.rotation);
+            barrel.GetComponent<ExplosiveBarrel>().SetTrajectoryParameters(BarrelOut.position, _touchPosition, BarrelOffset.position);
+        }
 
         void UpdateLightDirection()
         {
@@ -213,5 +239,7 @@ namespace Alexandre.NoRBPhare.Scripts
             Gizmos.color = Color.magenta;
             Gizmos.DrawSphere(_offset.position, 2f);
         }
+        
+        // Arme bonus : tonneaux explosifs
     }
 }

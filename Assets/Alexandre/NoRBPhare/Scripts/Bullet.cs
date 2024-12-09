@@ -5,7 +5,6 @@ public class Bullet : MonoBehaviour
     private Vector3 startPosition;
     private Vector3 endPosition;
     private Vector3 offset;
-    private float journeyLength;
     private float startTime;
     public float speed = 10f; // Vitesse de la balle
     
@@ -14,7 +13,6 @@ public class Bullet : MonoBehaviour
     void Start()
     {
         startTime = Time.time;
-        journeyLength = Vector3.Distance(startPosition, endPosition);
     }
 
     void Update()
