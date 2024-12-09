@@ -1703,6 +1703,12 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 2003055778}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &758070494 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2134021058067376435, guid: bcdce6be5de008d4babd556fc2e2947e,
+    type: 3}
+  m_PrefabInstance: {fileID: 1418133261820419410}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &800833143
 GameObject:
   m_ObjectHideFlags: 0
@@ -2804,6 +2810,12 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 45, y: 180, z: 0}
+--- !u!4 &1284705819 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2874059836728545513, guid: bcdce6be5de008d4babd556fc2e2947e,
+    type: 3}
+  m_PrefabInstance: {fileID: 1418133261820419410}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1307763592
 GameObject:
   m_ObjectHideFlags: 0
@@ -4805,9 +4817,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4826552341380177976, guid: bcdce6be5de008d4babd556fc2e2947e,
         type: 3}
+      propertyPath: CanonRail
+      value: 
+      objectReference: {fileID: 1284705819}
+    - target: {fileID: 4826552341380177976, guid: bcdce6be5de008d4babd556fc2e2947e,
+        type: 3}
       propertyPath: RayCastUI
       value: 
       objectReference: {fileID: 4130650674001179722}
+    - target: {fileID: 4826552341380177976, guid: bcdce6be5de008d4babd556fc2e2947e,
+        type: 3}
+      propertyPath: CanonParent
+      value: 
+      objectReference: {fileID: 758070494}
     - target: {fileID: 4826552341380177976, guid: bcdce6be5de008d4babd556fc2e2947e,
         type: 3}
       propertyPath: CoolDownSlider
