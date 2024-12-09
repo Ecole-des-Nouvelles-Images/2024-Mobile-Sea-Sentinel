@@ -113,7 +113,7 @@ Material:
     - _DetailAlbedoMapScale: 1
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
-    - _Emission_Reduction: 0.49
+    - _Emission_Reduction: 0.34
     - _EnvironmentReflections: 1
     - _Fresnel_Power: 1
     - _Glitter_Offset: 0.5
@@ -138,10 +138,10 @@ Material:
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _Emission_Color: {r: 1, g: 0.538391, b: 0, a: 1}
+    - _Emission_Color: {r: 0.8679245, g: 0.63607883, b: 0.29067284, a: 1}
     - _Fresnel_Color: {r: 0.68, g: 0.42499998, b: 0.06799999, a: 1}
     - _Glitter_Color: {r: 10.68063, g: 6.878101, b: 1.006551, a: 0}
     - _Noise_Scale: {r: 200, g: 200, b: 0, a: 0}
-    - _Sand_Grains_Color: {r: 0.8705506, g: 0.051620986, b: 0, a: 1}
+    - _Sand_Grains_Color: {r: 0.8039216, g: 0.58888257, b: 0, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
   m_BuildTextureStacks: []
