@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.Serialization;
@@ -33,6 +34,15 @@ namespace Alexandre.NoRBPhare.Scripts
         public float ShootCooldown = 2.0f; // Cooldown time in seconds
         private float _lastShootTime = 0f; // Time when the last shot was fired
 
+        // Arme sélectionnée
+        public enum WeaponType
+        {
+            Canon = 0,
+            ExplosiveBarrel = 1
+        }
+
+        public WeaponType SelectedWeapon;
+        
         // Références pour le tir
         public GameObject BulletPrefab;
         public ParticleSystem VFXShot1;
@@ -47,6 +57,7 @@ namespace Alexandre.NoRBPhare.Scripts
         public Transform BarrelOut;
         public GameObject ExplosiveBarrelPrefab;
         public Transform BarrelOffset;
+        [SerializeField] private float _barrelHeightOffsetDelta = 5f;
         
 
         // Ref au Canon
@@ -70,6 +81,9 @@ namespace Alexandre.NoRBPhare.Scripts
 
             // Ajuster le masque de couche pour exclure le layer "NonInteractable"
             InteractableLayer = ~LayerMask.GetMask("NonInteractable");
+
+            // Initialiser SelectedWeapon à la première arme
+            SelectedWeapon = WeaponType.Canon;
         }
 
         void Update()
@@ -117,7 +131,10 @@ namespace Alexandre.NoRBPhare.Scripts
                         Vector3 adjustedPosition = Canon.position + horizontalOffset.normalized * distanceToTarget;
                         _touchPosition = new Vector3(adjustedPosition.x, _touchPosition.y, adjustedPosition.z);
 
-                        //Ajuster l'Offset
+                        
+                        //Ajuster les Offset
+                        GetExplosiveBarrelTrajectory();
+
                         CalculateOffset(distanceToTarget);
                         //Ajuste l'inclinaison du Canon
                         UpdateCanonDirection();
@@ -130,11 +147,76 @@ namespace Alexandre.NoRBPhare.Scripts
 
                 if (touch.phase == TouchPhase.Ended && _autoShoot)
                 {
-                    ShootWithCooldown();
+                    CanonShootWithCooldown();
                 }
             }
         }
 
+        public void SelectNextWeapon()
+        {
+            SelectedWeapon = (WeaponType)(((int)SelectedWeapon + 1) % Enum.GetValues(typeof(WeaponType)).Length);
+            Debug.Log($"Selected Weapon : {SelectedWeapon}");
+        }
+        
+         public void Shoot()
+        {
+  
+                switch (SelectedWeapon)
+                {
+                    case WeaponType.Canon:
+                        CanonShootWithCooldown();
+                        break;
+                    case WeaponType.ExplosiveBarrel:
+                        ShootExplosiveBarrel();
+                        break;
+                    default:
+                        CanonShootWithCooldown();
+                        break;
+                }
+            
+
+        }
+        void ShootExplosiveBarrel()
+        {
+            GameObject barrel = Instantiate(ExplosiveBarrelPrefab, BarrelOut.position, BarrelOut.rotation);
+            barrel.GetComponent<ExplosiveBarrel>().SetTrajectoryParameters(BarrelOut.position, _touchPosition, BarrelOffset.position);
+        }
+
+
+        void CanonShootWithCooldown()
+        {
+            if (Time.time >= _lastShootTime + ShootCooldown)
+            {
+                // Vérifiez si la position de tir est valide
+                if (_touchPosition != Vector3.zero)
+                {
+                    //float distanceToTarget = Vector3.Distance(Canon.position, touchPosition);
+
+                    // VFX de tir
+                    if (VFXShot1 != null) VFXShot1.Play();
+                    if (VFXShot2 != null) VFXShot2.Play();
+                    // Instancier le boulet
+                    GameObject bullet = Instantiate(BulletPrefab, CanonOut.position, CanonOut.rotation);
+                    Vector3 bulletEndTarget = _touchPosition + Vector3.up * -_depthOffset;
+                    bullet.GetComponent<Bullet>()
+                        .SetTrajectoryParameters(CanonOut.position, bulletEndTarget, _offset.position);
+                    // Définir la direction du boulet pour correspondre à la direction du Canon
+                    bullet.transform.forward = Canon.forward;
+
+                    // Mettre à jour le dernier temps de tir
+                    _lastShootTime = Time.time;
+
+                    // Réinitialiser le slider à la valeur minimale
+                    CoolDownSlider.value = 0;
+                }
+            }
+        }
+
+        void UpdateCoolDownSlider()
+        {
+            float timeSinceLastShot = Time.time - _lastShootTime;
+            CoolDownSlider.value = Mathf.Clamp(timeSinceLastShot, 0, ShootCooldown);
+        }
 
         void CalculateOffset(float distanceToTarget)
         {
@@ -148,7 +230,7 @@ namespace Alexandre.NoRBPhare.Scripts
 
         void GetExplosiveBarrelTrajectory()
         {
-            float offsetHeight = Mathf.Lerp(_touchPosition.y, BarrelOut.position.y * _heightOffsetDelta,
+            float offsetHeight = Mathf.Lerp(_touchPosition.y, BarrelOut.position.y * _barrelHeightOffsetDelta,
                 (Vector3.Distance(BarrelOut.position, _touchPosition) - minDistance) / (maxDistance - minDistance));
             BarrelOffset.position = new Vector3(_touchPosition.x, offsetHeight, _touchPosition.z);
             // Calculez la direction du canon vers la position touchée
@@ -159,11 +241,6 @@ namespace Alexandre.NoRBPhare.Scripts
             
         }
 
-        void ShootExplosiveBarrel()
-        {
-            GameObject barrel = Instantiate(ExplosiveBarrelPrefab, BarrelOut.position, BarrelOut.rotation);
-            barrel.GetComponent<ExplosiveBarrel>().SetTrajectoryParameters(BarrelOut.position, _touchPosition, BarrelOffset.position);
-        }
 
         void UpdateLightDirection()
         {
@@ -199,40 +276,7 @@ namespace Alexandre.NoRBPhare.Scripts
             }
         }
 
-        public void ShootWithCooldown()
-        {
-            if (Time.time >= _lastShootTime + ShootCooldown)
-            {
-                // Vérifiez si la position de tir est valide
-                if (_touchPosition != Vector3.zero)
-                {
-                    //float distanceToTarget = Vector3.Distance(Canon.position, touchPosition);
-
-                    // VFX de tir
-                    if (VFXShot1 != null) VFXShot1.Play();
-                    if (VFXShot2 != null) VFXShot2.Play();
-                    // Instancier le boulet
-                    GameObject bullet = Instantiate(BulletPrefab, CanonOut.position, CanonOut.rotation);
-                    Vector3 bulletEndTarget = _touchPosition + Vector3.up * -_depthOffset;
-                    bullet.GetComponent<Bullet>()
-                        .SetTrajectoryParameters(CanonOut.position, bulletEndTarget, _offset.position);
-                    // Définir la direction du boulet pour correspondre à la direction du Canon
-                    bullet.transform.forward = Canon.forward;
-
-                    // Mettre à jour le dernier temps de tir
-                    _lastShootTime = Time.time;
-
-                    // Réinitialiser le slider à la valeur minimale
-                    CoolDownSlider.value = 0;
-                }
-            }
-        }
-
-        void UpdateCoolDownSlider()
-        {
-            float timeSinceLastShot = Time.time - _lastShootTime;
-            CoolDownSlider.value = Mathf.Clamp(timeSinceLastShot, 0, ShootCooldown);
-        }
+       
 
         private void OnDrawGizmos()
         {

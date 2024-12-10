@@ -7131,7 +7131,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1103037148}
         m_TargetAssemblyTypeName: RayCastControl, Assembly-CSharp
-        m_MethodName: ShootWithCooldown
+        m_MethodName: CanonShootWithCooldown
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

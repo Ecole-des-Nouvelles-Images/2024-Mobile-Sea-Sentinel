@@ -1,3 +1,4 @@
+using Michael.Scripts.Enemy;
 using UnityEngine;
 using UnityEngine.Serialization;
 
@@ -9,7 +10,8 @@ namespace Alexandre.NoRBPhare.Scripts
         private Vector3 _endPosition;
         private Vector3 _offset;
         private float _startTime;
-        [FormerlySerializedAs("speed")] public float Speed = 10f; // Vitesse du jet de tonneau
+        [FormerlySerializedAs("explosionEffect")] public GameObject ExplosionEffectPrefab;
+        [FormerlySerializedAs("speed")] public float Speed = .5f; // Vitesse du jet de tonneau
     
         private bool _tracjetorySetted = false;
 
@@ -46,10 +48,22 @@ namespace Alexandre.NoRBPhare.Scripts
             if (other.gameObject.CompareTag("Enemy"))
             {
                 //blast with a sphere collider to apply damage to enemies
-                //destroy the barrel
+                Instantiate(ExplosionEffectPrefab, transform.position, Quaternion.identity);
+                Collider[] colliders = Physics.OverlapSphere(transform.position, 50f);
+                foreach (var hit in colliders)
+                {
+                    if (hit.CompareTag("Enemy"))
+                    {
+                        hit.GetComponent<BoatEnemy>().TakeDamage(100);
+                    }
+                }
+                //destroy the barrel after explosion
+                Destroy(gameObject);
             }
             // Détruire le projectile lorsqu'il entre en collision avec un autre objet
-            Destroy(gameObject);
+            //Destroy(gameObject);
         }
+
+   
     }
 }
