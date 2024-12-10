@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _boatPrefab: {fileID: 1668166797174309776, guid: 57c650d350ec4414b815dfcc5bae728c,
     type: 3}
-  _speed: 6
+  _speed: 5
   _goldCapacity: 50
   _maxHealth: 20

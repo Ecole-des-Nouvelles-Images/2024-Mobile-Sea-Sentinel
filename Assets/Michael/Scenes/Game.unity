@@ -6556,7 +6556,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpeedIncrement: 1
-  GoldIncrement: 25
+  GoldIncrement: 15
   HealthIncrement: 5
   BoatGoldMultiplier: 0.2
   StatsprogressionInterval: 3

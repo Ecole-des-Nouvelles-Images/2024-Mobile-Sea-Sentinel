@@ -63,28 +63,20 @@ namespace Michael.Scripts.Enemy
             BoatGoldMax = BoatType.GoldCapacity;
             _maxHealth = BoatType.MaxHealth;
             
-          /*  if (Random.value <= WaveManager.Instance._currentWaveData.BoatWithGoldPourcent)
-            {
-                CurrentBoatGold = Mathf.FloorToInt(BoatGoldMax * 0.2f);
-                Debug.Log("as gold");
-            }
-            else {
-                CurrentBoatGold = 0;
-            }*/
+            UpgradeStats();
         }
 
         public void SetGoldOnBoat(int gold)
         {
             CurrentBoatGold = gold;
         }
-        
-        public void UpgradeStats()
+
+        private void UpgradeStats()
         {
-            _navMeshAgent.speed = WaveManager.Instance.SpeedIncrement * WaveManager.Instance._upgradeNumber;
-            BoatGoldMax = WaveManager.Instance.GoldIncrement * WaveManager.Instance._upgradeNumber;
-            _maxHealth = WaveManager.Instance.HealthIncrement * WaveManager.Instance._upgradeNumber;
+            _navMeshAgent.speed += WaveManager.Instance.SpeedIncrement * WaveManager.Instance._upgradeNumber;
+            BoatGoldMax += WaveManager.Instance.GoldIncrement * WaveManager.Instance._upgradeNumber;
+            _maxHealth += WaveManager.Instance.HealthIncrement * WaveManager.Instance._upgradeNumber;
             
-            Debug.Log("stats upgraded");
         }
 
     

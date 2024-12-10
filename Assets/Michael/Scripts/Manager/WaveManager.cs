@@ -72,10 +72,6 @@ namespace Michael.Scripts.Manager
                         _boatsWithGoldGenerated++;
                     }
                     
-                    if (_currentWave % StatsprogressionInterval == 0)
-                    {
-                        boatEnemy.UpgradeStats();
-                    }
                     
                     _boatsToSpawn.RemoveAt(0);
                     _spawnedBoats.Add(boat);
@@ -120,6 +116,11 @@ namespace Michael.Scripts.Manager
                 
                 _currentWaveData = _waveData[_currentWave / WaveprogressionInterval];
                 // nouvelle vague 
+             }
+             if (_currentWave % StatsprogressionInterval == 0)
+             {
+                 _upgradeNumber++;
+                 Debug.Log("stats wave !");
              }
              GenerateEnemy();
             
