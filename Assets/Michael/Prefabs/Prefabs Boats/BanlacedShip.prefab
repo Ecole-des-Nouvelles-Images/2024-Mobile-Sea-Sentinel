@@ -316,7 +316,7 @@ GameObject:
   - component: {fileID: 7730030008898648260}
   m_Layer: 0
   m_Name: BanlacedShip
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -351,6 +351,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   BoatType: {fileID: 11400000, guid: ba29ed64427a20f4da5f02d1e8236f52, type: 2}
+  CurrentBoatGold: 0
+  BoatGoldMax: 0
   _boatModel: {fileID: 1619348359233919151}
   _boatGoldText: {fileID: 7785394016062314180}
   _damageNumberText: {fileID: 3776548591851240748}

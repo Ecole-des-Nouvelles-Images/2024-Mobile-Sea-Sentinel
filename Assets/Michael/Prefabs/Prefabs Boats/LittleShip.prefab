@@ -316,7 +316,7 @@ GameObject:
   - component: {fileID: 7730030008898648260}
   m_Layer: 0
   m_Name: LittleShip
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -351,6 +351,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   BoatType: {fileID: 11400000, guid: cbc8dbb618206454880c9a22b239987d, type: 2}
+  CurrentBoatGold: 0
+  BoatGoldMax: 0
   _boatModel: {fileID: 7668111298836604651}
   _boatGoldText: {fileID: 7785394016062314180}
   _damageNumberText: {fileID: 3776548591851240748}

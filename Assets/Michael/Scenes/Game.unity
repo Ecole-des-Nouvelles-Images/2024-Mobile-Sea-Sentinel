@@ -123,12 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!4 &32608300 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 2874059836728545513, guid: bcdce6be5de008d4babd556fc2e2947e,
-    type: 3}
-  m_PrefabInstance: {fileID: 1934641232}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &76158319 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1507636620937791777, guid: 7097ba7ba649e1f41bba232312bdcbd8,
@@ -6715,17 +6709,22 @@ PrefabInstance:
     - target: {fileID: 3895169580640776686, guid: 906daa4e24c41ac43bd705ddc6f086ab,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: ShootWithCooldown
-      objectReference: {fileID: 0}
-    - target: {fileID: 3895169580640776686, guid: 906daa4e24c41ac43bd705ddc6f086ab,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: Alexandre.NoRBPhare.Scripts.RayCastControl, Assembly-CSharp
+      value: Shoot
       objectReference: {fileID: 0}
     - target: {fileID: 4193319145493150789, guid: 906daa4e24c41ac43bd705ddc6f086ab,
         type: 3}
       propertyPath: m_Name
       value: RayCastUI_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4213050458050195133, guid: 906daa4e24c41ac43bd705ddc6f086ab,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1533409535}
+    - target: {fileID: 4213050458050195133, guid: 906daa4e24c41ac43bd705ddc6f086ab,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SelectNextWeapon
       objectReference: {fileID: 0}
     - target: {fileID: 8402692077686585956, guid: 906daa4e24c41ac43bd705ddc6f086ab,
         type: 3}
@@ -8330,24 +8329,9 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4826552341380177976, guid: bcdce6be5de008d4babd556fc2e2947e,
         type: 3}
-      propertyPath: CanonRail
-      value: 
-      objectReference: {fileID: 32608300}
-    - target: {fileID: 4826552341380177976, guid: bcdce6be5de008d4babd556fc2e2947e,
-        type: 3}
       propertyPath: RayCastUI
       value: 
       objectReference: {fileID: 1546476293}
-    - target: {fileID: 4826552341380177976, guid: bcdce6be5de008d4babd556fc2e2947e,
-        type: 3}
-      propertyPath: maxDistance
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 4826552341380177976, guid: bcdce6be5de008d4babd556fc2e2947e,
-        type: 3}
-      propertyPath: minDistance
-      value: 30
-      objectReference: {fileID: 0}
     - target: {fileID: 4826552341380177976, guid: bcdce6be5de008d4babd556fc2e2947e,
         type: 3}
       propertyPath: CoolDownSlider
@@ -8413,16 +8397,6 @@ PrefabInstance:
       propertyPath: goldText
       value: 
       objectReference: {fileID: 174314963}
-    - target: {fileID: 7945330404300736617, guid: bcdce6be5de008d4babd556fc2e2947e,
-        type: 3}
-      propertyPath: BulletDamage
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 7945330404300736617, guid: bcdce6be5de008d4babd556fc2e2947e,
-        type: 3}
-      propertyPath: MaxGoldCapacity
-      value: 200
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

@@ -1646,7 +1646,7 @@ PrefabInstance:
     - target: {fileID: 8084931244863866087, guid: 2a533733564fe914c8df13c1d8c4ae87,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: ShootWithCooldown
+      value: CanonShootWithCooldown
       objectReference: {fileID: 0}
     - target: {fileID: 8434738240651740100, guid: 2a533733564fe914c8df13c1d8c4ae87,
         type: 3}

@@ -1703,12 +1703,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 2003055778}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &758070494 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 2134021058067376435, guid: bcdce6be5de008d4babd556fc2e2947e,
-    type: 3}
-  m_PrefabInstance: {fileID: 1418133261820419410}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &800833143
 GameObject:
   m_ObjectHideFlags: 0
@@ -2810,12 +2804,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 45, y: 180, z: 0}
---- !u!4 &1284705819 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 2874059836728545513, guid: bcdce6be5de008d4babd556fc2e2947e,
-    type: 3}
-  m_PrefabInstance: {fileID: 1418133261820419410}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1307763592
 GameObject:
   m_ObjectHideFlags: 0
@@ -2999,7 +2987,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1335475259
 Transform:
   m_ObjectHideFlags: 0
@@ -3038,6 +3026,7 @@ MonoBehaviour:
   SpeedIncrement: 2
   GoldIncrement: 25
   HealthIncrement: 25
+  BoatGoldMultiplier: 0.2
   StatsprogressionInterval: 3
   WaveprogressionInterval: 5
   _spawnedBoats: []
@@ -3050,6 +3039,7 @@ MonoBehaviour:
   - {fileID: 877966309}
   - {fileID: 322215573}
   - {fileID: 322279560}
+  _currentWaveData: {fileID: 0}
   _littleBoatsIncrement: 0
   _balancedBoatsIncrement: 0
   _bigBoatsIncrement: 0
@@ -3066,7 +3056,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 3ffb4d65fe7c2b04e854be277bf0d8dc, type: 2}
   - {fileID: 11400000, guid: 3ffb4d65fe7c2b04e854be277bf0d8dc, type: 2}
   - {fileID: 11400000, guid: 3ffb4d65fe7c2b04e854be277bf0d8dc, type: 2}
-  _currentWaveData: {fileID: 0}
   _currentWave: 0
 --- !u!1 &1355313800
 GameObject:
@@ -4821,19 +4810,9 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4826552341380177976, guid: bcdce6be5de008d4babd556fc2e2947e,
         type: 3}
-      propertyPath: CanonRail
-      value: 
-      objectReference: {fileID: 1284705819}
-    - target: {fileID: 4826552341380177976, guid: bcdce6be5de008d4babd556fc2e2947e,
-        type: 3}
       propertyPath: RayCastUI
       value: 
       objectReference: {fileID: 4130650674001179722}
-    - target: {fileID: 4826552341380177976, guid: bcdce6be5de008d4babd556fc2e2947e,
-        type: 3}
-      propertyPath: CanonParent
-      value: 
-      objectReference: {fileID: 758070494}
     - target: {fileID: 4826552341380177976, guid: bcdce6be5de008d4babd556fc2e2947e,
         type: 3}
       propertyPath: CoolDownSlider
@@ -5097,6 +5076,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: RayCastUI
       objectReference: {fileID: 0}
+    - target: {fileID: 4213050458050195133, guid: 906daa4e24c41ac43bd705ddc6f086ab,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 919132149333152148}
     - target: {fileID: 8402692077686585956, guid: 906daa4e24c41ac43bd705ddc6f086ab,
         type: 3}
       propertyPath: m_AnchorMax.y
@@ -5149,6 +5133,74 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1001 &8221014258603543764
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3521265399808654362, guid: e26e7e71b4dbfd04e9f0358f7d92757d,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3521265399808654362, guid: e26e7e71b4dbfd04e9f0358f7d92757d,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3521265399808654362, guid: e26e7e71b4dbfd04e9f0358f7d92757d,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3521265399808654362, guid: e26e7e71b4dbfd04e9f0358f7d92757d,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3521265399808654362, guid: e26e7e71b4dbfd04e9f0358f7d92757d,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3521265399808654362, guid: e26e7e71b4dbfd04e9f0358f7d92757d,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3521265399808654362, guid: e26e7e71b4dbfd04e9f0358f7d92757d,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3521265399808654362, guid: e26e7e71b4dbfd04e9f0358f7d92757d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3521265399808654362, guid: e26e7e71b4dbfd04e9f0358f7d92757d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3521265399808654362, guid: e26e7e71b4dbfd04e9f0358f7d92757d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5872902002937885641, guid: e26e7e71b4dbfd04e9f0358f7d92757d,
+        type: 3}
+      propertyPath: m_Name
+      value: ExplosiveBarrel
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e26e7e71b4dbfd04e9f0358f7d92757d, type: 3}
 --- !u!1 &8331507892798426987
 GameObject:
   m_ObjectHideFlags: 0
@@ -5218,3 +5270,4 @@ SceneRoots:
   - {fileID: 846226313}
   - {fileID: 666466901}
   - {fileID: 5530896176476904325}
+  - {fileID: 8221014258603543764}

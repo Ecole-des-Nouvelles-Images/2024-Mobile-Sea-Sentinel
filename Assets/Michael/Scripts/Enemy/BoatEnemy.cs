@@ -124,7 +124,7 @@ namespace Michael.Scripts.Enemy
         }
         
         [ContextMenu("Take Damage")]
-        private void TakeDamage(int damage)
+        public void TakeDamage(int damage)
         {
             HealthBarFeedback(_boatUi);
             _currentHealth -= damage;
