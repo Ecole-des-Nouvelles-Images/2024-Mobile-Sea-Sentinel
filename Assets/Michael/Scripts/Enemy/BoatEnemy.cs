@@ -24,6 +24,7 @@ namespace Michael.Scripts.Enemy
         
         [SerializeField] private Transform _boatModel;
         [SerializeField] private TextMeshProUGUI _boatGoldText;
+        [SerializeField] private ParticleSystem _explosionParticles;
         [SerializeField] private TextMeshProUGUI _damageNumberText;
         [SerializeField] Slider _boatHealthBar;
         [SerializeField] Slider _boatEaseHealthBar;
@@ -43,10 +44,8 @@ namespace Michael.Scripts.Enemy
 
         void Start() {
             
-            _navMeshAgent = GetComponent<NavMeshAgent>();
             _initialPosition = transform.position;
-            InitializeBoatStats();
-            UpgradeStats(WaveManager.Instance.SpeedIncrement,WaveManager.Instance.GoldIncrement,WaveManager.Instance.HealthIncrement);
+           // UpgradeStats(WaveManager.Instance.SpeedIncrement,WaveManager.Instance.GoldIncrement,WaveManager.Instance.HealthIncrement);
             _boatGoldText.text = CurrentBoatGold + "/" + BoatGoldMax;
             GetNearestTarget();
             FollowTarget(_playerTarget.transform.position);
@@ -59,17 +58,19 @@ namespace Michael.Scripts.Enemy
 
         public void InitializeBoatStats()
         {
+            _navMeshAgent = GetComponent<NavMeshAgent>();
             _navMeshAgent.speed = BoatType.Speed;
             BoatGoldMax = BoatType.GoldCapacity;
             _maxHealth = BoatType.MaxHealth;
             
-            if (Random.value <= WaveManager.Instance._currentWaveData.BoatWithGoldPourcent)
+          /*  if (Random.value <= WaveManager.Instance._currentWaveData.BoatWithGoldPourcent)
             {
-              
+                CurrentBoatGold = Mathf.FloorToInt(BoatGoldMax * 0.2f);
+                Debug.Log("as gold");
             }
             else {
                 CurrentBoatGold = 0;
-            }
+            }*/
         }
 
         public void SetGoldOnBoat(int gold)
@@ -77,11 +78,13 @@ namespace Michael.Scripts.Enemy
             CurrentBoatGold = gold;
         }
         
-        public void UpgradeStats(float speedIncrease, int goldCapacityIncrease, int healthIncrease)
+        public void UpgradeStats()
         {
-            _navMeshAgent.speed += speedIncrease;
-            BoatGoldMax += goldCapacityIncrease;
-            _maxHealth += healthIncrease;
+            _navMeshAgent.speed = WaveManager.Instance.SpeedIncrement * WaveManager.Instance._upgradeNumber;
+            BoatGoldMax = WaveManager.Instance.GoldIncrement * WaveManager.Instance._upgradeNumber;
+            _maxHealth = WaveManager.Instance.HealthIncrement * WaveManager.Instance._upgradeNumber;
+            
+            Debug.Log("stats upgraded");
         }
 
     
@@ -139,6 +142,8 @@ namespace Michael.Scripts.Enemy
             if (_currentHealth <= 0)
             {
                 WaveManager.Instance._spawnedBoats.Remove(gameObject);
+                Instantiate(_explosionParticles, transform.position, Quaternion.identity);
+                GameManager.Instance.ShakeCamera();
                 DestroyBoat();
             }
            
@@ -147,20 +152,22 @@ namespace Michael.Scripts.Enemy
         private void StealGold(GameObject target)
         {
             Debug.Log("StealGold");
-            CurrentBoatGold = BoatGoldMax - CurrentBoatGold;
-            PlayerData.Instance.CurrentGold -= CurrentBoatGold;
+            int goldtoSteal = BoatGoldMax - CurrentBoatGold;
+            PlayerData.Instance.CurrentGold -= goldtoSteal;
+            CurrentBoatGold = BoatGoldMax;
             HealthBarFeedback( PlayerData.Instance.goldText.gameObject);
             _boatGoldText.text = CurrentBoatGold + "/" + BoatGoldMax;
             target.transform.DOShakePosition(1, Vector3.one).SetEase(Ease.InBounce);
             FollowTarget(_initialPosition);
         }
+        
+        
 
         private void DestroyBoat()
         {
             // activer version en plusieurs morceaux
             // opacité shader
             Destroy(gameObject);
-            GameManager.Instance.ShakeCamera();
             if (CurrentBoatGold >= 1 )
             { 
                 GameObject chest = Instantiate(_chest, transform.position,transform.rotation);

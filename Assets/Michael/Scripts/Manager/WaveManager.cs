@@ -3,6 +3,7 @@ using Michael.Scripts.Controller;
 using Michael.Scripts.Enemy;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Rendering;
 using UnityEngine.Serialization;
 using Random = UnityEngine.Random;
 
@@ -17,7 +18,7 @@ namespace Michael.Scripts.Manager
         public float BoatGoldMultiplier = 0.2f;  
         public int StatsprogressionInterval = 3; 
         public int WaveprogressionInterval = 5;
-        
+        public int _upgradeNumber = 0; 
         
         [Header("Wave Progression")]
         public List<GameObject> _spawnedBoats = new List<GameObject>();
@@ -38,12 +39,15 @@ namespace Michael.Scripts.Manager
         private int _littleBoatsBonus = 0 ;
         private int _balancedBoatsBonus = 0 ;
         private int _bigBoatsBonus = 0 ;
-        public int _currentWave = 0;
+        private int _currentWave = 0;
+        
         
         private void Start() {
             _currentWaveData = _waveData[_currentWave];
             StartWave();
         }
+        
+        
         private void FixedUpdate()
         {
             if (_spawnTimer <= 0) {
@@ -56,18 +60,22 @@ namespace Michael.Scripts.Manager
                     }
                     _lastSpawnPoint = _spawnPoints[_spawnIndex];
                     GameObject boat = Instantiate(_boatsToSpawn[0],_lastSpawnPoint.position, Quaternion.identity);
+                    BoatEnemy boatEnemy = boat.GetComponent<Enemy.BoatEnemy>();
                     
+                    boatEnemy.InitializeBoatStats();
                     float currentGoldBoatRatio = (float)_boatsWithGoldGenerated / _boatsToSpawn.Count;
                     if (currentGoldBoatRatio < _currentWaveData.BoatWithGoldPourcent)
                     {
-                        Debug.Log("boat with gols");
+                        Debug.Log("boat with golds");
                         int goldOnBoat = Mathf.CeilToInt(boat.GetComponent<BoatEnemy>().BoatGoldMax * 0.2f);
                         boat.GetComponent<Enemy.BoatEnemy>().SetGoldOnBoat(goldOnBoat);
                         _boatsWithGoldGenerated++;
                     }
                     
-                    
-                    
+                    if (_currentWave % StatsprogressionInterval == 0)
+                    {
+                        boatEnemy.UpgradeStats();
+                    }
                     
                     _boatsToSpawn.RemoveAt(0);
                     _spawnedBoats.Add(boat);
@@ -87,6 +95,7 @@ namespace Michael.Scripts.Manager
 
             if ( _spawnedBoats.Count <= 0 && _boatsToSpawn.Count <= 0) { 
                 
+               //Invoke(nameof(EndWave),1f);
                EndWave();
             }
         }
@@ -107,16 +116,10 @@ namespace Michael.Scripts.Manager
             _currentWave++;
             _waveText.text = "Vague : " + _currentWave;
             
-         
              if (_currentWave % WaveprogressionInterval == 0 ) {
                 
                 _currentWaveData = _waveData[_currentWave / WaveprogressionInterval];
                 // nouvelle vague 
-             }
-             else if (_currentWave % StatsprogressionInterval == 0) {
-             
-                 ApplyBoatProgression();
-                 // up des stats des bateaux
              }
              GenerateEnemy();
             
@@ -143,17 +146,8 @@ namespace Michael.Scripts.Manager
             _boatsWithGoldGenerated = 0;
             GameManager.Instance.OpenShop();
         }
+        
        
-       private void ApplyBoatProgression()
-        {
-            foreach (GameObject boat in _boatsToSpawn) {
-                
-               // boat.Speed += speedIncrement; 
-               // boat.GoldCapacity += goldIncrement;
-               
-            }
-            
-        }
         
        
     }

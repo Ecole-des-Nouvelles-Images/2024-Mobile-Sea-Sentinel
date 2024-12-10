@@ -5,20 +5,80 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b7472739-ef28-4269-8639-9f341bd314f4" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Mobile-Sea-Sentinel/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Mobile-Sea-Sentinel/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Alexandre/NoRBPhare/Prefabs/Bullet.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Alexandre/NoRBPhare/Prefabs/Bullet.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Alexandre/NoRBPhare/Prefabs/Crosshair.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Alexandre/NoRBPhare/Prefabs/Crosshair.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Alexandre/NoRBPhare/Ressources/Materials/CloudSmoke.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Alexandre/NoRBPhare/Ressources/Materials/CloudSmoke.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Alexandre/Shaders/OccaSoftware/RangeIndicator/Materials/RangeIndicator.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Alexandre/Shaders/OccaSoftware/RangeIndicator/Materials/RangeIndicator.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Anzy sand shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Anzy sand shader/Material.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Anzy sand shader/Material/Sand Dune.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Anzy sand shader/Material/Sand Dune.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Anzy sand shader/Material/Sand Emisse Windy.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Anzy sand shader/Material/Sand Emisse Windy.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Anzy sand shader/Material/Sand Simple.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Anzy sand shader/Material/Sand Simple.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Anzy sand shader/Material/Sand Smooth.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Anzy sand shader/Material/Sand Smooth.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Anzy sand shader/Shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Anzy sand shader/Shader/Sand.shadergraph" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Anzy sand shader/Shader/Sand.shadergraph.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Anzy sand shader/Textures.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Anzy sand shader/Textures/HurlNoise.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Anzy sand shader/Textures/HurlNoise.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Anzy sand shader/Textures/HurlNoise2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Anzy sand shader/Textures/HurlNoise2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Anzy sand shader/Textures/Sand_Bone.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Anzy sand shader/Textures/Sand_Bone.jpg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Anzy sand shader/Textures/Sand_Jaggy.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Anzy sand shader/Textures/Sand_Jaggy.jpg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Anzy sand shader/Textures/Sand_Jaggy2 1.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Anzy sand shader/Textures/Sand_Jaggy2 1.bmp.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Anzy sand shader/Textures/Sand_Jaggy2.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Anzy sand shader/Textures/Sand_Jaggy2.bmp.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Anzy sand shader/Textures/Sand_Realistic.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Anzy sand shader/Textures/Sand_Realistic.bmp.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Anzy sand shader/Textures/Sand_Soft.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Anzy sand shader/Textures/Sand_Soft.jpg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Anzy sand shader/Textures/Sand_Windswept.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Anzy sand shader/Textures/Sand_Windswept.jpg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/PhareProto/Resources/Materials/M_Blue.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/PhareProto/Resources/Materials/M_Blue.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/PhareProto/Resources/Materials/M_Green.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/PhareProto/Resources/Materials/M_Green.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/PhareProto/Resources/Materials/M_Grey.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/PhareProto/Resources/Materials/M_Grey.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/PhareProto/Resources/Materials/M_Red.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/PhareProto/Resources/Materials/M_Red.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/PhareProto/Resources/Materials/M_White.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/PhareProto/Resources/Materials/M_White.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/Prefabs/Prefabs Boats/BanlacedShip.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Prefabs/Prefabs Boats/BanlacedShip.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/Prefabs/Prefabs Boats/BigShip.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Prefabs/Prefabs Boats/BigShip.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/Prefabs/Prefabs Boats/LittleShip.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Prefabs/Prefabs Boats/LittleShip.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Michael/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Scenes/Game.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Scenes/MainMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Scenes/MainMenu.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Scenes/Prototype.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Michael/Scripts/Enemy/BoatEnemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Scripts/Enemy/BoatEnemy.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Scripts/Manager/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Scripts/Manager/GameManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Scripts/Manager/WaveData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Scripts/Manager/WaveData.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/Scripts/Enemy/Chest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Scripts/Enemy/Chest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/Scripts/Manager/BoatType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Scripts/Manager/BoatType.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Michael/Scripts/Manager/WaveManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Scripts/Manager/WaveManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Scripts/Manager/Wave_1.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Scripts/Manager/Wave_1.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Scripts/Upgrade/DamageUpgrade.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Scripts/Upgrade/DamageUpgrade.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Scripts/Upgrade/FireRateUpgrade.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Scripts/Upgrade/FireRateUpgrade.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Scripts/Upgrade/GoldCapacityUpgrade.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Scripts/Upgrade/GoldCapacityUpgrade.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/Scripts/Manager/Wave_2.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Scripts/Manager/Wave_2.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/Scripts/Manager/Wave_3.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Scripts/Manager/Wave_3.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/Scripts/Manager/Wave_4.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Scripts/Manager/Wave_4.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/Scripts/Manager/Wave_5.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Scripts/Manager/Wave_5.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/Scripts/Manager/Wave_6.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Scripts/Manager/Wave_6.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/Scripts/Manager/Wave_7.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Scripts/Manager/Wave_7.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/Shader/Simple Water Shader/Resources/Water_mat_03.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Shader/Simple Water Shader/Resources/Water_mat_03.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/Shader/Volumetric light/MAT_VolumetricLight.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Shader/Volumetric light/MAT_VolumetricLight.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/VFX/Materials/Farming/atom_particle_2-2.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/VFX/Materials/Farming/atom_particle_2-2.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/VFX/Materials/Farming/leaf.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/VFX/Materials/Farming/leaf.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/VFX/Materials/Farming/ring2.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/VFX/Materials/Farming/ring2.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/VFX/Materials/Farming/rock-alpha.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/VFX/Materials/Farming/rock-alpha.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/VFX/Materials/Farming/rock.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/VFX/Materials/Farming/rock.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/VFX/Materials/Farming/seed.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/VFX/Materials/Farming/seed.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/VFX/Materials/Farming/smoke2.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/VFX/Materials/Farming/smoke2.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/VFX/Materials/Farming/smoke3.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/VFX/Materials/Farming/smoke3.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/VFX/Materials/Farming/water2.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/VFX/Materials/Farming/water2.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/VFX/Materials/Farming/wing.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/VFX/Materials/Farming/wing.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/VFX/Prefabs/Fishing/FX_WaterSplash2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/VFX/Prefabs/Fishing/FX_WaterSplash2.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Settings/URP-Balanced-Renderer.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/URP-Balanced-Renderer.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Settings/URP-HighFidelity-Renderer.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/URP-HighFidelity-Renderer.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Materials/Crate - Surface Shader Scene.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Materials/Crate - Surface Shader Scene.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Materials/Ground - Logo Scene.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Materials/Ground - Logo Scene.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Materials/Ground - Surface Shader Scene.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Materials/Ground - Surface Shader Scene.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Materials/Small Crate_diffuse.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Materials/Small Crate_diffuse.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,9 +91,12 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Alexandre/PhareRB/Scripts/MouseLook.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Alexandre/ProtoPharePackage/TouchAim/LHControls.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Michael/Scripts/Controller/RayCastControl.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Michael/Scripts/Enemy/Bullet.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Michael/Scripts/UI/HealthBar.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Michael/Scripts/UI/UiFollowCamera.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Michael/Scripts/Upgrade/FireRateUpgrade.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.universal@14.0.11/Runtime/Passes/CopyDepthPass.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.universal@14.0.11/Runtime/ScriptableRendererData.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventInterfaces.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/GraphicRaycaster.cs" root0="SKIP_HIGHLIGHTING" />
@@ -143,6 +206,7 @@
       <workItem from="1733573922918" duration="7286000" />
       <workItem from="1733676312333" duration="2564000" />
       <workItem from="1733734738072" duration="4962000" />
+      <workItem from="1733821600854" duration="15190000" />
     </task>
     <servers />
   </component>
@@ -169,6 +233,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
 </project>

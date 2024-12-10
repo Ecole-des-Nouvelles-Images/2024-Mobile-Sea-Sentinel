@@ -5,11 +5,12 @@ TagManager:
   serializedVersion: 2
   tags:
   - Bullet
+  - Water
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - 3dUI
   - Water
   - UI
   - Aimable
@@ -41,4 +42,7 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: 1
+    uniqueID: 2136261455
     locked: 0
