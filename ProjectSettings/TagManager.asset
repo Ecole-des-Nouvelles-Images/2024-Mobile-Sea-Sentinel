@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Bullet
   - Enemy
+  - FxTemporaire
+  - Water
+  - ExplosiveBarrel
   layers:
   - Default
   - TransparentFX

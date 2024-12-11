@@ -5,43 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b7472739-ef28-4269-8639-9f341bd314f4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/NoRBPhare/Prefabs/ExplosiveBarrel.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/NoRBPhare/Prefabs/ExplosiveBarrel.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/NoRBPhare/Prefabs/VFX_Blast.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/NoRBPhare/Prefabs/VFX_Blast.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Mobile-Sea-Sentinel/.idea/projectSettingsUpdater.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Mobile-Sea-Sentinel/.idea/projectSettingsUpdater.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Mobile-Sea-Sentinel/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Mobile-Sea-Sentinel/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Alexandre/NoRBPhare/Prefabs/RayCastUI.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Alexandre/NoRBPhare/Prefabs/RayCastUI.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Alexandre/NoRBPhare/Prefabs/Bullet.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Alexandre/NoRBPhare/Prefabs/Bullet.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Alexandre/NoRBPhare/Prefabs/ExplosiveBarrel.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Alexandre/NoRBPhare/Prefabs/ExplosiveBarrel.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Alexandre/NoRBPhare/Prefabs/ST_Lighthouse_low.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Alexandre/NoRBPhare/Prefabs/ST_Lighthouse_low.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Alexandre/NoRBPhare/Scripts/ExplosiveBarrel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Alexandre/NoRBPhare/Scripts/ExplosiveBarrel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Alexandre/NoRBPhare/Scripts/RayCastControl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Alexandre/NoRBPhare/Scripts/RayCastControl.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Alexandre/ProtoPharePackage/TouchAim/TouchAimProto.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Alexandre/ProtoPharePackage/TouchAim/TouchAimProto.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Alexandre/Scenes/NoRBScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Alexandre/Scenes/NoRBScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Alexandre/Scenes/protomerge.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Alexandre/Scenes/protomerge.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/BigRookGames Holder.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/BigRookGames Holder/VFX.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/BigRookGames Holder/VFX/Lights.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/BigRookGames Holder/VFX/Lights/RocketFireLight.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/BigRookGames Holder/VFX/Lights/RocketFireLight.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/BigRookGames.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/BigRookGames/Scripts.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/BigRookGames/Scripts/BigRookGames.asmdef" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/BigRookGames/Scripts/BigRookGames.asmdef.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/BigRookGames/Scripts/Weapons.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/BigRookGames/Scripts/Weapons/GunfireController.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/BigRookGames/Scripts/Weapons/GunfireController.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/BigRookGames/Scripts/Weapons/ProjectileController.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/BigRookGames/Scripts/Weapons/ProjectileController.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Prefabs/Prefabs Boats/BanlacedShip.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Prefabs/Prefabs Boats/BanlacedShip.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Prefabs/Prefabs Boats/BigShip.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Prefabs/Prefabs Boats/BigShip.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Prefabs/Prefabs Boats/LittleShip.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Prefabs/Prefabs Boats/LittleShip.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Scenes/Game.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Scripts/Enemy/Boat 1.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Scripts/Enemy/Boat 1.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Scripts/Enemy/Boat 2.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Scripts/Enemy/Boat 2.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Scripts/Enemy/BoatEnemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Scripts/Enemy/BoatEnemy.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Scripts/Manager/WaveManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Scripts/Manager/WaveManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Bangers SDF - Outline.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Bangers SDF - Outline.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Bangers SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Bangers SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -112,7 +81,7 @@
       <method v="2" />
     </configuration>
     <configuration name="UnitTests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="D:\Utilisateurs\miche\Unity\2022.3.47f1\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2022.3.47f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath &quot;D:\Utilisateurs\miche\Unity Project 2023-2024\Mobile-Sea-Sentinel&quot; -testResults Logs/results.xml -testPlatform EditMode -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="D:\Utilisateurs\miche\Unity Project 2023-2024\Mobile-Sea-Sentinel" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -172,6 +141,8 @@
       <workItem from="1733734738072" duration="4962000" />
       <workItem from="1733821600854" duration="15190000" />
       <workItem from="1733858965007" duration="3162000" />
+      <workItem from="1733907078941" duration="2150000" />
+      <workItem from="1733910611690" duration="2463000" />
     </task>
     <servers />
   </component>

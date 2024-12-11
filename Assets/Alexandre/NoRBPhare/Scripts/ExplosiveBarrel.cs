@@ -1,18 +1,21 @@
 using Michael.Scripts.Enemy;
 using UnityEngine;
 using UnityEngine.Serialization;
+using System.Collections;
 
 namespace Alexandre.NoRBPhare.Scripts
 {
     public class ExplosiveBarrel : MonoBehaviour
     {
+        public float ExplosionRadius = 50f;
+        public float ExplosionDuration = 1f;
         private Vector3 _startPosition;
         private Vector3 _endPosition;
         private Vector3 _offset;
         private float _startTime;
         [FormerlySerializedAs("explosionEffect")] public GameObject ExplosionEffectPrefab;
         [FormerlySerializedAs("speed")] public float Speed = .5f; // Vitesse du jet de tonneau
-    
+
         private bool _tracjetorySetted = false;
 
         void Start()
@@ -42,28 +45,48 @@ namespace Alexandre.NoRBPhare.Scripts
             return Vector3.Lerp(startToOffset, offsetToEnd, time);
         }
 
-
         void OnTriggerEnter(Collider other)
         {
-            if (other.gameObject.CompareTag("Enemy"))
+            if (other.gameObject.CompareTag("Enemy") || other.gameObject.CompareTag("Bullet"))
             {
-                //blast with a sphere collider to apply damage to enemies
-                Instantiate(ExplosionEffectPrefab, transform.position, Quaternion.identity);
-                Collider[] colliders = Physics.OverlapSphere(transform.position, 50f);
+                // Start the explosion coroutine
+                StartCoroutine(Explode());
+            }
+        }
+
+        private IEnumerator Explode()
+        {
+            Instantiate(ExplosionEffectPrefab, transform.position, Quaternion.identity);
+            float maxRadius = ExplosionRadius;
+            float duration = ExplosionDuration; // Duration of the explosion expansion
+            float elapsedTime = 0f;
+
+            while (elapsedTime < duration)
+            {
+                float currentRadius = Mathf.Lerp(0, maxRadius, elapsedTime / duration);
+                Collider[] colliders = Physics.OverlapSphere(transform.position, currentRadius);
                 foreach (var hit in colliders)
                 {
                     if (hit.CompareTag("Enemy"))
                     {
                         hit.GetComponent<BoatEnemy>().TakeDamage(100);
                     }
+                    else if (hit.CompareTag("ExplosiveBarrel"))
+                    {
+                        hit.GetComponent<ExplosiveBarrel>().TriggerExplosion();
+                    }
                 }
-                //destroy the barrel after explosion
-                Destroy(gameObject);
+                elapsedTime += Time.deltaTime;
+                yield return null;
             }
-            // Détruire le projectile lorsqu'il entre en collision avec un autre objet
-            //Destroy(gameObject);
+
+            // Destroy the barrel after explosion
+            Destroy(gameObject);
         }
 
-   
+        public void TriggerExplosion()
+        {
+            StartCoroutine(Explode());
+        }
     }
 }
