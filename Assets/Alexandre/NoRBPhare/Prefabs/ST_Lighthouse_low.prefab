@@ -5582,7 +5582,6 @@ GameObject:
   m_Component:
   - component: {fileID: 7432855833992531195}
   - component: {fileID: 7945330404300736617}
-  - component: {fileID: 4826552341380177976}
   m_Layer: 0
   m_Name: ST_Lighthouse_low
   m_TagString: Untagged
@@ -5638,47 +5637,6 @@ MonoBehaviour:
   BulletDamage: 10
   AlliesBoats: 1
   goldText: {fileID: 0}
---- !u!114 &4826552341380177976
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5022931267418528957}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 30df5988d1d240a4bbf3351abd647788, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _autoShoot: 0
-  RayCastUI: {fileID: 0}
-  InteractableLayer:
-    serializedVersion: 2
-    m_Bits: 64
-  PhareLight: {fileID: 3515058680284971181}
-  AimSpeed: 5
-  CanonRail: {fileID: 2874059836728545513}
-  CrosshairPrefab: {fileID: 5690401255660621922, guid: effcae371b66af640bb762f25546aed2,
-    type: 3}
-  ShootCooldown: 2
-  SelectedWeapon: 2
-  BulletPrefab: {fileID: 3024273405111157043, guid: 8c67642554685234c98540d51cac8fa2,
-    type: 3}
-  VFXShot1: {fileID: 8833998170533440952}
-  VFXShot2: {fileID: 675025434759765812}
-  CanonOut: {fileID: 537164305854911211}
-  _offset: {fileID: 9110538319395663657}
-  _depthOffset: 5
-  _heightOffsetDelta: 1.49
-  BarrelOut: {fileID: 5128928106910250103}
-  ExplosiveBarrelPrefab: {fileID: 5872902002937885641, guid: e26e7e71b4dbfd04e9f0358f7d92757d,
-    type: 3}
-  BarrelOffset: {fileID: 8455498126152167726}
-  _barrelHeightOffsetDelta: 5
-  Canon: {fileID: 2134021058067376435}
-  CoolDownSlider: {fileID: 0}
-  minDistance: 15
-  maxDistance: 70
 --- !u!1 &5254389102073637731
 GameObject:
   m_ObjectHideFlags: 0

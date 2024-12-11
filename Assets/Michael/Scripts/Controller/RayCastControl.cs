@@ -87,7 +87,7 @@ namespace Michael.Scripts.Controller
                 Touch touch = Input.GetTouch(0);
                 Debug.Log("Touch phase : " + touch.phase);
 
-                if (EventSystem.current.IsPointerOverGameObject())
+                if (EventSystem.current.IsPointerOverGameObject(Input.GetTouch(0).fingerId))
                 {
                     Debug.Log("Touch is over a UI element");
                     return;

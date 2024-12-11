@@ -5,46 +5,42 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b7472739-ef28-4269-8639-9f341bd314f4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Adaptive Performance/Provider.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Adaptive Performance/Provider/Samsung Android Provider Loader.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Adaptive Performance/Provider/Samsung Android Provider Loader.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Adaptive Performance/Settings/Samsung Android Provider Settings.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Adaptive Performance/Settings/Samsung Android Provider Settings.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Michael/VFX/Prefabs/BigSplash.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Mobile-Sea-Sentinel/.idea/projectSettingsUpdater.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Mobile-Sea-Sentinel/.idea/projectSettingsUpdater.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/NoRBPhare/Prefabs/VFX_BoatExplosion.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/NoRBPhare/Prefabs/VFX_BoatExplosion.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/NoRBPhare/Scripts/presets.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/NoRBPhare/Scripts/presets/RayCastControl_Mi.preset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/NoRBPhare/Scripts/presets/RayCastControl_Mi.preset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/SFX.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/SFX/BarrelBlast01.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/SFX/BarrelBlast01.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/SFX/BarrelBlast02.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/SFX/BarrelBlast02.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/SFX/BarrelBlast03.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/SFX/BarrelBlast03.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/SFX/CanonFail.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/SFX/CanonFail.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/SFX/CanonShot01.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/SFX/CanonShot01.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/SFX/CanonShot02.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/SFX/CanonShot02.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/SFX/WaterSplash01.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/SFX/WaterSplash01.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/SFX/WaterSplash02.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/SFX/WaterSplash02.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/Scenes/Game1112.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/Scenes/Game1112.unity.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Mobile-Sea-Sentinel/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Mobile-Sea-Sentinel/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Adaptive Performance/AdaptivePerformanceGeneralSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Adaptive Performance/AdaptivePerformanceGeneralSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Prefabs/Bullet.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Prefabs/Bullet.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Prefabs/Chest.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Prefabs/Chest.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Prefabs/ChestButton.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Prefabs/ChestButton.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/VFX/Prefabs/BigSplash.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Prefabs/Prefabs Boats/BanlacedShip.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Prefabs/Prefabs Boats/BanlacedShip.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Prefabs/Prefabs Boats/BigShip.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Prefabs/Prefabs Boats/BigShip.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Prefabs/Prefabs Boats/LittleShip.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Prefabs/Prefabs Boats/LittleShip.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Alexandre/NoRBPhare/Prefabs/Bullet.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Alexandre/NoRBPhare/Prefabs/Bullet.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Alexandre/NoRBPhare/Prefabs/ExplosiveBarrel.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Alexandre/NoRBPhare/Prefabs/ExplosiveBarrel.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Alexandre/NoRBPhare/Prefabs/ST_Lighthouse_low.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Alexandre/NoRBPhare/Prefabs/ST_Lighthouse_low.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Alexandre/NoRBPhare/Scripts/ExplosiveBarrel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Alexandre/NoRBPhare/Scripts/ExplosiveBarrel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Alexandre/NoRBPhare/Scripts/RayCastControl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Alexandre/NoRBPhare/Scripts/RayCastControl.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Michael/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Scenes/Game.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Michael/Scripts/Controller/RayCastControl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Scripts/Controller/RayCastControl.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Scripts/Enemy/Boat 1.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Scripts/Enemy/Boat 1.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Scripts/Enemy/Boat 2.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Scripts/Enemy/Boat 2.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Scripts/Enemy/Boat 3.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Scripts/Enemy/Boat 3.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Scripts/Enemy/BoatEnemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Scripts/Enemy/BoatEnemy.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Scripts/Enemy/Chest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Scripts/Enemy/Chest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Scripts/Manager/ShopManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Scripts/Manager/ShopManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Scripts/Manager/WaveManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Scripts/Manager/WaveManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Scripts/Upgrade/DamageUpgrade.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Scripts/Upgrade/DamageUpgrade.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Scripts/Upgrade/FireRateUpgrade.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Scripts/Upgrade/FireRateUpgrade.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Scripts/Upgrade/GoldCapacityUpgrade.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Scripts/Upgrade/GoldCapacityUpgrade.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Scripts/Upgrade/Upgrade.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Scripts/Upgrade/Upgrade.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Settings/URP-HighFidelity.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/URP-HighFidelity.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Anton SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Anton SDF.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Bangers SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Bangers SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Electronic Highway Sign SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Electronic Highway Sign SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Oswald Bold SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Oswald Bold SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Roboto-Bold SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Roboto-Bold SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,22 +76,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Discover.Launch.Via.Unity&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Michael&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;CodeLensConfigurable&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Discover.Launch.Via.Unity": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "Merging Michael",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "CodeLensConfigurable",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2022.3.47f1\Editor\Unity.exe" />
