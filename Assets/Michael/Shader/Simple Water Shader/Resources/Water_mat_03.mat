@@ -30,7 +30,7 @@ Material:
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 1
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
+  m_CustomRenderQueue: 2999
   stringTagMap: {}
   disabledShaderPasses: []
   m_LockedProperties: _FoamCutoff
@@ -79,14 +79,14 @@ Material:
     - Vector1_6f56a0970372485390c6587863c2374e: -2.1
     - Vector1_7273530c27a34c9f8ee5723b84f96baa: 0.3
     - Vector1_dada42ebfac44076897b6de67441ba32: 2.22
-    - _FoamAmount: 10.99
-    - _FoamCutoff: 4.69
-    - _FoamScale: 47
+    - _FoamAmount: 95.52
+    - _FoamCutoff: 6.3
+    - _FoamScale: 57.9
     - _FoamSpeed: 0.001
     - _Normal_1_Speed: 100
     - _Normal_2_Speed: 50
     - _QueueControl: 0
-    - _QueueOffset: 0
+    - _QueueOffset: -1
     - _SpeedNormal: -20
     - _WaveSpeed: 60
     - _metallness: 0

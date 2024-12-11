@@ -77,7 +77,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 0}
   m_FillRect: {fileID: 436791862708478116}
   m_HandleRect: {fileID: 0}
@@ -355,6 +355,8 @@ MonoBehaviour:
   BoatGoldMax: 0
   _boatModel: {fileID: 1619348359233919151}
   _boatGoldText: {fileID: 7785394016062314180}
+  _explosionParticles: {fileID: 766496771916605646, guid: 3a1eb4ca725a0ec4581ed10f6c6d8471,
+    type: 3}
   _damageNumberText: {fileID: 3776548591851240748}
   _boatHealthBar: {fileID: 7577671158895896664}
   _boatEaseHealthBar: {fileID: 4218139146647203477}
@@ -940,7 +942,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 0}
   m_FillRect: {fileID: 4249876202372388605}
   m_HandleRect: {fileID: 0}

@@ -70,7 +70,7 @@ Material:
     - _EdgeFalloff: 0.26
     - _Noise_Strength: 0.3
     - _Opacity: 1.98
-    - _QueueControl: 0
+    - _QueueControl: 1
     - _QueueOffset: 0
     - _SrcBlend: 5
     - _Surface: 1

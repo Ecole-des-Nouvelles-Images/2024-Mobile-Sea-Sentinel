@@ -5,6 +5,7 @@ namespace Michael.Scripts.Manager
     [CreateAssetMenu(fileName = "BoatType",menuName = "ScriptableObjects/BoatType")]
     public class BoatType : ScriptableObject
     {
+        
         [SerializeField] GameObject _boatPrefab;
         public GameObject BoatPrefab { get => _boatPrefab; private set => _boatPrefab = value; }
         
@@ -16,7 +17,8 @@ namespace Michael.Scripts.Manager
     
         [SerializeField] int _maxHealth;
         public int MaxHealth  { get => _maxHealth; private set => _maxHealth = value; }
-       
-    
+        
+     
+
     }
 }
