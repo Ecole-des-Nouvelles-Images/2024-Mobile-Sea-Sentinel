@@ -17,6 +17,7 @@ namespace Alexandre.NoRBPhare.Scripts
         [FormerlySerializedAs("speed")] public float Speed = .5f; // Vitesse du jet de tonneau
 
         private bool _tracjetorySetted = false;
+        private bool _isExploding = false;
 
         void Start()
         {
@@ -56,6 +57,9 @@ namespace Alexandre.NoRBPhare.Scripts
 
         private IEnumerator Explode()
         {
+            if (_isExploding) yield break;
+            _isExploding = true;
+
             Instantiate(ExplosionEffectPrefab, transform.position, Quaternion.identity);
             float maxRadius = ExplosionRadius;
             float duration = ExplosionDuration; // Duration of the explosion expansion
@@ -73,7 +77,11 @@ namespace Alexandre.NoRBPhare.Scripts
                     }
                     else if (hit.CompareTag("ExplosiveBarrel"))
                     {
-                        hit.GetComponent<ExplosiveBarrel>().TriggerExplosion();
+                        ExplosiveBarrel otherBarrel = hit.GetComponent<ExplosiveBarrel>();
+                        if (otherBarrel != null && !otherBarrel._isExploding)
+                        {
+                            otherBarrel.TriggerExplosion();
+                        }
                     }
                 }
                 elapsedTime += Time.deltaTime;

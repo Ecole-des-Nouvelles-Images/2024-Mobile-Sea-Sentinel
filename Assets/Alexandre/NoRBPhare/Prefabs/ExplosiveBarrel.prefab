@@ -47,10 +47,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8791d1c7b73e8c64fbad60f00eeb175b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ExplosionEffectPrefab: {fileID: 6580478137926153881, guid: 16e093483bf0db54bbb605fbb89cb667,
+  ExplosionRadius: 25
+  ExplosionDuration: 1
+  ExplosionEffectPrefab: {fileID: 9084057167321959727, guid: b3dbbe1f134fad34b9201e793d0ecf2c,
     type: 3}
   Speed: 1
-  explosionParticles: {fileID: 8056284868339789429}
 --- !u!135 &115889838410602190
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -162,17 +163,17 @@ PrefabInstance:
     - target: {fileID: 8661080860493787501, guid: 3a1eb4ca725a0ec4581ed10f6c6d8471,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 1
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8661080860493787501, guid: 3a1eb4ca725a0ec4581ed10f6c6d8471,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 1
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8661080860493787501, guid: 3a1eb4ca725a0ec4581ed10f6c6d8471,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 1
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8661080860493787501, guid: 3a1eb4ca725a0ec4581ed10f6c6d8471,
         type: 3}
@@ -224,10 +225,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8661080860493787501, guid: 3a1eb4ca725a0ec4581ed10f6c6d8471,
+        type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9084057167321959727, guid: 3a1eb4ca725a0ec4581ed10f6c6d8471,
         type: 3}
       propertyPath: m_Name
       value: BoatExplosion
+      objectReference: {fileID: 0}
+    - target: {fileID: 9084057167321959727, guid: 3a1eb4ca725a0ec4581ed10f6c6d8471,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -237,12 +248,6 @@ PrefabInstance:
 --- !u!4 &2115811669656958934 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8661080860493787501, guid: 3a1eb4ca725a0ec4581ed10f6c6d8471,
-    type: 3}
-  m_PrefabInstance: {fileID: 7308929498679723707}
-  m_PrefabAsset: {fileID: 0}
---- !u!198 &8056284868339789429 stripped
-ParticleSystem:
-  m_CorrespondingSourceObject: {fileID: 766496771916605646, guid: 3a1eb4ca725a0ec4581ed10f6c6d8471,
     type: 3}
   m_PrefabInstance: {fileID: 7308929498679723707}
   m_PrefabAsset: {fileID: 0}
