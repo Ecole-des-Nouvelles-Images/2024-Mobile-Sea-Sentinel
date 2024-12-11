@@ -353,7 +353,11 @@ MonoBehaviour:
   BoatType: {fileID: 11400000, guid: ad487da6c56c6984a818681592fa7de1, type: 2}
   CurrentBoatGold: 0
   BoatGoldMax: 0
+  _maxHealth: 0
+  _currentHealth: 0
   _boatModel: {fileID: 2246481421353791658}
+  _slashParticle: {fileID: 5137123306192418792, guid: 96e4756e776fcec4391b26156b4a6004,
+    type: 3}
   _boatGoldText: {fileID: 7785394016062314180}
   _explosionParticles: {fileID: 766496771916605646, guid: 3a1eb4ca725a0ec4581ed10f6c6d8471,
     type: 3}

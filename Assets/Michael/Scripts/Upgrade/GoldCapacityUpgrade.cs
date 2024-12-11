@@ -14,7 +14,8 @@ namespace Michael.Scripts.Upgrade
         public override void ApplyUpgrade()
         {
             base.ApplyUpgrade();
-            PlayerData.Instance.MaxGoldCapacity += IncrementValue;
+            IncrementValueText.text = " + " + IncrementValue;
+            PlayerData.Instance.MaxGoldCapacity += (int)IncrementValue;
             ValueText.text = PlayerData.Instance.MaxGoldCapacity.ToString();
         }
     }

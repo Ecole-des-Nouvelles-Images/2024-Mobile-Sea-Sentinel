@@ -75,6 +75,7 @@ namespace Michael.Scripts.Controller
 
         void Update()
         {
+            ShootCooldown = PlayerData.Instance.FireRate;
             UpdateLightDirection();
             UpdateCoolDownSlider();
             UpdateCanonDirection();

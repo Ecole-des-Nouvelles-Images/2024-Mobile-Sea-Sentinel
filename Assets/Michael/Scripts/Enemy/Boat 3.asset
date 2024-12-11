@@ -16,4 +16,4 @@ MonoBehaviour:
     type: 3}
   _speed: 3
   _goldCapacity: 150
-  _maxHealth: 40
+  _maxHealth: 20

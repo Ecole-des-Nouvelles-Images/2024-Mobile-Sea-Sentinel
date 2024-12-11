@@ -67,7 +67,7 @@ namespace Michael.Scripts.Manager
                     if (currentGoldBoatRatio < _currentWaveData.BoatWithGoldPourcent)
                     {
                         Debug.Log("boat with golds");
-                        int goldOnBoat = Mathf.CeilToInt(boat.GetComponent<BoatEnemy>().BoatGoldMax * 0.2f);
+                        int goldOnBoat = Mathf.CeilToInt(boat.GetComponent<BoatEnemy>().BoatGoldMax * 0.25f);
                         boat.GetComponent<Enemy.BoatEnemy>().SetGoldOnBoat(goldOnBoat);
                         _boatsWithGoldGenerated++;
                     }
@@ -117,12 +117,17 @@ namespace Michael.Scripts.Manager
                 _currentWaveData = _waveData[_currentWave / WaveprogressionInterval];
                 // nouvelle vague 
              }
-             if (_currentWave % StatsprogressionInterval == 0)
+           /*  if (_currentWave % StatsprogressionInterval == 0)
              {
                  _upgradeNumber++;
                  Debug.Log("stats wave !");
-             }
-             GenerateEnemy();
+             }*/
+           
+            if (_currentWave > 1)
+            {
+                _upgradeNumber++;
+            } 
+            GenerateEnemy();
             
         }
 

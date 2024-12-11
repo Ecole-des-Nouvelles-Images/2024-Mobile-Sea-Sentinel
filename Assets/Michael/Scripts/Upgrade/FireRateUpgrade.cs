@@ -9,13 +9,15 @@ public class FireRateUpgrade : Upgrade
     public override void Start()
     {
         base.Start();
-       // ValueText.text = PlayerData.Instance.FireRate.ToString();
+        IncrementValueText.text = " - " + IncrementValue;
+        //ValueText.text = PlayerData.Instance.FireRate.ToString();
     }
 
     public override void ApplyUpgrade()
     {
         base.ApplyUpgrade();
-        PlayerData.Instance.FireRate += IncrementValue;
+        PlayerData.Instance.FireRate -= IncrementValue;
+        IncrementValueText.text = " - " + IncrementValue;
         ValueText.text = PlayerData.Instance.FireRate.ToString();
     }
 }

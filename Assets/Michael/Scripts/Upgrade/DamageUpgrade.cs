@@ -15,7 +15,8 @@ namespace Michael.Scripts.Upgrade
         public override void ApplyUpgrade()
         {
             base.ApplyUpgrade();
-            PlayerData.Instance.BulletDamage += IncrementValue;
+            IncrementValueText.text = " + " + IncrementValue;
+            PlayerData.Instance.BulletDamage += (int)IncrementValue;
             ValueText.text = PlayerData.Instance.BulletDamage.ToString();
         }
     }

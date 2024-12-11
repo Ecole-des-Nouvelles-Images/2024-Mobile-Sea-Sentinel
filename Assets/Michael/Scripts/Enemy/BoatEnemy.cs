@@ -19,10 +19,11 @@ namespace Michael.Scripts.Enemy
         public BoatType BoatType;
         public int CurrentBoatGold = 0;
         public int BoatGoldMax; 
-        private int _maxHealth;
-        private int _currentHealth;
+        public int _maxHealth;
+        public int _currentHealth;
         
         [SerializeField] private Transform _boatModel;
+        [SerializeField] private GameObject _slashParticle;
         [SerializeField] private TextMeshProUGUI _boatGoldText;
         [SerializeField] private ParticleSystem _explosionParticles;
         [SerializeField] private TextMeshProUGUI _damageNumberText;
@@ -62,7 +63,6 @@ namespace Michael.Scripts.Enemy
             _navMeshAgent.speed = BoatType.Speed;
             BoatGoldMax = BoatType.GoldCapacity;
             _maxHealth = BoatType.MaxHealth;
-            
             UpgradeStats();
         }
 
@@ -76,17 +76,13 @@ namespace Michael.Scripts.Enemy
             _navMeshAgent.speed += WaveManager.Instance.SpeedIncrement * WaveManager.Instance._upgradeNumber;
             BoatGoldMax += WaveManager.Instance.GoldIncrement * WaveManager.Instance._upgradeNumber;
             _maxHealth += WaveManager.Instance.HealthIncrement * WaveManager.Instance._upgradeNumber;
-            
+            _currentHealth = _maxHealth;
         }
 
     
         void Update() {
             
-
-            if (Input.GetKeyDown(KeyCode.Space))
-            {
-                TakeDamage(PlayerData.Instance.BulletDamage);
-            }
+            
             
             if (!_hasThief) return;
             
@@ -104,8 +100,9 @@ namespace Michael.Scripts.Enemy
         
             if (other.CompareTag("Bullet")) {
                
+                
                TakeDamage(PlayerData.Instance.BulletDamage);
-                Debug.Log("bateau touché");
+               Debug.Log("bateau touché" + PlayerData.Instance.BulletDamage);
             }
 
             if (other.CompareTag("Player")) {
@@ -131,10 +128,12 @@ namespace Michael.Scripts.Enemy
             feedBackSequence.Play();
             _boatEaseHealthBar.DOValue( _currentHealth, _lerpSpeed);
             ShowDamageNumber(damage);
+          
             if (_currentHealth <= 0)
             {
                 WaveManager.Instance._spawnedBoats.Remove(gameObject);
                 Instantiate(_explosionParticles, transform.position, Quaternion.identity);
+                Instantiate(_slashParticle, transform.position, Quaternion.identity);
                 GameManager.Instance.ShakeCamera();
                 DestroyBoat();
             }

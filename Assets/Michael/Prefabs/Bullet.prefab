@@ -120,7 +120,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5a33e670ff3ab648b62f854a3b9c813, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
+  speed: 2
   _slashParticle: {fileID: 5563476825078396293, guid: ab226f8780c601b418846e69ae808586,
     type: 3}
 --- !u!54 &-5014580725873332867

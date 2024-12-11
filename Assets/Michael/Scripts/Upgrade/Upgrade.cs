@@ -8,7 +8,7 @@ namespace Michael.Scripts.Upgrade
     {
         public int BaseCost;
         public float CostIncrement; 
-        public int IncrementValue;
+        public float IncrementValue;
         public int CurrentCost ;
         public TextMeshProUGUI CostText;
         public TextMeshProUGUI IncrementValueText;
@@ -17,15 +17,12 @@ namespace Michael.Scripts.Upgrade
         {
             CurrentCost = BaseCost;  
             CostText.text = BaseCost.ToString();
-            IncrementValueText.text = " + " + IncrementValue;
-            
         }
 
         public virtual void ApplyUpgrade()
         {
             CurrentCost = (int)(CurrentCost * CostIncrement);
             CostText.text = CurrentCost.ToString();
-            IncrementValueText.text = " + " + IncrementValue;
         }
     }
 }
