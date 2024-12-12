@@ -42,6 +42,7 @@ namespace Michael.Scripts.Manager
         private int _currentWave = 0;
         
         
+        
         private void Start() {
             _currentWaveData = _waveData[_currentWave];
             StartWave();
@@ -117,16 +118,13 @@ namespace Michael.Scripts.Manager
                 _currentWaveData = _waveData[_currentWave / WaveprogressionInterval];
                 // nouvelle vague 
              }
-           /*  if (_currentWave % StatsprogressionInterval == 0)
+             if (_currentWave % StatsprogressionInterval == 0)
              {
                  _upgradeNumber++;
-                 Debug.Log("stats wave !");
-             }*/
+                
+             }
            
-            if (_currentWave > 1)
-            {
-                _upgradeNumber++;
-            } 
+         
             GenerateEnemy();
             
         }

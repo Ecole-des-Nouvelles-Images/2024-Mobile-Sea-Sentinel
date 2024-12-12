@@ -9,11 +9,12 @@ TagManager:
   - FxTemporaire
   - Water
   - ExplosiveBarrel
+  - Boat
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - 3DUi
   - Water
   - UI
   - Aimable
