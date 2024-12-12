@@ -83,6 +83,7 @@ Material:
     - _FoamCutoff: 0.7
     - _FoamScale: 13.85
     - _FoamSpeed: 0.001
+    - _GlobalScale: 0
     - _Normal_1_Speed: 100
     - _Normal_2_Speed: 50
     - _QueueControl: 0
