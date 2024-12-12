@@ -11,7 +11,7 @@ namespace Alexandre.NoRBPhare.Scripts
         [FormerlySerializedAs("autoShoot")] [SerializeField]
         private bool _autoShoot = false;
 
-        public GameObject RayCastUI;
+      //  public GameObject RayCastUI;
 
         // Définissez le masque de couche pour la couche "Interactable"
         [FormerlySerializedAs("interactableLayer")]
@@ -74,7 +74,7 @@ namespace Alexandre.NoRBPhare.Scripts
 
         void Start()
         {
-            RayCastUI.SetActive(true);
+            //RayCastUI.SetActive(true);
             CoolDownSlider.maxValue = ShootCooldown;
             CoolDownSlider.value = 0; // Initialiser à la valeur minimale
             _crosshairInstance = Instantiate(CrosshairPrefab);
@@ -210,6 +210,7 @@ namespace Alexandre.NoRBPhare.Scripts
         void UpdateCoolDownSlider()
         {
             float timeSinceLastShot = Time.time - _lastShootTime;
+            
             CoolDownSlider.value = Mathf.Clamp(timeSinceLastShot, 0, ShootCooldown);
         }
 
