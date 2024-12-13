@@ -45,12 +45,12 @@ namespace Michael.Scripts.Enemy
 
         void OnTriggerEnter(Collider other)
         {
-            Destroy(gameObject,0.2f);
+          
             
             if (other.CompareTag("Water"))
             {
                 Debug.Log("water touched" );
-                Instantiate(_slashParticle, transform.position, Quaternion.identity);
+                Instantiate(_slashParticle, new Vector3(transform.position.x,0.3f,transform.position.z), Quaternion.identity);
             }
         
         }

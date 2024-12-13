@@ -99,10 +99,8 @@ namespace Michael.Scripts.Enemy
         private void OnTriggerEnter(Collider other) {
         
             if (other.CompareTag("Bullet")) {
-               
                 
                TakeDamage(PlayerData.Instance.BulletDamage);
-               Debug.Log("bateau touché" + PlayerData.Instance.BulletDamage);
             }
 
             if (other.CompareTag("Player")) {

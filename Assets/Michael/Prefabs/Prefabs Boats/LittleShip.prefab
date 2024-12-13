@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1936061499516672941}
   - component: {fileID: 7577671158895896664}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: HealthBar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -100,7 +100,7 @@ GameObject:
   - component: {fileID: 1900850359230484802}
   - component: {fileID: 2502071316965534543}
   - component: {fileID: 2446628720826314726}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: GoldUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -177,7 +177,7 @@ GameObject:
   - component: {fileID: 4670316164824198322}
   - component: {fileID: 2081895857248290254}
   - component: {fileID: 3776548591851240748}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: DamageNumber
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -583,7 +583,7 @@ GameObject:
   - component: {fileID: 391999883252478558}
   - component: {fileID: 8404875978011093117}
   - component: {fileID: 5345402082596664582}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: goldImage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -658,7 +658,7 @@ GameObject:
   - component: {fileID: 7359765363798540647}
   - component: {fileID: 4529595713978079371}
   - component: {fileID: 7785394016062314180}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -793,7 +793,7 @@ GameObject:
   - component: {fileID: 6288413866014370148}
   - component: {fileID: 4641225578555326768}
   - component: {fileID: 4355882401281493844}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: DamageFiltre
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -879,7 +879,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2291490237189440695}
   - component: {fileID: 4218139146647203477}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: HealthEaseBar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -967,7 +967,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6541876966184843426}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: HealthBar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1008,7 +1008,7 @@ GameObject:
   - component: {fileID: 4202665069510859736}
   - component: {fileID: 6484439148520443508}
   - component: {fileID: 2075396749324447148}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: WorldSpaceCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1088,7 +1088,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5919076038643849334}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
   m_Name: 
@@ -1121,7 +1121,7 @@ GameObject:
   - component: {fileID: 3156287629360955265}
   - component: {fileID: 1927467374686663935}
   - component: {fileID: 4053454579744037640}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: Fil_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1194,7 +1194,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4760668209468000030}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: BoatUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1235,7 +1235,7 @@ GameObject:
   - component: {fileID: 4249876202372388605}
   - component: {fileID: 1454813529745647900}
   - component: {fileID: 7548089794053434742}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: Fil
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1310,7 +1310,7 @@ GameObject:
   - component: {fileID: 5615307198639389899}
   - component: {fileID: 7104301893537191715}
   - component: {fileID: 3748882850941155640}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1385,7 +1385,7 @@ GameObject:
   - component: {fileID: 436791862708478116}
   - component: {fileID: 2888269689390477855}
   - component: {fileID: 3138203350637328007}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: Fil
   m_TagString: Untagged
   m_Icon: {fileID: 0}

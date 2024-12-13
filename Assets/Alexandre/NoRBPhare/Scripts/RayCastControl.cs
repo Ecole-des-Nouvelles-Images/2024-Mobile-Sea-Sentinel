@@ -11,7 +11,7 @@ namespace Alexandre.NoRBPhare.Scripts
         [FormerlySerializedAs("autoShoot")] [SerializeField]
         private bool _autoShoot = false;
 
-        public GameObject RayCastUI;
+      //  public GameObject RayCastUI;
 
         // Définissez le masque de couche pour la couche "Interactable"
         [FormerlySerializedAs("interactableLayer")]
@@ -74,7 +74,7 @@ namespace Alexandre.NoRBPhare.Scripts
 
         void Start()
         {
-            RayCastUI.SetActive(true);
+            //RayCastUI.SetActive(true);
             CoolDownSlider.maxValue = ShootCooldown;
             CoolDownSlider.value = 0; // Initialiser à la valeur minimale
             _crosshairInstance = Instantiate(CrosshairPrefab);
@@ -97,11 +97,9 @@ namespace Alexandre.NoRBPhare.Scripts
             {
                 // Obtenez le premier toucher
                 Touch touch = Input.GetTouch(0);
-                Debug.Log("Touch phase : " + touch.phase);
 
                 if (EventSystem.current.IsPointerOverGameObject(Input.GetTouch(0).fingerId))
                 {
-                    Debug.Log("Touch is over a UI element");
                     return;
                 }
 
@@ -111,7 +109,6 @@ namespace Alexandre.NoRBPhare.Scripts
                 {
                     // Convertissez la position du toucher en un rayon
                     Ray ray = Camera.main.ScreenPointToRay(touch.position);
-                    Debug.Log("Ray : " + ray);
 
                     // Effectuez un raycast avec le masque de couche
                     RaycastHit hit;
@@ -119,7 +116,6 @@ namespace Alexandre.NoRBPhare.Scripts
                     {
                         // Si le raycast touche quelque chose, obtenez la position
                         _touchPosition = hit.point;
-                        Debug.Log("Position touchée : " + _touchPosition);
 
                         // Calculez la distance en deux dimensions (x, z)
                         Vector3 horizontalOffset = new Vector3(_touchPosition.x, 0, _touchPosition.z) -
@@ -155,7 +151,6 @@ namespace Alexandre.NoRBPhare.Scripts
         public void SelectNextWeapon()
         {
             SelectedWeapon = (WeaponType)(((int)SelectedWeapon + 1) % Enum.GetValues(typeof(WeaponType)).Length);
-            Debug.Log($"Selected Weapon : {SelectedWeapon}");
         }
         
          public void Shoot()
@@ -198,7 +193,7 @@ namespace Alexandre.NoRBPhare.Scripts
                     // Instancier le boulet
                     GameObject bullet = Instantiate(BulletPrefab, CanonOut.position, CanonOut.rotation);
                     Vector3 bulletEndTarget = _touchPosition + Vector3.up * -_depthOffset;
-                    bullet.GetComponent<Bullet>()
+                    bullet.GetComponent<Michael.Scripts.Enemy.Bullet>()
                         .SetTrajectoryParameters(CanonOut.position, bulletEndTarget, _offset.position);
                     // Définir la direction du boulet pour correspondre à la direction du Canon
                     bullet.transform.forward = Canon.forward;
@@ -215,6 +210,7 @@ namespace Alexandre.NoRBPhare.Scripts
         void UpdateCoolDownSlider()
         {
             float timeSinceLastShot = Time.time - _lastShootTime;
+            
             CoolDownSlider.value = Mathf.Clamp(timeSinceLastShot, 0, ShootCooldown);
         }
 
@@ -222,10 +218,8 @@ namespace Alexandre.NoRBPhare.Scripts
         {
             float offsetHeight = Mathf.Lerp(_touchPosition.y, Canon.position.y * _heightOffsetDelta,
                 (distanceToTarget - minDistance) / (maxDistance - minDistance));
-            Debug.Log("Offset Height : " + offsetHeight);
-
+            
             _offset.position = new Vector3(_touchPosition.x, offsetHeight, _touchPosition.z);
-            Debug.Log("Offset position : " + _offset.position);
         }
 
         void GetExplosiveBarrelTrajectory()

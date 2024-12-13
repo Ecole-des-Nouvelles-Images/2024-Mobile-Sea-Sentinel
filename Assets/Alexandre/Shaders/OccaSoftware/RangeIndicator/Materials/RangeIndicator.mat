@@ -33,7 +33,7 @@ Material:
   m_CustomRenderQueue: 3007
   stringTagMap: {}
   disabledShaderPasses: []
-  m_LockedProperties: 
+  m_LockedProperties: Color_a8a2c6b4140141bb97df5f35167c736e
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:

@@ -4,33 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b7472739-ef28-4269-8639-9f341bd314f4" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Mobile-Sea-Sentinel/.idea/projectSettingsUpdater.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Mobile-Sea-Sentinel/.idea/projectSettingsUpdater.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Mobile-Sea-Sentinel/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Mobile-Sea-Sentinel/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Scenes/Game.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Scripts/Manager/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Scripts/Manager/GameManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Scripts/Manager/WaveManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Scripts/Manager/WaveManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sacha/Anzy sand shader.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sacha/Anzy sand shader.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sacha/Anzy sand shader/Material.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sacha/Anzy sand shader/Material.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sacha/Anzy sand shader/Material/Sand Dune.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sacha/Anzy sand shader/Material/Sand Dune.mat.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sacha/Anzy sand shader/Material/Sand Emisse Windy.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sacha/Anzy sand shader/Material/Sand Emisse Windy.mat.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sacha/Anzy sand shader/Material/Sand Simple.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sacha/Anzy sand shader/Material/Sand Simple.mat.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sacha/Anzy sand shader/Material/Sand Smooth.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sacha/Anzy sand shader/Material/Sand Smooth.mat.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sacha/Anzy sand shader/Shader.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sacha/Anzy sand shader/Shader.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sacha/Anzy sand shader/Shader/Sand.shadergraph.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sacha/Anzy sand shader/Shader/Sand.shadergraph.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sacha/Anzy sand shader/Textures.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sacha/Anzy sand shader/Textures.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sacha/Anzy sand shader/Textures/HurlNoise.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sacha/Anzy sand shader/Textures/HurlNoise.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sacha/Anzy sand shader/Textures/HurlNoise2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sacha/Anzy sand shader/Textures/HurlNoise2.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sacha/Anzy sand shader/Textures/Sand_Bone.jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sacha/Anzy sand shader/Textures/Sand_Bone.jpg.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sacha/Anzy sand shader/Textures/Sand_Jaggy.jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sacha/Anzy sand shader/Textures/Sand_Jaggy.jpg.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sacha/Anzy sand shader/Textures/Sand_Jaggy2 1.bmp.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sacha/Anzy sand shader/Textures/Sand_Jaggy2 1.bmp.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sacha/Anzy sand shader/Textures/Sand_Jaggy2.bmp.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sacha/Anzy sand shader/Textures/Sand_Jaggy2.bmp.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sacha/Anzy sand shader/Textures/Sand_Realistic.bmp.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sacha/Anzy sand shader/Textures/Sand_Realistic.bmp.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sacha/Anzy sand shader/Textures/Sand_Soft.jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sacha/Anzy sand shader/Textures/Sand_Soft.jpg.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sacha/Anzy sand shader/Textures/Sand_Windswept.jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sacha/Anzy sand shader/Textures/Sand_Windswept.jpg.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Anton SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Anton SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Bangers SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Bangers SDF.asset" afterDir="false" />
-    </list>
+    <list default="true" id="b7472739-ef28-4269-8639-9f341bd314f4" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -42,7 +16,6 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Alexandre/PhareRB/Scripts/MouseLook.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Alexandre/ProtoPharePackage/TouchAim/LHControls.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Alexandre/ScoreManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Michael/Scripts/Controller/RayCastControl.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Michael/Scripts/Enemy/Bullet.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Michael/Scripts/UI/HealthBar.cs" root0="FORCE_HIGHLIGHTING" />
@@ -66,22 +39,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Discover.Launch.Via.Unity&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Merging Michael&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;CodeLensConfigurable&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Discover.Launch.Via.Unity": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "Intégration",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "CodeLensConfigurable",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2022.3.47f1\Editor\Unity.exe" />
@@ -100,7 +73,7 @@
       <method v="2" />
     </configuration>
     <configuration name="UnitTests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2022.3.47f1\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="D:\Utilisateurs\miche\Unity\2022.3.47f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath &quot;D:\Utilisateurs\miche\Unity Project 2023-2024\Mobile-Sea-Sentinel&quot; -testResults Logs/results.xml -testPlatform EditMode -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="D:\Utilisateurs\miche\Unity Project 2023-2024\Mobile-Sea-Sentinel" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -162,7 +135,7 @@
       <workItem from="1733858965007" duration="3162000" />
       <workItem from="1733909164661" duration="724000" />
       <workItem from="1733912200397" duration="17163000" />
-      <workItem from="1734036694015" duration="3963000" />
+      <workItem from="1733995450783" duration="6000" />
     </task>
     <servers />
   </component>
@@ -189,6 +162,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
 </project>

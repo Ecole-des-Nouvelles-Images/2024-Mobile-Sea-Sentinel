@@ -19,6 +19,7 @@ namespace Michael.Scripts.Enemy
       private Sequence _sinkSequence ;
       private void Start()
       {
+         _sinkSequence = DOTween.Sequence();
          Vector3 pos = new Vector3(transform.position.x,transform.position.y,transform.position.z);
          _button.transform.SetParent( GameManager.Instance._canvas.transform);
          _button.transform.SetAsFirstSibling();
@@ -40,7 +41,6 @@ namespace Michael.Scripts.Enemy
 
       private void SinkChest()
       {
-         _sinkSequence = DOTween.Sequence();
          _sinkSequence.Join(gameObject.transform.DOMove(new Vector3(transform.position.x, -8, transform.position.z), 5f));
          _sinkSequence.Join(gameObject.transform.DORotate(new Vector3(transform.position.x,transform.position.y , 20), 5f));
          _sinkSequence.OnComplete(() => { Destroy(gameObject); });
