@@ -16,7 +16,7 @@ namespace Michael.Scripts.Enemy
       [SerializeField] private GameObject _chestTop; 
       [SerializeField] private GameObject _button;
       [SerializeField] private ParticleSystem _coinpParticles;
-      private Sequence _sinkSequence ;
+      private Sequence _sinkSequence;
       private void Start()
       {
          _sinkSequence = DOTween.Sequence();

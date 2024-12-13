@@ -25,6 +25,7 @@ namespace Michael.Scripts.Enemy
             if (!_tracjetorySetted) return;
             float time = (Time.time - startTime) * speed;
             transform.position = GetBezierPoints(startPosition, endPosition, offset, time);
+            
         }
 
         public void SetTrajectoryParameters(Vector3 start, Vector3 end, Vector3 newOffset)

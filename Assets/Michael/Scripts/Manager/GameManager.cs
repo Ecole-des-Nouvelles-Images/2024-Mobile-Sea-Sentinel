@@ -1,23 +1,29 @@
 using System;
 using DG.Tweening;
+using Intégration.Scripts;
 using Michael.Scripts.Controller;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.Serialization;
+using UnityEngine.UI;
 
 namespace Michael.Scripts.Manager
 {
     public class GameManager : MonoBehaviourSingleton<GameManager>
-    {
-        
+    { 
+        [SerializeField] GameData gameData;
         [SerializeField] private GameObject _shopPanel;
         [SerializeField] private GameObject _gameOverPanel;
+        [SerializeField] private Slider _sfxSlider;
+        [SerializeField] private Slider _musicSlider;
         public Camera _mainCamera;
         [SerializeField] private float _shakeVibrato;
         public Canvas _canvas;
         private void Start()
         {
             Time.timeScale = 1;
+           //_sfxSlider.value = gameData.SfxVolume;
+         //_musicSlider.value = gameData.MusicVolume;
             _mainCamera = Camera.main;
         }
 
