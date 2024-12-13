@@ -3161,15 +3161,34 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _soundList:
-  - {fileID: 8300000, guid: ad69a49a6ef6c544db354afefdcc7c76, type: 3}
-  - {fileID: 8300000, guid: 4a79ccf524ff4274380154f3d19ee558, type: 3}
-  - {fileID: 8300000, guid: 9918c43c1304de54cb79c50e840c05fd, type: 3}
-  - {fileID: 8300000, guid: fd7170de4bd413347a22a2c0e5188180, type: 3}
-  - {fileID: 8300000, guid: 23af409e7710278498cb224fe6aea3c2, type: 3}
-  - {fileID: 8300000, guid: d67cd8f54b0775046b582d798bb12c70, type: 3}
-  - {fileID: 8300000, guid: c69819c47f7923347a3eab3233fcdb8c, type: 3}
-  - {fileID: 8300000, guid: 8cc1c305f6b1fdf48bd6b4341ba64078, type: 3}
-  - {fileID: 8300000, guid: 374244e63362bb9459ae27e9c5686cde, type: 3}
+  - Name: Shoot
+    _sounds:
+    - {fileID: 8300000, guid: ad69a49a6ef6c544db354afefdcc7c76, type: 3}
+  - Name: ShootFail
+    _sounds:
+    - {fileID: 8300000, guid: 4a79ccf524ff4274380154f3d19ee558, type: 3}
+  - Name: Explosion
+    _sounds:
+    - {fileID: 8300000, guid: 9918c43c1304de54cb79c50e840c05fd, type: 3}
+  - Name: BoatHit
+    _sounds:
+    - {fileID: 8300000, guid: fd7170de4bd413347a22a2c0e5188180, type: 3}
+  - Name: GoldIn
+    _sounds:
+    - {fileID: 8300000, guid: 23af409e7710278498cb224fe6aea3c2, type: 3}
+  - Name: GoldOut
+    _sounds:
+    - {fileID: 8300000, guid: 38eafa4d94eab4f418f277cd800abf02, type: 3}
+    - {fileID: 8300000, guid: d67cd8f54b0775046b582d798bb12c70, type: 3}
+  - Name: Sinking
+    _sounds:
+    - {fileID: 8300000, guid: c69819c47f7923347a3eab3233fcdb8c, type: 3}
+  - Name: Splash
+    _sounds:
+    - {fileID: 8300000, guid: 8cc1c305f6b1fdf48bd6b4341ba64078, type: 3}
+  - Name: WaterHit
+    _sounds:
+    - {fileID: 8300000, guid: 374244e63362bb9459ae27e9c5686cde, type: 3}
 --- !u!82 &649799635
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3179,7 +3198,7 @@ AudioSource:
   m_GameObject: {fileID: 649799633}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 24300002, guid: ea1cc3b31c6495f44aba313e4a7b6d5b,
+  OutputAudioMixerGroup: {fileID: 3155690933336491267, guid: ea1cc3b31c6495f44aba313e4a7b6d5b,
     type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
@@ -3651,6 +3670,162 @@ PrefabInstance:
       addedObject: {fileID: 1656119786}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: db261d298b2514e4f9608b8721a6259c, type: 3}
+--- !u!1 &727941308
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 727941311}
+  - component: {fileID: 727941310}
+  - component: {fileID: 727941309}
+  m_Layer: 0
+  m_Name: MusicManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &727941309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 727941308}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19337c8396f1eaf42b6afca601db11de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _musicList:
+  - Name: MainTheme
+    _musics:
+    - {fileID: 8300000, guid: 2acd04dbcb5d03447bb12bd5204d0609, type: 3}
+    - {fileID: 8300000, guid: 412c846f35e5a204f97626fec00dbc62, type: 3}
+  - Name: GameOver
+    _musics: []
+  - Name: Victory
+    _musics: []
+  - Name: Game
+    _musics: []
+  - Name: ShopMusic
+    _musics:
+    - {fileID: 8300000, guid: 412c846f35e5a204f97626fec00dbc62, type: 3}
+--- !u!82 &727941310
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 727941308}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: -8350004223780827232, guid: ea1cc3b31c6495f44aba313e4a7b6d5b,
+    type: 2}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &727941311
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 727941308}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 18.99875, y: -5.2911105, z: 82.32704}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &749032367
 GameObject:
   m_ObjectHideFlags: 0
@@ -15448,3 +15623,4 @@ SceneRoots:
   - {fileID: 893321470}
   - {fileID: 447471680}
   - {fileID: 649799636}
+  - {fileID: 727941311}

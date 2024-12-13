@@ -16,10 +16,10 @@ public enum SoundType
     WaterHit,
 }
 
-[RequireComponent(typeof(AudioSource))]
+[RequireComponent(typeof(AudioSource)), ExecuteInEditMode]
 public class SoundManager : MonoBehaviour
 {
-    [SerializeField] private AudioClip[] _soundList;
+    [SerializeField] private SoundList[] _soundList;
     private static SoundManager _instance;
     private AudioSource _audioSource;
 
@@ -35,6 +35,33 @@ public class SoundManager : MonoBehaviour
 
     public static void PlaySound(SoundType sound, float volume = 1)
     {
-        _instance._audioSource.PlayOneShot(_instance._soundList[(int)sound], volume);
+        AudioClip[] clips = _instance._soundList[(int)sound].Sounds;
+        AudioClip randomClip = clips[UnityEngine.Random.Range(0, clips.Length)];
+        _instance._audioSource.PlayOneShot(randomClip, volume);
+    }
+
+#if UNITY_EDITOR
+
+    private void OnEnable()
+    {
+        string[] names = Enum.GetNames(typeof(SoundType));
+        Array.Resize(ref _soundList, names.Length);
+        for (int i = 0; i < _soundList.Length; i++)
+        {
+            _soundList[i].Name = names[i];
+        }
+    }
+#endif
+
+    [Serializable]
+    public struct SoundList
+    {
+        public AudioClip[] Sounds
+        {
+            get => _sounds;
+        }
+
+        [HideInInspector] public string Name;
+        [SerializeField] private AudioClip[] _sounds;
     }
 }
