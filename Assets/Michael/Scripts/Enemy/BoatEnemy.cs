@@ -116,6 +116,7 @@ namespace Michael.Scripts.Enemy
         [ContextMenu("Take Damage")]
         public void TakeDamage(int damage)
         {
+            SoundManager.PlaySound(SoundType.BoatHit);
             HealthBarFeedback(_boatUi);
             _currentHealth -= damage;
             _boatHealthBar.value = _currentHealth; 
@@ -140,6 +141,7 @@ namespace Michael.Scripts.Enemy
 
         private void StealGold(GameObject target)
         {
+            SoundManager.PlaySound(SoundType.GoldOut);
             Debug.Log("StealGold");
             int goldtoSteal = BoatGoldMax - CurrentBoatGold;
             PlayerData.Instance.CurrentGold -= goldtoSteal;
@@ -156,6 +158,7 @@ namespace Michael.Scripts.Enemy
         {
             // activer version en plusieurs morceaux
             // opacité shader
+            SoundManager.PlaySound(SoundType.Explosion);
             Destroy(gameObject);
             if (CurrentBoatGold >= 1 )
             { 

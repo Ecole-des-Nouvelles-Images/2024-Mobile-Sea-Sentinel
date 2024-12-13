@@ -8,9 +8,6 @@ namespace Alexandre.Integration.Scripts
 {
     public class RayCastControl : MonoBehaviour
     {
-        public AudioSource AudioSource;
-        
-        
         
         [FormerlySerializedAs("autoShoot")] [SerializeField]
         private bool _autoShoot = false;
@@ -190,15 +187,15 @@ namespace Alexandre.Integration.Scripts
                 if (_touchPosition != Vector3.zero)
                 {
                     //float distanceToTarget = Vector3.Distance(Canon.position, touchPosition);
-
+                    // SFX
+                    SoundManager.PlaySound(SoundType.Shoot);
                     // VFX de tir
                     if (VFXShot1 != null) VFXShot1.Play();
                     if (VFXShot2 != null) VFXShot2.Play();
                     // Instancier le boulet
                     GameObject bullet = Instantiate(BulletPrefab, CanonOut.position, CanonOut.rotation);
                     Vector3 bulletEndTarget = _touchPosition + Vector3.up * -_depthOffset;
-                    bullet.GetComponent<Michael.Scripts.Enemy.Bullet>()
-                        .SetTrajectoryParameters(CanonOut.position, bulletEndTarget, _offset.position);
+                    bullet.GetComponent<Bullet>().SetTrajectoryParameters(CanonOut.position, bulletEndTarget, _offset.position);
                     // Définir la direction du boulet pour correspondre à la direction du Canon
                     bullet.transform.forward = Canon.forward;
 
@@ -208,6 +205,11 @@ namespace Alexandre.Integration.Scripts
                     // Réinitialiser le slider à la valeur minimale
                     CoolDownSlider.value = 0;
                 }
+            }
+            else
+            {
+                // SFX
+                SoundManager.PlaySound(SoundType.ShootFail);
             }
         }
 

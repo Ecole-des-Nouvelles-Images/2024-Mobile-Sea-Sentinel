@@ -9,8 +9,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3521265399808654362}
-  - component: {fileID: 6289614983563036187}
   - component: {fileID: 115889838410602190}
+  - component: {fileID: 3761487924075934409}
+  - component: {fileID: 3943227761246927047}
   m_Layer: 0
   m_Name: ExplosiveBarrel
   m_TagString: ExplosiveBarrel
@@ -35,23 +36,6 @@ Transform:
   - {fileID: 2115811669656958934}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6289614983563036187
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5872902002937885641}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fd4b496de295308429a3631012143a86, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ExplosionRadius: 25
-  ExplosionDuration: 1
-  ExplosionEffectPrefab: {fileID: 9084057167321959727, guid: b3dbbe1f134fad34b9201e793d0ecf2c,
-    type: 3}
-  Speed: 1
 --- !u!135 &115889838410602190
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -73,6 +57,50 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 8
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &3761487924075934409
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5872902002937885641}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f29449e6e3d863a48bbf474cd0823f43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ExplosionRadius: 50
+  ExplosionDuration: 1
+  ExplosionEffectPrefab: {fileID: 9084057167321959727, guid: b3dbbe1f134fad34b9201e793d0ecf2c,
+    type: 3}
+  Speed: 1
+--- !u!54 &3943227761246927047
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5872902002937885641}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1001 &749443600462231759
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -53,13 +53,17 @@ namespace Alexandre.Integration.Scripts
                 // Start the explosion coroutine
                 StartCoroutine(Explode());
             }
+            if (other.gameObject.CompareTag("Water"))
+            {
+                SoundManager.PlaySound(SoundType.Splash);
+            }
         }
 
         private IEnumerator Explode()
         {
             if (_isExploding) yield break;
             _isExploding = true;
-
+            SoundManager.PlaySound(SoundType.Explosion);
             Instantiate(ExplosionEffectPrefab, transform.position, Quaternion.identity);
             float maxRadius = ExplosionRadius;
             float duration = ExplosionDuration; // Duration of the explosion expansion
