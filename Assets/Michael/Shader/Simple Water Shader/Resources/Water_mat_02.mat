@@ -25,14 +25,18 @@ Material:
     type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
-  m_ValidKeywords: []
+  m_ValidKeywords:
+  - _ALPHATEST_ON
+  - _SURFACE_TYPE_TRANSPARENT
   m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 1
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
+  stringTagMap:
+    RenderType: Transparent
+  disabledShaderPasses:
+  - DepthOnly
   m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
@@ -79,6 +83,13 @@ Material:
     - Vector1_6f56a0970372485390c6587863c2374e: -2.5
     - Vector1_7273530c27a34c9f8ee5723b84f96baa: 0.3
     - Vector1_dada42ebfac44076897b6de67441ba32: 0.3
+    - _AlphaClip: 1
+    - _AlphaToMask: 0
+    - _Blend: 0
+    - _BlendModePreserveSpecular: 0
+    - _CastShadows: 1
+    - _Cull: 2
+    - _DstBlend: 10
     - _FoamAmount: 5
     - _FoamCutoff: 5
     - _FoamScale: 200
@@ -87,7 +98,14 @@ Material:
     - _Normal_2_Speed: 0
     - _QueueControl: 0
     - _QueueOffset: 0
+    - _ReceiveShadows: 1
+    - _SrcBlend: 5
+    - _Surface: 1
     - _WaveSpeed: 100
+    - _WorkflowMode: 1
+    - _ZTest: 4
+    - _ZWrite: 0
+    - _ZWriteControl: 0
     - _shore_wave_speed: 0
     m_Colors:
     - Color_36218622185947c6a5ae36366d8e21d8: {r: 0.23673905, g: 0.3217783, b: 0.5283019,
