@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using DG.Tweening;
 using Michael.Scripts.Controller;
+using Michael.Scripts.Manager;
 using Michael.Scripts.UI;
 using Michael.Scripts.Upgrade;
 using TMPro;
