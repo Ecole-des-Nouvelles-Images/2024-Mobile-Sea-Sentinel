@@ -12,7 +12,8 @@ Material:
     type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
-  m_ValidKeywords: []
+  m_ValidKeywords:
+  - WORLD_SPACE_UV_ON
   m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -50,7 +51,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - WORLD_SPACE_UV: 0
+    - WORLD_SPACE_UV: 1
     - _Depth_Fade_Distance: 1.2
     - _Foam_Blend: 1
     - _Horizon_Distance: 1.3
@@ -69,21 +70,21 @@ Material:
     - _Normals_Strength: 0.592
     - _QueueControl: 1
     - _QueueOffset: -1
-    - _Refraction_Scale: 0.055
+    - _Refraction_Scale: 0.01
     - _Refraction_Speed: 0
-    - _Refraction_Strength: 0.0028
+    - _Refraction_Strength: 0
     - _Shore_Depth: 0
     - _Smoothness: 0.47
     - _Surface_Foam_Blend: 1
     - _Surface_Foam_Color_Blend: 1
     - _Surface_Foam_Cutoff: 0.131
     - _Surface_Foam_Direction: 0.028
-    - _Surface_Foam_Distortion: 2.46
+    - _Surface_Foam_Distortion: 0
     - _Surface_Foam_Speed: 0
     - _Surface_Foam_Tiling: 30.1
     - _Wave_Length: 2.84
     - _Wave_Speed: 0.49
-    - _Wave_Steepness: 0.518
+    - _Wave_Steepness: 1
     m_Colors:
     - _Deep_Color: {r: 0, g: 0.593808, b: 0.7735849, a: 1}
     - _Diffuse_Color: {r: 1, g: 0, b: 0, a: 1}

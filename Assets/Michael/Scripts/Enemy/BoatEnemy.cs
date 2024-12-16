@@ -34,6 +34,7 @@ namespace Michael.Scripts.Enemy
         [SerializeField] private float _lerpSpeed = 0.05f;
         [SerializeField] CanvasGroup _damageImageCanvasGroup;
         [SerializeField] private GameObject _chest;
+        [SerializeField] private GameObject _worldSpaceCanva;
         private GameObject _playerTarget;
         private NavMeshAgent _navMeshAgent;
         private bool _hasThief ;
@@ -41,19 +42,23 @@ namespace Michael.Scripts.Enemy
         private Sequence _damageNumberSequence;
         private Vector3 _originalPosition;
         private GameObject[] _playerChests;
-        
+        private Sequence _sinkSequence;
+        private FloatingEffect _floatingEffect;
+        private Collider _boatCollider;
 
-        void Start() {
-            
+        void Start()
+        {
+
+            _boatCollider = GetComponent<Collider>();
+            _floatingEffect = GetComponent<FloatingEffect>();
             _initialPosition = transform.position;
            // UpgradeStats(WaveManager.Instance.SpeedIncrement,WaveManager.Instance.GoldIncrement,WaveManager.Instance.HealthIncrement);
-            _boatGoldText.text = CurrentBoatGold + "/" + BoatGoldMax;
-            GetNearestTarget();
+           GetNearestTarget();
             FollowTarget(_playerTarget.transform.position);
+            _originalPosition = _damageNumberText.transform.position;
             _boatHealthBar.maxValue = _maxHealth;
             _boatEaseHealthBar.maxValue = _maxHealth;
-            _originalPosition = _damageNumberText.transform.position;
-            
+            _boatGoldText.text = CurrentBoatGold + "/" + BoatGoldMax;
             
         }
 
@@ -64,6 +69,8 @@ namespace Michael.Scripts.Enemy
             BoatGoldMax = BoatType.GoldCapacity;
             _maxHealth = BoatType.MaxHealth;
             UpgradeStats();
+            
+          
         }
 
         public void SetGoldOnBoat(int gold)
@@ -101,6 +108,7 @@ namespace Michael.Scripts.Enemy
             if (other.CompareTag("Bullet")) {
                 
                TakeDamage(PlayerData.Instance.BulletDamage);
+               Destroy(other);
             }
 
             if (other.CompareTag("Player")) {
@@ -120,7 +128,7 @@ namespace Michael.Scripts.Enemy
             HealthBarFeedback(_boatUi);
             _currentHealth -= damage;
             _boatHealthBar.value = _currentHealth; 
-           _boatModel.DOShakePosition( 1f,new Vector3(0.2f,0,0.2f),4).SetEase(Ease.InBounce);
+         // effet de secousse
             Sequence feedBackSequence = DOTween.Sequence();
             feedBackSequence.Append( _damageImageCanvasGroup.DOFade(0.2f, 0.1f).SetEase(Ease.Linear));
             feedBackSequence.Append( _damageImageCanvasGroup.DOFade(0f, 0.1f).SetEase(Ease.Linear));
@@ -158,13 +166,27 @@ namespace Michael.Scripts.Enemy
         {
             // activer version en plusieurs morceaux
             // opacité shader
+            _boatCollider.enabled = false;
+            _floatingEffect.enabled = false;
             SoundManager.PlaySound(SoundType.Explosion);
-            Destroy(gameObject);
+            _worldSpaceCanva.SetActive(false);
+            SinkBoat();
             if (CurrentBoatGold >= 1 )
             { 
                 GameObject chest = Instantiate(_chest, transform.position,transform.rotation);
                 chest.GetComponent<Chest>().ChestGold = CurrentBoatGold;
+                WaveManager.Instance.ChestGameObjects.Add(chest);
             }
+        }
+        
+        private void SinkBoat()
+        {
+            _sinkSequence = DOTween.Sequence();
+            SoundManager.PlaySound(SoundType.Sinking);
+            _sinkSequence.Join(_boatModel.gameObject.transform.DOMove(new Vector3(transform.position.x, -8, transform.position.z), 2f));
+            _sinkSequence.Join(_boatModel.gameObject.transform.DORotate(new Vector3(transform.position.x,transform.position.y , 10), 2f));
+            _sinkSequence.OnComplete(() => { Destroy(gameObject); });
+            _sinkSequence.Play();
         }
 
         private void HealthBarFeedback(GameObject ui)

@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3521265399808654362}
   - component: {fileID: 6289614983563036187}
   - component: {fileID: 115889838410602190}
+  - component: {fileID: -3990054913746360107}
   m_Layer: 0
   m_Name: ExplosiveBarrel
   m_TagString: ExplosiveBarrel
@@ -47,8 +48,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd4b496de295308429a3631012143a86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ExplosionRadius: 25
+  ExplosionRadius: 20.9
   ExplosionDuration: 1
+  _barrelPrefab: {fileID: 479606052991567262}
+  _slashParticle: {fileID: 0}
+  _rotationVector: {x: 0, y: 0, z: 360}
   ExplosionEffectPrefab: {fileID: 9084057167321959727, guid: b3dbbe1f134fad34b9201e793d0ecf2c,
     type: 3}
   Speed: 1
@@ -73,6 +77,89 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 8
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &-3990054913746360107
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5872902002937885641}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78bb08c642f86144b850dfc4b0d99e29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _shipModel: {fileID: 1003237868312780580}
+  _floatCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.46498862
+      value: 0.9940017
+      inSlope: -0.0053410623
+      outSlope: -0.0053410623
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.43825215
+      outWeight: 0.35485673
+    - serializedVersion: 3
+      time: 1.0333252
+      value: 0.042453766
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  _floatAmplitude: 0.5
+  _floatDuration: 2
+  tiltCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.4733061
+      value: 1.0050099
+      inSlope: -0.013145925
+      outSlope: -0.013145925
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.43062502
+    - serializedVersion: 3
+      time: 0.9416809
+      value: -0.021224976
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  _tiltAmplitude: 5
+  _tiltDuration: 2
 --- !u!1001 &749443600462231759
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -104,17 +191,17 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 57bd8c0c70c9f1641aa0b99533b1b36e,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 57bd8c0c70c9f1641aa0b99533b1b36e,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 57bd8c0c70c9f1641aa0b99533b1b36e,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 57bd8c0c70c9f1641aa0b99533b1b36e,
         type: 3}
@@ -141,6 +228,12 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 57bd8c0c70c9f1641aa0b99533b1b36e, type: 3}
+--- !u!1 &479606052991567262 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 57bd8c0c70c9f1641aa0b99533b1b36e,
+    type: 3}
+  m_PrefabInstance: {fileID: 749443600462231759}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1003237868312780580 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 57bd8c0c70c9f1641aa0b99533b1b36e,
