@@ -1,4 +1,6 @@
 using System;
+using Michael.Scripts.Controller;
+using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.Serialization;
@@ -8,7 +10,7 @@ namespace Intégration.Scripts
 {
     public class RayCastControl : MonoBehaviour
     {
-        [FormerlySerializedAs("autoShoot")] [SerializeField]
+         [FormerlySerializedAs("autoShoot")] [SerializeField]
         private bool _autoShoot = false;
 
       //  public GameObject RayCastUI;
@@ -54,6 +56,7 @@ namespace Intégration.Scripts
         public float _heightOffsetDelta = 1f;
         
         // Références pour le tir de tonneaux explosifs
+       
         public Transform BarrelOut;
         public GameObject ExplosiveBarrelPrefab;
         public Transform BarrelOffset;
@@ -63,20 +66,28 @@ namespace Intégration.Scripts
         // Ref au Canon
         public Transform Canon;
 
+        // Cooldown radial
+        public Image CoolDownImage;
         // Reference CoolDown slider
-        public Slider CoolDownSlider;
+        //public Slider CoolDownSlider;
 
         public float minDistance = 5f; // Distance minimale pour viser
         public float maxDistance = 50f; // Distance maximale pour viser
+        
+        // Ref au playerData ( pour les explosive barrels ) 
+        
+        // Référence à la caméra principale
         public Camera MainCamera;
 
 
 
         void Start()
         {
+            
+            CoolDownImage.fillAmount = 0;
             //RayCastUI.SetActive(true);
-            CoolDownSlider.maxValue = ShootCooldown;
-            CoolDownSlider.value = 0; // Initialiser à la valeur minimale
+            //CoolDownSlider.maxValue = ShootCooldown;
+            //CoolDownSlider.value = 0; // Initialiser à la valeur minimale
             _crosshairInstance = Instantiate(CrosshairPrefab);
             // Ajuster le masque de couche pour exclure le layer "NonInteractable"
             InteractableLayer = ~LayerMask.GetMask("NonInteractable");
@@ -88,8 +99,9 @@ namespace Intégration.Scripts
         void Update()
         {
          //   UpdateLightDirection();
-            UpdateCoolDownSlider();
-            UpdateCanonDirection();
+         //UpdateCoolDownSlider();
+         UpdateCoolDownImage();
+         UpdateCanonDirection();
 
             // Vérifiez s'il y a des touches sur l'écran
             if (Input.touchCount > 0)
@@ -152,32 +164,43 @@ namespace Intégration.Scripts
             SelectedWeapon = (WeaponType)(((int)SelectedWeapon + 1) % Enum.GetValues(typeof(WeaponType)).Length);
         }
         
-         public void Shoot()
+        //  public void Shoot()
+        // {
+        //
+        //         switch (SelectedWeapon)
+        //         {
+        //             case WeaponType.Canon:
+        //                 CanonShootWithCooldown();
+        //                 break;
+        //             case WeaponType.ExplosiveBarrel:
+        //                 ShootExplosiveBarrel();
+        //                 break;
+        //             default:
+        //                 CanonShootWithCooldown();
+        //                 break;
+        //         }
+        //     
+        //
+        // }
+        
+        public void ShootExplosiveBarrel()
         {
-  
-                switch (SelectedWeapon)
-                {
-                    case WeaponType.Canon:
-                        CanonShootWithCooldown();
-                        break;
-                    case WeaponType.ExplosiveBarrel:
-                        ShootExplosiveBarrel();
-                        break;
-                    default:
-                        CanonShootWithCooldown();
-                        break;
-                }
-            
-
-        }
-        void ShootExplosiveBarrel()
-        {
-            GameObject barrel = Instantiate(ExplosiveBarrelPrefab, BarrelOut.position, BarrelOut.rotation);
-            barrel.GetComponent<ExplosiveBarrel>().SetTrajectoryParameters(BarrelOut.position, _touchPosition, BarrelOffset.position);
+            if (PlayerData.Instance.CurrentExplosifBarrel > 0)
+            {
+                GameObject barrel = Instantiate(ExplosiveBarrelPrefab, BarrelOut.position, BarrelOut.rotation);
+                barrel.GetComponent<ExplosiveBarrel>()
+                    .SetTrajectoryParameters(BarrelOut.position, _touchPosition, BarrelOffset.position);
+                PlayerData.Instance.CurrentExplosifBarrel--;
+                PlayerData.Instance.UpdateExplosiveBarrelText();
+            }
+            else
+            {
+                SoundManager.PlaySound(SoundType.ShootFail);
+            }
         }
 
 
-        void CanonShootWithCooldown()
+        public void CanonShootWithCooldown()
         {
             if (Time.time >= _lastShootTime + ShootCooldown)
             {
@@ -201,7 +224,8 @@ namespace Intégration.Scripts
                     _lastShootTime = Time.time;
 
                     // Réinitialiser le slider à la valeur minimale
-                    CoolDownSlider.value = 0;
+                    //CoolDownSlider.value = 0;
+                    CoolDownImage.fillAmount = 0;
                 }
             }
             else
@@ -211,12 +235,18 @@ namespace Intégration.Scripts
             }
         }
 
-        void UpdateCoolDownSlider()
+        
+        void UpdateCoolDownImage()
+        {
+            float timeSinceLastShot = Time.time - _lastShootTime;
+            CoolDownImage.fillAmount = Mathf.Clamp(timeSinceLastShot, 0, ShootCooldown) / ShootCooldown;
+        }
+        /*void UpdateCoolDownSlider()
         {
             float timeSinceLastShot = Time.time - _lastShootTime;
             
             CoolDownSlider.value = Mathf.Clamp(timeSinceLastShot, 0, ShootCooldown);
-        }
+        }*/
 
         void CalculateOffset(float distanceToTarget)
         {

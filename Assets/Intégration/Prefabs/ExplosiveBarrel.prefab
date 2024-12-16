@@ -51,9 +51,10 @@ MonoBehaviour:
   ExplosionRadius: 20.9
   ExplosionDuration: 1
   _barrelPrefab: {fileID: 479606052991567262}
-  _slashParticle: {fileID: 0}
+  _slashParticle: {fileID: 5563476825078396293, guid: ab226f8780c601b418846e69ae808586,
+    type: 3}
   _rotationVector: {x: 360, y: 360, z: 360}
-  ExplosionEffectPrefab: {fileID: 9084057167321959727, guid: b3dbbe1f134fad34b9201e793d0ecf2c,
+  ExplosionEffectPrefab: {fileID: 6785221216783073760, guid: 4a420fc0b5f06494384adea05c86e672,
     type: 3}
   Speed: 1
 --- !u!114 &-3990054913746360107

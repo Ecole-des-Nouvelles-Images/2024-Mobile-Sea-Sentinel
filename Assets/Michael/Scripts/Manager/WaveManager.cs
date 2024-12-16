@@ -26,6 +26,9 @@ namespace Michael.Scripts.Manager
         [Header("Wave Progression")] public List<GameObject> _spawnedBoats = new List<GameObject>();
         public List<Transform> _spawnPoints;
         public WaveData _currentWaveData;
+        
+        
+        
         [SerializeField] private int _littleBoatsIncrement;
         [SerializeField] private int _balancedBoatsIncrement;
         [SerializeField] private int _bigBoatsIncrement = 0;
@@ -44,11 +47,11 @@ namespace Michael.Scripts.Manager
         private int _bigBoatsBonus = 0;
         private int _currentWave = 0;
         private bool _isWaveActive = false;
-
         private void Start()
         {
             _currentWaveData = _waveData[_currentWave];
             StartWave();
+            
         }
 
         private void FixedUpdate()
@@ -110,7 +113,8 @@ namespace Michael.Scripts.Manager
         [ContextMenu("StartWave !")]
         public void StartWave()
         {
-
+            PlayerData.Instance.CurrentExplosifBarrel = PlayerData.Instance.ExplosifBarrelNumber;
+            PlayerData.Instance.UpdateExplosiveBarrelText();
             _isWaveActive = true;
             if (_currentWave > (_waveData.Count - 1) * WaveprogressionInterval)
             {
