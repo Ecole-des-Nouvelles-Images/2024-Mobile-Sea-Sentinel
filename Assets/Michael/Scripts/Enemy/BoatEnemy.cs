@@ -153,8 +153,7 @@ namespace Michael.Scripts.Enemy
 
         private void StealGold(GameObject target)
         {
-            SoundManager.PlaySound(SoundType.GoldOut);
-            Debug.Log("StealGold");
+            SoundManager.PlaySound(SoundType.GoldOut); 
             int goldtoSteal = BoatGoldMax - CurrentBoatGold;
             PlayerData.Instance.CurrentGold -= goldtoSteal;
             CurrentBoatGold = BoatGoldMax;

@@ -76,7 +76,6 @@ namespace Michael.Scripts.Manager
                     float currentGoldBoatRatio = (float)_boatsWithGoldGenerated / _boatsToSpawn.Count;
                     if (currentGoldBoatRatio < _currentWaveData.BoatWithGoldPourcent)
                     {
-                        Debug.Log("boat with golds");
                         int goldOnBoat = Mathf.CeilToInt(boat.GetComponent<BoatEnemy>().BoatGoldMax * 0.25f);
                         boat.GetComponent<Enemy.BoatEnemy>().SetGoldOnBoat(goldOnBoat);
                         _boatsWithGoldGenerated++;

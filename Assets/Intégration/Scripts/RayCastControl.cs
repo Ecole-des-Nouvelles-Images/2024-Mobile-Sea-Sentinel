@@ -1,10 +1,13 @@
 using System;
+using System.Numerics;
+using DG.Tweening;
 using Michael.Scripts.Controller;
 using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.Serialization;
 using UnityEngine.UI;
+using Vector3 = UnityEngine.Vector3;
 
 namespace Intégration.Scripts
 {
@@ -226,6 +229,7 @@ namespace Intégration.Scripts
                     // Réinitialiser le slider à la valeur minimale
                     //CoolDownSlider.value = 0;
                     CoolDownImage.fillAmount = 0;
+                    Canon.transform.DOShakePosition(2, 0.2f, 4);
                 }
             }
             else

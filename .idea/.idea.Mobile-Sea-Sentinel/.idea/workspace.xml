@@ -5,21 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b7472739-ef28-4269-8639-9f341bd314f4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Intégration/Ui/UI_ShootButtonsWithoutBlack.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Intégration/Ui/UI_ShootButtonsWithoutBlack.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Michael/Scripts/Upgrade/BarrelUpgrade.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Michael/Scripts/Upgrade/BarrelUpgrade.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Mobile-Sea-Sentinel/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Mobile-Sea-Sentinel/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Alexandre/Integration/Scene/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Alexandre/Integration/Scene/Game.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Intégration/Prefabs/ExplosiveBarrel.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Intégration/Prefabs/ExplosiveBarrel.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Intégration/Scene/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Intégration/Scene/Game.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Intégration/Scripts/RayCastControl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Intégration/Scripts/RayCastControl.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Scripts/Controller/PlayerData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Scripts/Controller/PlayerData.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Scripts/Enemy/Bullet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Scripts/Enemy/Bullet.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/Scripts/Enemy/BoatEnemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Scripts/Enemy/BoatEnemy.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Michael/Scripts/Manager/WaveManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Scripts/Manager/WaveManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Shader/Simple Water Shader/Resources/Water_mat_01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Shader/Simple Water Shader/Resources/Water_mat_01.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/VFX/Cartoon FX Remaster/Assets/Graphics/cfxr ww smoke second color ab.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/VFX/Cartoon FX Remaster/Assets/Graphics/cfxr ww smoke second color ab.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Bangers SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Bangers SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/Shader/Simple Water Shader/Resources/WaterShader.shadergraph" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Shader/Simple Water Shader/Resources/WaterShader.shadergraph" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sacha/Scenes/Prototype_Sacha.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sacha/Scenes/Prototype_Sacha.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
