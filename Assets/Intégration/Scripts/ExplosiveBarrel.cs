@@ -27,12 +27,12 @@ namespace Intégration.Scripts
         void Start()
         {
             _startTime = Time.time;
-          
+           
         }
 
         void Update()
         {
-            _barrelPrefab.transform.DOLocalRotate(_rotationVector, 2);
+            gameObject.transform.DOLocalRotate(_rotationVector, 2);
             if (!_tracjetorySetted) return;
             float time = (Time.time - _startTime) * Speed;
             transform.position = GetBezierPoints(_startPosition, _endPosition, _offset, time);

@@ -13,13 +13,15 @@ namespace Michael.Scripts.Controller
         public   float FireRate;
         public  int BulletDamage;
         public int ExplosifBarrelNumber = 0;
+        public int CurrentExplosifBarrel;
         public int BarrelDamage;
         
         public TextMeshProUGUI goldText;
-
+        public TextMeshProUGUI ExplosiveBarrelText;
         private void Start() 
         {
             CurrentGold = MaxGoldCapacity; 
+            UpdateExplosiveBarrelText();
         }
         
         private void Update()
@@ -30,6 +32,11 @@ namespace Michael.Scripts.Controller
                 CurrentGold = 0;
                 GameManager.Instance.GameOver();
             }
+        }
+        
+        public void UpdateExplosiveBarrelText()
+        {
+            ExplosiveBarrelText.text = PlayerData.Instance.CurrentExplosifBarrel.ToString();
         }
 
 
