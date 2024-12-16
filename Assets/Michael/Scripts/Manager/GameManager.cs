@@ -66,6 +66,7 @@ namespace Michael.Scripts.Manager
 
         public void GameOver()
         {
+            Pause();
             _mainMusic.Stop();
             _defeatSound.Play();
             OpenPanel(_gameOverPanel);
