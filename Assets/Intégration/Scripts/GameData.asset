@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53ff35efc2e1bbb468af92f5f5a5304b, type: 3}
   m_Name: GameData
   m_EditorClassIdentifier: 
-  MusicVolume: 0.7755082
-  SfxVolume: 0.8673443
+  MusicVolume: 0.5
+  SfxVolume: 0.5
   Highscore: 0
+  _sfxSliderEnable: 1
+  _musicSliderEnable: 1

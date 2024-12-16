@@ -2,6 +2,8 @@ using Michael.Scripts.Enemy;
 using UnityEngine;
 using UnityEngine.Serialization;
 using System.Collections;
+using DG.Tweening;
+using Michael.Scripts.Controller;
 
 namespace Intégration.Scripts
 {
@@ -9,6 +11,9 @@ namespace Intégration.Scripts
     {
         public float ExplosionRadius = 50f;
         public float ExplosionDuration = 1f;
+        [SerializeField] private GameObject _barrelPrefab;
+        [SerializeField] private GameObject _slashParticle;
+        [SerializeField] private Vector3 _rotationVector;
         private Vector3 _startPosition;
         private Vector3 _endPosition;
         private Vector3 _offset;
@@ -22,10 +27,12 @@ namespace Intégration.Scripts
         void Start()
         {
             _startTime = Time.time;
+          
         }
 
         void Update()
         {
+            _barrelPrefab.transform.DOLocalRotate(_rotationVector, 2);
             if (!_tracjetorySetted) return;
             float time = (Time.time - _startTime) * Speed;
             transform.position = GetBezierPoints(_startPosition, _endPosition, _offset, time);
@@ -50,8 +57,16 @@ namespace Intégration.Scripts
         {
             if (other.gameObject.CompareTag("Enemy") || other.gameObject.CompareTag("Bullet"))
             {
+                _barrelPrefab.GetComponent<MeshRenderer>().enabled = false;
+                SoundManager.PlaySound(SoundType.Explosion);
                 // Start the explosion coroutine
                 StartCoroutine(Explode());
+                
+            }
+            if (other.CompareTag("Water"))
+            {
+                Instantiate(_slashParticle, new Vector3(transform.position.x,0.3f,transform.position.z), Quaternion.identity);
+                SoundManager.PlaySound(SoundType.WaterHit);
             }
         }
 
@@ -73,7 +88,7 @@ namespace Intégration.Scripts
                 {
                     if (hit.CompareTag("Enemy"))
                     {
-                        hit.GetComponent<BoatEnemy>().TakeDamage(100);
+                        hit.GetComponent<BoatEnemy>().TakeDamage(PlayerData.Instance.BarrelDamage);
                     }
                     else if (hit.CompareTag("ExplosiveBarrel"))
                     {

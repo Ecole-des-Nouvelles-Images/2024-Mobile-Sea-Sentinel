@@ -69,7 +69,7 @@ namespace Intégration.Scripts
 
         public float minDistance = 5f; // Distance minimale pour viser
         public float maxDistance = 50f; // Distance maximale pour viser
-
+        public Camera MainCamera;
 
 
 
@@ -79,7 +79,6 @@ namespace Intégration.Scripts
             CoolDownSlider.maxValue = ShootCooldown;
             CoolDownSlider.value = 0; // Initialiser à la valeur minimale
             _crosshairInstance = Instantiate(CrosshairPrefab);
-
             // Ajuster le masque de couche pour exclure le layer "NonInteractable"
             InteractableLayer = ~LayerMask.GetMask("NonInteractable");
 
@@ -89,7 +88,7 @@ namespace Intégration.Scripts
 
         void Update()
         {
-            UpdateLightDirection();
+         //   UpdateLightDirection();
             UpdateCoolDownSlider();
             UpdateCanonDirection();
 
@@ -109,7 +108,7 @@ namespace Intégration.Scripts
                     touch.phase == TouchPhase.Stationary)
                 {
                     // Convertissez la position du toucher en un rayon
-                    Ray ray = Camera.main.ScreenPointToRay(touch.position);
+                    Ray ray =  MainCamera.ScreenPointToRay(touch.position);
 
                     // Effectuez un raycast avec le masque de couche
                     RaycastHit hit;
@@ -187,7 +186,7 @@ namespace Intégration.Scripts
                 if (_touchPosition != Vector3.zero)
                 {
                     //float distanceToTarget = Vector3.Distance(Canon.position, touchPosition);
-
+                    SoundManager.PlaySound(SoundType.Shoot);
                     // VFX de tir
                     if (VFXShot1 != null) VFXShot1.Play();
                     if (VFXShot2 != null) VFXShot2.Play();
@@ -205,6 +204,11 @@ namespace Intégration.Scripts
                     // Réinitialiser le slider à la valeur minimale
                     CoolDownSlider.value = 0;
                 }
+            }
+            else
+            {
+                // SFX
+                SoundManager.PlaySound(SoundType.ShootFail);
             }
         }
 
@@ -273,11 +277,11 @@ namespace Intégration.Scripts
 
        
 
-        private void OnDrawGizmos()
+     /*   private void OnDrawGizmos()
         {
             Gizmos.color = Color.magenta;
             Gizmos.DrawSphere(_offset.position, 2f);
-        }
+        }*/
         
         // Arme bonus : tonneaux explosifs
     }

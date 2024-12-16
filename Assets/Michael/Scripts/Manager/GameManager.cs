@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using Alexandre;
 using DG.Tweening;
 using Intégration.Scripts;
 using Michael.Scripts.Controller;
@@ -13,7 +14,7 @@ using Random = Unity.Mathematics.Random;
 namespace Michael.Scripts.Manager
 {
     public class GameManager : MonoBehaviourSingleton<GameManager>
-    { 
+    {
         public static bool IsPaused = false;
         public Camera _mainCamera;
         public Canvas _canvas;
@@ -29,14 +30,18 @@ namespace Michael.Scripts.Manager
         [SerializeField] private AudioSource _mainMusic;
         [SerializeField] private float _shakeVibrato;
         [SerializeField] private AudioMixer _mixer;
-      
+        [SerializeField] private Toggle _sfxToggle;
+        [SerializeField] private Toggle _musicToggle;
+
+        private bool _toogleChangeEnable;
         private void Start()
         {
             IsPaused = false;
             _mainCamera = Camera.main;
-            _sfxSlider.value = gameData.SfxVolume;
-            _musicSlider.value = gameData.MusicVolume;
+            InitiateVolumeSlider();
+            _toogleChangeEnable = true;
         }
+
         void Update()
         {
             if (IsPaused)
@@ -65,58 +70,138 @@ namespace Michael.Scripts.Manager
             _defeatSound.Play();
             OpenPanel(_gameOverPanel);
         }
-        
+
         [ContextMenu("open shop !")]
-        public void OpenShop() {
+        public void OpenShop()
+        {
             OpenPanel(_shopPanel);
         }
- 
-        public void CloseShop() { 
+
+        public void CloseShop()
+        {
             ClosePanel(_shopPanel);
         }
 
-        public void ShakeCamera() {
-            _mainCamera.transform.DOShakePosition(0.5f,0.25f, 10);
+        public void ShakeCamera()
+        {
+            _mainCamera.transform.DOShakePosition(0.5f, 0.25f, 10);
         }
 
-        public void OpenPanel(GameObject panel) {
-            
-            panel.SetActive(true); 
+        public void OpenPanel(GameObject panel)
+        {
+
+            panel.SetActive(true);
             Sequence showSequence = DOTween.Sequence();
             showSequence.Append(panel.transform.DOScale(Vector3.one, 0.25f).SetEase(Ease.Linear));
             showSequence.Join((panel.GetComponent<CanvasGroup>().DOFade(1f, 0.25f)));
+            showSequence.SetUpdate(true);
             showSequence.Play();
             _openButtonSound.Play();
         }
+
         public void ClosePanel(GameObject panel)
-       {
+        {
             Sequence showSequence = DOTween.Sequence();
             showSequence.Append(panel.transform.DOScale(Vector3.zero, 0.25f).SetEase(Ease.OutBounce));
             showSequence.Join((panel.GetComponent<CanvasGroup>().DOFade(0f, 0.25f)));
+            showSequence.SetUpdate(true);
             showSequence.Play();
-            showSequence.OnComplete(()=> panel.SetActive(false)); 
+            showSequence.OnComplete(() => panel.SetActive(false));
             _closeButtonSound.Play();
         }
-        
-        public void ButtonFeedback(Button button) {
-            
+
+        public void ButtonFeedback(GameObject button)
+        {
+
             Sequence feedBackSequence = DOTween.Sequence();
             feedBackSequence.Append(button.transform.DOScale(1.1f, 0.2f).SetEase(Ease.Linear));
             feedBackSequence.Append(button.transform.DOScale(1f, 0.2f).SetEase(Ease.Linear));
+            feedBackSequence.SetUpdate(true);
             feedBackSequence.Play();
             _buttonSound.Play();
         }
-        
+
         public void SetSfxVolume()
         {
             gameData.SfxVolume = _sfxSlider.value;
             _mixer.SetFloat("Sfx", Mathf.Log10(gameData.SfxVolume) * 20);
+            _buttonSound.Play();
         }
-        
+
         public void SetMusicVolume()
         {
             gameData.MusicVolume = _musicSlider.value;
             _mixer.SetFloat("Music", Mathf.Log10(gameData.MusicVolume) * 20);
+            _buttonSound.Play();
+        }
+
+        private void UpdateScoreDisplay(int wavesSurvived, int[] highScores)
+        {
+            // _waveSurvivedText.text = "Waves Survived: " + wavesSurvived;
+            //  _highScoresText.text = "High Scores:\n1. " + highScores[0] + "\n2. " + highScores[1] + "\n3. " + highScores[2];
+        }
+
+        public void ToggleSfxVolume()
+        {
+            if (_toogleChangeEnable)
+            {
+                if (gameData._sfxSliderEnable)
+                {
+                    _sfxSlider.value = _sfxSlider.minValue;
+                    gameData.SfxVolume = _sfxSlider.value;
+                    _sfxSlider.interactable = false;
+                    _sfxSlider.GetComponentInParent<CanvasGroup>().alpha = 0.5f;
+                    gameData._sfxSliderEnable = false;
+                }
+                else
+                {
+                    _sfxSlider.value = _sfxSlider.maxValue / 2;
+                    gameData.SfxVolume = _sfxSlider.value;
+                    _sfxSlider.interactable = true;
+                    _sfxSlider.GetComponentInParent<CanvasGroup>().alpha = 1f;
+                    gameData._sfxSliderEnable = true;
+                }
+                _buttonSound.Play();
+            }
+
+        }
+
+        public void ToggleMusicVolume()
+        {
+            if (_toogleChangeEnable)
+            {
+                if (gameData._musicSliderEnable)
+                {
+                    _musicSlider.value = _musicSlider.minValue;
+                    _musicSlider.interactable = false;
+                    _musicSlider.GetComponentInParent<CanvasGroup>().alpha = 0.5f;
+                    gameData._musicSliderEnable = false;
+                }
+                else
+                {
+                    _musicSlider.value = _musicSlider.maxValue / 2;
+                    gameData.MusicVolume = _musicSlider.value;
+                    _musicSlider.interactable = true;
+                    _musicSlider.GetComponentInParent<CanvasGroup>().alpha = 1;
+                    gameData._musicSliderEnable = true;
+                }
+                _buttonSound.Play();
+            }
+
+
+        }
+
+        private void InitiateVolumeSlider()
+        {
+            _musicSlider.interactable = gameData._musicSliderEnable;
+            _sfxSlider.interactable = gameData._sfxSliderEnable;
+
+            _musicSlider.value = gameData._musicSliderEnable ? gameData.MusicVolume : _musicSlider.minValue;
+            _sfxSlider.value = gameData._sfxSliderEnable ? gameData.SfxVolume : _sfxSlider.minValue;
+            
+            _musicToggle.isOn = gameData._musicSliderEnable;
+            _sfxToggle.isOn = gameData._sfxSliderEnable;
+            
         }
         
     }

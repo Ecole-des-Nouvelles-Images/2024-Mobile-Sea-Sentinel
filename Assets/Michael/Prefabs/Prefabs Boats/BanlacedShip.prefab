@@ -419,6 +419,7 @@ MonoBehaviour:
   _lerpSpeed: 0.5
   _damageImageCanvasGroup: {fileID: 4355882401281493844}
   _chest: {fileID: 2574795244810488946, guid: 1e1289bad5667324b9eed56cbda03b1d, type: 3}
+  _worldSpaceCanva: {fileID: 5919076038643849334}
 --- !u!65 &4713444641581972916
 BoxCollider:
   m_ObjectHideFlags: 0

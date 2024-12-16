@@ -5,26 +5,345 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b7472739-ef28-4269-8639-9f341bd314f4" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Mobile-Sea-Sentinel/.idea/projectSettingsUpdater.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Mobile-Sea-Sentinel/.idea/projectSettingsUpdater.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/Integration.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/Integration/Prefabs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/Integration/Prefabs/Bullet.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/Integration/Prefabs/Bullet.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/Integration/Prefabs/ST_Lighthouse_low.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/Integration/Prefabs/ST_Lighthouse_low.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/Integration/Scene.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/Integration/Scene/Game.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/Integration/Scene/Game.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/Integration/Scene/Game.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/Integration/Scene/Game/LightingData.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/Integration/Scene/Game/LightingData.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/Integration/Scene/Game/Lightmap-0_comp_dir.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/Integration/Scene/Game/Lightmap-0_comp_dir.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/Integration/Scene/Game/Lightmap-0_comp_light.exr" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/Integration/Scene/Game/Lightmap-0_comp_light.exr.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/Integration/Scene/Game/Lightmap-10_comp_dir.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/Integration/Scene/Game/Lightmap-10_comp_dir.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/Integration/Scene/Game/Lightmap-10_comp_light.exr" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/Integration/Scene/Game/Lightmap-10_comp_light.exr.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/Integration/Scene/Game/Lightmap-11_comp_dir.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/Integration/Scene/Game/Lightmap-11_comp_dir.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/Integration/Scene/Game/Lightmap-11_comp_light.exr" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/Integration/Scene/Game/Lightmap-11_comp_light.exr.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/Integration/Scene/Game/Lightmap-12_comp_dir.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/Integration/Scene/Game/Lightmap-12_comp_dir.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/Integration/Scene/Game/Lightmap-12_comp_light.exr" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/Integration/Scene/Game/Lightmap-12_comp_light.exr.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/Integration/Scene/Game/Lightmap-13_comp_dir.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/Integration/Scene/Game/Lightmap-13_comp_dir.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/Integration/Scene/Game/Lightmap-13_comp_light.exr" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/Integration/Scene/Game/Lightmap-13_comp_light.exr.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/Integration/Scene/Game/Lightmap-14_comp_dir.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/Integration/Scene/Game/Lightmap-14_comp_dir.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/Integration/Scene/Game/Lightmap-14_comp_light.exr" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/Integration/Scene/Game/Lightmap-14_comp_light.exr.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/Integration/Scene/Game/Lightmap-15_comp_dir.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/Integration/Scene/Game/Lightmap-15_comp_dir.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/Integration/Scene/Game/Lightmap-15_comp_light.exr" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/Integration/Scene/Game/Lightmap-15_comp_light.exr.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/Integration/Scene/Game/Lightmap-16_comp_dir.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/Integration/Scene/Game/Lightmap-16_comp_dir.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/Integration/Scene/Game/Lightmap-16_comp_light.exr" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/Integration/Scene/Game/Lightmap-16_comp_light.exr.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/Integration/Scene/Game/Lightmap-17_comp_dir.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/Integration/Scene/Game/Lightmap-17_comp_dir.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/Integration/Scene/Game/Lightmap-17_comp_light.exr" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/Integration/Scene/Game/Lightmap-17_comp_light.exr.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/Integration/Scene/Game/Lightmap-1_comp_dir.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/Integration/Scene/Game/Lightmap-1_comp_dir.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/Integration/Scene/Game/Lightmap-1_comp_light.exr" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/Integration/Scene/Game/Lightmap-1_comp_light.exr.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/Integration/Scene/Game/Lightmap-2_comp_dir.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/Integration/Scene/Game/Lightmap-2_comp_dir.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/Integration/Scene/Game/Lightmap-2_comp_light.exr" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/Integration/Scene/Game/Lightmap-2_comp_light.exr.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/Integration/Scene/Game/Lightmap-3_comp_dir.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/Integration/Scene/Game/Lightmap-3_comp_dir.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/Integration/Scene/Game/Lightmap-3_comp_light.exr" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/Integration/Scene/Game/Lightmap-3_comp_light.exr.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/Integration/Scene/Game/Lightmap-4_comp_dir.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/Integration/Scene/Game/Lightmap-4_comp_dir.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/Integration/Scene/Game/Lightmap-4_comp_light.exr" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/Integration/Scene/Game/Lightmap-4_comp_light.exr.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/Integration/Scene/Game/Lightmap-5_comp_dir.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/Integration/Scene/Game/Lightmap-5_comp_dir.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/Integration/Scene/Game/Lightmap-5_comp_light.exr" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/Integration/Scene/Game/Lightmap-5_comp_light.exr.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/Integration/Scene/Game/Lightmap-6_comp_dir.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/Integration/Scene/Game/Lightmap-6_comp_dir.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/Integration/Scene/Game/Lightmap-6_comp_light.exr" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/Integration/Scene/Game/Lightmap-6_comp_light.exr.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/Integration/Scene/Game/Lightmap-7_comp_dir.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/Integration/Scene/Game/Lightmap-7_comp_dir.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/Integration/Scene/Game/Lightmap-7_comp_light.exr" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/Integration/Scene/Game/Lightmap-7_comp_light.exr.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/Integration/Scene/Game/Lightmap-8_comp_dir.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/Integration/Scene/Game/Lightmap-8_comp_dir.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/Integration/Scene/Game/Lightmap-8_comp_light.exr" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/Integration/Scene/Game/Lightmap-8_comp_light.exr.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/Integration/Scene/Game/Lightmap-9_comp_dir.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/Integration/Scene/Game/Lightmap-9_comp_dir.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/Integration/Scene/Game/Lightmap-9_comp_light.exr" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/Integration/Scene/Game/Lightmap-9_comp_light.exr.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/Integration/Scene/Game/ReflectionProbe-0.exr" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/Integration/Scene/Game/ReflectionProbe-0.exr.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/Integration/Scene/Menu.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/Integration/Scene/Menu.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/Integration/Scripts.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/Integration/Scripts/Bullet.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/Integration/Scripts/Bullet.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/Integration/Scripts/ExplosiveBarrel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/Integration/Scripts/ExplosiveBarrel.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/Integration/Scripts/MusicManager.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/Integration/Scripts/MusicManager.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/Integration/Scripts/RayCastControl.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/Integration/Scripts/RayCastControl.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/Integration/Scripts/SoundManager.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/Integration/Scripts/SoundManager.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/Integration/proto.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/Integration/proto.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/Musics.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/Musics/UPM_BOS1064_1_Thrill_Of_The_Chase_Instrumental_Hewitt_Brown_1970109.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/Musics/UPM_PN8CD1157_1_Legends_And_Adventures_Instrumental_Tore_Hallstrom_2019833.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/Musics/UPM_PN8CD1157_1_Legends_And_Adventures_Instrumental_Tore_Hallstrom_2019833.mp3.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/SFX/AudioMixer.mixer" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/SFX/AudioMixer.mixer.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/SFX/BarrelBlast.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/SFX/BarrelBlast.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/SFX/BoatHit.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/SFX/BoatHit.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/SFX/CanonFail 1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/SFX/CanonFail 1.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/SFX/CanonShot.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/SFX/CanonShot.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/SFX/MoneyIn.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/SFX/MoneyIn.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/SFX/MoneyOut01.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/SFX/MoneyOut01.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/SFX/MoneyOut02.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/SFX/MoneyOut02.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/SFX/MoneyOut03.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/SFX/MoneyOut03.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/SFX/Sinking.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/SFX/Sinking.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/SFX/Splash.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/SFX/Splash.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/ScoreManager.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/ScoreManager.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/Scripts.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Intégration/Ui.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Intégration/Ui/Scene Transition.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Intégration/Ui/Scene Transition/In.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Intégration/Ui/Scene Transition/In/Image.controller" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Intégration/Ui/Scene Transition/In/Image.controller.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Intégration/Ui/Scene Transition/In/ezgif-frame-006-removebg-preview.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Intégration/Ui/Scene Transition/In/ezgif-frame-006-removebg-preview.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Intégration/Ui/Scene Transition/In/ezgif-frame-008-removebg-preview.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Intégration/Ui/Scene Transition/In/ezgif-frame-008-removebg-preview.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Intégration/Ui/Scene Transition/In/ezgif-frame-009-removebg-preview.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Intégration/Ui/Scene Transition/In/ezgif-frame-009-removebg-preview.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Intégration/Ui/Scene Transition/In/ezgif-frame-010-removebg-preview.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Intégration/Ui/Scene Transition/In/ezgif-frame-010-removebg-preview.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Intégration/Ui/Scene Transition/In/ezgif-frame-011-removebg-preview.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Intégration/Ui/Scene Transition/In/ezgif-frame-011-removebg-preview.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Intégration/Ui/Scene Transition/In/ezgif-frame-012-removebg-preview.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Intégration/Ui/Scene Transition/In/ezgif-frame-012-removebg-preview.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Intégration/Ui/Scene Transition/In/ezgif-frame-013.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Intégration/Ui/Scene Transition/In/ezgif-frame-013.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Intégration/Ui/Scene Transition/In/ezgif-frame-017.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Intégration/Ui/Scene Transition/In/ezgif-frame-017.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Intégration/Ui/Scene Transition/In/in transition anim.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Intégration/Ui/Scene Transition/In/in transition anim.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Intégration/Ui/Scene Transition/In/out transition.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Intégration/Ui/Scene Transition/In/out transition.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sacha/Font/Cayman-Land SDF Outiline.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sacha/Font/Cayman-Land SDF Outiline.asset.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Mobile-Sea-Sentinel/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Mobile-Sea-Sentinel/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Alexandre/Shaders/OccaSoftware/RangeIndicator/Materials/RangeIndicator.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Alexandre/Shaders/OccaSoftware/RangeIndicator/Materials/RangeIndicator.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Alexandre/NoRBPhare/Prefabs/ExplosiveBarrel.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Alexandre/Integration/Prefabs/ExplosiveBarrel.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Alexandre/NoRBPhare/Prefabs/ExplosiveBarrel.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Alexandre/Integration/Prefabs/ExplosiveBarrel.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Alexandre/NoRBPhare/Prefabs/ST_Lighthouse_low.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Alexandre/NoRBPhare/Prefabs/ST_Lighthouse_low.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Alexandre/SFX/BarrelBlast01.wav.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Alexandre/SFX/BarrelBlast01.wav.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Alexandre/SFX/BarrelBlast02.wav.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Alexandre/SFX/BarrelBlast02.wav.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Alexandre/SFX/BarrelBlast03.wav.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Alexandre/SFX/BarrelBlast03.wav.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Alexandre/SFX/CanonFail.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Alexandre/SFX/CanonFail.wav.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Alexandre/Musics/UPM_BOS1064_1_Thrill_Of_The_Chase_Instrumental_Hewitt_Brown_1970109.mp3.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Alexandre/SFX/CanonShot01.wav.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Alexandre/SFX/CanonShot01.wav.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Alexandre/SFX/CanonShot02.wav.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Alexandre/SFX/CanonShot02.wav.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Alexandre/SFX/WaterSplash01.wav" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Alexandre/SFX/WaterSplash01.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Alexandre/SFX/WaterSplash01.wav.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Alexandre/SFX/WaterSplash01.wav.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Alexandre/SFX/WaterSplash02.wav" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Alexandre/SFX/WaterSplash02.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Alexandre/SFX/WaterSplash02.wav.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Alexandre/SFX/WaterSplash02.wav.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Intégration/Prefabs/ExplosiveBarrel.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Intégration/Prefabs/ExplosiveBarrel.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Intégration/Scene/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Intégration/Scene/Game.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Intégration/Scene/Game/NavMesh-Ground.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Intégration/Scene/Game/NavMesh-Ground.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Intégration/Scene/Game/NavMesh-Ground.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Intégration/Scene/Game/NavMesh-Ground.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Intégration/Scene/Game/LightingData.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Intégration/Scene/Game/LightingData.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Intégration/Scene/Menu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Intégration/Scene/Menu.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Intégration/Scripts/ExplosiveBarrel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Intégration/Scripts/ExplosiveBarrel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Intégration/Scripts/GameData.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Intégration/Scripts/GameData.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Intégration/Scripts/GameData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Intégration/Scripts/GameData.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Intégration/Scripts/RayCastControl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Intégration/Scripts/RayCastControl.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Intégration/Scripts/Ui/MenuTitleAnim.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Intégration/Scripts/Ui/MenuTitleAnim.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Intégration/Sfx/Ui/Button Sound.flac.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Intégration/Sfx/Ui/Button Sound.flac.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Intégration/Sfx/Ui/Close Panel.flac.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Intégration/Sfx/Ui/Close Panel.flac.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Intégration/Sfx/Ui/Open Panel.flac.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Intégration/Sfx/Ui/Open Panel.flac.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/Prefabs/Chest.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Prefabs/Chest.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Michael/Prefabs/Prefabs Boats/BanlacedShip.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Prefabs/Prefabs Boats/BanlacedShip.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Michael/Prefabs/Prefabs Boats/BigShip.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Prefabs/Prefabs Boats/BigShip.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Michael/Prefabs/Prefabs Boats/LittleShip.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Prefabs/Prefabs Boats/LittleShip.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/Scripts/Controller/PlayerData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Scripts/Controller/PlayerData.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/Scripts/Enemy/BoatEnemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Scripts/Enemy/BoatEnemy.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/Scripts/Enemy/Bullet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Scripts/Enemy/Bullet.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/Scripts/Enemy/Chest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Scripts/Enemy/Chest.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Michael/Scripts/Manager/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Scripts/Manager/GameManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Shader/Simple Water Shader/Resources/WaterSurface_single.tif.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Shader/Simple Water Shader/Resources/WaterSurface_single.tif.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Shader/Simple Water Shader/Resources/Water_mat_03.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Shader/Simple Water Shader/Resources/Water_mat_03.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Settings/SampleSceneProfile.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/SampleSceneProfile.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Settings/URP-Balanced.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/URP-Balanced.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Settings/URP-HighFidelity.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/URP-HighFidelity.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Settings/URP-Performant.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/URP-Performant.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/Scripts/Manager/WaveManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Scripts/Manager/WaveManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/VFX/Hyper Casual FX.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/VFX/Hyper Casual FX/Demo.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/VFX/Hyper Casual FX/Demo/Animations.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/VFX/Hyper Casual FX/Demo/Animations/SwitchFX_1.2s.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/VFX/Hyper Casual FX/Demo/Animations/SwitchFX_1.2s.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/VFX/Hyper Casual FX/Demo/Animations/SwitchFX_1.2s.controller" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/VFX/Hyper Casual FX/Demo/Animations/SwitchFX_1.2s.controller.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/VFX/Hyper Casual FX/Demo/Animations/SwitchFX_4s.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/VFX/Hyper Casual FX/Demo/Animations/SwitchFX_4s.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/VFX/Hyper Casual FX/Demo/Animations/SwitchFX_4s.controller" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/VFX/Hyper Casual FX/Demo/Animations/SwitchFX_4s.controller.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/VFX/Hyper Casual FX/Demo/Readme.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/VFX/Hyper Casual FX/Demo/Readme.txt.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/VFX/Hyper Casual FX/Demo/Scenes.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/VFX/Hyper Casual FX/Demo/Scenes/LanaDemo01.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/VFX/Hyper Casual FX/Demo/Scenes/LanaDemo01.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/VFX/Hyper Casual FX/Demo/Scenes/LanaDemo02.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/VFX/Hyper Casual FX/Demo/Scenes/LanaDemo02.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/VFX/Hyper Casual FX/Demo/Scenes/LanaDemo03.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/VFX/Hyper Casual FX/Demo/Scenes/LanaDemo03.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/VFX/Hyper Casual FX/Demo/Scenes/LanaDemo04.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/VFX/Hyper Casual FX/Demo/Scenes/LanaDemo04.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/VFX/Hyper Casual FX/Materials.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/VFX/Hyper Casual FX/Materials/Circles_AB.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/VFX/Hyper Casual FX/Materials/Circles_AB.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/VFX/Hyper Casual FX/Materials/Circles_Additive.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/VFX/Hyper Casual FX/Materials/Circles_Additive.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/VFX/Hyper Casual FX/Materials/Drop_AB.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/VFX/Hyper Casual FX/Materials/Drop_AB.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/VFX/Hyper Casual FX/Materials/Square.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/VFX/Hyper Casual FX/Materials/Square.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/VFX/Hyper Casual FX/Models.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/VFX/Hyper Casual FX/Models/Area_vertical.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/VFX/Hyper Casual FX/Models/Area_vertical.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/VFX/Hyper Casual FX/Models/Confetti.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/VFX/Hyper Casual FX/Models/Confetti.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/VFX/Hyper Casual FX/Prefabs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/VFX/Hyper Casual FX/Prefabs/Area.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/VFX/Hyper Casual FX/Prefabs/Area/Area_circles_blue.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/VFX/Hyper Casual FX/Prefabs/Area/Area_circles_blue.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/VFX/Hyper Casual FX/Prefabs/Area/Area_fire_red.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/VFX/Hyper Casual FX/Prefabs/Area/Area_fire_red.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/VFX/Hyper Casual FX/Prefabs/Area/Area_heal_green.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/VFX/Hyper Casual FX/Prefabs/Area/Area_heal_green.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/VFX/Hyper Casual FX/Prefabs/Area/Area_magic_multicolor.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/VFX/Hyper Casual FX/Prefabs/Area/Area_magic_multicolor.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/VFX/Hyper Casual FX/Prefabs/Area/Area_star_ellow.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/VFX/Hyper Casual FX/Prefabs/Area/Area_star_ellow.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/VFX/Hyper Casual FX/Prefabs/Confetti.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/VFX/Hyper Casual FX/Prefabs/Confetti/Confetti_blast_multicolor.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/VFX/Hyper Casual FX/Prefabs/Confetti/Confetti_blast_multicolor.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/VFX/Hyper Casual FX/Prefabs/Confetti/Confetti_directional_multicolor.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/VFX/Hyper Casual FX/Prefabs/Confetti/Confetti_directional_multicolor.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/VFX/Hyper Casual FX/Prefabs/Dust.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/VFX/Hyper Casual FX/Prefabs/Dust/Dust_permanently_blue.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/VFX/Hyper Casual FX/Prefabs/Dust/Dust_permanently_blue.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/VFX/Hyper Casual FX/Prefabs/Flash.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/VFX/Hyper Casual FX/Prefabs/Flash/Flash_blue_purple.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/VFX/Hyper Casual FX/Prefabs/Flash/Flash_blue_purple.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/VFX/Hyper Casual FX/Prefabs/Flash/Flash_ellow.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/VFX/Hyper Casual FX/Prefabs/Flash/Flash_ellow.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/VFX/Hyper Casual FX/Prefabs/Flash/Flash_ellow_pink.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/VFX/Hyper Casual FX/Prefabs/Flash/Flash_ellow_pink.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/VFX/Hyper Casual FX/Prefabs/Flash/Flash_magic_blue_pink.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/VFX/Hyper Casual FX/Prefabs/Flash/Flash_magic_blue_pink.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/VFX/Hyper Casual FX/Prefabs/Flash/Flash_magic_ellow_blue.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/VFX/Hyper Casual FX/Prefabs/Flash/Flash_magic_ellow_blue.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/VFX/Hyper Casual FX/Prefabs/Flash/Flash_round_ellow.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/VFX/Hyper Casual FX/Prefabs/Flash/Flash_round_ellow.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/VFX/Hyper Casual FX/Prefabs/Flash/Flash_star_ellow_green.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/VFX/Hyper Casual FX/Prefabs/Flash/Flash_star_ellow_green.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/VFX/Hyper Casual FX/Prefabs/Flash/Flash_star_ellow_purple.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/VFX/Hyper Casual FX/Prefabs/Flash/Flash_star_ellow_purple.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/VFX/Hyper Casual FX/Prefabs/Shine.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/VFX/Hyper Casual FX/Prefabs/Shine/Shine_blue.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/VFX/Hyper Casual FX/Prefabs/Shine/Shine_blue.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/VFX/Hyper Casual FX/Prefabs/Shine/Shine_ellow.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/VFX/Hyper Casual FX/Prefabs/Shine/Shine_ellow.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/VFX/Hyper Casual FX/Prefabs/Shine/Shine_pink.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/VFX/Hyper Casual FX/Prefabs/Shine/Shine_pink.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/VFX/Hyper Casual FX/Prefabs/Sparkle.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/VFX/Hyper Casual FX/Prefabs/Sparkle/Sparkle_ellow.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/VFX/Hyper Casual FX/Prefabs/Sparkle/Sparkle_ellow.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/VFX/Hyper Casual FX/Prefabs/Water.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/VFX/Hyper Casual FX/Prefabs/Water/Water_blast_blue.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/VFX/Hyper Casual FX/Prefabs/Water/Water_blast_blue.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/VFX/Hyper Casual FX/Prefabs/Water/Water_blast_green.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/VFX/Hyper Casual FX/Prefabs/Water/Water_blast_green.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/VFX/Hyper Casual FX/Textures.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/VFX/Hyper Casual FX/Textures/Blast_directional.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/VFX/Hyper Casual FX/Textures/Blast_directional.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/VFX/Hyper Casual FX/Textures/Blast_spiky.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/VFX/Hyper Casual FX/Textures/Blast_spiky.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/VFX/Hyper Casual FX/Textures/Circle01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/VFX/Hyper Casual FX/Textures/Circle01.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/VFX/Hyper Casual FX/Textures/Circle02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/VFX/Hyper Casual FX/Textures/Circle02.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/VFX/Hyper Casual FX/Textures/Circle03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/VFX/Hyper Casual FX/Textures/Circle03.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/VFX/Hyper Casual FX/Textures/Circle04.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/VFX/Hyper Casual FX/Textures/Circle04.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/VFX/Hyper Casual FX/Textures/Circle05.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/VFX/Hyper Casual FX/Textures/Circle05.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/VFX/Hyper Casual FX/Textures/Circle06.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/VFX/Hyper Casual FX/Textures/Circle06.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/VFX/Hyper Casual FX/Textures/Dust01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/VFX/Hyper Casual FX/Textures/Dust01.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/VFX/Hyper Casual FX/Textures/Flare01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/VFX/Hyper Casual FX/Textures/Flare01.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/VFX/Hyper Casual FX/Textures/Flare02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/VFX/Hyper Casual FX/Textures/Flare02.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/VFX/Hyper Casual FX/Textures/Flare03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/VFX/Hyper Casual FX/Textures/Flare03.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/VFX/Hyper Casual FX/Textures/Gradient01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/VFX/Hyper Casual FX/Textures/Gradient01.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/VFX/Hyper Casual FX/Textures/Plus01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/VFX/Hyper Casual FX/Textures/Plus01.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/VFX/Hyper Casual FX/Textures/Ray01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/VFX/Hyper Casual FX/Textures/Ray01.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/VFX/Hyper Casual FX/Textures/Shockwave_spiky.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/VFX/Hyper Casual FX/Textures/Shockwave_spiky.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/VFX/Hyper Casual FX/Textures/Square01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/VFX/Hyper Casual FX/Textures/Square01.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/VFX/Hyper Casual FX/Textures/Square02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/VFX/Hyper Casual FX/Textures/Square02.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/VFX/Hyper Casual FX/Textures/Star01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/VFX/Hyper Casual FX/Textures/Star01.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/VFX/Hyper Casual FX/Textures/Star02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/VFX/Hyper Casual FX/Textures/Star02.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/VFX/Hyper Casual FX/Textures/confetti_large.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/VFX/Hyper Casual FX/Textures/confetti_large.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/VFX/Hyper Casual FX/Textures/drop.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/VFX/Hyper Casual FX/Textures/drop.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/VFX/Hyper Casual FX/Textures/drop_blue.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/VFX/Hyper Casual FX/Textures/drop_blue.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/VFX/Hyper Casual FX/Textures/drop_green.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/VFX/Hyper Casual FX/Textures/drop_green.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/VFX/Hyper Casual FX/Textures/spark01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/VFX/Hyper Casual FX/Textures/spark01.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Anton SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Anton SDF.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Bangers SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Bangers SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Electronic Highway Sign SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Electronic Highway Sign SDF.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Oswald Bold SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Oswald Bold SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Roboto-Bold SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Roboto-Bold SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +356,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Alexandre/PhareRB/Scripts/MouseLook.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Alexandre/ProtoPharePackage/TouchAim/LHControls.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Alexandre/ScoreManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Intégration/Scripts/Ui/MenuTitleAnim.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Michael/Scripts/Controller/RayCastControl.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Michael/Scripts/Enemy/Bullet.cs" root0="FORCE_HIGHLIGHTING" />
@@ -161,7 +481,7 @@
       <workItem from="1733912200397" duration="17163000" />
       <workItem from="1733995450783" duration="6000" />
       <workItem from="1734105573179" duration="715000" />
-      <workItem from="1734268871321" duration="5111000" />
+      <workItem from="1734268871321" duration="25366000" />
     </task>
     <servers />
   </component>

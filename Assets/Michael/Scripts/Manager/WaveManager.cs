@@ -19,6 +19,8 @@ namespace Michael.Scripts.Manager
         public int StatsprogressionInterval = 3; 
         public int WaveprogressionInterval = 5;
         public int _upgradeNumber = 0; 
+        public List<GameObject> ChestGameObjects;
+        
         
         [Header("Wave Progression")]
         public List<GameObject> _spawnedBoats = new List<GameObject>();
@@ -40,9 +42,8 @@ namespace Michael.Scripts.Manager
         private int _balancedBoatsBonus = 0 ;
         private int _bigBoatsBonus = 0 ;
         private int _currentWave = 0;
-        
-        
-        
+      
+
         private void Start() {
             _currentWaveData = _waveData[_currentWave];
             StartWave();
@@ -147,6 +148,8 @@ namespace Michael.Scripts.Manager
         }
         private void EndWave() {
             
+            ChestGameObjects.Clear();
+            foreach (GameObject chest in ChestGameObjects) { Destroy(chest); }
             _boatsWithGoldGenerated = 0;
             GameManager.Instance.OpenShop();
         }

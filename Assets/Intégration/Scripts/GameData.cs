@@ -8,5 +8,7 @@ namespace Intégration.Scripts
         public float MusicVolume;
         public float SfxVolume;
         public int Highscore;
+        public bool _sfxSliderEnable;
+        public bool _musicSliderEnable;
     }
 }

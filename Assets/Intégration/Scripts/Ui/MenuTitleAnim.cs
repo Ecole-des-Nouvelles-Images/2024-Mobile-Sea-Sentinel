@@ -11,9 +11,10 @@ public class MenuTitleAnim : MonoBehaviour
         [SerializeField] private float animationDuration = 2f;
         [SerializeField] private float bounceDuration = 0.5f;
         [SerializeField] private CanvasGroup mainMenu;
-        void Awake() {
+        void Start() {
             
-            ShowTitle();
+          //  ShowTitle();
+          MainMenuAnimation();
         }
         void ShowTitle() {
             
