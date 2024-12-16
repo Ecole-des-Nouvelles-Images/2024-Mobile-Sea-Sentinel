@@ -54,7 +54,7 @@ Material:
     - WORLD_SPACE_UV: 1
     - _Depth_Fade_Distance: 1.2
     - _Foam_Blend: 1
-    - _Horizon_Distance: 1.3
+    - _Horizon_Distance: 2.6
     - _Intersection_Foam_Blend: 0
     - _Intersection_Foam_Color_Blend: 0.332
     - _Intersection_Foam_Cutoff: 0.435

@@ -26,6 +26,7 @@ namespace Michael.Scripts.Enemy
         [SerializeField] private GameObject _slashParticle;
         [SerializeField] private TextMeshProUGUI _boatGoldText;
         [SerializeField] private ParticleSystem _explosionParticles;
+        [SerializeField] private ParticleSystem _hitParticles;
         [SerializeField] private TextMeshProUGUI _damageNumberText;
         [SerializeField] Slider _boatHealthBar;
         [SerializeField] Slider _boatEaseHealthBar;
@@ -128,13 +129,16 @@ namespace Michael.Scripts.Enemy
             HealthBarFeedback(_boatUi);
             _currentHealth -= damage;
             _boatHealthBar.value = _currentHealth; 
-         // effet de secousse
+            Instantiate(_hitParticles, transform.position, Quaternion.identity);
+            _boatModel.transform.DOShakePosition(0.2f, 0.3f);
+            // effet de secousse
             Sequence feedBackSequence = DOTween.Sequence();
-            feedBackSequence.Append( _damageImageCanvasGroup.DOFade(0.2f, 0.1f).SetEase(Ease.Linear));
-            feedBackSequence.Append( _damageImageCanvasGroup.DOFade(0f, 0.1f).SetEase(Ease.Linear));
+            feedBackSequence.Append( _damageImageCanvasGroup.DOFade(0.5f, 0.1f).SetEase(Ease.Linear));
+            feedBackSequence.Append( _damageImageCanvasGroup.DOFade(1f, 0.1f).SetEase(Ease.Linear));
             feedBackSequence.Play();
             _boatEaseHealthBar.DOValue( _currentHealth, _lerpSpeed);
             ShowDamageNumber(damage);
+          
           
             if (_currentHealth <= 0)
             {
@@ -149,8 +153,7 @@ namespace Michael.Scripts.Enemy
 
         private void StealGold(GameObject target)
         {
-            SoundManager.PlaySound(SoundType.GoldOut);
-            Debug.Log("StealGold");
+            SoundManager.PlaySound(SoundType.GoldOut); 
             int goldtoSteal = BoatGoldMax - CurrentBoatGold;
             PlayerData.Instance.CurrentGold -= goldtoSteal;
             CurrentBoatGold = BoatGoldMax;
@@ -183,7 +186,7 @@ namespace Michael.Scripts.Enemy
         {
             _sinkSequence = DOTween.Sequence();
             SoundManager.PlaySound(SoundType.Sinking);
-            _sinkSequence.Join(_boatModel.gameObject.transform.DOMove(new Vector3(transform.position.x, -8, transform.position.z), 2f));
+            _sinkSequence.Join(_boatModel.gameObject.transform.DOMove(new Vector3(transform.position.x, -10, transform.position.z), 2f));
             _sinkSequence.Join(_boatModel.gameObject.transform.DORotate(new Vector3(transform.position.x,transform.position.y , 10), 2f));
             _sinkSequence.OnComplete(() => { Destroy(gameObject); });
             _sinkSequence.Play();

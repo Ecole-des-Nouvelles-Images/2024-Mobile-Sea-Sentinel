@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 3521265399808654362}
   - component: {fileID: 6289614983563036187}
-  - component: {fileID: 115889838410602190}
   - component: {fileID: -3990054913746360107}
+  - component: {fileID: 333277155016694236}
   m_Layer: 0
   m_Name: ExplosiveBarrel
   m_TagString: ExplosiveBarrel
@@ -51,32 +51,12 @@ MonoBehaviour:
   ExplosionRadius: 20.9
   ExplosionDuration: 1
   _barrelPrefab: {fileID: 479606052991567262}
-  _slashParticle: {fileID: 0}
-  _rotationVector: {x: 0, y: 0, z: 360}
-  ExplosionEffectPrefab: {fileID: 9084057167321959727, guid: b3dbbe1f134fad34b9201e793d0ecf2c,
+  _slashParticle: {fileID: 5563476825078396293, guid: ab226f8780c601b418846e69ae808586,
+    type: 3}
+  _rotationVector: {x: 360, y: 360, z: 360}
+  ExplosionEffectPrefab: {fileID: 6785221216783073760, guid: 4a420fc0b5f06494384adea05c86e672,
     type: 3}
   Speed: 1
---- !u!135 &115889838410602190
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5872902002937885641}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Radius: 8
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &-3990054913746360107
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -84,7 +64,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5872902002937885641}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 78bb08c642f86144b850dfc4b0d99e29, type: 3}
   m_Name: 
@@ -160,6 +140,29 @@ MonoBehaviour:
     m_RotationOrder: 4
   _tiltAmplitude: 5
   _tiltDuration: 2
+--- !u!136 &333277155016694236
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5872902002937885641}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 3.4884808
+  m_Height: 8.844761
+  m_Direction: 1
+  m_Center: {x: 0, y: 2.8, z: 0}
 --- !u!1001 &749443600462231759
 PrefabInstance:
   m_ObjectHideFlags: 0
