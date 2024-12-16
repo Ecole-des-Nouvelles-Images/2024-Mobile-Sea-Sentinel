@@ -4,6 +4,7 @@ using UnityEngine.Serialization;
 using System.Collections;
 using DG.Tweening;
 using Michael.Scripts.Controller;
+using Michael.Scripts.Manager;
 
 namespace Intégration.Scripts
 {
@@ -14,6 +15,7 @@ namespace Intégration.Scripts
         [SerializeField] private GameObject _barrelPrefab;
         [SerializeField] private GameObject _slashParticle;
         [SerializeField] private Vector3 _rotationVector;
+        private FloatingEffect _floatingEffect;
         private Vector3 _startPosition;
         private Vector3 _endPosition;
         private Vector3 _offset;
@@ -26,13 +28,14 @@ namespace Intégration.Scripts
 
         void Start()
         {
+            _floatingEffect = GetComponent<FloatingEffect>();
             _startTime = Time.time;
            
         }
 
         void Update()
         {
-            gameObject.transform.DOLocalRotate(_rotationVector, 2);
+            _barrelPrefab.transform.DOLocalRotate(_rotationVector, 2);
             if (!_tracjetorySetted) return;
             float time = (Time.time - _startTime) * Speed;
             transform.position = GetBezierPoints(_startPosition, _endPosition, _offset, time);
@@ -59,6 +62,7 @@ namespace Intégration.Scripts
             {
                 _barrelPrefab.GetComponent<MeshRenderer>().enabled = false;
                 SoundManager.PlaySound(SoundType.Explosion);
+                GameManager.Instance.ShakeCamera();
                 // Start the explosion coroutine
                 StartCoroutine(Explode());
                 
@@ -67,6 +71,7 @@ namespace Intégration.Scripts
             {
                 Instantiate(_slashParticle, new Vector3(transform.position.x,0.3f,transform.position.z), Quaternion.identity);
                 SoundManager.PlaySound(SoundType.WaterHit);
+                _floatingEffect.enabled = true;
             }
         }
 

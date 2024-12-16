@@ -182,5 +182,10 @@ namespace Michael.Scripts.Manager
             _uiEndWave.SetActive(true);
             _uiEndWave.transform.GetComponent<CanvasGroup>().DOFade(1f, 2f).SetUpdate(true);
         }
+        
+        public int GetCurrentWave()
+        {
+            return _currentWave; 
+        }
     }
 }

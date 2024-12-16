@@ -191,8 +191,9 @@ namespace Intégration.Scripts
             if (PlayerData.Instance.CurrentExplosifBarrel > 0)
             {
                 GameObject barrel = Instantiate(ExplosiveBarrelPrefab, BarrelOut.position, BarrelOut.rotation);
+                Vector3 barrelEndPos= new Vector3(_touchPosition.x, _touchPosition.y - 2, _touchPosition.z);
                 barrel.GetComponent<ExplosiveBarrel>()
-                    .SetTrajectoryParameters(BarrelOut.position, _touchPosition, BarrelOffset.position);
+                    .SetTrajectoryParameters(BarrelOut.position, barrelEndPos , BarrelOffset.position);
                 PlayerData.Instance.CurrentExplosifBarrel--;
                 PlayerData.Instance.UpdateExplosiveBarrelText();
             }
