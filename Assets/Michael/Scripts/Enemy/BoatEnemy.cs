@@ -159,8 +159,10 @@ namespace Michael.Scripts.Enemy
             CurrentBoatGold = BoatGoldMax;
             HealthBarFeedback( PlayerData.Instance.goldText.gameObject);
             _boatGoldText.text = CurrentBoatGold + "/" + BoatGoldMax;
-            target.transform.DOShakePosition(1, Vector3.one).SetEase(Ease.InBounce);
+          //  target.transform.DOShakePosition(1, Vector3.one).SetEase(Ease.InBounce);
             FollowTarget(_initialPosition);
+            
+            PlayerData.Instance.UpdatePlayerGold();
         }
         
         
@@ -169,6 +171,7 @@ namespace Michael.Scripts.Enemy
         {
             // activer version en plusieurs morceaux
             // opacité shader
+            GameManager.Instance.BoatDestoyed++;
             _boatCollider.enabled = false;
             _floatingEffect.enabled = false;
             SoundManager.PlaySound(SoundType.Explosion);

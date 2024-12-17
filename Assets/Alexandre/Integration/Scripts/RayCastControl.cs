@@ -79,7 +79,6 @@ namespace Alexandre.Integration.Scripts
             CoolDownSlider.maxValue = ShootCooldown;
             CoolDownSlider.value = 0; // Initialiser à la valeur minimale
             _crosshairInstance = Instantiate(CrosshairPrefab);
-
             // Ajuster le masque de couche pour exclure le layer "NonInteractable"
             InteractableLayer = ~LayerMask.GetMask("NonInteractable");
 

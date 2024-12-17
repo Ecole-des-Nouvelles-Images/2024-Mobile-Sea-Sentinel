@@ -22,16 +22,12 @@ namespace Michael.Scripts.Controller
         {
             CurrentGold = MaxGoldCapacity; 
             UpdateExplosiveBarrelText();
+            UpdatePlayerGold();
         }
         
         private void Update()
         {
-            goldText.text =  goldText.text = CurrentGold + " / " + MaxGoldCapacity;
-            if (CurrentGold <= 0)
-            {
-                CurrentGold = 0;
-                GameManager.Instance.GameOver();
-            }
+          
         }
         
         public void UpdateExplosiveBarrelText()
@@ -39,6 +35,20 @@ namespace Michael.Scripts.Controller
             ExplosiveBarrelText.text = PlayerData.Instance.CurrentExplosifBarrel.ToString();
         }
 
+        public void UpdatePlayerGold()
+        {
+            goldText.text =  goldText.text = CurrentGold + " / " + MaxGoldCapacity;
+            if (CurrentGold <= 0)
+            {
+                CurrentGold = 0;
+                GameManager.Instance.GameOver();
+                
+            }
+            if (CurrentGold >= MaxGoldCapacity)
+            {
+                CurrentGold = MaxGoldCapacity;
+            }
+        }
 
       
         

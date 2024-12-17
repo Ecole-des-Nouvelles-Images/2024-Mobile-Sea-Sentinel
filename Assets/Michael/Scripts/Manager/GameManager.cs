@@ -4,6 +4,7 @@ using Alexandre;
 using DG.Tweening;
 using Intégration.Scripts;
 using Michael.Scripts.Controller;
+using TMPro;
 using UnityEngine;
 using UnityEngine.Audio;
 using UnityEngine.SceneManagement;
@@ -18,6 +19,8 @@ namespace Michael.Scripts.Manager
         public static bool IsPaused = false;
         public Camera _mainCamera;
         public Canvas _canvas;
+        public bool GameIsFinished;
+        public int BoatDestoyed;
         [SerializeField] GameData gameData;
         [SerializeField] private GameObject _shopPanel;
         [SerializeField] private GameObject _gameOverPanel;
@@ -32,7 +35,12 @@ namespace Michael.Scripts.Manager
         [SerializeField] private AudioMixer _mixer;
         [SerializeField] private Toggle _sfxToggle;
         [SerializeField] private Toggle _musicToggle;
-
+        [SerializeField] private TextMeshProUGUI _currentWaveText; 
+        [SerializeField] private TextMeshProUGUI _highScoreText;
+        [SerializeField] private TextMeshProUGUI _destroyedBoatText;
+        private int _waveHighScore;
+        private int _currentWave;
+        
         private bool _toogleChangeEnable;
         private void Start()
         {
@@ -40,6 +48,9 @@ namespace Michael.Scripts.Manager
             _mainCamera = Camera.main;
             InitiateVolumeSlider();
             _toogleChangeEnable = true;
+            
+            _waveHighScore =  PlayerPrefs.GetInt("HighWave", 0);
+            _highScoreText.text = "Record : Vague " + _waveHighScore;
         }
 
         void Update()
@@ -70,7 +81,19 @@ namespace Michael.Scripts.Manager
             _mainMusic.Stop();
             _defeatSound.Play();
             OpenPanel(_gameOverPanel);
+
+           _currentWave =  WaveManager.Instance.GetCurrentWave();
+           _currentWaveText.text = "Vague atteinte : " + _currentWave;
+           _destroyedBoatText.text = "Bateaux detruits : " + BoatDestoyed;
+            
+            if (_currentWave > _waveHighScore)
+            {
+                PlayerPrefs.SetInt("HighWave", _currentWave); // Sauvegarder le nouveau record
+                _highScoreText.text = "Nouveau Record ! Vague " + _currentWave;
+            }
         }
+        
+        
 
         [ContextMenu("open shop !")]
         public void OpenShop()

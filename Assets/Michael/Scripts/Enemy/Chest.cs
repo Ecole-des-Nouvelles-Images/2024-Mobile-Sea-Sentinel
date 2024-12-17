@@ -18,6 +18,7 @@ namespace Michael.Scripts.Enemy
       [SerializeField] private ParticleSystem _coinpParticles;
       [SerializeField] private GameObject _chestParticles;
       private Sequence _sinkSequence;
+     
       private void Start()
       {
          Vector3 pos = new Vector3(transform.position.x,transform.position.y,transform.position.z);
@@ -60,12 +61,18 @@ namespace Michael.Scripts.Enemy
          _canRecovered = true;
          Destroy(_button);
          PlayerData.Instance.CurrentGold += ChestGold;
-         SoundManager.PlaySound(SoundType.GoldIn);
+         if ( PlayerData.Instance.CurrentGold >  PlayerData.Instance.MaxGoldCapacity)
+         {
+            PlayerData.Instance.CurrentGold = PlayerData.Instance.MaxGoldCapacity;
+         }
+         PlayerData.Instance.UpdatePlayerGold();
          _chestParticles.SetActive(false);
-            ChestGold = 0;
+         ChestGold = 0;
          _chestTop.transform.DOLocalRotate(new Vector3(-60f, 0, 0), 2f).SetEase(Ease.OutBounce).OnComplete(() =>
          {
           // _coinpParticles.Play();
+          SoundManager.PlaySound(SoundType.GoldIn);
+          // animation gold
             SinkChest();
          });
       }
