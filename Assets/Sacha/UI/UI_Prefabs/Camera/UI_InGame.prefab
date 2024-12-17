@@ -172,8 +172,8 @@ RectTransform:
   - {fileID: 1407671006554282431}
   m_Father: {fileID: 639526199993178913}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.1, y: 0.2}
-  m_AnchorMax: {x: 0.9, y: 0.2}
+  m_AnchorMin: {x: 0.11, y: 0.22}
+  m_AnchorMax: {x: 0.9, y: 0.22}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0}
@@ -1979,9 +1979,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Gold max: 0000
-
-'
+  m_text: 'Tonneaux: 000'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 606b1b648f7d9e548a19abb16f03fd63, type: 2}
   m_sharedMaterial: {fileID: -4707936083118442498, guid: 606b1b648f7d9e548a19abb16f03fd63,
@@ -4325,7 +4323,7 @@ PrefabInstance:
     - target: {fileID: 5176010064800102609, guid: ea97cba2e4fe16246915baf3e572b8de,
         type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 5237547863133177885, guid: ea97cba2e4fe16246915baf3e572b8de,
         type: 3}
