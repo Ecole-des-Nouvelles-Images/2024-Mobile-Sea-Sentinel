@@ -17,7 +17,6 @@ namespace Michael.Scripts.Manager
     public class GameManager : MonoBehaviourSingleton<GameManager>
     {
         public static bool IsPaused = false;
-        public Camera _mainCamera;
         public Canvas _canvas;
         public bool GameIsFinished;
         public int BoatDestoyed;
@@ -40,15 +39,14 @@ namespace Michael.Scripts.Manager
         [SerializeField] private TextMeshProUGUI _destroyedBoatText;
         private int _waveHighScore;
         private int _currentWave;
-        
+        private Camera _mainCamera;
         private bool _toogleChangeEnable;
         private void Start()
         {
             IsPaused = false;
-            _mainCamera = Camera.main;
             InitiateVolumeSlider();
             _toogleChangeEnable = true;
-            
+            _mainCamera = Camera.main;
             _waveHighScore =  PlayerPrefs.GetInt("HighWave", 0);
             _highScoreText.text = "Record : Vague " + _waveHighScore;
         }
