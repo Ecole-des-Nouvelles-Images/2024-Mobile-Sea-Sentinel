@@ -15,7 +15,7 @@ namespace Michael.Scripts.Enemy
       [SerializeField] private bool _canRecovered = false;
       [SerializeField] private GameObject _chestTop; 
       [SerializeField] private GameObject _button;
-      [SerializeField] private ParticleSystem _coinpParticles;
+      [SerializeField] private ParticleSystem _coinParticles;
       [SerializeField] private GameObject _chestParticles;
       private Sequence _sinkSequence;
      
@@ -24,7 +24,7 @@ namespace Michael.Scripts.Enemy
          Vector3 pos = new Vector3(transform.position.x,transform.position.y,transform.position.z);
          _button.transform.SetParent( GameManager.Instance._canvas.transform);
          _button.transform.SetAsFirstSibling();
-         _button.transform.position = GameManager.Instance._mainCamera.WorldToScreenPoint(pos);
+         _button.transform.position = Camera.main.WorldToScreenPoint(pos);
       }
 
       private void Update()
@@ -60,6 +60,7 @@ namespace Michael.Scripts.Enemy
          //animation coffre qui s'ouvre 
          _canRecovered = true;
          Destroy(_button);
+         _coinParticles.Play();
          PlayerData.Instance.CurrentGold += ChestGold;
          if ( PlayerData.Instance.CurrentGold >  PlayerData.Instance.MaxGoldCapacity)
          {
@@ -69,10 +70,9 @@ namespace Michael.Scripts.Enemy
          _chestParticles.SetActive(false);
          ChestGold = 0;
          _chestTop.transform.DOLocalRotate(new Vector3(-60f, 0, 0), 2f).SetEase(Ease.OutBounce).OnComplete(() =>
-         {
-          // _coinpParticles.Play();
-          SoundManager.PlaySound(SoundType.GoldIn);
-          // animation gold
+         { 
+            SoundManager.PlaySound(SoundType.GoldIn);
+            // animation gold
             SinkChest();
          });
       }

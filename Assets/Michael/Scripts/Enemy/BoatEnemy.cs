@@ -189,7 +189,7 @@ namespace Michael.Scripts.Enemy
         {
             _sinkSequence = DOTween.Sequence();
             SoundManager.PlaySound(SoundType.Sinking);
-            _sinkSequence.Join(_boatModel.gameObject.transform.DOMove(new Vector3(transform.position.x, -10, transform.position.z), 2f));
+            _sinkSequence.Join(_boatModel.gameObject.transform.DOMove(new Vector3(transform.position.x, -15, transform.position.z), 2f));
             _sinkSequence.Join(_boatModel.gameObject.transform.DORotate(new Vector3(transform.position.x,transform.position.y , 10), 2f));
             _sinkSequence.OnComplete(() => { Destroy(gameObject); });
             _sinkSequence.Play();
