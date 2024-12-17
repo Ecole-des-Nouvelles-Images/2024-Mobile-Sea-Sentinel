@@ -112,7 +112,7 @@ namespace Michael.Scripts.Manager
         [ContextMenu("StartWave !")]
         public void StartWave()
         {
-            PlayerData.Instance.CurrentExplosifBarrel = PlayerData.Instance.ExplosifBarrelNumber;
+            PlayerData.Instance.CurrentExplosifBarrel = PlayerData.Instance.MaxExplosifBarrel;
             PlayerData.Instance.UpdateExplosiveBarrelText();
             _isWaveActive = true;
             if (_currentWave > (_waveData.Count - 1) * WaveprogressionInterval)

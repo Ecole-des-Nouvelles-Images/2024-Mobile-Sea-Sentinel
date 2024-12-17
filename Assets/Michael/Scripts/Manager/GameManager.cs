@@ -30,7 +30,7 @@ namespace Michael.Scripts.Manager
         [SerializeField] private AudioSource _buttonSound;
         [SerializeField] private AudioSource _defeatSound;
         [SerializeField] private AudioSource _mainMusic;
-        [SerializeField] private float _shakeVibrato;
+        [SerializeField] private int _shakeVibrato;
         [SerializeField] private AudioMixer _mixer;
         [SerializeField] private Toggle _sfxToggle;
         [SerializeField] private Toggle _musicToggle;
@@ -50,6 +50,9 @@ namespace Michael.Scripts.Manager
             _mainCamera = Camera.main;
             _waveHighScore =  PlayerPrefs.GetInt("HighWave", 0);
             _highScoreText.text = "Record : Vague " + _waveHighScore;
+
+            
+          
         }
 
         void Update()
@@ -98,12 +101,20 @@ namespace Michael.Scripts.Manager
         public void OpenShop()
         {
             OpenPanel(_shopPanel);
-            
+        }
+
+        public void CheckUpgradesCost()
+        {
+           
             foreach (var button in _buyButtons) {
-                Upgrade.Upgrade upgrade = button.GetComponent<Upgrade.Upgrade>();
-                if (PlayerData.Instance.CurrentGold > upgrade.CurrentCost)
+               Upgrade.Upgrade upgrade = button.GetComponent<Upgrade.Upgrade>();
+                if (PlayerData.Instance.CurrentGold <= upgrade.CurrentCost)
                 {
                     upgrade.CostText.color = Color.red;
+                }
+                else
+                {
+                    upgrade.CostText.color = upgrade.InitialCostColor;
                 }
             }
         }
@@ -115,7 +126,7 @@ namespace Michael.Scripts.Manager
 
         public void ShakeCamera()
         {
-            _mainCamera.transform.DOShakePosition(0.5f, 0.25f, 10);
+            _mainCamera.transform.DOShakePosition(0.7f, 0.5f, _shakeVibrato);
         }
 
         public void OpenPanel(GameObject panel)
@@ -166,12 +177,7 @@ namespace Michael.Scripts.Manager
             _buttonSound.Play();
         }
 
-        private void UpdateScoreDisplay(int wavesSurvived, int[] highScores)
-        {
-            // _waveSurvivedText.text = "Waves Survived: " + wavesSurvived;
-            //  _highScoresText.text = "High Scores:\n1. " + highScores[0] + "\n2. " + highScores[1] + "\n3. " + highScores[2];
-        }
-
+     
         public void ToggleSfxVolume()
         {
             if (_toogleChangeEnable)

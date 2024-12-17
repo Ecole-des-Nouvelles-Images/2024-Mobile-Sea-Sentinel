@@ -86,7 +86,7 @@ namespace Intégration.Scripts
 
         void Start()
         {
-            
+            ShootCooldown = PlayerData.Instance.FireRate;
             CoolDownImage.fillAmount = 0;
             //RayCastUI.SetActive(true);
             //CoolDownSlider.maxValue = ShootCooldown;
@@ -206,6 +206,7 @@ namespace Intégration.Scripts
 
         public void CanonShootWithCooldown()
         {
+            ShootCooldown = PlayerData.Instance.FireRate;
             if (Time.time >= _lastShootTime + ShootCooldown)
             {
                 // Vérifiez si la position de tir est valide

@@ -17,7 +17,7 @@ public class BarrelUpgrade : Upgrade
     public override void ApplyUpgrade()
     {
         base.ApplyUpgrade();
-        PlayerData.Instance.ExplosifBarrelNumber += (int)IncrementValue;
+        PlayerData.Instance.MaxExplosifBarrel += (int)IncrementValue;
         IncrementValueText.text = "+ " + IncrementValue;
     }
 }

@@ -17,9 +17,15 @@ public class FireRateUpgrade : Upgrade
 
     public override void ApplyUpgrade()
     {
-        base.ApplyUpgrade();
-        PlayerData.Instance.FireRate -= IncrementValue;
+        
         IncrementValueText.text = "- " + IncrementValue;
+        if (PlayerData.Instance.FireRate > 0 )
+        {
+            base.ApplyUpgrade();
+            PlayerData.Instance.FireRate -= IncrementValue;
+        }
+
+
     }
 }
 
