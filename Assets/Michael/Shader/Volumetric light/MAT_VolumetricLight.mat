@@ -70,7 +70,7 @@ Material:
     - _EdgeFalloff: 0.26
     - _Noise_Strength: 0.3
     - _Opacity: 1.98
-    - _QueueControl: 0
+    - _QueueControl: 1
     - _QueueOffset: 0
     - _SrcBlend: 5
     - _Surface: 1
@@ -79,5 +79,5 @@ Material:
     - _ZWrite: 0
     - _ZWriteControl: 0
     m_Colors:
-    - _Light_Color: {r: 0.8254717, g: 1, b: 0.96955425, a: 0}
+    - _Light_Color: {r: 0.9622642, g: 0.85721385, b: 0.40396938, a: 0}
   m_BuildTextureStacks: []

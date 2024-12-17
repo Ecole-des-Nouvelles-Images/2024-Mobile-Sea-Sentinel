@@ -12,9 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c54cc41d5f79fc47bd745c57d76f935, type: 3}
   m_Name: Boat 3
   m_EditorClassIdentifier: 
-  BoatPrefab: {fileID: 1668166797174309776, guid: 31f906011b274484b89f1fcd0c6dcc64,
+  _boatPrefab: {fileID: 1668166797174309776, guid: ea787972de331ed43876e276552bd605,
     type: 3}
-  SpawnCost: 20
-  Speed: 5
-  GoldCapacity: 150
-  MaxHealth: 40
+  _speed: 3
+  _goldCapacity: 150
+  _maxHealth: 20

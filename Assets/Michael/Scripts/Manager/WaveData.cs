@@ -8,6 +8,12 @@ namespace Michael.Scripts.Manager
     public class WaveData : ScriptableObject
     {
         [field : SerializeField]
-        public List<BoatType> Boats { get; private set; }
+        public int LittleBoatCount { get; private set; }
+        [field : SerializeField]
+        public int BalancedBoatCount { get; private set; }
+        [field : SerializeField]
+        public int BigBoatCount { get; private set; }
+        [field : SerializeField]
+        public float BoatWithGoldPourcent { get; private set; }
     }
 }

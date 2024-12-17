@@ -5,6 +5,7 @@ using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.Serialization;
 using Slider = UnityEngine.UI.Slider;
 using Sequence = DG.Tweening.Sequence;
 
@@ -16,14 +17,16 @@ namespace Michael.Scripts.Enemy
     {
         [Header("Boat Data")]
         public BoatType BoatType;
-        private int _boatGoldMax; 
-        private int _currentBoatGold = 0;
-        private int _maxHealth;
-        private int _currentHealth;
-      
-       
+        public int CurrentBoatGold = 0;
+        public int BoatGoldMax; 
+        public int _maxHealth;
+        public int _currentHealth;
+        
         [SerializeField] private Transform _boatModel;
+        [SerializeField] private GameObject _slashParticle;
         [SerializeField] private TextMeshProUGUI _boatGoldText;
+        [SerializeField] private ParticleSystem _explosionParticles;
+        [SerializeField] private ParticleSystem _hitParticles;
         [SerializeField] private TextMeshProUGUI _damageNumberText;
         [SerializeField] Slider _boatHealthBar;
         [SerializeField] Slider _boatEaseHealthBar;
@@ -31,41 +34,63 @@ namespace Michael.Scripts.Enemy
         [SerializeField] private AnimationCurve _bounceFeedback;
         [SerializeField] private float _lerpSpeed = 0.05f;
         [SerializeField] CanvasGroup _damageImageCanvasGroup;
+        [SerializeField] private GameObject _chest;
+        [SerializeField] private GameObject _worldSpaceCanva;
         private GameObject _playerTarget;
         private NavMeshAgent _navMeshAgent;
         private bool _hasThief ;
         private Vector3 _initialPosition;
         private Sequence _damageNumberSequence;
         private Vector3 _originalPosition;
-        
+        private GameObject[] _playerChests;
+        private Sequence _sinkSequence;
+        private FloatingEffect _floatingEffect;
+        private Collider _boatCollider;
 
-        void Start() {
-        
-            _playerTarget = GameObject.FindGameObjectWithTag("Player");
-            _navMeshAgent = GetComponent<NavMeshAgent>();
+        void Start()
+        {
+
+            _boatCollider = GetComponent<Collider>();
+            _floatingEffect = GetComponent<FloatingEffect>();
             _initialPosition = transform.position;
-           _navMeshAgent.speed = BoatType.Speed;
-            _boatGoldMax = BoatType.GoldCapacity;
-            _maxHealth = BoatType.MaxHealth;
-            _currentHealth = _maxHealth;
-            _boatGoldText.text = _currentBoatGold + "/" + _boatGoldMax;
+           // UpgradeStats(WaveManager.Instance.SpeedIncrement,WaveManager.Instance.GoldIncrement,WaveManager.Instance.HealthIncrement);
+           GetNearestTarget();
             FollowTarget(_playerTarget.transform.position);
-
+            _originalPosition = _damageNumberText.transform.position;
             _boatHealthBar.maxValue = _maxHealth;
             _boatEaseHealthBar.maxValue = _maxHealth;
-            _originalPosition = _damageNumberText.transform.position;
+            _boatGoldText.text = CurrentBoatGold + "/" + BoatGoldMax;
+            
         }
-        
-        
+
+        public void InitializeBoatStats()
+        {
+            _navMeshAgent = GetComponent<NavMeshAgent>();
+            _navMeshAgent.speed = BoatType.Speed;
+            BoatGoldMax = BoatType.GoldCapacity;
+            _maxHealth = BoatType.MaxHealth;
+            UpgradeStats();
+            
+          
+        }
+
+        public void SetGoldOnBoat(int gold)
+        {
+            CurrentBoatGold = gold;
+        }
+
+        private void UpgradeStats()
+        {
+            _navMeshAgent.speed += WaveManager.Instance.SpeedIncrement * WaveManager.Instance._upgradeNumber;
+            BoatGoldMax += WaveManager.Instance.GoldIncrement * WaveManager.Instance._upgradeNumber;
+            _maxHealth += WaveManager.Instance.HealthIncrement * WaveManager.Instance._upgradeNumber;
+            _currentHealth = _maxHealth;
+        }
 
     
         void Update() {
             
-
-            if (Input.GetKeyDown(KeyCode.Space))
-            {
-                TakeDamage(10);
-            }
+            
             
             if (!_hasThief) return;
             
@@ -82,34 +107,45 @@ namespace Michael.Scripts.Enemy
         private void OnTriggerEnter(Collider other) {
         
             if (other.CompareTag("Bullet")) {
-               
-               //TakeDamage(10);
-                Debug.Log("bateau touché");
+                
+               TakeDamage(PlayerData.Instance.BulletDamage);
+               Destroy(other);
             }
 
             if (other.CompareTag("Player")) {
-                
+
+                if (!_hasThief)
+                {
+                    StealGold(other.gameObject);
+                }
                 _hasThief = true;
-               StealGold(other.gameObject);
             }
         }
         
         [ContextMenu("Take Damage")]
-        private void TakeDamage(int damage)
+        public void TakeDamage(int damage)
         {
+            SoundManager.PlaySound(SoundType.BoatHit);
             HealthBarFeedback(_boatUi);
             _currentHealth -= damage;
             _boatHealthBar.value = _currentHealth; 
-           _boatModel.DOShakePosition( 1f,new Vector3(0.2f,0,0.2f),4).SetEase(Ease.InBounce);
+            Instantiate(_hitParticles, transform.position, Quaternion.identity);
+            _boatModel.transform.DOShakePosition(0.2f, 0.3f);
+            // effet de secousse
             Sequence feedBackSequence = DOTween.Sequence();
-            feedBackSequence.Append( _damageImageCanvasGroup.DOFade(0.2f, 0.1f).SetEase(Ease.Linear));
-            feedBackSequence.Append( _damageImageCanvasGroup.DOFade(0f, 0.1f).SetEase(Ease.Linear));
+            feedBackSequence.Append( _damageImageCanvasGroup.DOFade(0.5f, 0.1f).SetEase(Ease.Linear));
+            feedBackSequence.Append( _damageImageCanvasGroup.DOFade(1f, 0.1f).SetEase(Ease.Linear));
             feedBackSequence.Play();
             _boatEaseHealthBar.DOValue( _currentHealth, _lerpSpeed);
             ShowDamageNumber(damage);
+          
+          
             if (_currentHealth <= 0)
             {
                 WaveManager.Instance._spawnedBoats.Remove(gameObject);
+                Instantiate(_explosionParticles, transform.position, Quaternion.identity);
+                Instantiate(_slashParticle, transform.position, Quaternion.identity);
+                GameManager.Instance.ShakeCamera();
                 DestroyBoat();
             }
            
@@ -117,23 +153,46 @@ namespace Michael.Scripts.Enemy
 
         private void StealGold(GameObject target)
         {
-            _currentBoatGold = _boatGoldMax - _currentBoatGold;
-            PlayerData playerData = target.GetComponent<PlayerData>();
-            playerData.CurrentGold -= _currentBoatGold;
-            HealthBarFeedback( playerData.goldText.gameObject);
-            _boatGoldText.text = _currentBoatGold + "/" + _boatGoldMax;
-          
-            
+            SoundManager.PlaySound(SoundType.GoldOut); 
+            int goldtoSteal = BoatGoldMax - CurrentBoatGold;
+            PlayerData.Instance.CurrentGold -= goldtoSteal;
+            CurrentBoatGold = BoatGoldMax;
+            HealthBarFeedback( PlayerData.Instance.goldText.gameObject);
+            _boatGoldText.text = CurrentBoatGold + "/" + BoatGoldMax;
+          //  target.transform.DOShakePosition(1, Vector3.one).SetEase(Ease.InBounce);
             FollowTarget(_initialPosition);
+            
+            PlayerData.Instance.UpdatePlayerGold();
         }
+        
+        
 
         private void DestroyBoat()
         {
             // activer version en plusieurs morceaux
             // opacité shader
-            Destroy(gameObject);
-            GameManager.Instance.ShakeCamera();
-            
+            GameManager.Instance.BoatDestoyed++;
+            _boatCollider.enabled = false;
+            _floatingEffect.enabled = false;
+            SoundManager.PlaySound(SoundType.Explosion);
+            _worldSpaceCanva.SetActive(false);
+            SinkBoat();
+            if (CurrentBoatGold >= 1 )
+            { 
+                GameObject chest = Instantiate(_chest, transform.position,transform.rotation);
+                chest.GetComponent<Chest>().ChestGold = CurrentBoatGold;
+                WaveManager.Instance.ChestGameObjects.Add(chest);
+            }
+        }
+        
+        private void SinkBoat()
+        {
+            _sinkSequence = DOTween.Sequence();
+            SoundManager.PlaySound(SoundType.Sinking);
+            _sinkSequence.Join(_boatModel.gameObject.transform.DOMove(new Vector3(transform.position.x, -15, transform.position.z), 2f));
+            _sinkSequence.Join(_boatModel.gameObject.transform.DORotate(new Vector3(transform.position.x,transform.position.y , 10), 2f));
+            _sinkSequence.OnComplete(() => { Destroy(gameObject); });
+            _sinkSequence.Play();
         }
 
         private void HealthBarFeedback(GameObject ui)
@@ -156,9 +215,24 @@ namespace Michael.Scripts.Enemy
             _damageNumberSequence.OnComplete(() => { _damageNumberText.gameObject.SetActive(false);
             });
         }
+
+        public void GetNearestTarget()
+        {
+            _playerChests = GameObject.FindGameObjectsWithTag("Player");
+            GameObject nearestChest = _playerChests[0];
+            float nearestDistance = Vector3.Distance(gameObject.transform.position, nearestChest.transform.position);
+
+            for (int i = 1; i < _playerChests.Length; i++)
+            {
+                float distance = Vector3.Distance(gameObject.transform.position, _playerChests[i].transform.position);
+                if (distance < nearestDistance)
+                {
+                    nearestChest = _playerChests[i];
+                    distance = nearestDistance;
+                }
+            }
+            _playerTarget = nearestChest;
+        }
         
-        
-        
-    
     }
 }
