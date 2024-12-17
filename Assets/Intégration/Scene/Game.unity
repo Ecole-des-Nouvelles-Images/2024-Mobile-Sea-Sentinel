@@ -9483,7 +9483,7 @@ MonoBehaviour:
     type: 3}
   ShootCooldown: 2
   SelectedWeapon: 0
-  BulletPrefab: {fileID: 3024273405111157043, guid: c379f2df0cf93144885e87b413644b66,
+  BulletPrefab: {fileID: 3024273405111157043, guid: 3f31b74b64365b04dbf28fa3bfa93e5a,
     type: 3}
   VFXShot1: {fileID: 220116438}
   VFXShot2: {fileID: 220116438}
