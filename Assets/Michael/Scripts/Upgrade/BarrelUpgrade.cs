@@ -1,18 +1,23 @@
 using System.Collections;
 using System.Collections.Generic;
+using Michael.Scripts.Controller;
+using Michael.Scripts.Upgrade;
 using UnityEngine;
 
-public class BarrelUpgrade : MonoBehaviour
+public class BarrelUpgrade : Upgrade
 {
     // Start is called before the first frame update
-    void Start()
+    public override void Start()
     {
-        
+        base.Start();
+        IncrementValueText.text = "+ " + IncrementValue;
+
     }
 
-    // Update is called once per frame
-    void Update()
+    public override void ApplyUpgrade()
     {
-        
+        base.ApplyUpgrade();
+        PlayerData.Instance.ExplosifBarrelNumber += (int)IncrementValue;
+        IncrementValueText.text = "+ " + IncrementValue;
     }
 }

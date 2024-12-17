@@ -37,6 +37,7 @@ namespace Michael.Scripts.Manager
         [SerializeField] private TextMeshProUGUI _currentWaveText; 
         [SerializeField] private TextMeshProUGUI _highScoreText;
         [SerializeField] private TextMeshProUGUI _destroyedBoatText;
+        [SerializeField] private List<Button> _buyButtons;
         private int _waveHighScore;
         private int _currentWave;
         private Camera _mainCamera;
@@ -97,6 +98,14 @@ namespace Michael.Scripts.Manager
         public void OpenShop()
         {
             OpenPanel(_shopPanel);
+            
+            foreach (var button in _buyButtons) {
+                Upgrade.Upgrade upgrade = button.GetComponent<Upgrade.Upgrade>();
+                if (PlayerData.Instance.CurrentGold > upgrade.CurrentCost)
+                {
+                    upgrade.CostText.color = Color.red;
+                }
+            }
         }
 
         public void CloseShop()

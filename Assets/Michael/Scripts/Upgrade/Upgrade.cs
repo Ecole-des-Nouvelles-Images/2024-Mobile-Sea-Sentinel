@@ -12,7 +12,7 @@ namespace Michael.Scripts.Upgrade
         public int CurrentCost ;
         public TextMeshProUGUI CostText;
         public TextMeshProUGUI IncrementValueText;
-        public TextMeshProUGUI ValueText;
+     //   public TextMeshProUGUI ValueText;
         public virtual void Start() 
         {
             CurrentCost = BaseCost;  
