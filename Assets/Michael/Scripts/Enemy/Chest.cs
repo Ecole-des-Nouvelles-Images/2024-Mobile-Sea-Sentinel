@@ -5,6 +5,7 @@ using Michael.Scripts.Manager;
 using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.Rendering;
+using Random = UnityEngine.Random;
 
 namespace Michael.Scripts.Enemy
 {
@@ -18,13 +19,50 @@ namespace Michael.Scripts.Enemy
       [SerializeField] private ParticleSystem _coinParticles;
       [SerializeField] private GameObject _chestParticles;
       private Sequence _sinkSequence;
-     
+
+      [Header("coin animation")]
+      [SerializeField] private GameObject _coinPrefabs;
+      [SerializeField] private Vector3 _startCoinPosition;
+      [SerializeField] private Vector3 _endCoinPosition;
+      [SerializeField] private float _coinAnimDuration;
+      [SerializeField] private int _coinAmount; 
+      [SerializeField] private float _coinTotalDelay;
+     [SerializeField] private float _coinPerDelay;
+      
       private void Start()
       {
          Vector3 pos = new Vector3(transform.position.x,transform.position.y,transform.position.z);
          _button.transform.SetParent( GameManager.Instance._canvas.transform);
          _button.transform.SetAsFirstSibling();
          _button.transform.position = Camera.main.WorldToScreenPoint(pos);
+
+         _startCoinPosition = Camera.main.WorldToScreenPoint(pos);
+         _endCoinPosition = Camera.main.WorldToScreenPoint(Vector3.zero);
+      }
+      
+      private void GoldCoinAnimation(float delay)
+      {
+         GameObject coinObject = Instantiate(_coinPrefabs, GameManager.Instance._canvas.transform);
+         coinObject.transform.SetAsFirstSibling();
+         Vector3 offset = new Vector3(Random.Range(-50, 50), Random.Range(-60, 60), 0f);
+         Vector3 startPos = offset + _startCoinPosition;
+         coinObject.transform.position = startPos; 
+         
+         coinObject.transform.localScale = Vector3.one;
+         coinObject.transform.DOScale(Vector3.one, delay);
+
+         coinObject.transform.DOMove(_endCoinPosition, _coinAnimDuration).SetEase(Ease.InBack).SetDelay(delay).OnComplete(() =>
+            {
+               PlayerData.Instance.CurrentGold += ChestGold;
+               if ( PlayerData.Instance.CurrentGold >  PlayerData.Instance.MaxGoldCapacity)
+               {
+                  PlayerData.Instance.CurrentGold = PlayerData.Instance.MaxGoldCapacity;
+               }
+               PlayerData.Instance.UpdatePlayerGold();
+               ChestGold = 0;
+               SinkChest();
+               Destroy(coinObject);
+            });
       }
 
       private void Update()
@@ -51,6 +89,11 @@ namespace Michael.Scripts.Enemy
          _sinkSequence.OnComplete(() => { Destroy(gameObject); });
          _sinkSequence.Play();
       }
+
+
+   
+      
+      
       
       
 
@@ -60,20 +103,19 @@ namespace Michael.Scripts.Enemy
          //animation coffre qui s'ouvre 
          _canRecovered = true;
          Destroy(_button);
-         _coinParticles.Play();
-         PlayerData.Instance.CurrentGold += ChestGold;
-         if ( PlayerData.Instance.CurrentGold >  PlayerData.Instance.MaxGoldCapacity)
-         {
-            PlayerData.Instance.CurrentGold = PlayerData.Instance.MaxGoldCapacity;
-         }
-         PlayerData.Instance.UpdatePlayerGold();
+         SoundManager.PlaySound(SoundType.OpenChest);
          _chestParticles.SetActive(false);
-         ChestGold = 0;
+         _coinParticles.Play();
          _chestTop.transform.DOLocalRotate(new Vector3(-60f, 0, 0), 2f).SetEase(Ease.OutBounce).OnComplete(() =>
          { 
             SoundManager.PlaySound(SoundType.GoldIn);
             // animation gold
-            SinkChest();
+            _coinPerDelay = _coinTotalDelay / _coinAmount;
+            for (int i = 0; i < _coinAmount; i++)
+            {
+               float targetDelay = i * _coinPerDelay;
+               GoldCoinAnimation(targetDelay);
+            }
          });
       }
       

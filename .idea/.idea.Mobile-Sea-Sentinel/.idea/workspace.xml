@@ -5,56 +5,84 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b7472739-ef28-4269-8639-9f341bd314f4" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Mobile-Sea-Sentinel/.idea/projectSettingsUpdater.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Mobile-Sea-Sentinel/.idea/projectSettingsUpdater.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/Integration/LastPrefabs/BanlacedShip.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/Integration/LastPrefabs/BigShip.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/Integration/LastPrefabs/BigShip.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/Integration/LastPrefabs/BoatTrail.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/Integration/LastPrefabs/BoatTrail.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/Integration/LastPrefabs/Bullet.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/Integration/LastPrefabs/Bullet.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/Integration/LastPrefabs/LittleShip.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/Integration/LastPrefabs/LittleShip.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/Integration/Materials.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/Integration/Materials/BoatExplosion.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/Integration/Materials/BoatExplosion.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/Integration/Materials/M_BarrelRipple.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/Integration/Materials/M_BarrelRipple.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/Integration/Materials/M_BoatWave.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/Integration/Materials/M_BoatWave.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/Integration/Materials/M_BulletTrail.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/Integration/Materials/M_BulletTrail.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/Integration/Materials/SG_BoatWave.shadergraph" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/Integration/Materials/SG_BoatWave.shadergraph.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/Integration/Materials/SG_BulletTrail.shadergraph" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/Integration/Materials/SG_BulletTrail.shadergraph.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/Integration/Materials/T_BarrelRipple.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/Integration/Materials/T_BarrelRipple.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/Integration/Materials/T_BoatWave.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/Integration/Materials/T_BoatWave.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/Integration/game1712.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/Integration/game1712.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/SFX/HatchOpen2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/SFX/HatchOpen2.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/SFX/SeaNSeagull.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/SFX/SeaNSeagull.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/SFX/impactWood.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Alexandre/SFX/impactWood.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Intégration/Prefabs/Bullet.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Intégration/Prefabs/Bullet.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Intégration/Scripts/CoinAnimation.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Intégration/Scripts/CoinAnimation.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Intégration/Sfx/Game.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Intégration/Sfx/Game/SoundCoin.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Intégration/Sfx/Game/SoundCoin.mp3.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Intégration/Sprites.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Intégration/Sprites/Icon Application.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Intégration/Sprites/Icon Application/LogoIcon144.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Intégration/Sprites/Icon Application/LogoIcon144.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Intégration/Sprites/Icon Application/LogoIcon192.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Intégration/Sprites/Icon Application/LogoIcon192.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Intégration/Sprites/Icon Application/LogoIcon36.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Intégration/Sprites/Icon Application/LogoIcon36.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Intégration/Sprites/Icon Application/LogoIcon48.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Intégration/Sprites/Icon Application/LogoIcon48.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Intégration/Sprites/Icon Application/LogoIcon72.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Intégration/Sprites/Icon Application/LogoIcon72.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Intégration/Sprites/Icon Application/LogoIcon96.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Intégration/Sprites/Icon Application/LogoIcon96.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Intégration/Ui/coinImage.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Intégration/Ui/coinImage.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Michael/Prefabs/Prefabs Boats/BalancedShip.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Mobile-Sea-Sentinel/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Mobile-Sea-Sentinel/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Alexandre/Integration/RayCastControl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Alexandre/Integration/RayCastControl.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Alexandre/Integration/Scripts/SoundManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Alexandre/Integration/Scripts/SoundManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Intégration/Prefabs/ExplosiveBarrel.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Intégration/Prefabs/ExplosiveBarrel.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Intégration/Scene/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Intégration/Scene/Game.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Intégration/Scripts/RayCastControl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Intégration/Scripts/RayCastControl.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Intégration/Scene/Menu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Intégration/Scene/Menu.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Intégration/Scripts/ExplosiveBarrel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Intégration/Scripts/ExplosiveBarrel.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Michael/Prefabs/Bullet.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Prefabs/Bullet.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Scripts/Controller/PlayerData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Scripts/Controller/PlayerData.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Scripts/Manager/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Scripts/Manager/GameManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Scripts/Manager/ShopManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Scripts/Manager/ShopManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/Prefabs/Chest.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Prefabs/Chest.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/Prefabs/Prefabs Boats/BanlacedShip.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Alexandre/Integration/LastPrefabs/BanlacedShip.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/Prefabs/Prefabs Boats/BanlacedShip.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Prefabs/Prefabs Boats/BalancedShip.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/Prefabs/Prefabs Boats/BigShip.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Prefabs/Prefabs Boats/BigShip.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/Prefabs/Prefabs Boats/LittleShip.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Prefabs/Prefabs Boats/LittleShip.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/Scripts/Enemy/BoatEnemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Scripts/Enemy/BoatEnemy.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/Scripts/Enemy/Bullet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Scripts/Enemy/Bullet.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/Scripts/Enemy/Chest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Scripts/Enemy/Chest.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Michael/Scripts/Manager/WaveManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Scripts/Manager/WaveManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Scripts/Manager/Wave_2.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Scripts/Manager/Wave_2.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Scripts/Manager/Wave_3.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Scripts/Manager/Wave_3.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Scripts/Manager/Wave_4.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Scripts/Manager/Wave_4.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Scripts/Manager/Wave_5.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Scripts/Manager/Wave_5.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Scripts/Manager/Wave_6.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Scripts/Manager/Wave_6.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Scripts/Manager/Wave_7.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Scripts/Manager/Wave_7.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Scripts/Upgrade/BarrelUpgrade.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Scripts/Upgrade/BarrelUpgrade.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Scripts/Upgrade/Upgrade.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Scripts/Upgrade/Upgrade.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Shader/Simple Water Shader/Prefabs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Shader/Simple Water Shader/Prefabs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Shader/Simple Water Shader/Prefabs/WaterBlock_50m.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Shader/Simple Water Shader/Prefabs/WaterBlock_50m.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Shader/Simple Water Shader/Prefabs/WaterBlock_50m.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Shader/Simple Water Shader/Prefabs/WaterBlock_50m.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Shader/Simple Water Shader/Prefabs/WaterReflectionCamera.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Shader/Simple Water Shader/Prefabs/WaterReflectionCamera.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Shader/Simple Water Shader/Prefabs/WaterReflectionCamera.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Shader/Simple Water Shader/Prefabs/WaterReflectionCamera.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Shader/Simple Water Shader/Resources.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Shader/Simple Water Shader/Resources.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Shader/Simple Water Shader/Resources/WaterBlock_50m.mesh" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Shader/Simple Water Shader/Resources/WaterBlock_50m.mesh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Shader/Simple Water Shader/Resources/WaterBlock_50m.mesh.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Shader/Simple Water Shader/Resources/WaterBlock_50m.mesh.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Shader/Simple Water Shader/Resources/WaterReflection.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Shader/Simple Water Shader/Resources/WaterReflection.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Shader/Simple Water Shader/Resources/WaterReflection.renderTexture" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Shader/Simple Water Shader/Resources/WaterReflection.renderTexture" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Shader/Simple Water Shader/Resources/WaterReflection.renderTexture.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Shader/Simple Water Shader/Resources/WaterReflection.renderTexture.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Shader/Simple Water Shader/Resources/WaterShader.shadergraph" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Shader/Simple Water Shader/Resources/WaterShader.shadergraph" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Shader/Simple Water Shader/Resources/WaterShader.shadergraph.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Shader/Simple Water Shader/Resources/WaterShader.shadergraph.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Shader/Simple Water Shader/Resources/WaterSurface_atlas.tif.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Shader/Simple Water Shader/Resources/WaterSurface_atlas.tif.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Shader/Simple Water Shader/Resources/WaterSurface_single.tif.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Shader/Simple Water Shader/Resources/WaterSurface_single.tif.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Shader/Simple Water Shader/Resources/Water_mat_01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Shader/Simple Water Shader/Resources/Water_mat_01.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Shader/Simple Water Shader/Resources/Water_mat_01.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Shader/Simple Water Shader/Resources/Water_mat_01.mat.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Shader/Simple Water Shader/Resources/Water_mat_02.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Shader/Simple Water Shader/Resources/Water_mat_02.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Shader/Simple Water Shader/Resources/Water_mat_02.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Shader/Simple Water Shader/Resources/Water_mat_02.mat.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Shader/Simple Water Shader/Resources/Water_mat_03.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Shader/Simple Water Shader/Resources/Water_mat_03.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Michael/Shader/Simple Water Shader/Resources/Water_mat_03.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Shader/Simple Water Shader/Resources/Water_mat_03.mat.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/VFX/Cartoon FX Remaster/Assets/Graphics/cfxr hidden.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/VFX/Cartoon FX Remaster/Assets/Graphics/cfxr hidden.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Settings/SampleSceneProfile.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/SampleSceneProfile.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Settings/URP-Balanced-Renderer.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/URP-Balanced-Renderer.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Settings/URP-Balanced.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/URP-Balanced.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Settings/URP-Performant.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/URP-Performant.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Anton SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Anton SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Bangers SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Bangers SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Oswald Bold SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Oswald Bold SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/DynamicsManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/DynamicsManager.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -197,7 +225,7 @@
       <workItem from="1734339922671" duration="17312000" />
       <workItem from="1734377299108" duration="11488000" />
       <workItem from="1734425508462" duration="5051000" />
-      <workItem from="1734462112101" duration="6926000" />
+      <workItem from="1734462112101" duration="17238000" />
     </task>
     <servers />
   </component>
