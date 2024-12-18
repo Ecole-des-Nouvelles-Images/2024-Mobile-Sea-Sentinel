@@ -48,15 +48,16 @@ namespace Michael.Scripts.Enemy
         {
             if (other.CompareTag("Water"))
             {
-                Debug.Log("water touched" );
                 Instantiate(_slashParticle, new Vector3(transform.position.x,0.1f,transform.position.z), Quaternion.identity);
                 SoundManager.PlaySound(SoundType.WaterHit);
                 Destroy(gameObject,0.5f);
             }
-            else if (other)
+            else if (other.CompareTag("Player")) { return; }
+            else
             {
                 Destroy(gameObject);
             }
+          
            
         }
         

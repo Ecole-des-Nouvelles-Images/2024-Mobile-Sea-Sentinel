@@ -177,6 +177,14 @@ MonoBehaviour:
   _button: {fileID: 6085994174759809237}
   _coinParticles: {fileID: 7505691310879120489}
   _chestParticles: {fileID: 5151911173593313271}
+  _coinPrefabs: {fileID: 3111405320273050311, guid: 3d427280f69d532439696518ab3dc032,
+    type: 3}
+  _startCoinPosition: {x: 0, y: 0, z: 0}
+  _endCoinPosition: {x: 0, y: 0, z: 0}
+  _coinAnimDuration: 1
+  _coinAmount: 10
+  _coinTotalDelay: 0.5
+  _coinPerDelay: 0.005
 --- !u!1 &6085994174759809237
 GameObject:
   m_ObjectHideFlags: 0
@@ -546,18 +554,33 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8537651174243782305, guid: 1a2aac824ba2fe54ea3b87c5280d6f1e,
         type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8537651174243782305, guid: 1a2aac824ba2fe54ea3b87c5280d6f1e,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8537651174243782305, guid: 1a2aac824ba2fe54ea3b87c5280d6f1e,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8537651174243782305, guid: 1a2aac824ba2fe54ea3b87c5280d6f1e,
+        type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8537651174243782305, guid: 1a2aac824ba2fe54ea3b87c5280d6f1e,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3
+      value: 8.3
       objectReference: {fileID: 0}
     - target: {fileID: 8537651174243782305, guid: 1a2aac824ba2fe54ea3b87c5280d6f1e,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 3
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8537651174243782305, guid: 1a2aac824ba2fe54ea3b87c5280d6f1e,
         type: 3}
@@ -593,6 +616,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8537651174243782305, guid: 1a2aac824ba2fe54ea3b87c5280d6f1e,
+        type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8630736189928928738, guid: 1a2aac824ba2fe54ea3b87c5280d6f1e,
         type: 3}

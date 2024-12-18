@@ -15,27 +15,36 @@ using UnityEngine.UI;
     public class ShopManager : MonoBehaviour
     {
         
-        [SerializeField] private TextMeshProUGUI currentGoldText;
-        [SerializeField] private List<Button> buyButtons;
-        private void Update()
+        [SerializeField] private TextMeshProUGUI _currentGoldText;
+        [SerializeField] private TextMeshProUGUI _currentDamageText;
+        [SerializeField] private TextMeshProUGUI _currentFireRateText;
+        [SerializeField] private TextMeshProUGUI _currentBarrelText;
+        [SerializeField] private TextMeshProUGUI _currentMaxGoldText;
+        
+        [SerializeField] private List<Button> _buyButtons;
+        
+        private void LateUpdate()
         {
-          
+            _currentGoldText.text = "" + PlayerData.Instance.CurrentGold;
+            GameManager.Instance.CheckUpgradesCost();
         }
 
         private void Start()
         {
-            currentGoldText.text = "" + PlayerData.Instance.CurrentGold;
-            foreach (var button in buyButtons) 
-            {
-                Upgrade upgrade = button.GetComponent<Upgrade>();
-                if (PlayerData.Instance.CurrentGold > upgrade.CurrentCost)
-                {
-                    upgrade.CostText.color = Color.red;
-                }
-            }
-            
-            
+            UpdateStatsText();
         }
+        
+        
+        
+
+        private void UpdateStatsText()
+        {
+            _currentDamageText.text = "Degats: " + PlayerData.Instance.BulletDamage;
+            _currentFireRateText.text = "Cadence de tir: " + PlayerData.Instance.FireRate + "s";
+            _currentBarrelText.text = "Tonneaux explo: " + PlayerData.Instance.MaxExplosifBarrel;
+            _currentMaxGoldText.text = "Capacite d'or: " + PlayerData.Instance.MaxGoldCapacity;
+        }
+        
 
       
         public void PurchaseUpgrade(Button button)
@@ -45,32 +54,19 @@ using UnityEngine.UI;
             {
                 PlayerData.Instance.CurrentGold -= upgrade.CurrentCost;
                 upgrade.ApplyUpgrade();
-                UpdateButtons(button.gameObject);
-                
-                if (PlayerData.Instance.CurrentGold < upgrade.CurrentCost)
-                {
-                    upgrade.CostText.color = Color.red;
-                }
+               // UpdateButtons(button.gameObject);
             }
-            else
-            {
-                upgrade.CostText.color = Color.red;
-            }
-            currentGoldText.text = "" + PlayerData.Instance.CurrentGold;
+            UpdateStatsText();
+            PlayerData.Instance.UpdatePlayerGold();
+
         }
         
-        private void UpdateButtons(GameObject buttons)
-        {
-          UiFeedback(buttons);
-        }
-
-        private void UiFeedback(GameObject ui)
-        {
-            ui.transform.DOScale(1.2f, 0.5f).SetEase(Ease.InBounce);
-        }
+    
 
      
     }
+
+    
 
     
  

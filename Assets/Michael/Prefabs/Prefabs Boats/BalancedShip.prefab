@@ -329,7 +329,7 @@ Transform:
   m_GameObject: {fileID: 1668166797174309776}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -7.96, y: 0, z: -13.22}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1327,6 +1327,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: BoatTrail
       objectReference: {fileID: 0}
+    - target: {fileID: 571973268096171460, guid: 64af7354748847c42946541c6f7aee9c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 802912208095239100, guid: 64af7354748847c42946541c6f7aee9c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1340,7 +1345,7 @@ PrefabInstance:
     - target: {fileID: 802912208095239100, guid: 64af7354748847c42946541c6f7aee9c,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 7.04
       objectReference: {fileID: 0}
     - target: {fileID: 802912208095239100, guid: 64af7354748847c42946541c6f7aee9c,
         type: 3}

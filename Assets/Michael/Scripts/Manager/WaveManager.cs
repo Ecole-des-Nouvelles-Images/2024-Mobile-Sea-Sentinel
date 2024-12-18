@@ -26,9 +26,10 @@ namespace Michael.Scripts.Manager
         [Header("Wave Progression")] public List<GameObject> _spawnedBoats = new List<GameObject>();
         public List<Transform> _spawnPoints;
         public WaveData _currentWaveData;
-        
-        
-        
+
+
+        [SerializeField] private float _goldpourcentPerWave;
+        [SerializeField] private float _goldpourcentPerWaveMax;
         [SerializeField] private int _littleBoatsIncrement;
         [SerializeField] private int _balancedBoatsIncrement;
         [SerializeField] private int _bigBoatsIncrement = 0;
@@ -76,7 +77,7 @@ namespace Michael.Scripts.Manager
                     float currentGoldBoatRatio = (float)_boatsWithGoldGenerated / _boatsToSpawn.Count;
                     if (currentGoldBoatRatio < _currentWaveData.BoatWithGoldPourcent)
                     {
-                        int goldOnBoat = Mathf.CeilToInt(boat.GetComponent<BoatEnemy>().BoatGoldMax * 0.25f);
+                        int goldOnBoat = Mathf.CeilToInt(boat.GetComponent<BoatEnemy>().BoatGoldMax * _goldpourcentPerWave);
                         boat.GetComponent<Enemy.BoatEnemy>().SetGoldOnBoat(goldOnBoat);
                         _boatsWithGoldGenerated++;
                     }
@@ -112,7 +113,7 @@ namespace Michael.Scripts.Manager
         [ContextMenu("StartWave !")]
         public void StartWave()
         {
-            PlayerData.Instance.CurrentExplosifBarrel = PlayerData.Instance.ExplosifBarrelNumber;
+            PlayerData.Instance.CurrentExplosifBarrel = PlayerData.Instance.MaxExplosifBarrel;
             PlayerData.Instance.UpdateExplosiveBarrelText();
             _isWaveActive = true;
             if (_currentWave > (_waveData.Count - 1) * WaveprogressionInterval)
@@ -169,12 +170,21 @@ namespace Michael.Scripts.Manager
 
         private void EndWave()
         {
-                _uiEndWave.transform.GetComponent<CanvasGroup>().DOFade(0f, 1f);
-                ChestGameObjects.Clear();
-                foreach (GameObject chest in ChestGameObjects) { Destroy(chest); }
-                _boatsWithGoldGenerated = 0;
-                _uiEndWave.SetActive(false);
-                GameManager.Instance.OpenShop();
+            if (_goldpourcentPerWave >= _goldpourcentPerWaveMax)
+            {
+                _goldpourcentPerWave = 0.20f;
+            }
+            else
+            {
+                _goldpourcentPerWave += 0.20f;
+            }
+           
+            _uiEndWave.transform.GetComponent<CanvasGroup>().DOFade(0f, 1f);
+            ChestGameObjects.Clear();
+            foreach (GameObject chest in ChestGameObjects) { Destroy(chest); }
+            _boatsWithGoldGenerated = 0;
+            _uiEndWave.SetActive(false);
+            GameManager.Instance.OpenShop();
         }
 
         private void ShowEndWavePopup()

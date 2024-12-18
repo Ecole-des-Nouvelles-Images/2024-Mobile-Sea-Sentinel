@@ -189,12 +189,12 @@ namespace Alexandre.Integration
         
         public void ShootExplosiveBarrel()
         {
-            if (_playerData.ExplosifBarrelNumber > 0)
+            if (_playerData.CurrentExplosifBarrel > 0)
             {
                 GameObject barrel = Instantiate(ExplosiveBarrelPrefab, BarrelOut.position, BarrelOut.rotation);
                 barrel.GetComponent<ExplosiveBarrel>()
                     .SetTrajectoryParameters(BarrelOut.position, _touchPosition, BarrelOffset.position);
-                _playerData.ExplosifBarrelNumber--;
+                _playerData.CurrentExplosifBarrel--;
                 UpdateExplosiveBarrelText();
             }
             else
@@ -241,7 +241,7 @@ namespace Alexandre.Integration
 
         void UpdateExplosiveBarrelText()
         {
-            ExplosiveBarrelText.text = _playerData.ExplosifBarrelNumber.ToString();
+            ExplosiveBarrelText.text = _playerData.CurrentExplosifBarrel.ToString();
         }
         void UpdateCoolDownImage()
         {
