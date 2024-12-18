@@ -38,6 +38,7 @@ namespace Michael.Scripts.Manager
         [SerializeField] private TextMeshProUGUI _highScoreText;
         [SerializeField] private TextMeshProUGUI _destroyedBoatText;
         [SerializeField] private List<Button> _buyButtons;
+        [SerializeField] private GameObject _transitionImage;
         private int _waveHighScore;
         private int _currentWave;
         private Camera _mainCamera;
@@ -51,6 +52,14 @@ namespace Michael.Scripts.Manager
             _waveHighScore =  PlayerPrefs.GetInt("HighWave", 0);
             _highScoreText.text = "Record : Vague " + _waveHighScore;
 
+
+            if (_transitionImage)
+            {
+                _transitionImage.transform.DOScale(0, 2).SetEase(Ease.Linear).SetUpdate(true).OnComplete(() =>
+                {
+                    _transitionImage.SetActive(false);
+                });
+            }
             
           
         }
@@ -74,7 +83,18 @@ namespace Michael.Scripts.Manager
 
         public void LoadScene(string title)
         {
-            SceneManager.LoadScene(title);
+            if (_transitionImage)
+            {
+                _transitionImage.SetActive(true);
+                _transitionImage.transform.DOScale(20, 2).SetUpdate(true).OnComplete(() =>
+                {
+                    SceneManager.LoadScene(title);
+                });
+            }
+            else
+            {
+                SceneManager.LoadScene(title);
+            }
         }
 
         public void GameOver()
