@@ -8,16 +8,17 @@ namespace Michael.Scripts.Upgrade
         public override void Start()
         {
             base.Start();
-           // ValueText.text = PlayerData.Instance.BulletDamage.ToString();
+            IncrementValueText.text = "+ " + IncrementValue;
+           
         }
 
 
         public override void ApplyUpgrade()
         {
+            
             base.ApplyUpgrade();
-            IncrementValueText.text = " + " + IncrementValue;
+            IncrementValueText.text = "+ " + IncrementValue;
             PlayerData.Instance.BulletDamage += (int)IncrementValue;
-            ValueText.text = PlayerData.Instance.BulletDamage.ToString();
         }
     }
 }

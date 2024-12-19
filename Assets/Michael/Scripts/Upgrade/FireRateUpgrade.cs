@@ -6,18 +6,27 @@ using UnityEngine;
 
 public class FireRateUpgrade : Upgrade
 {
+
+    
     public override void Start()
     {
-        base.Start();
-        IncrementValueText.text = " - " + IncrementValue;
-        //ValueText.text = PlayerData.Instance.FireRate.ToString();
+        base.Start(); 
+        IncrementValueText.text = "- " + IncrementValue;
+       
     }
 
     public override void ApplyUpgrade()
     {
-        base.ApplyUpgrade();
-        PlayerData.Instance.FireRate -= IncrementValue;
-        IncrementValueText.text = " - " + IncrementValue;
-        ValueText.text = PlayerData.Instance.FireRate.ToString();
+        
+        IncrementValueText.text = "- " + IncrementValue;
+        if (PlayerData.Instance.FireRate > 0 )
+        {
+            base.ApplyUpgrade();
+            PlayerData.Instance.FireRate -= IncrementValue;
+        }
+
+
     }
 }
+
+

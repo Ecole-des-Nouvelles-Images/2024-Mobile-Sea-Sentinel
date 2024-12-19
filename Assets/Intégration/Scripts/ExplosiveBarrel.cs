@@ -15,6 +15,8 @@ namespace Intégration.Scripts
         [SerializeField] private GameObject _barrelPrefab;
         [SerializeField] private GameObject _slashParticle;
         [SerializeField] private Vector3 _rotationVector;
+        [SerializeField] private GameObject _floatingPFX;
+        [SerializeField] private GameObject _trail;
         private FloatingEffect _floatingEffect;
         private Vector3 _startPosition;
         private Vector3 _endPosition;
@@ -30,6 +32,8 @@ namespace Intégration.Scripts
         {
             _floatingEffect = GetComponent<FloatingEffect>();
             _startTime = Time.time;
+            _floatingPFX.SetActive(false);
+            _trail.SetActive(true);
            
         }
 
@@ -39,6 +43,12 @@ namespace Intégration.Scripts
             if (!_tracjetorySetted) return;
             float time = (Time.time - _startTime) * Speed;
             transform.position = GetBezierPoints(_startPosition, _endPosition, _offset, time);
+            if (transform.position == _endPosition)
+            {
+                _floatingPFX.SetActive(true);
+                _trail.SetActive(false);
+            }
+
         }
 
         public void SetTrajectoryParameters(Vector3 start, Vector3 end, Vector3 newOffset)

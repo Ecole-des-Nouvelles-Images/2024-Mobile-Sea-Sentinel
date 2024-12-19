@@ -12,11 +12,12 @@ namespace Michael.Scripts.Upgrade
         public int CurrentCost ;
         public TextMeshProUGUI CostText;
         public TextMeshProUGUI IncrementValueText;
-        public TextMeshProUGUI ValueText;
+        public Color InitialCostColor;
         public virtual void Start() 
         {
             CurrentCost = BaseCost;  
             CostText.text = BaseCost.ToString();
+            InitialCostColor = CostText.color;
         }
 
         public virtual void ApplyUpgrade()

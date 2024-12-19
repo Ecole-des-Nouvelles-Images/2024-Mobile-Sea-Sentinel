@@ -14,6 +14,7 @@ public enum SoundType
     Sinking,
     Splash,
     WaterHit,
+    OpenChest,
 }
 
 [RequireComponent(typeof(AudioSource)), ExecuteInEditMode]
