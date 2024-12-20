@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 7b5dcd904f1028b4188e693017d7d560
+guid: 2f7cc52deaa84e94182d0ebc2e22993a
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -7,8 +7,8 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: M_Flower
-    second: {fileID: 2100000, guid: 584b89469e8b78f45a3e4d231074c413, type: 2}
+      name: M_Anchor
+    second: {fileID: 2100000, guid: e1991988489201d4285fb25f764dc4f1, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
