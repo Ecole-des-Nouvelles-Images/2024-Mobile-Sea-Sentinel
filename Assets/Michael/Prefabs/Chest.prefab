@@ -181,7 +181,7 @@ MonoBehaviour:
     type: 3}
   _startCoinPosition: {x: 0, y: 0, z: 0}
   _endCoinPosition: {x: 0, y: 0, z: 0}
-  _coinAnimDuration: 1
+  _coinAnimDuration: 0.5
   _coinAmount: 10
   _coinTotalDelay: 0.5
   _coinPerDelay: 0.005

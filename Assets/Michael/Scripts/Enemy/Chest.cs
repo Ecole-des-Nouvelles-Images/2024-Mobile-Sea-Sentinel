@@ -106,7 +106,7 @@ namespace Michael.Scripts.Enemy
          SoundManager.PlaySound(SoundType.OpenChest);
          _chestParticles.SetActive(false);
          _coinParticles.Play();
-         _chestTop.transform.DOLocalRotate(new Vector3(-60f, 0, 0), 2f).SetEase(Ease.OutBounce).OnComplete(() =>
+         _chestTop.transform.DOLocalRotate(new Vector3(-60f, 0, 0), 0.5f).SetEase(Ease.OutBounce).OnComplete(() =>
          { 
             SoundManager.PlaySound(SoundType.GoldIn);
             // animation gold
