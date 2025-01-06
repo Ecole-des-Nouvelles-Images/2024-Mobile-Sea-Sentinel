@@ -101,10 +101,10 @@ Material:
     - _DstBlend: 0
     - _DstBlendAlpha: 0
     - _EnvironmentReflections: 1
-    - _FoamAmount: 1.5
+    - _FoamAmount: 3.3
     - _FoamColor: 1
     - _FoamCutoff: 1
-    - _FoamScale: 100
+    - _FoamScale: 52.1
     - _FoamSpeed: 0.3
     - _GlossMapScale: 0
     - _Glossiness: 0
@@ -130,10 +130,10 @@ Material:
     - _AbsorptionColor: {r: 0, g: 1, b: 0.38996744, a: 1}
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _Deep: {r: 0.08627448, g: 0.6476106, b: 0.65882355, a: 0.972549}
+    - _Deep: {r: 0.12771447, g: 0.76031363, b: 0.7735849, a: 0.972549}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _FoamColor: {r: 1, g: 1, b: 1, a: 0.78431374}
-    - _Shallow: {r: 0.17647055, g: 0.91764706, b: 0.77868813, a: 0.98039216}
+    - _FoamColor: {r: 1, g: 1, b: 1, a: 0.4392157}
+    - _Shallow: {r: 0.4198113, g: 1, b: 0.8925576, a: 0.98039216}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _WaterColor: {r: 0.30734533, g: 0.81031454, b: 0.9308176, a: 0}
   m_BuildTextureStacks: []
