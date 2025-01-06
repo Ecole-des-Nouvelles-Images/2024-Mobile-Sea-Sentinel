@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8630736189928928738}
   - component: {fileID: 7396431754642700109}
   m_Layer: 0
-  m_Name: gold particles
+  m_Name: Stars Effect
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

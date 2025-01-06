@@ -162,6 +162,7 @@ namespace Michael.Scripts.Enemy
             target.transform.DOShakePosition(1, 1,4).SetEase(Ease.InBounce);
             FollowTarget(_initialPosition);
             PlayerData.Instance.UpdatePlayerGold();
+            target.GetComponent<Animator>().SetTrigger("LostGold");
         }
         
         

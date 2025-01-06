@@ -52,7 +52,9 @@ using UnityEngine.UI;
             Upgrade upgrade = button.GetComponent<Upgrade>();
             if (PlayerData.Instance.CurrentGold > upgrade.CurrentCost)
             {
+                SoundManager.PlaySound(SoundType.OpenChest);
                 PlayerData.Instance.CurrentGold -= upgrade.CurrentCost;
+                SoundManager.PlaySound(SoundType.OpenChest);
                 upgrade.ApplyUpgrade();
                // UpdateButtons(button.gameObject);
             }
