@@ -163,6 +163,7 @@ namespace Michael.Scripts.Enemy
             FollowTarget(_initialPosition);
             PlayerData.Instance.UpdatePlayerGold();
             target.GetComponent<Animator>().SetTrigger("LostGold");
+            target.GetComponentInChildren<ParticleSystem>().Play();
         }
         
         
