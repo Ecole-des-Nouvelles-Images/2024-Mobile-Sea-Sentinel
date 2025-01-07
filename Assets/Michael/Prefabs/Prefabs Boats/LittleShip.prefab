@@ -1257,11 +1257,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: BoatTrail
       objectReference: {fileID: 0}
-    - target: {fileID: 571973268096171460, guid: 64af7354748847c42946541c6f7aee9c,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 802912208095239100, guid: 64af7354748847c42946541c6f7aee9c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1311,16 +1306,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
-      objectReference: {fileID: 0}
-    - target: {fileID: 7810705216752335856, guid: 64af7354748847c42946541c6f7aee9c,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7810705216752335856, guid: 64af7354748847c42946541c6f7aee9c,
-        type: 3}
-      propertyPath: m_Parameters.alignment
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
