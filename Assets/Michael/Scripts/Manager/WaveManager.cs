@@ -48,6 +48,7 @@ namespace Michael.Scripts.Manager
         private int _bigBoatsBonus = 0;
         private int _currentWave = 0;
         private bool _isWaveActive = false;
+        
         private void Start()
         {
             _currentWaveData = _waveData[_currentWave];
@@ -103,10 +104,17 @@ namespace Michael.Scripts.Manager
             }
 
             if (_spawnedBoats.Count <= 0 && _boatsToSpawn.Count <= 0 && _isWaveActive)
-            { 
-                ShowEndWavePopup();
-                Invoke("EndWave",4);
-                _isWaveActive = false;
+            {
+                if (PlayerData.Instance.CurrentGold <= 0)
+                {
+                    GameManager.Instance.GameOver();
+                }
+                else
+                {
+                    ShowEndWavePopup();
+                    Invoke("EndWave",4);
+                    _isWaveActive = false;
+                }
             }
         }
 

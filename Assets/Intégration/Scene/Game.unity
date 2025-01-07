@@ -3012,7 +3012,7 @@ ParticleSystem:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 573097494}
   serializedVersion: 8
-  lengthInSec: 0.5
+  lengthInSec: 0.1
   simulationSpeed: 2.4
   stopAction: 0
   cullingMode: 0
@@ -3087,7 +3087,7 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 5
+      scalar: 3
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -3258,7 +3258,7 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 1.5
+      scalar: 2.3
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -6648,7 +6648,7 @@ ParticleSystem:
         m_NumAlphaKeys: 2
     range: {x: 0, y: 1}
   CollisionModule:
-    enabled: 1
+    enabled: 0
     serializedVersion: 4
     type: 1
     collisionMode: 0
@@ -11858,7 +11858,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: ba29ed64427a20f4da5f02d1e8236f52, type: 2}
   - {fileID: 11400000, guid: ad487da6c56c6984a818681592fa7de1, type: 2}
   _boatsToSpawn: []
-  _spawnInterval: 3
+  _spawnInterval: 4
   _spawnTimer: 0
   _waveText: {fileID: 5886499792576226402}
   _waveData:
@@ -12131,6 +12131,11 @@ PrefabInstance:
       propertyPath: goldText
       value: 
       objectReference: {fileID: 5885046393578628548}
+    - target: {fileID: 7945330404300736617, guid: bcdce6be5de008d4babd556fc2e2947e,
+        type: 3}
+      propertyPath: MaxGoldCapacity
+      value: 200
+      objectReference: {fileID: 0}
     - target: {fileID: 7945330404300736617, guid: bcdce6be5de008d4babd556fc2e2947e,
         type: 3}
       propertyPath: ExplosiveBarrelText
@@ -13668,7 +13673,7 @@ ParticleSystem:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1643926811}
   serializedVersion: 8
-  lengthInSec: 0.5
+  lengthInSec: 0.1
   simulationSpeed: 2.4
   stopAction: 0
   cullingMode: 0
@@ -13743,7 +13748,7 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 5
+      scalar: 3
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -13914,7 +13919,7 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 1.5
+      scalar: 2.3
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -17304,7 +17309,7 @@ ParticleSystem:
         m_NumAlphaKeys: 2
     range: {x: 0, y: 1}
   CollisionModule:
-    enabled: 1
+    enabled: 0
     serializedVersion: 4
     type: 1
     collisionMode: 0
@@ -24378,8 +24383,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 3
-  m_fontSizeBase: 3
+  m_fontSize: 2.8
+  m_fontSizeBase: 2.8
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18

@@ -38,17 +38,24 @@ namespace Michael.Scripts.Controller
 
         public void UpdatePlayerGold()
         {
-            goldText.text =  goldText.text = CurrentGold + " / " + MaxGoldCapacity;
             if (CurrentGold <= 0)
             {
                 CurrentGold = 0;
-                GameManager.Instance.GameOver();
+                Debug.Log("gold a zero");
+                goldText.color = Color.red;
+              //  GameManager.Instance.GameOver();
                 
+            }
+            else
+            {
+                goldText.color = Color.white;
             }
             if (CurrentGold >= MaxGoldCapacity)
             {
                 CurrentGold = MaxGoldCapacity;
             }
+            
+            goldText.text =  goldText.text = CurrentGold + " / " + MaxGoldCapacity;
         }
 
       

@@ -46,6 +46,7 @@ namespace Michael.Scripts.Enemy
         private Sequence _sinkSequence;
         private FloatingEffect _floatingEffect;
         private Collider _boatCollider;
+        private TrailRenderer _trailRenderer;
 
         void Start()
         {
@@ -60,7 +61,7 @@ namespace Michael.Scripts.Enemy
             _boatHealthBar.maxValue = _maxHealth;
             _boatEaseHealthBar.maxValue = _maxHealth;
             _boatGoldText.text = CurrentBoatGold + "/" + BoatGoldMax;
-            
+            _trailRenderer = GetComponentInChildren<TrailRenderer>();
         }
 
         public void InitializeBoatStats()
@@ -153,17 +154,21 @@ namespace Michael.Scripts.Enemy
 
         private void StealGold(GameObject target)
         {
-            SoundManager.PlaySound(SoundType.GoldOut); 
-            int goldtoSteal = BoatGoldMax - CurrentBoatGold;
-            PlayerData.Instance.CurrentGold -= goldtoSteal;
-            CurrentBoatGold = BoatGoldMax;
-            HealthBarFeedback( PlayerData.Instance.goldText.gameObject);
-            _boatGoldText.text = CurrentBoatGold + "/" + BoatGoldMax;
-            target.transform.DOShakePosition(1, 1,4).SetEase(Ease.InBounce);
+            if ( PlayerData.Instance.CurrentGold > 0)
+            {
+                SoundManager.PlaySound(SoundType.GoldOut); 
+                int goldtoSteal = BoatGoldMax - CurrentBoatGold;
+                PlayerData.Instance.CurrentGold -= goldtoSteal;
+                CurrentBoatGold = BoatGoldMax;
+                HealthBarFeedback( PlayerData.Instance.goldText.gameObject);
+                _boatGoldText.text = CurrentBoatGold + "/" + BoatGoldMax;
+                target.transform.DOShakePosition(1, 1,4).SetEase(Ease.InBounce);
+                PlayerData.Instance.UpdatePlayerGold();
+                target.GetComponent<Animator>().SetTrigger("LostGold");
+                target.GetComponentInChildren<ParticleSystem>().Play();
+                GameManager.Instance.ShakeCamera();
+            }
             FollowTarget(_initialPosition);
-            PlayerData.Instance.UpdatePlayerGold();
-            target.GetComponent<Animator>().SetTrigger("LostGold");
-            target.GetComponentInChildren<ParticleSystem>().Play();
         }
         
         
@@ -173,6 +178,7 @@ namespace Michael.Scripts.Enemy
             // activer version en plusieurs morceaux
             // opacité shader
             GameManager.Instance.BoatDestoyed++;
+            _trailRenderer.enabled = false;
             _boatCollider.enabled = false;
             _floatingEffect.enabled = false;
             SoundManager.PlaySound(SoundType.Explosion);
