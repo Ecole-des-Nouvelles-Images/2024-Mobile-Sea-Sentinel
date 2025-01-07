@@ -11858,7 +11858,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: ba29ed64427a20f4da5f02d1e8236f52, type: 2}
   - {fileID: 11400000, guid: ad487da6c56c6984a818681592fa7de1, type: 2}
   _boatsToSpawn: []
-  _spawnInterval: 4
+  _spawnInterval: 3
   _spawnTimer: 0
   _waveText: {fileID: 5886499792576226402}
   _waveData:

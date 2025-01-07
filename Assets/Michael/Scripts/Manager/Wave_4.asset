@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 585b6e3cbd7d15047bdc9dfef416d58d, type: 3}
   m_Name: Wave_4
   m_EditorClassIdentifier: 
-  <LittleBoatCount>k__BackingField: 8
-  <BalancedBoatCount>k__BackingField: 3
+  <LittleBoatCount>k__BackingField: 2
+  <BalancedBoatCount>k__BackingField: 6
   <BigBoatCount>k__BackingField: 3
   <BoatWithGoldPourcent>k__BackingField: 0.7
