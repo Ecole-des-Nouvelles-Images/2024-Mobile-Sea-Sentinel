@@ -1,4 +1,9 @@
-
+<h1 align="center">
+    <a href="https://github.com/Ecole-des-Nouvelles-Images/2024-Mobile-Sea-Sentinel/blob/main/README.md">
+    <img src="https://github.com/user-attachments/assets/41b66b00-1f67-4793-bd92-24e4f4613b26" width="60" height="40">
+  </a>
+  <a href="https://github.com/Ecole-des-Nouvelles-Images/Top-Down-3D-Game-Gurus/blob/main/README.md">
+    <img src="https://github.com/user-attachments/assets/8724f8b2-1eeb-402b-9584-50f07269331b" width="60" height="40">
   </a>
 </h1>
 
@@ -16,7 +21,7 @@
 
 </h2>
 <p>
-  Le projet <strong>Sea Sentinel</strong> est un petit jeu <strong> Mobile de tir</strong>, réalisé par <strong> 3 étudiants</strong> du 25 novembre au 22 juin 2024 en fin de semestre de 3e année Jeu Vidéo & Image Temps Réel, au sein de l'<a href="https://github.com/Ecole-des-Nouvelles-Images">Ecole des Nouvelles Images</a>. 
+  Le projet <strong>Sea Sentinel</strong> est un petit jeu <strong> Mobile de tir</strong>, réalisé par <strong> 3 étudiants</strong> du 25 novembre au 20 décembre 2024 en fin de semestre de 3e année Jeu Vidéo & Image Temps Réel, au sein de l'<a href="https://github.com/Ecole-des-Nouvelles-Images">Ecole des Nouvelles Images</a>. 
 </p>
 
 <h2 id="équipe" align="center">
