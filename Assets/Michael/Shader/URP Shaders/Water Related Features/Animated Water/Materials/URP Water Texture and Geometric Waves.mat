@@ -1,0 +1,66 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-4623390975788544373
+MonoBehaviour:
+  m_ObjectHideFlags: 11
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0353a89b1f911e48b9e16bdc9f2e058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 7
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: URP Water Texture and Geometric Waves
+  m_Shader: {fileID: -6465566751694194690, guid: 5c2410344104cbf4dbf7f4741dc98dd6,
+    type: 3}
+  m_Parent: {fileID: 2100000, guid: 30c57e7ed63a540b89c2204e536e793d, type: 2}
+  m_ModifiedSerializedProperties: 16
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: 2999
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: Vector1_33fc1cba724d4672ac81b13eb2b7a1b1
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - Texture2D_2a3670e0c9744ef8820b615cd9f637c8:
+        m_Texture: {fileID: 2800000, guid: 9f04018992f98ef4997b6883c48cc0f8, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_eb872b6fea4c4e9bbf9ae7c3605301f6:
+        m_Texture: {fileID: 2800000, guid: c21511cdc86c86847bdae740c8b071da, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - Vector1_00923200cbc64e29addcc0ad90f8a0be: 5
+    - Vector1_13fd3ecdcb7c4093bfa64be766d4bb2f: 1.37
+    - Vector1_33fc1cba724d4672ac81b13eb2b7a1b1: 6.66
+    - Vector1_41c4db8b870446fe80ce86c0fd78fd8c: 2.6
+    - Vector1_5aaaa4bca5ae44e6984dfc529ce2d504: 9.03
+    - Vector1_be0ccdb81ad54f29986176a6a4a69f1c: 1
+    - Vector1_da84f9cecb92426a871118ff0e688e26: 500
+    - Vector1_fb2ebe0157bc4e0aa0a6b9757c920c7f: 1
+    - _QueueOffset: -1
+    m_Colors:
+    - Color_302251bc20874d89a683cf3d1b6fff88: {r: 0.2834639, g: 0.51139486, b: 0.6603774,
+        a: 0}
+    - Color_363c18cd4bab4d08a5a0036e278ceee3: {r: 1, g: 1, b: 1, a: 1}
+    - Color_cc93b70e40c54c46881e0228bd6e3623: {r: 0, g: 1, b: 0.92546487, a: 1}
+    - Color_dce8e05d9129476f989af101532bc4de: {r: 0, g: 0.8773585, b: 0.5784781, a: 1}
+    - Vector2_96ef9bdb871b472eaa8998ca2475aa08: {r: 0.008, g: -0.01, b: 0, a: 0}
+  m_BuildTextureStacks: []

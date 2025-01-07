@@ -5,18 +5,23 @@ TagManager:
   serializedVersion: 2
   tags:
   - Bullet
+  - Enemy
+  - FxTemporaire
+  - Water
+  - ExplosiveBarrel
+  - Boat
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - 3DUi
   - Water
   - UI
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Aimable
+  - NonAimableMin
+  - NonAimableMax
+  - Chest
+  - Bullet
   - 
   - 
   - 
