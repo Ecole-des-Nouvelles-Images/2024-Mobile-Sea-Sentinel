@@ -6,6 +6,7 @@ namespace Michael.Scripts.Enemy
     {
         public float speed = 10f; 
         [SerializeField] private GameObject _slashParticle;
+        [SerializeField] private GameObject _smokeParticle;
         private Vector3 startPosition;
         private Vector3 endPosition;
         private Vector3 offset;
@@ -50,12 +51,13 @@ namespace Michael.Scripts.Enemy
             {
                 Instantiate(_slashParticle, new Vector3(transform.position.x,0.1f,transform.position.z), Quaternion.identity);
                 SoundManager.PlaySound(SoundType.WaterHit);
-                Destroy(gameObject,0.5f);
+                Destroy(gameObject,0.05f);
             }
             else if (other.CompareTag("Player")) { return; }
             else
             {
-                Destroy(gameObject);
+                Destroy(gameObject,0.05f);
+                _smokeParticle.SetActive(false);
             }
           
            

@@ -86,7 +86,11 @@ namespace Michael.Scripts.Enemy
         // SoundManager.PlaySound(SoundType.Sinking);
          _sinkSequence.Join(gameObject.transform.DOMove(new Vector3(transform.position.x, -8, transform.position.z), 2f));
          _sinkSequence.Join(gameObject.transform.DORotate(new Vector3(transform.position.x,transform.position.y , 20), 2f));
-         _sinkSequence.OnComplete(() => { Destroy(gameObject); });
+         _sinkSequence.OnComplete(() =>
+         {
+            WaveManager.Instance.ChestGameObjects.Remove(gameObject);
+            Destroy(gameObject);
+         });
          _sinkSequence.Play();
       }
 

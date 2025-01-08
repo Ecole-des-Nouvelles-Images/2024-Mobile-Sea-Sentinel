@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using DG.Tweening;
 using Michael.Scripts.Controller;
 using Michael.Scripts.Enemy;
@@ -48,12 +49,12 @@ namespace Michael.Scripts.Manager
         private int _bigBoatsBonus = 0;
         private int _currentWave = 0;
         private bool _isWaveActive = false;
-        
+
         private void Start()
         {
             _currentWaveData = _waveData[_currentWave];
             StartWave();
-            
+
         }
 
         private void FixedUpdate()
@@ -78,7 +79,8 @@ namespace Michael.Scripts.Manager
                     float currentGoldBoatRatio = (float)_boatsWithGoldGenerated / _boatsToSpawn.Count;
                     if (currentGoldBoatRatio < _currentWaveData.BoatWithGoldPourcent)
                     {
-                        int goldOnBoat = Mathf.CeilToInt(boat.GetComponent<BoatEnemy>().BoatGoldMax * _goldpourcentPerWave);
+                        int goldOnBoat =
+                            Mathf.CeilToInt(boat.GetComponent<BoatEnemy>().BoatGoldMax * _goldpourcentPerWave);
                         boat.GetComponent<Enemy.BoatEnemy>().SetGoldOnBoat(goldOnBoat);
                         _boatsWithGoldGenerated++;
                     }
@@ -102,20 +104,24 @@ namespace Michael.Scripts.Manager
             {
                 _spawnTimer -= Time.fixedDeltaTime;
             }
-
-            if (_spawnedBoats.Count <= 0 && _boatsToSpawn.Count <= 0 && _isWaveActive)
-            {
-                if (PlayerData.Instance.CurrentGold <= 0)
-                {
-                    GameManager.Instance.GameOver();
-                }
-                else
-                {
-                    ShowEndWavePopup();
-                    Invoke("EndWave",4);
-                    _isWaveActive = false;
+            
+            
+            if (_boatsToSpawn.Count <= 0 && _isWaveActive) {
+                if (PlayerData.Instance.CurrentGold <= 0) { 
+                    if (ChestGameObjects.Count <= 0 && _spawnedBoats.All(boat => boat.GetComponent<BoatEnemy>().CurrentBoatGold <= 0)) {
+                        if (_spawnedBoats.Count <= 0) {
+                            _isWaveActive = false;
+                            GameManager.Instance.GameOver(); 
+                        }
+                    }
                 }
             }
+            if (_spawnedBoats.Count <= 0 && _boatsToSpawn.Count <= 0 && _isWaveActive && PlayerData.Instance.CurrentGold > 0) {
+                ShowEndWavePopup();
+                Invoke("EndWave", 4);
+                _isWaveActive = false;
+            }
+
         }
 
         [ContextMenu("StartWave !")]
@@ -186,10 +192,14 @@ namespace Michael.Scripts.Manager
             {
                 _goldpourcentPerWave += 0.20f;
             }
-           
+
             _uiEndWave.transform.GetComponent<CanvasGroup>().DOFade(0f, 1f);
             ChestGameObjects.Clear();
-            foreach (GameObject chest in ChestGameObjects) { Destroy(chest); }
+            foreach (GameObject chest in ChestGameObjects)
+            {
+                Destroy(chest);
+            }
+
             _boatsWithGoldGenerated = 0;
             _uiEndWave.SetActive(false);
             GameManager.Instance.OpenShop();
@@ -200,10 +210,10 @@ namespace Michael.Scripts.Manager
             _uiEndWave.SetActive(true);
             _uiEndWave.transform.GetComponent<CanvasGroup>().DOFade(1f, 2f).SetUpdate(true);
         }
-        
+
         public int GetCurrentWave()
         {
-            return _currentWave; 
+            return _currentWave;
         }
     }
 }

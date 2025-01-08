@@ -5,8 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b7472739-ef28-4269-8639-9f341bd314f4" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Mobile-Sea-Sentinel/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Mobile-Sea-Sentinel/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Intégration/Prefabs/Bullet.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Intégration/Prefabs/Bullet.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Intégration/Prefabs/ExplosiveBarrel.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Intégration/Prefabs/ExplosiveBarrel.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Intégration/Scene/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Intégration/Scene/Game.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Intégration/Scene/Menu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Intégration/Scene/Menu.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/Prefabs/Chest.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Prefabs/Chest.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/Scripts/Enemy/Bullet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Scripts/Enemy/Bullet.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/Scripts/Enemy/Chest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Scripts/Enemy/Chest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/Scripts/Manager/WaveManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Scripts/Manager/WaveManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/Scripts/Upgrade/FireRateUpgrade.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Scripts/Upgrade/FireRateUpgrade.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/Shader/StylisedWaterV2/M_StylisedWater.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/Shader/StylisedWaterV2/M_StylisedWater.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/VFX/Prefabs/BarrelExplosion.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/VFX/Prefabs/BarrelExplosion.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/VFX/Stylized Weapon Pack/Stylized Rocket Launcher/Materials/VFX/SmokeMeshAdd.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/VFX/Stylized Weapon Pack/Stylized Rocket Launcher/Materials/VFX/SmokeMeshAdd.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Michael/VFX/Stylized Weapon Pack/Stylized Rocket Launcher/Prefabs/VFX/RocketFire.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Michael/VFX/Stylized Weapon Pack/Stylized Rocket Launcher/Prefabs/VFX/RocketFire.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sacha/Animation/BoatAnimation.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sacha/Animation/BoatAnimation.anim" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,6 +49,7 @@
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/GraphicRaycaster.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Selectable.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Slider.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/Downloads/Nouveau dossier (2)/ViewFinder-main/Assets/Scripts/Polaroid.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -48,22 +62,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Discover.Launch.Via.Unity": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "CodeLensConfigurable",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Discover.Launch.Via.Unity&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;CodeLensConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2022.3.47f1\Editor\Unity.exe" />
@@ -156,6 +170,7 @@
       <workItem from="1736090636414" duration="1627000" />
       <workItem from="1736169318178" duration="10000" />
       <workItem from="1736258795666" duration="5815000" />
+      <workItem from="1736329683758" duration="12466000" />
     </task>
     <servers />
   </component>

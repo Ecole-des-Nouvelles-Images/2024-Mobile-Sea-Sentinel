@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1914175723924341146}
   - component: {fileID: 7790596635964327480}
   - component: {fileID: 6419521208083660794}
+  - component: {fileID: 8425545356621801813}
   m_Layer: 0
   m_Name: Chest
   m_TagString: Untagged
@@ -29,9 +30,9 @@ Transform:
   m_GameObject: {fileID: 2574795244810488946}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 27.35}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 3946006024162287950}
   - {fileID: 7607932369722582826}
@@ -84,8 +85,8 @@ MonoBehaviour:
     m_PreInfinity: 1
     m_PostInfinity: 1
     m_RotationOrder: 4
-  _floatAmplitude: 1
-  _floatDuration: 3
+  _floatAmplitude: 2
+  _floatDuration: 4
   tiltCurve:
     serializedVersion: 2
     m_Curve:
@@ -119,7 +120,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  _tiltAmplitude: 1
+  _tiltAmplitude: 2
   _tiltDuration: 10
 --- !u!65 &1914175723924341146
 BoxCollider:
@@ -185,6 +186,27 @@ MonoBehaviour:
   _coinAmount: 10
   _coinTotalDelay: 0.5
   _coinPerDelay: 0.005
+--- !u!95 &8425545356621801813
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2574795244810488946}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 539728bc769574549a102705a46edb74, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &6085994174759809237
 GameObject:
   m_ObjectHideFlags: 0
@@ -634,7 +656,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 8537651174243782305, guid: 1a2aac824ba2fe54ea3b87c5280d6f1e,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4085784784875721850}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1a2aac824ba2fe54ea3b87c5280d6f1e, type: 3}
 --- !u!198 &7505691310879120489 stripped
@@ -757,4 +783,78 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: -8354305412941574533, guid: 018516af9ce48a347a782b7761be726d,
     type: 3}
   m_PrefabInstance: {fileID: 3551579715016050341}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6889758741866123103
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 7607932369722582826}
+    m_Modifications:
+    - target: {fileID: 5382558103381528261, guid: b4d4f454ef71669438219facef7196fb,
+        type: 3}
+      propertyPath: m_Name
+      value: Gold Burst
+      objectReference: {fileID: 0}
+    - target: {fileID: 7435100552249482021, guid: b4d4f454ef71669438219facef7196fb,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7435100552249482021, guid: b4d4f454ef71669438219facef7196fb,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7435100552249482021, guid: b4d4f454ef71669438219facef7196fb,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7435100552249482021, guid: b4d4f454ef71669438219facef7196fb,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 7435100552249482021, guid: b4d4f454ef71669438219facef7196fb,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 7435100552249482021, guid: b4d4f454ef71669438219facef7196fb,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7435100552249482021, guid: b4d4f454ef71669438219facef7196fb,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7435100552249482021, guid: b4d4f454ef71669438219facef7196fb,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 7435100552249482021, guid: b4d4f454ef71669438219facef7196fb,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7435100552249482021, guid: b4d4f454ef71669438219facef7196fb,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b4d4f454ef71669438219facef7196fb, type: 3}
+--- !u!4 &4085784784875721850 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7435100552249482021, guid: b4d4f454ef71669438219facef7196fb,
+    type: 3}
+  m_PrefabInstance: {fileID: 6889758741866123103}
   m_PrefabAsset: {fileID: 0}
