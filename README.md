@@ -48,7 +48,7 @@
   <strong>Pitch</strong>  
 </h2>
 <p>
- <strong>Sea Sentinel </strong> est un jeu mobile, hybride entre un shoot em up et un tower défense, dans lequel le joueur contrôle un phare avec un canon pour éliminer des vagues de bateaux pirates cherchant à lui voler ses ressources. Le joueur peut améliorer son phare en echange de son unique ressource, de l'or. Le joueur devra alors faire des choix car quand l'or arrive à zéro la partie est terminée.
+ <strong>Sea Sentinel </strong> est un jeu mobile, hybride entre un shoot em up et un tower défense, dans lequel le joueur contrôle un phare avec un canon pour éliminer des vagues de bateaux pirates cherchant à lui voler ses ressources. Le joueur peut améliorer son phare en échange de son unique ressource: de l'or. Le joueur devra alors faire des choix, la partie se terminant lorsque celui-ci perd tout son or.
 </p>
 
 <div align="center">
