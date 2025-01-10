@@ -28,7 +28,7 @@
   <strong>Équipe</strong>
 </h2>
 <p>
-The team consists of three students : <a href="https://github.com/Michael-elie">Michaël Elie</a>, <strong>who served as Product Owner, Developer, and Game Designer</strong>, <a href="https://github.com/Tartacule"> Sasha Nino</a>, <strong>a 2D & 3D Artist</strong> and <a href="https://github.com/sky-ark"> Alexandre Renaux </a>, <strong>a Developer and sound Designer</strong>.
+The team consists of three students : <a href="https://github.com/Michael-elie">Michaël Elie</a>, <strong>who served as Product Owner, Developer, and Game Designer</strong>, <a href="https://github.com/Tartacule"> Sacha Nino</a>, <strong>a 2D & 3D Artist</strong> and <a href="https://github.com/sky-ark"> Alexandre Renaux </a>, <strong>a Developer and sound Designer</strong>.
 </p>
 
 <div align="center">
@@ -48,7 +48,7 @@ The team consists of three students : <a href="https://github.com/Michael-elie">
   <strong>Pitch</strong>  
 </h2>
 <p>
- <strong>Sea Sentinel </strong> is a mobile game, a hybrid between a shoot 'em up and tower defense, where the player controls a lighthouse equipped with a cannon to eliminate waves of pirate ships attempting to steal its resources. The player can upgrade the lighthouse in exchange for the game's sole resource, gold. Strategic decisions are crucial, as the game ends when the gold runs out.
+ <strong>Sea Sentinel </strong> is a mobile game, a hybrid between a shoot 'em up and tower defense, in which the player controls a lighthouse equipped with a cannon to eliminate waves of pirate ships attempting to steal its resources. The player can upgrade the lighthouse in exchange for the game's sole resource, gold. Strategic decisions are crucial, as the game ends when the gold runs out.
 </p>
 
 <div align="center">
