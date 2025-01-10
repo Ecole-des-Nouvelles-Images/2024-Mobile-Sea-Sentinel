@@ -28,7 +28,7 @@
   <strong>Équipe</strong>
 </h2>
 <p>
-  L'équipe est composée de 3 étudiants : <a href="https://github.com/Michael-elie">Michaël Elie</a>, <strong>Product Owner</strong> <strong>, Développeur et Game Designer</strong>, <a href="https://github.com/Tartacule"> Sasha Nino</a>, <strong>Artiste 2D & 3D</strong> et <a href="https://github.com/sky-ark"> Alexandre Renaux </a>, <strong>Développeur</strong>.
+  L'équipe est composée de 3 étudiants : <a href="https://github.com/Michael-elie">Michaël Elie</a>, <strong>Product Owner</strong> <strong>, Développeur et Game Designer</strong>, <a href="https://github.com/Tartacule"> Sacha Nino</a>, <strong>Artiste 2D & 3D</strong> et <a href="https://github.com/sky-ark"> Alexandre Renaux </a>, <strong>Développeur</strong>.
 </p>
 
 <div align="center">
