@@ -51,7 +51,10 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
+    - _FlapAmount: 0.738
+    - _FlapSpeed: 5
     - _QueueControl: 0
     - _QueueOffset: 0
-    m_Colors: []
+    m_Colors:
+    - _BaseColor: {r: 1, g: 1, b: 1, a: 0}
   m_BuildTextureStacks: []
